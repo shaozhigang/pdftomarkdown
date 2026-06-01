@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.prose-md h1,
+.prose-md h2,
+.prose-md h3 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+.prose-md h1 {
+  font-size: 1.6rem;
+  margin: 1rem 0 0.5rem;
+}
+.prose-md h2 {
+  font-size: 1.35rem;
+  margin: 0.9rem 0 0.5rem;
+}
+.prose-md h3 {
+  font-size: 1.15rem;
+  margin: 0.8rem 0 0.4rem;
+}
+.prose-md p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+.prose-md ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.prose-md table {
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+.prose-md th,
+.prose-md td {
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+.prose-md th {
+  background: #f9fafb;
+}
+.prose-md pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+.prose-md code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
