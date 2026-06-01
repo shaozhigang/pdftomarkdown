@@ -23,7 +23,7 @@ export async function convertPdfToMarkdown(
   const warnings: string[] = [];
   if (totalLines === 0) {
     warnings.push(
-      "未提取到任何文本,这可能是扫描件或图片型 PDF。OCR 支持将在后续版本提供。"
+      "No text could be extracted. This may be a scanned or image-only PDF. OCR support is on the roadmap."
     );
   }
 

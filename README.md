@@ -26,7 +26,9 @@ npm run dev
 
 站点 URL 用于 SEO(canonical、sitemap、结构化数据),通过环境变量 `NEXT_PUBLIC_SITE_URL` 配置,默认已是生产域名。本地开发如需预览 SEO 元数据,可复制 `.env.example` 为 `.env.local` 并取消注释 localhost 一行。
 
-部署与 Spaceship DNS 配置见 [`docs/deployment.md`](docs/deployment.md)。
+部署与 Spaceship DNS 配置见 [`docs/deployment.md`](docs/deployment.md)（Vercel 方案）。
+
+**Cloudflare DNS + Cloudflare Pages** 一体化方案见 [`docs/deployment-cloudflare.md`](docs/deployment-cloudflare.md)。
 
 ## 目录结构
 

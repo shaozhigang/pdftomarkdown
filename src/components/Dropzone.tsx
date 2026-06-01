@@ -19,11 +19,11 @@ export function Dropzone({ onFile, disabled }: DropzoneProps) {
       setError(null);
       if (!file) return;
       if (file.type !== "application/pdf" && !file.name.endsWith(".pdf")) {
-        setError("请上传 PDF 文件。");
+        setError("Please upload a PDF file.");
         return;
       }
       if (file.size > MAX_SIZE) {
-        setError("文件超过 50MB,MVP 暂不支持更大文件。");
+        setError("File exceeds 50MB. Larger files are not supported yet.");
         return;
       }
       onFile(file);
@@ -76,10 +76,11 @@ export function Dropzone({ onFile, disabled }: DropzoneProps) {
           />
         </svg>
         <p className="text-base font-medium">
-          拖拽 PDF 到这里,或 <span className="text-brand">点击选择</span>
+          Drop your PDF here, or{" "}
+          <span className="text-brand">click to browse</span>
         </p>
         <p className="text-sm text-slate-500">
-          100% 本地处理 · 文件不会离开你的浏览器 · 上限 50MB
+          100% local processing · Files never leave your browser · Max 50MB
         </p>
         <input
           ref={inputRef}

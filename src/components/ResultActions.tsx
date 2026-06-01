@@ -32,13 +32,13 @@ export function ResultActions({ markdown, fileName }: ResultActionsProps) {
         onClick={copy}
         className="rounded-lg bg-brand px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-dark"
       >
-        {copied ? "已复制 ✓" : "复制 Markdown"}
+        {copied ? "Copied ✓" : "Copy Markdown"}
       </button>
       <button
         onClick={download}
         className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
       >
-        下载 .md
+        Download .md
       </button>
     </div>
   );

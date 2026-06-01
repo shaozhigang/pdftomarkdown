@@ -30,7 +30,7 @@ export function Converter() {
       setStatus("done");
     } catch (err) {
       console.error(err);
-      setErrorMsg(err instanceof Error ? err.message : "转换失败");
+      setErrorMsg(err instanceof Error ? err.message : "Conversion failed");
       setStatus("error");
     }
   };
@@ -49,19 +49,20 @@ export function Converter() {
         <div className="flex items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-6 py-14">
           <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
           <span className="text-slate-600">
-            正在本地解析 <span className="font-medium">{fileName}</span> …
+            Parsing locally{" "}
+            <span className="font-medium">{fileName}</span> …
           </span>
         </div>
       )}
 
       {status === "error" && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-6 py-10 text-center">
-          <p className="text-red-700">转换失败:{errorMsg}</p>
+          <p className="text-red-700">Conversion failed: {errorMsg}</p>
           <button
             onClick={reset}
             className="mt-3 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm"
           >
-            重新选择文件
+            Choose another file
           </button>
         </div>
       )}
@@ -77,7 +78,7 @@ export function Converter() {
                     tab === "preview" ? "bg-white shadow-sm" : "text-slate-500"
                   }`}
                 >
-                  预览
+                  Preview
                 </button>
                 <button
                   onClick={() => setTab("source")}
@@ -85,11 +86,11 @@ export function Converter() {
                     tab === "source" ? "bg-white shadow-sm" : "text-slate-500"
                   }`}
                 >
-                  源码
+                  Source
                 </button>
               </div>
               <span className="text-xs text-slate-400">
-                {result.stats.pages} 页 · {result.stats.durationMs} ms
+                {result.stats.pages} pages · {result.stats.durationMs} ms
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -98,7 +99,7 @@ export function Converter() {
                 onClick={reset}
                 className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
               >
-                新文件
+                New file
               </button>
             </div>
           </div>
