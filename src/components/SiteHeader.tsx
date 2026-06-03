@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { NAV_ITEMS } from "@/lib/landing";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 
 export async function SiteHeader() {
   const t = await getTranslations("Nav");
@@ -26,11 +27,7 @@ export async function SiteHeader() {
               </Link>
             ))}
           </nav>
-          {/* LocaleSwitcher — add active locales here when translations are ready */}
-          <div className="flex items-center gap-1 text-xs">
-            <span className="rounded px-1.5 py-0.5 font-medium ring-1 ring-brand text-brand">EN</span>
-            <span className="rounded px-1.5 py-0.5 text-slate-400 cursor-not-allowed" title="Coming soon">ZH</span>
-          </div>
+          <LocaleSwitcher />
         </div>
       </div>
     </header>

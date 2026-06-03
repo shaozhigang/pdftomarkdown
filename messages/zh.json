@@ -1,1 +1,177 @@
-{}
+{
+  "Nav": {
+    "home": "首页",
+    "obsidian": "适用于 Obsidian",
+    "chatgpt": "适用于 ChatGPT & LLM",
+    "table": "表格提取"
+  },
+  "Footer": {
+    "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。"
+  },
+  "Converter": {
+    "dropTitleBefore": "将 PDF 拖放到此处，或",
+    "dropClickBrowse": "点击浏览文件",
+    "dropSubtitle": "100% 本地处理 · 文件永不上传 · 最大 50MB",
+    "errorNotPdf": "请上传 PDF 文件。",
+    "errorTooLarge": "文件超过 50MB，暂不支持更大的文件。",
+    "statusParsing": "本地解析中",
+    "chooseAnother": "选择其他文件",
+    "conversionFailed": "转换失败",
+    "tabPreview": "预览",
+    "tabSource": "源码",
+    "statsInfo": "{pages} 页 · {ms} ms",
+    "actionCopy": "复制 Markdown",
+    "actionCopied": "已复制 ✓",
+    "actionDownload": "下载 .md",
+    "actionNewFile": "新文件",
+    "warningNoText": "无法提取文本。这可能是扫描件或纯图片型 PDF，OCR 支持已在路线图中。"
+  },
+  "Landing": {
+    "faqTitle": "常见问题",
+    "relatedTitle": "相关工具"
+  },
+  "Home": {
+    "metaTitle": "PDF 转 Markdown — 免费、私密、本地转换器",
+    "metaDescription": "在浏览器中将 PDF 转为干净的 Markdown，100% 本地处理，文件永不离开您的设备。专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
+    "keywords": ["pdf转markdown", "pdf to markdown", "pdf转md", "在线pdf转markdown"],
+    "badge": "100% 本地 · 无上传",
+    "h1": "PDF 转 Markdown",
+    "subtitle": "在浏览器中将 PDF 转为干净的 Markdown，专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
+    "features": [
+      {
+        "title": "隐私优先设计",
+        "body": "所有处理均在浏览器内完成，无上传、无服务器、不追踪您的文档。"
+      },
+      {
+        "title": "结构完整还原",
+        "body": "标题、列表、嵌套列表和表格均被完整保留，输出即可直接使用。"
+      },
+      {
+        "title": "免费无限制",
+        "body": "无需注册、无水印、单文件转换无每日限额。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "我的文件会上传到服务器吗？",
+        "a": "不会。转换完全在浏览器中通过 WebAssembly 运行，PDF 文件永远不会离开您的设备，合同、研究资料等私密文档均可放心使用。"
+      },
+      {
+        "q": "转换器能保留哪些格式？",
+        "a": "标题层级、段落、有序和无序列表（包括嵌套）以及表格。页眉、页脚和页码会被自动过滤。"
+      },
+      {
+        "q": "支持扫描版 PDF 吗？",
+        "a": "当前完全支持文本型 PDF。扫描件 / 纯图片型 PDF 的 OCR 功能已在路线图中。"
+      }
+    ]
+  },
+  "Obsidian": {
+    "metaTitle": "PDF 转 Markdown（Obsidian 专用）— 离线 & 干净",
+    "metaDescription": "将 PDF 转为适合 Obsidian 的干净 Markdown 笔记，100% 离线处理，标题、列表和表格完整保留，直接拖入 Vault 即用。",
+    "keywords": ["obsidian pdf转markdown", "pdf转obsidian笔记", "pdf导入obsidian", "obsidian pdf to markdown"],
+    "badge": "离线 · Vault 即用",
+    "h1": "PDF 转 Markdown（Obsidian 专用）",
+    "subtitle": "将 PDF 转为干净的离线 Markdown 笔记，标题、列表和表格完整保留，直接拖入 Obsidian Vault 即可使用。",
+    "features": [
+      {
+        "title": "Vault 即用输出",
+        "body": "下载 .md 文件后移入 Vault 任意文件夹，标题自动成为笔记结构，表格保持 Markdown 格式。"
+      },
+      {
+        "title": "完全离线",
+        "body": "无需上传，断网也能正常使用，非常适合私密研究笔记和资料剪藏。"
+      },
+      {
+        "title": "笔记干净整洁",
+        "body": "页码和重复的页眉/页脚会被自动去除，笔记不受打印格式污染。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "我的文件会上传到服务器吗？",
+        "a": "不会。转换完全在浏览器中通过 WebAssembly 运行，PDF 文件永远不会离开您的设备，合同、研究资料等私密文档均可放心使用。"
+      },
+      {
+        "q": "如何将结果导入 Obsidian？",
+        "a": "点击「下载 .md」，将文件移入 Obsidian Vault 内的任意文件夹，笔记即刻出现。"
+      },
+      {
+        "q": "表格和列表导入后能保留吗？",
+        "a": "可以。表格会转为 GitHub Flavored Markdown 表格，嵌套列表保留缩进层级。"
+      }
+    ]
+  },
+  "ChatGPT": {
+    "metaTitle": "PDF 转 Markdown（ChatGPT / LLM / RAG 专用）",
+    "metaDescription": "将 PDF 转为适合 ChatGPT、Claude 和 RAG 流水线的干净 Markdown，结构清晰、Token 高效，全程在浏览器本地处理。",
+    "keywords": ["pdf转markdown chatgpt", "pdf to markdown llm", "pdf转markdown rag", "pdf转markdown 大模型"],
+    "badge": "LLM 就绪输出",
+    "h1": "PDF 转 Markdown（ChatGPT & LLM 专用）",
+    "subtitle": "将 PDF 转为结构清晰、Token 高效的 Markdown，ChatGPT、Claude 和 RAG 流水线均可可靠解析，全程在浏览器本地处理。",
+    "features": [
+      {
+        "title": "Token 高效",
+        "body": "Markdown 远比 PDF 原始文本紧凑，可在模型上下文窗口中放入更多内容。"
+      },
+      {
+        "title": "模型可理解的结构",
+        "body": "干净的标题和列表赋予模型文档层次感，有助于提升答案基准性并降低幻觉。"
+      },
+      {
+        "title": "RAG 就绪",
+        "body": "规范的 Markdown 易于按标题切块并嵌入向量数据库，用于检索增强生成。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "我的文件会上传到服务器吗？",
+        "a": "不会。转换完全在浏览器中通过 WebAssembly 运行，PDF 文件永远不会离开您的设备，合同、研究资料等私密文档均可放心使用。"
+      },
+      {
+        "q": "为什么 Markdown 比 PDF 原始文本更适合 LLM？",
+        "a": "Markdown 用极少的额外 Token 编码了文档结构（标题、列表、表格），帮助模型理解文档内容并保持提示词简洁。"
+      },
+      {
+        "q": "输出内容可以直接用于 RAG 流水线吗？",
+        "a": "可以。干净的 Markdown 按标题自然分块，易于切片和嵌入，非常适合检索增强生成场景。"
+      }
+    ]
+  },
+  "Table": {
+    "metaTitle": "PDF 表格转 Markdown — 精准提取表格",
+    "metaDescription": "从 PDF 中提取表格并转为 GitHub Flavored Markdown 表格，列结构自动检测，全程在浏览器本地处理，无需上传。",
+    "keywords": ["pdf表格转markdown", "pdf table to markdown", "pdf转markdown表格", "从pdf提取表格"],
+    "badge": "表格 · GFM 输出",
+    "h1": "PDF 表格转 Markdown",
+    "subtitle": "从 PDF 中提取表格并转为干净的 GitHub Flavored Markdown 表格，列边界自动检测，全程在浏览器内完成。",
+    "features": [
+      {
+        "title": "自动列检测",
+        "body": "引擎通过水平位置对齐单元格，多列表格均可正确还原结构。"
+      },
+      {
+        "title": "GFM 标准表格",
+        "body": "输出符合 GitHub Flavored Markdown 表格规范，在 GitHub、Obsidian、Notion 及多数编辑器中均可正常渲染。"
+      },
+      {
+        "title": "混合文档一并处理",
+        "body": "PDF 中的表格、标题和正文段落在同一次转换中全部处理，无需单独操作。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "我的文件会上传到服务器吗？",
+        "a": "不会。转换完全在浏览器中通过 WebAssembly 运行，PDF 文件永远不会离开您的设备，合同、研究资料等私密文档均可放心使用。"
+      },
+      {
+        "q": "支持哪些表格布局？",
+        "a": "列间距清晰的文本型表格效果最佳。合并单元格会被展平，因为 Markdown 表格不支持跨格。"
+      },
+      {
+        "q": "可以只复制表格部分吗？",
+        "a": "可以。转换完成后切换到源码视图，复制所需的表格区块即可。"
+      }
+    ]
+  }
+}

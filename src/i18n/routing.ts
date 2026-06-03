@@ -1,8 +1,7 @@
 import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
-  // Add "zh" here when translations in messages/zh.json are ready
-  locales: ["en"],
+  locales: ["en", "zh"],
   defaultLocale: "en",
   localePrefix: "always",
 });
