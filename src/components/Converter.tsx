@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Dropzone } from "./Dropzone";
 import { MarkdownPreview } from "./MarkdownPreview";
 import { ResultActions } from "./ResultActions";
@@ -10,6 +11,7 @@ import type { ConvertResult } from "@/lib/types";
 type Tab = "preview" | "source";
 
 export function Converter() {
+  const t = useTranslations("Converter");
   const [status, setStatus] = useState<"idle" | "working" | "done" | "error">(
     "idle"
   );
@@ -30,7 +32,7 @@ export function Converter() {
       setStatus("done");
     } catch (err) {
       console.error(err);
-      setErrorMsg(err instanceof Error ? err.message : "Conversion failed");
+      setErrorMsg(err instanceof Error ? err.message : t("conversionFailed"));
       setStatus("error");
     }
   };
@@ -49,7 +51,7 @@ export function Converter() {
         <div className="flex items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-6 py-14">
           <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
           <span className="text-slate-600">
-            Parsing locally{" "}
+            {t("statusParsing")}{" "}
             <span className="font-medium">{fileName}</span> …
           </span>
         </div>
@@ -57,12 +59,14 @@ export function Converter() {
 
       {status === "error" && (
         <div className="rounded-xl border border-red-200 bg-red-50 px-6 py-10 text-center">
-          <p className="text-red-700">Conversion failed: {errorMsg}</p>
+          <p className="text-red-700">
+            {t("conversionFailed")}: {errorMsg}
+          </p>
           <button
             onClick={reset}
             className="mt-3 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm"
           >
-            Choose another file
+            {t("chooseAnother")}
           </button>
         </div>
       )}
@@ -78,7 +82,7 @@ export function Converter() {
                     tab === "preview" ? "bg-white shadow-sm" : "text-slate-500"
                   }`}
                 >
-                  Preview
+                  {t("tabPreview")}
                 </button>
                 <button
                   onClick={() => setTab("source")}
@@ -86,11 +90,14 @@ export function Converter() {
                     tab === "source" ? "bg-white shadow-sm" : "text-slate-500"
                   }`}
                 >
-                  Source
+                  {t("tabSource")}
                 </button>
               </div>
               <span className="text-xs text-slate-400">
-                {result.stats.pages} pages · {result.stats.durationMs} ms
+                {t("statsInfo", {
+                  pages: result.stats.pages,
+                  ms: result.stats.durationMs,
+                })}
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -99,14 +106,18 @@ export function Converter() {
                 onClick={reset}
                 className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
               >
-                New file
+                {t("actionNewFile")}
               </button>
             </div>
           </div>
 
           {result.warnings.length > 0 && (
             <div className="border-b border-amber-100 bg-amber-50 px-4 py-2 text-sm text-amber-700">
-              {result.warnings.join(" ")}
+              {result.warnings
+                .map((code) =>
+                  code === "warningNoText" ? t("warningNoText") : code
+                )
+                .join(" ")}
             </div>
           )}
 

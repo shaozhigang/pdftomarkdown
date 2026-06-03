@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface ResultActionsProps {
   markdown: string;
@@ -8,6 +9,7 @@ interface ResultActionsProps {
 }
 
 export function ResultActions({ markdown, fileName }: ResultActionsProps) {
+  const t = useTranslations("Converter");
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
@@ -32,13 +34,13 @@ export function ResultActions({ markdown, fileName }: ResultActionsProps) {
         onClick={copy}
         className="rounded-lg bg-brand px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-dark"
       >
-        {copied ? "Copied ✓" : "Copy Markdown"}
+        {copied ? t("actionCopied") : t("actionCopy")}
       </button>
       <button
         onClick={download}
         className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
       >
-        Download .md
+        {t("actionDownload")}
       </button>
     </div>
   );

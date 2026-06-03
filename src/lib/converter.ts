@@ -22,9 +22,8 @@ export async function convertPdfToMarkdown(
 
   const warnings: string[] = [];
   if (totalLines === 0) {
-    warnings.push(
-      "No text could be extracted. This may be a scanned or image-only PDF. OCR support is on the roadmap."
-    );
+    // "warningNoText" maps to the Converter.warningNoText key in messages
+    warnings.push("warningNoText");
   }
 
   return {

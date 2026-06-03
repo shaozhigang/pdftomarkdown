@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-打开 http://localhost:3000,拖入一个 PDF 即可看到转换结果。
+打开 http://localhost:3000/en，拖入一个 PDF 即可看到转换结果（根路径 `/` 自动 301 重定向到 `/en`）。
 
 ## 生产域名
 

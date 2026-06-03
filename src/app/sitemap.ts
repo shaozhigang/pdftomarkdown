@@ -1,12 +1,30 @@
 import type { MetadataRoute } from "next";
-import { LANDING_PAGES, SITE_URL } from "@/lib/landing";
+import { SITE_URL, SECONDARY_SLUGS } from "@/lib/landing";
+import { routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  return LANDING_PAGES.map((p) => ({
-    url: p.slug ? `${SITE_URL}/${p.slug}` : SITE_URL,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: p.slug === "" ? 1 : 0.8,
-  }));
+  const entries: MetadataRoute.Sitemap = [];
+
+  for (const locale of routing.locales) {
+    // Home page
+    entries.push({
+      url: `${SITE_URL}/${locale}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 1,
+    });
+
+    // Secondary landing pages
+    for (const slug of SECONDARY_SLUGS) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/${slug}`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+    }
+  }
+
+  return entries;
 }

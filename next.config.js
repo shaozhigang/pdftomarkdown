@@ -1,3 +1,5 @@
+const withNextIntl = require("next-intl/plugin")("./src/i18n/request.ts");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -9,6 +11,26 @@ const nextConfig = {
     };
     return config;
   },
+  async redirects() {
+    return [
+      { source: "/", destination: "/en", permanent: true },
+      {
+        source: "/pdf-to-markdown-for-obsidian",
+        destination: "/en/pdf-to-markdown-for-obsidian",
+        permanent: true,
+      },
+      {
+        source: "/pdf-to-markdown-for-chatgpt",
+        destination: "/en/pdf-to-markdown-for-chatgpt",
+        permanent: true,
+      },
+      {
+        source: "/pdf-table-to-markdown",
+        destination: "/en/pdf-table-to-markdown",
+        permanent: true,
+      },
+    ];
+  },
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);

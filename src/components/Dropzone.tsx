@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface DropzoneProps {
   onFile: (file: File) => void;
@@ -10,6 +11,7 @@ interface DropzoneProps {
 const MAX_SIZE = 50 * 1024 * 1024; // 50MB
 
 export function Dropzone({ onFile, disabled }: DropzoneProps) {
+  const t = useTranslations("Converter");
   const [dragging, setDragging] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -19,16 +21,16 @@ export function Dropzone({ onFile, disabled }: DropzoneProps) {
       setError(null);
       if (!file) return;
       if (file.type !== "application/pdf" && !file.name.endsWith(".pdf")) {
-        setError("Please upload a PDF file.");
+        setError(t("errorNotPdf"));
         return;
       }
       if (file.size > MAX_SIZE) {
-        setError("File exceeds 50MB. Larger files are not supported yet.");
+        setError(t("errorTooLarge"));
         return;
       }
       onFile(file);
     },
-    [onFile]
+    [onFile, t]
   );
 
   return (
@@ -76,12 +78,10 @@ export function Dropzone({ onFile, disabled }: DropzoneProps) {
           />
         </svg>
         <p className="text-base font-medium">
-          Drop your PDF here, or{" "}
-          <span className="text-brand">click to browse</span>
+          {t("dropTitleBefore")}{" "}
+          <span className="text-brand">{t("dropClickBrowse")}</span>
         </p>
-        <p className="text-sm text-slate-500">
-          100% local processing · Files never leave your browser · Max 50MB
-        </p>
+        <p className="text-sm text-slate-500">{t("dropSubtitle")}</p>
         <input
           ref={inputRef}
           type="file"

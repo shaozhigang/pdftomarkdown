@@ -1,16 +1,22 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Converter } from "@/components/Converter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import {
-  SITE_URL,
-  type LandingContent,
-  SECONDARY_PAGES,
-} from "@/lib/landing";
+import { type LandingContent, type RelatedPage } from "@/lib/landing";
 
-export function LandingPage({ content }: { content: LandingContent }) {
-  const url = content.slug ? `${SITE_URL}/${content.slug}` : SITE_URL;
-  const related = SECONDARY_PAGES.filter((p) => p.slug !== content.slug);
+interface LandingPageProps {
+  content: LandingContent;
+  related: RelatedPage[];
+  pageUrl: string;
+}
+
+export async function LandingPage({
+  content,
+  related,
+  pageUrl,
+}: LandingPageProps) {
+  const t = await getTranslations("Landing");
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -18,7 +24,7 @@ export function LandingPage({ content }: { content: LandingContent }) {
       {
         "@type": "WebApplication",
         name: content.h1,
-        url,
+        url: pageUrl,
         applicationCategory: "UtilitiesApplication",
         operatingSystem: "Web",
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -65,9 +71,7 @@ export function LandingPage({ content }: { content: LandingContent }) {
         </section>
 
         <section className="mt-14">
-          <h2 className="mb-4 text-xl font-semibold">
-            Frequently asked questions
-          </h2>
+          <h2 className="mb-4 text-xl font-semibold">{t("faqTitle")}</h2>
           <div className="space-y-3">
             {content.faqs.map((f) => (
               <details
@@ -83,12 +87,12 @@ export function LandingPage({ content }: { content: LandingContent }) {
 
         {related.length > 0 && (
           <section className="mt-14">
-            <h2 className="mb-4 text-xl font-semibold">Related tools</h2>
+            <h2 className="mb-4 text-xl font-semibold">{t("relatedTitle")}</h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {related.map((p) => (
                 <Link
-                  key={p.slug}
-                  href={`/${p.slug}`}
+                  key={p.slug || "home"}
+                  href={p.slug ? `/${p.slug}` : "/"}
                   className="rounded-lg border border-slate-200 bg-white p-4 transition hover:border-brand/60 hover:shadow-sm"
                 >
                   <span className="font-medium text-brand-dark">{p.h1}</span>
