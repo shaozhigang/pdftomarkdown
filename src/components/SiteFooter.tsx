@@ -22,6 +22,12 @@ export async function SiteFooter() {
               {tNav(item.msgKey)}
             </Link>
           ))}
+          <Link
+            href="/privacy-policy"
+            className="text-slate-600 hover:text-slate-900"
+          >
+            {tFooter("privacyPolicy")}
+          </Link>
         </div>
         <p className="mt-4 text-xs text-slate-400">{tFooter("tagline")}</p>
       </div>

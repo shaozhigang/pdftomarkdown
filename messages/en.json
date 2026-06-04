@@ -6,7 +6,8 @@
     "table": "Table Extractor"
   },
   "Footer": {
-    "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device."
+    "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",
+    "privacyPolicy": "Privacy Policy"
   },
   "Converter": {
     "dropTitleBefore": "Drop your PDF here, or",
@@ -171,6 +172,106 @@
       {
         "q": "Can I copy just the table?",
         "a": "Yes. Convert the PDF, switch to the source view, and copy the table block you need."
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "Learn how PDF to Markdown handles your data. PDF conversion runs locally in your browser; we use Google Analytics and Microsoft Clarity for site usage insights.",
+    "h1": "Privacy Policy",
+    "lastUpdated": "Last updated: June 4, 2026",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is a free browser-based tool that converts PDF files to Markdown. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.",
+    "sections": [
+      {
+        "title": "1. PDF conversion — your files stay on your device",
+        "paragraphs": [
+          "When you convert a PDF, all processing happens entirely in your web browser using WebAssembly. Your PDF files are never uploaded to our servers or any third-party service for conversion.",
+          "We do not store, access, or retain the content of your PDF files or the Markdown output you generate. Once you close the browser tab, that data is gone from our perspective."
+        ]
+      },
+      {
+        "title": "2. Information we collect automatically",
+        "paragraphs": [
+          "When you visit our website, we and our analytics partners may automatically collect certain technical and usage information, such as:"
+        ],
+        "bullets": [
+          "Pages visited, links clicked, and time spent on the site",
+          "Browser type, operating system, device type, and screen resolution",
+          "Approximate geographic location (country/region level, derived from IP address)",
+          "Referring website or search query",
+          "Session interactions such as scrolls, clicks, and mouse movements (via Microsoft Clarity)"
+        ]
+      },
+      {
+        "title": "3. Analytics services we use",
+        "paragraphs": [
+          "We use the following third-party analytics tools to understand how visitors use our site and to improve the product. These services may set cookies or similar technologies in your browser."
+        ],
+        "bullets": [
+          "Google Analytics (GA4) — provided by Google LLC. Google Analytics collects data about how you interact with our website, including pages viewed and events triggered. Data is processed according to Google's privacy policy. You can learn more at https://policies.google.com/privacy and opt out via the Google Analytics Opt-out Browser Add-on at https://tools.google.com/dlpage/gaoptout.",
+          "Microsoft Clarity — provided by Microsoft Corporation. Clarity uses cookies and similar technologies to record session replays, heatmaps, and interaction data to help us understand user experience and fix usability issues. Data is processed according to Microsoft's privacy policy. You can learn more at https://privacy.microsoft.com/en-us/privacystatement."
+        ]
+      },
+      {
+        "title": "4. Cookies and similar technologies",
+        "paragraphs": [
+          "Our analytics providers use cookies, local storage, and similar tracking technologies to collect usage data described above. You can control cookies through your browser settings — most browsers allow you to block or delete cookies.",
+          "Disabling cookies may not affect the core PDF conversion functionality, which runs entirely in your browser without requiring cookies."
+        ]
+      },
+      {
+        "title": "5. How we use collected information",
+        "paragraphs": [
+          "We use the automatically collected information to:"
+        ],
+        "bullets": [
+          "Monitor site performance and fix errors",
+          "Understand which features and pages are most useful",
+          "Improve the user experience and prioritize product development",
+          "Detect and prevent abuse or fraudulent activity"
+        ]
+      },
+      {
+        "title": "6. Data sharing",
+        "paragraphs": [
+          "We do not sell your personal information. Usage data collected by Google Analytics and Microsoft Clarity is shared with those respective providers as described in their privacy policies.",
+          "We may also disclose information if required by law, court order, or to protect the rights, property, or safety of our users or the public."
+        ]
+      },
+      {
+        "title": "7. Data retention",
+        "paragraphs": [
+          "Analytics data is retained according to the retention policies of Google Analytics and Microsoft Clarity. PDF files and conversion output are never stored on our servers."
+        ]
+      },
+      {
+        "title": "8. Your rights and choices",
+        "paragraphs": [
+          "Depending on your location, you may have rights to access, correct, or delete personal data held about you. You can also:"
+        ],
+        "bullets": [
+          "Opt out of Google Analytics using the browser add-on linked above",
+          "Block or delete cookies via your browser settings",
+          "Use a privacy-focused browser or extensions to limit tracking"
+        ]
+      },
+      {
+        "title": "9. Children's privacy",
+        "paragraphs": [
+          "Our service is not directed at children under 13. We do not knowingly collect personal information from children."
+        ]
+      },
+      {
+        "title": "10. Changes to this policy",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time. When we do, we will revise the \"Last updated\" date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy."
+        ]
+      },
+      {
+        "title": "11. Contact",
+        "paragraphs": [
+          "If you have questions about this Privacy Policy, please visit https://pdftomarkdown.run."
+        ]
       }
     ]
   }

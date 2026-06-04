@@ -6,7 +6,8 @@
     "table": "表格提取"
   },
   "Footer": {
-    "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。"
+    "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。",
+    "privacyPolicy": "隐私政策"
   },
   "Converter": {
     "dropTitleBefore": "将 PDF 拖放到此处，或",
@@ -171,6 +172,106 @@
       {
         "q": "可以只复制表格部分吗？",
         "a": "可以。转换完成后切换到源码视图，复制所需的表格区块即可。"
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "隐私政策",
+    "metaDescription": "了解 PDF to Markdown 如何处理您的数据。PDF 转换在浏览器本地完成；我们使用 Google Analytics 和 Microsoft Clarity 收集网站使用数据。",
+    "h1": "隐私政策",
+    "lastUpdated": "最后更新：2026 年 6 月 4 日",
+    "intro": "PDF to Markdown（pdftomarkdown.run）是一款免费的浏览器端 PDF 转 Markdown 工具。本隐私政策说明我们收集哪些信息、如何使用这些信息，以及您可行使的选择。",
+    "sections": [
+      {
+        "title": "1. PDF 转换 — 您的文件留在本地",
+        "paragraphs": [
+          "当您转换 PDF 时，所有处理完全在您的浏览器中通过 WebAssembly 完成。您的 PDF 文件不会被上传至我们的服务器或任何第三方服务进行转换。",
+          "我们不会存储、访问或保留您 PDF 文件的内容或生成的 Markdown 输出。关闭浏览器标签页后，这些数据即不再与我们相关。"
+        ]
+      },
+      {
+        "title": "2. 我们自动收集的信息",
+        "paragraphs": [
+          "当您访问本网站时，我们和我们的分析合作伙伴可能会自动收集以下技术和使用信息："
+        ],
+        "bullets": [
+          "访问的页面、点击的链接及在网站上的停留时间",
+          "浏览器类型、操作系统、设备类型及屏幕分辨率",
+          "大致地理位置（国家/地区级别，由 IP 地址推断）",
+          "来源网站或搜索查询",
+          "会话交互数据，如滚动、点击和鼠标移动（通过 Microsoft Clarity 收集）"
+        ]
+      },
+      {
+        "title": "3. 我们使用的分析服务",
+        "paragraphs": [
+          "我们使用以下第三方分析工具了解访客如何使用网站并改进产品。这些服务可能会在您的浏览器中设置 Cookie 或类似技术。"
+        ],
+        "bullets": [
+          "Google Analytics（GA4）— 由 Google LLC 提供。Google Analytics 收集您与本网站交互的数据，包括浏览的页面和触发的事件。数据处理遵循 Google 隐私政策。详情请参阅 https://policies.google.com/privacy，您也可通过 Google Analytics 退出浏览器插件（https://tools.google.com/dlpage/gaoptout）选择退出。",
+          "Microsoft Clarity — 由 Microsoft Corporation 提供。Clarity 使用 Cookie 及类似技术记录会话回放、热图和交互数据，帮助我们了解用户体验并修复可用性问题。数据处理遵循 Microsoft 隐私政策。详情请参阅 https://privacy.microsoft.com/zh-cn/privacystatement。"
+        ]
+      },
+      {
+        "title": "4. Cookie 及类似技术",
+        "paragraphs": [
+          "我们的分析服务提供商使用 Cookie、本地存储及类似跟踪技术收集上述使用数据。您可通过浏览器设置控制 Cookie — 大多数浏览器允许您阻止或删除 Cookie。",
+          "禁用 Cookie 通常不会影响核心 PDF 转换功能，该功能完全在浏览器中运行，无需 Cookie。"
+        ]
+      },
+      {
+        "title": "5. 我们如何使用收集的信息",
+        "paragraphs": [
+          "我们使用自动收集的信息用于："
+        ],
+        "bullets": [
+          "监控网站性能并修复错误",
+          "了解哪些功能和页面最有用",
+          "改善用户体验并确定产品开发优先级",
+          "检测和防止滥用或欺诈行为"
+        ]
+      },
+      {
+        "title": "6. 数据共享",
+        "paragraphs": [
+          "我们不会出售您的个人信息。Google Analytics 和 Microsoft Clarity 收集的使用数据会按照各自隐私政策与相应提供商共享。",
+          "如法律、法院命令要求，或为保护用户或公众的权利、财产或安全，我们也可能披露相关信息。"
+        ]
+      },
+      {
+        "title": "7. 数据保留",
+        "paragraphs": [
+          "分析数据按照 Google Analytics 和 Microsoft Clarity 的保留政策存储。PDF 文件和转换输出不会存储在我们的服务器上。"
+        ]
+      },
+      {
+        "title": "8. 您的权利与选择",
+        "paragraphs": [
+          "根据您所在地区，您可能有权访问、更正或删除与您相关的个人数据。您还可以："
+        ],
+        "bullets": [
+          "通过上述链接使用 Google Analytics 退出浏览器插件选择退出",
+          "通过浏览器设置阻止或删除 Cookie",
+          "使用注重隐私的浏览器或扩展程序限制跟踪"
+        ]
+      },
+      {
+        "title": "9. 儿童隐私",
+        "paragraphs": [
+          "我们的服务不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。"
+        ]
+      },
+      {
+        "title": "10. 政策变更",
+        "paragraphs": [
+          "我们可能会不时更新本隐私政策。更新时，我们将修订本页顶部的「最后更新」日期。变更后继续使用网站即表示您接受更新后的政策。"
+        ]
+      },
+      {
+        "title": "11. 联系我们",
+        "paragraphs": [
+          "如对本隐私政策有任何疑问，请访问 https://pdftomarkdown.run。"
+        ]
       }
     ]
   }
