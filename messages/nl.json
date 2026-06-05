@@ -1,0 +1,278 @@
+{
+  "Nav": {
+    "home": "Home",
+    "obsidian": "voor Obsidian",
+    "chatgpt": "voor ChatGPT & LLM's",
+    "table": "Tabelextractor"
+  },
+  "Footer": {
+    "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",
+    "privacyPolicy": "Privacybeleid"
+  },
+  "Converter": {
+    "dropTitleBefore": "Sleep je PDF hierheen, of",
+    "dropClickBrowse": "klik om te bladeren",
+    "dropSubtitle": "100% lokaal verwerkt · Bestanden verlaten je browser nooit · Max. 50 MB",
+    "errorNotPdf": "Upload een PDF-bestand.",
+    "errorTooLarge": "Bestand is groter dan 50 MB. Grotere bestanden worden nog niet ondersteund.",
+    "statusParsing": "Lokaal aan het verwerken",
+    "chooseAnother": "Ander bestand kiezen",
+    "conversionFailed": "Conversie mislukt",
+    "tabPreview": "Voorbeeld",
+    "tabSource": "Broncode",
+    "statsInfo": "{pages} pagina's · {ms} ms",
+    "actionCopy": "Markdown kopiëren",
+    "actionCopied": "Gekopieerd ✓",
+    "actionDownload": ".md downloaden",
+    "actionNewFile": "Nieuw bestand",
+    "warningNoText": "Er kon geen tekst worden geëxtraheerd. Dit kan een gescande of alleen-afbeelding-PDF zijn. OCR-ondersteuning staat op de roadmap."
+  },
+  "Landing": {
+    "faqTitle": "Veelgestelde vragen",
+    "relatedTitle": "Gerelateerde tools"
+  },
+  "Home": {
+    "metaTitle": "PDF naar Markdown — Gratis, privé, lokale converter",
+    "metaDescription": "Converteer PDF naar schone Markdown direct in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
+    "keywords": ["pdf naar markdown", "pdf converteren naar markdown", "pdf naar md", "pdf naar markdown online gratis"],
+    "badge": "100% lokaal · geen upload",
+    "h1": "PDF naar Markdown",
+    "subtitle": "Converteer PDF naar schone Markdown direct in je browser. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
+    "features": [
+      {
+        "title": "Privacy by design",
+        "body": "Alles gebeurt in je browser. Geen uploads, geen servers, geen tracking van je documenten."
+      },
+      {
+        "title": "Schone structuur",
+        "body": "Koppen, lijsten, geneste opsommingen en tabellen blijven behouden, zodat de Markdown direct klaar is voor gebruik."
+      },
+      {
+        "title": "Gratis & onbeperkt",
+        "body": "Geen registratie, geen watermerk, geen daglimiet voor conversies van enkele bestanden."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Worden mijn bestanden naar een server geüpload?",
+        "a": "Nee. De conversie draait volledig in je browser met WebAssembly. Je PDF verlaat je apparaat nooit, wat het veilig maakt voor contracten, onderzoek en andere privédocumenten."
+      },
+      {
+        "q": "Wat behoudt de converter?",
+        "a": "Koppen, alinea's, genummerde en ongenummerde lijsten (inclusief geneste lijsten) en tabellen. Lopende kop- en voetteksten en paginanummers worden automatisch verwijderd."
+      },
+      {
+        "q": "Ondersteunt het gescande PDF's?",
+        "a": "Tekstgebaseerde PDF's worden vandaag volledig ondersteund. OCR voor gescande of alleen-afbeelding-PDF's staat op de roadmap."
+      }
+    ]
+  },
+  "Obsidian": {
+    "metaTitle": "PDF naar Markdown voor Obsidian — Offline & schoon",
+    "metaDescription": "Zet PDF's om in schone Markdown-notities voor Obsidian. 100% offline in je browser — sleep het .md-bestand direct je vault in, met koppen, lijsten en tabellen intact.",
+    "keywords": ["pdf naar markdown voor obsidian", "obsidian pdf naar markdown", "pdf importeren in obsidian", "pdf naar md obsidian"],
+    "badge": "Offline · vault-klaar",
+    "h1": "PDF naar Markdown voor Obsidian",
+    "subtitle": "Converteer PDF's naar schone, offline Markdown-notities die je direct in je Obsidian-vault kunt plaatsen — koppen, lijsten en tabellen blijven intact.",
+    "features": [
+      {
+        "title": "Vault-klaar resultaat",
+        "body": "Download een .md-bestand en verplaats het naar je vault. Koppen worden notitiestructuur en tabellen blijven Markdown-tabellen."
+      },
+      {
+        "title": "Volledig offline",
+        "body": "Geen uploadstap betekent dat het werkt zonder netwerk — ideaal voor privé-onderzoeksnotities en clippings."
+      },
+      {
+        "title": "Schone notities",
+        "body": "Paginanummers en herhaalde kop- en voetteksten worden verwijderd, zodat je notities niet vervuild raken met printartefacten."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Worden mijn bestanden naar een server geüpload?",
+        "a": "Nee. De conversie draait volledig in je browser met WebAssembly. Je PDF verlaat je apparaat nooit, wat het veilig maakt voor contracten, onderzoek en andere privédocumenten."
+      },
+      {
+        "q": "Hoe importeer ik het resultaat in Obsidian?",
+        "a": "Klik op \".md downloaden\" en verplaats het bestand naar een willekeurige map in je Obsidian-vault. Het verschijnt direct als een nieuwe notitie."
+      },
+      {
+        "q": "Blijven tabellen en lijsten behouden bij import?",
+        "a": "Ja. Tabellen worden omgezet naar GitHub-flavored Markdown-tabellen en geneste opsommingen behouden hun inspringing."
+      }
+    ]
+  },
+  "ChatGPT": {
+    "metaTitle": "PDF naar Markdown voor ChatGPT, LLM's & RAG",
+    "metaDescription": "Converteer PDF's naar schone Markdown die klaar is voor ChatGPT, Claude en RAG-pipelines. Compacte, gestructureerde output die LLM's betrouwbaar kunnen verwerken — lokaal verwerkt in je browser.",
+    "keywords": ["pdf naar markdown voor chatgpt", "pdf naar markdown voor llm", "pdf naar markdown voor rag", "pdf naar markdown voor ai"],
+    "badge": "LLM-klaar resultaat",
+    "h1": "PDF naar Markdown voor ChatGPT & LLM's",
+    "subtitle": "Converteer PDF's naar compacte, gestructureerde Markdown die ChatGPT, Claude en RAG-pipelines betrouwbaar kunnen verwerken — alles lokaal in je browser.",
+    "features": [
+      {
+        "title": "Token-efficiënt",
+        "body": "Markdown is veel compacter dan ruwe PDF-tekstdumps, zodat je meer context in het contextvenster van het model past."
+      },
+      {
+        "title": "Structuur die het model begrijpt",
+        "body": "Schone koppen en lijsten geven het model documenthiërarchie, wat grounding verbetert en hallucinaties vermindert."
+      },
+      {
+        "title": "Klaar voor RAG",
+        "body": "Voorspelbare Markdown is eenvoudig op te splitsen en te embedden in een vectordatabase voor retrieval augmented generation."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Worden mijn bestanden naar een server geüpload?",
+        "a": "Nee. De conversie draait volledig in je browser met WebAssembly. Je PDF verlaat je apparaat nooit, wat het veilig maakt voor contracten, onderzoek en andere privédocumenten."
+      },
+      {
+        "q": "Waarom is Markdown beter dan ruwe PDF-tekst voor LLM's?",
+        "a": "Markdown codeert structuur (koppen, lijsten, tabellen) met zeer weinig extra tokens, wat het model helpt het document te interpreteren en prompts klein houdt."
+      },
+      {
+        "q": "Kan ik de output gebruiken in een RAG-pipeline?",
+        "a": "Ja. De schone Markdown is eenvoudig op te splitsen in chunks en te embedden voor retrieval, waarbij koppen natuurlijke chunkgrenzen vormen."
+      }
+    ]
+  },
+  "Table": {
+    "metaTitle": "PDF-tabel naar Markdown — Tabellen netjes converteren",
+    "metaDescription": "Extraheer tabellen uit PDF's naar GitHub-flavored Markdown-tabellen. Kolomstructuur wordt automatisch gedetecteerd en lokaal in je browser verwerkt — geen upload.",
+    "keywords": ["pdf tabel naar markdown", "pdf tabel converteren naar markdown", "pdf naar markdown tabel", "tabel uit pdf extraheren naar markdown"],
+    "badge": "Tabellen · GFM-output",
+    "h1": "PDF-tabel naar Markdown",
+    "subtitle": "Extraheer tabellen uit je PDF's naar schone GitHub-flavored Markdown-tabellen. Kolomgrenzen worden automatisch gedetecteerd, alles in je browser.",
+    "features": [
+      {
+        "title": "Automatische kolomdetectie",
+        "body": "De engine lijnt cellen uit op hun horizontale positie, zodat tabellen met meerdere kolommen correct gestructureerd worden."
+      },
+      {
+        "title": "GFM-tabellen",
+        "body": "Output gebruikt standaard GitHub-flavored Markdown-tabellen die renderen in GitHub, Obsidian, Notion en de meeste editors."
+      },
+      {
+        "title": "Gemengde documenten welkom",
+        "body": "Tabellen, koppen en lopende tekst in dezelfde PDF worden samen in één pass verwerkt."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Worden mijn bestanden naar een server geüpload?",
+        "a": "Nee. De conversie draait volledig in je browser met WebAssembly. Je PDF verlaat je apparaat nooit, wat het veilig maakt voor contracten, onderzoek en andere privédocumenten."
+      },
+      {
+        "q": "Welke tabelindelingen worden ondersteund?",
+        "a": "Tekstgebaseerde tabellen met duidelijke kolomafstand converteren het best. Samengevoegde cellen worden afgevlakt omdat Markdown-tabellen geen celspanning ondersteunen."
+      },
+      {
+        "q": "Kan ik alleen de tabel kopiëren?",
+        "a": "Ja. Converteer de PDF, schakel naar de bronweergave en kopieer het tabelblok dat je nodig hebt."
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "Privacybeleid",
+    "metaDescription": "Lees hoe PDF to Markdown met je gegevens omgaat. PDF-conversie draait lokaal in je browser; we gebruiken Google Analytics en Microsoft Clarity voor inzicht in sitegebruik.",
+    "h1": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: 4 juni 2026",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is een gratis browsergebaseerde tool die PDF-bestanden omzet naar Markdown. Dit privacybeleid legt uit welke informatie we verzamelen, hoe we die gebruiken en welke keuzes je hebt.",
+    "sections": [
+      {
+        "title": "1. PDF-conversie — je bestanden blijven op je apparaat",
+        "paragraphs": [
+          "Wanneer je een PDF converteert, gebeurt alle verwerking volledig in je webbrowser met WebAssembly. Je PDF-bestanden worden nooit geüpload naar onze servers of een dienst van derden voor conversie.",
+          "We slaan de inhoud van je PDF-bestanden of de Markdown-output die je genereert niet op, hebben er geen toegang toe en bewaren die niet. Zodra je het browsertabblad sluit, is die data voor ons verdwenen."
+        ]
+      },
+      {
+        "title": "2. Informatie die we automatisch verzamelen",
+        "paragraphs": [
+          "Wanneer je onze website bezoekt, kunnen wij en onze analytics-partners automatisch bepaalde technische en gebruiksgegevens verzamelen, zoals:"
+        ],
+        "bullets": [
+          "Bezochte pagina's, aangeklikte links en tijd op de site",
+          "Browsertype, besturingssysteem, apparaattype en schermresolutie",
+          "Geschatte geografische locatie (land/regio, afgeleid van IP-adres)",
+          "Verwijzende website of zoekopdracht",
+          "Sessie-interacties zoals scrollen, klikken en muisbewegingen (via Microsoft Clarity)"
+        ]
+      },
+      {
+        "title": "3. Analytics-diensten die we gebruiken",
+        "paragraphs": [
+          "We gebruiken de volgende analytics-tools van derden om te begrijpen hoe bezoekers onze site gebruiken en het product te verbeteren. Deze diensten kunnen cookies of vergelijkbare technologieën in je browser plaatsen."
+        ],
+        "bullets": [
+          "Google Analytics (GA4) — aangeboden door Google LLC. Google Analytics verzamelt gegevens over hoe je met onze website interacteert, inclusief bekeken pagina's en getriggerde events. Gegevens worden verwerkt volgens het privacybeleid van Google. Meer info op https://policies.google.com/privacy; je kunt je afmelden via de Google Analytics Opt-out Browser Add-on op https://tools.google.com/dlpage/gaoptout.",
+          "Microsoft Clarity — aangeboden door Microsoft Corporation. Clarity gebruikt cookies en vergelijkbare technologieën om sessie-opnames, heatmaps en interactiegegevens vast te leggen om gebruikerservaring te begrijpen en usability-problemen op te lossen. Gegevens worden verwerkt volgens het privacybeleid van Microsoft. Meer info op https://privacy.microsoft.com/en-us/privacystatement."
+        ]
+      },
+      {
+        "title": "4. Cookies en vergelijkbare technologieën",
+        "paragraphs": [
+          "Onze analytics-providers gebruiken cookies, local storage en vergelijkbare trackingtechnologieën om de hierboven beschreven gebruiksgegevens te verzamelen. Je kunt cookies beheren via je browserinstellingen — de meeste browsers laten je cookies blokkeren of verwijderen.",
+          "Cookies uitschakelen heeft meestal geen invloed op de kernfunctionaliteit van PDF-conversie, die volledig in je browser draait zonder cookies."
+        ]
+      },
+      {
+        "title": "5. Hoe we verzamelde informatie gebruiken",
+        "paragraphs": [
+          "We gebruiken automatisch verzamelde informatie om:"
+        ],
+        "bullets": [
+          "Siteprestaties te monitoren en fouten op te lossen",
+          "Te begrijpen welke functies en pagina's het meest nuttig zijn",
+          "De gebruikerservaring te verbeteren en productontwikkeling te prioriteren",
+          "Misbruik of frauduleuze activiteit te detecteren en te voorkomen"
+        ]
+      },
+      {
+        "title": "6. Gegevensdeling",
+        "paragraphs": [
+          "We verkopen je persoonsgegevens niet. Gebruiksgegevens die door Google Analytics en Microsoft Clarity worden verzameld, worden gedeeld met die respectievelijke providers zoals beschreven in hun privacybeleid.",
+          "We kunnen informatie ook openbaar maken indien vereist door wet, gerechtelijk bevel, of om de rechten, eigendom of veiligheid van onze gebruikers of het publiek te beschermen."
+        ]
+      },
+      {
+        "title": "7. Gegevensbewaring",
+        "paragraphs": [
+          "Analytics-gegevens worden bewaard volgens het bewaarbeleid van Google Analytics en Microsoft Clarity. PDF-bestanden en conversie-output worden nooit op onze servers opgeslagen."
+        ]
+      },
+      {
+        "title": "8. Jouw rechten en keuzes",
+        "paragraphs": [
+          "Afhankelijk van je locatie heb je mogelijk rechten om persoonsgegevens over jou in te zien, te corrigeren of te verwijderen. Je kunt ook:"
+        ],
+        "bullets": [
+          "Je afmelden voor Google Analytics via de hierboven gelinkte browser-add-on",
+          "Cookies blokkeren of verwijderen via je browserinstellingen",
+          "Een privacygerichte browser of extensies gebruiken om tracking te beperken"
+        ]
+      },
+      {
+        "title": "9. Privacy van kinderen",
+        "paragraphs": [
+          "Onze dienst is niet gericht op kinderen jonger dan 13 jaar. We verzamelen bewust geen persoonsgegevens van kinderen."
+        ]
+      },
+      {
+        "title": "10. Wijzigingen in dit beleid",
+        "paragraphs": [
+          "We kunnen dit privacybeleid van tijd tot tijd bijwerken. Wanneer we dat doen, passen we de datum \"Laatst bijgewerkt\" bovenaan deze pagina aan. Voortgezet gebruik van de site na wijzigingen geldt als acceptatie van het bijgewerkte beleid."
+        ]
+      },
+      {
+        "title": "11. Contact",
+        "paragraphs": [
+          "Als je vragen hebt over dit privacybeleid, neem dan contact met ons op via privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  }
+}

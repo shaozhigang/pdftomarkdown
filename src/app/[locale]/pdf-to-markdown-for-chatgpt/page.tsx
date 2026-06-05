@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LandingPage } from "@/components/LandingPage";
 import { SITE_URL, type Feature, type Faq, type RelatedPage } from "@/lib/landing";
+import { localeAlternates } from "@/lib/seo";
 
 const SLUG = "pdf-to-markdown-for-chatgpt";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({
     title: { absolute: t("metaTitle") },
     description: t("metaDescription"),
     keywords: t.raw("keywords") as string[],
-    alternates: { canonical: `/${locale}/${SLUG}` },
+    alternates: localeAlternates(locale, `/${SLUG}`),
     openGraph: {
       title: t("metaTitle"),
       description: t("metaDescription"),

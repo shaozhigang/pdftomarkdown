@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PrivacyPolicyPage } from "@/components/PrivacyPolicyPage";
+import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -13,7 +14,7 @@ export async function generateMetadata({
   return {
     title: { absolute: t("metaTitle") },
     description: t("metaDescription"),
-    alternates: { canonical: `/${locale}/privacy-policy` },
+    alternates: localeAlternates(locale, "/privacy-policy"),
     robots: { index: true, follow: true },
   };
 }
