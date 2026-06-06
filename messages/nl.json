@@ -42,6 +42,64 @@
     "faqTitle": "Veelgestelde vragen",
     "relatedTitle": "Gerelateerde tools"
   },
+  "Examples": {
+    "title": "Bekijk het in actie",
+    "resultTitle": "Wat je krijgt",
+    "trySample": "Probeer voorbeeld-PDF",
+    "loadingSample": "Voorbeeld laden…",
+    "errorSampleLoad": "Voorbeeld laden mislukt. Probeer het opnieuw.",
+    "specializedTitle": "Meer use cases",
+    "general": {
+      "howToName": "Hoe je een PDF naar Markdown converteert",
+      "steps": [
+        "Upload een tekst-PDF, of klik op \"Probeer voorbeeld-PDF\" hierboven om ons demo-artikel te laden.",
+        "Bekijk de Markdown in Voorbeeld- of Bronweergave, kopieer of download het .md-bestand.",
+        "Plak in je editor, kennisbank of LLM-prompt — koppen, lijsten en tabellen blijven behouden."
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "Hoe je een PDF in Obsidian importeert als Markdown",
+      "steps": [
+        "Upload je onderzoeksnotities-PDF, of klik op \"Probeer voorbeeld-PDF\" om ons demo-notitiebestand te laden.",
+        "Download het .md-bestand — het bevat YAML-frontmatter (titel, datum, tags) klaar voor je vault.",
+        "Verplaats het bestand naar een willekeurige map in je Obsidian-vault. Het verschijnt direct als gestructureerde notitie."
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "Hoe je een PDF naar LLM-klare Markdown converteert",
+      "steps": [
+        "Upload een rapport of paper-PDF, of klik op \"Probeer voorbeeld-PDF\" om ons demo-artikel te proberen.",
+        "Kopieer de Markdown-output — het bevat YAML-metadata en chunk-markers voor RAG-pipelines.",
+        "Plak in ChatGPT of Claude voor Q&A, of splits op chunk-markers en embed in je vectordatabase."
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "Hoe je tabellen uit een PDF naar Markdown extraheert",
+      "steps": [
+        "Upload een PDF met tabellen, of klik op \"Probeer voorbeeld-PDF\" om onze prijstabel-demo te laden.",
+        "De output bevat alleen GitHub Flavored Markdown-tabellen — geen omringende tekst.",
+        "Kopieer de tabel naar GitHub, Notion, Obsidian of elke editor die GFM-tabellen rendert."
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Obsidian-import",
+        "subtitle": "Vault-klare notities met frontmatter"
+      },
+      "llm": {
+        "title": "ChatGPT & RAG",
+        "subtitle": "Compacte Markdown met chunk-markers"
+      },
+      "table": {
+        "title": "Tabelextractie",
+        "subtitle": "Alleen GFM-tabellen, geen extra tekst"
+      }
+    }
+  },
   "Home": {
     "metaTitle": "PDF naar Markdown — Gratis, privé, lokale converter",
     "metaDescription": "Converteer PDF naar schone Markdown direct in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",

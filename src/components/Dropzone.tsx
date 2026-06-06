@@ -2,6 +2,10 @@
 
 import { useCallback, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import {
+  DEMO_FILE_NAME_BY_PROFILE,
+  DEMO_PDF_BY_PROFILE,
+} from "@/lib/examples";
 import type { ConvertProfile } from "@/lib/types";
 
 interface DropzoneProps {
@@ -18,8 +22,10 @@ export function Dropzone({
   profile = "general",
 }: DropzoneProps) {
   const t = useTranslations("Converter");
+  const tExamples = useTranslations("Examples");
   const [dragging, setDragging] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [loadingSample, setLoadingSample] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFile = useCallback(
@@ -38,6 +44,25 @@ export function Dropzone({
     },
     [onFile, t]
   );
+
+  const trySample = useCallback(async () => {
+    if (disabled || loadingSample) return;
+    setError(null);
+    setLoadingSample(true);
+    try {
+      const path = DEMO_PDF_BY_PROFILE[profile];
+      const name = DEMO_FILE_NAME_BY_PROFILE[profile];
+      const res = await fetch(path);
+      if (!res.ok) throw new Error("fetch failed");
+      const blob = await res.blob();
+      const file = new File([blob], name, { type: "application/pdf" });
+      onFile(file);
+    } catch {
+      setError(tExamples("errorSampleLoad"));
+    } finally {
+      setLoadingSample(false);
+    }
+  }, [disabled, loadingSample, onFile, profile, tExamples]);
 
   return (
     <div className="w-full">
@@ -98,7 +123,19 @@ export function Dropzone({
           onChange={(e) => handleFile(e.target.files?.[0])}
         />
       </div>
-      {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
+
+      <div className="mt-3 flex justify-center">
+        <button
+          type="button"
+          onClick={trySample}
+          disabled={disabled || loadingSample}
+          className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-brand/60 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          {loadingSample ? tExamples("loadingSample") : tExamples("trySample")}
+        </button>
+      </div>
+
+      {error && <p className="mt-2 text-center text-sm text-red-600">{error}</p>}
     </div>
   );
 }

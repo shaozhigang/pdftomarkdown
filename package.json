@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "copy-pdf-worker": "node scripts/copy-pdf-worker.mjs",
-    "predev": "npm run copy-pdf-worker",
-    "prebuild": "npm run copy-pdf-worker",
+    "make-demo-samples": "node scripts/make-demo-samples.mjs",
+    "predev": "npm run copy-pdf-worker && npm run make-demo-samples",
+    "prebuild": "npm run copy-pdf-worker && npm run make-demo-samples",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

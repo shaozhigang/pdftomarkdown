@@ -42,6 +42,64 @@
     "faqTitle": "Frequently asked questions",
     "relatedTitle": "Related tools"
   },
+  "Examples": {
+    "title": "See it in action",
+    "resultTitle": "What you get",
+    "trySample": "Try sample PDF",
+    "loadingSample": "Loading sample…",
+    "errorSampleLoad": "Could not load the sample. Please try again.",
+    "specializedTitle": "More use cases",
+    "general": {
+      "howToName": "How to convert a PDF to Markdown",
+      "steps": [
+        "Upload a text-based PDF, or click \"Try sample PDF\" above to use our demo article.",
+        "Review the Markdown in Preview or Source view, then copy or download the .md file.",
+        "Paste into your editor, knowledge base, or LLM prompt — headings, lists and tables are preserved."
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "How to import a PDF into Obsidian as Markdown",
+      "steps": [
+        "Upload your research notes PDF, or click \"Try sample PDF\" to load our demo notes file.",
+        "Download the .md file — it includes YAML frontmatter (title, date, tags) ready for your vault.",
+        "Move the file into any folder in your Obsidian vault. It appears instantly as a structured note."
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "How to convert a PDF to LLM-ready Markdown",
+      "steps": [
+        "Upload a report or paper PDF, or click \"Try sample PDF\" to try our demo article.",
+        "Copy the Markdown output — it includes YAML metadata and chunk markers for RAG pipelines.",
+        "Paste into ChatGPT or Claude for Q&A, or split on chunk markers and embed into your vector database."
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "How to extract tables from a PDF to Markdown",
+      "steps": [
+        "Upload a PDF that contains tables, or click \"Try sample PDF\" to load our pricing table demo.",
+        "The output contains only GitHub-flavored Markdown tables — no surrounding prose.",
+        "Copy the table into GitHub, Notion, Obsidian, or any editor that renders GFM tables."
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Obsidian import",
+        "subtitle": "Vault-ready notes with frontmatter"
+      },
+      "llm": {
+        "title": "ChatGPT & RAG",
+        "subtitle": "Compact Markdown with chunk markers"
+      },
+      "table": {
+        "title": "Table extraction",
+        "subtitle": "GFM tables only, no extra prose"
+      }
+    }
+  },
   "Home": {
     "metaTitle": "PDF to Markdown — Free, Private, Local Converter",
     "metaDescription": "Convert PDF to clean Markdown right in your browser. 100% local — files never leave your device. Built for LLM, RAG, Obsidian and Notion workflows.",

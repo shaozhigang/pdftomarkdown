@@ -1,10 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Converter } from "@/components/Converter";
+import { ExampleShowcase } from "@/components/ExampleShowcase";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { type LandingContent, type RelatedPage } from "@/lib/landing";
 import { slugToProfile } from "@/lib/profiles";
+import type { ConvertProfile } from "@/lib/types";
 
 interface LandingPageProps {
   content: LandingContent;
@@ -18,6 +20,10 @@ export async function LandingPage({
   pageUrl,
 }: LandingPageProps) {
   const t = await getTranslations("Landing");
+  const tExamples = await getTranslations("Examples");
+  const profile: ConvertProfile = slugToProfile(content.slug);
+  const steps = tExamples.raw(`${profile}.steps`) as string[];
+  const howToName = tExamples(`${profile}.howToName`);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -36,6 +42,15 @@ export async function LandingPage({
           "@type": "Question",
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+      {
+        "@type": "HowTo",
+        name: howToName,
+        step: steps.map((text, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          text,
         })),
       },
     ],
@@ -57,7 +72,9 @@ export async function LandingPage({
           </p>
         </header>
 
-        <Converter profile={slugToProfile(content.slug)} />
+        <Converter profile={profile} />
+
+        <ExampleShowcase profile={profile} />
 
         <section className="mt-14 grid gap-5 sm:grid-cols-3">
           {content.features.map((f) => (

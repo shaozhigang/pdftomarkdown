@@ -42,6 +42,64 @@
     "faqTitle": "常见问题",
     "relatedTitle": "相关工具"
   },
+  "Examples": {
+    "title": "看看效果",
+    "resultTitle": "你会得到",
+    "trySample": "试用示例 PDF",
+    "loadingSample": "正在加载示例…",
+    "errorSampleLoad": "示例加载失败，请稍后重试",
+    "specializedTitle": "更多使用场景",
+    "general": {
+      "howToName": "如何将 PDF 转为 Markdown",
+      "steps": [
+        "上传文本型 PDF，或点击上方「试用示例 PDF」加载演示文章。",
+        "在预览或源码视图中查看 Markdown，然后复制或下载 .md 文件。",
+        "粘贴到编辑器、知识库或大模型提示词中——标题、列表和表格均完整保留。"
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "如何将 PDF 导入 Obsidian",
+      "steps": [
+        "上传研究笔记类 PDF，或点击「试用示例 PDF」加载演示笔记文件。",
+        "下载 .md 文件——已包含 YAML frontmatter（标题、日期、标签），可直接放入 Vault。",
+        "将文件移入 Obsidian Vault 任意文件夹，即刻显示为结构化笔记。"
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "如何将 PDF 转为 LLM 就绪 Markdown",
+      "steps": [
+        "上传报告或论文 PDF，或点击「试用示例 PDF」试用演示文章。",
+        "复制 Markdown 输出——包含 YAML 元数据和 RAG 分块标记。",
+        "粘贴到 ChatGPT 或 Claude 进行问答，或按 chunk 标记切片后嵌入向量数据库。"
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "如何从 PDF 提取表格为 Markdown",
+      "steps": [
+        "上传含表格的 PDF，或点击「试用示例 PDF」加载定价表示例。",
+        "输出仅包含 GitHub Flavored Markdown 表格，不含周围正文。",
+        "将表格复制到 GitHub、Notion、Obsidian 或任何支持 GFM 表格的编辑器。"
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Obsidian 导入",
+        "subtitle": "含 frontmatter 的 Vault 就绪笔记"
+      },
+      "llm": {
+        "title": "ChatGPT & RAG",
+        "subtitle": "紧凑 Markdown + 分块标记"
+      },
+      "table": {
+        "title": "表格提取",
+        "subtitle": "仅输出 GFM 表格，无多余正文"
+      }
+    }
+  },
   "Home": {
     "metaTitle": "PDF 转 Markdown — 免费、私密、本地转换器",
     "metaDescription": "在浏览器中将 PDF 转为干净的 Markdown，100% 本地处理，文件永不离开您的设备。专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
