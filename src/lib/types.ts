@@ -39,18 +39,29 @@ export interface Block {
   rows?: string[][]; // table rows (incl. header as row 0)
 }
 
+export type ConvertProfile = "general" | "obsidian" | "llm" | "table";
+
 export interface ConvertOptions {
+  profile: ConvertProfile;
   detectTables: boolean;
   detectHeadings: boolean;
+  tablesOnly: boolean;
 }
 
 export interface ConvertResult {
   markdown: string;
   warnings: string[];
-  stats: { pages: number; durationMs: number };
+  stats: {
+    pages: number;
+    durationMs: number;
+    tables: number;
+    blocks: number;
+  };
 }
 
 export const DEFAULT_OPTIONS: ConvertOptions = {
+  profile: "general",
   detectTables: true,
   detectHeadings: true,
+  tablesOnly: false,
 };

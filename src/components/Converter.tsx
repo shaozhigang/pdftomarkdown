@@ -6,11 +6,15 @@ import { Dropzone } from "./Dropzone";
 import { MarkdownPreview } from "./MarkdownPreview";
 import { ResultActions } from "./ResultActions";
 import { convertPdfToMarkdown } from "@/lib/converter";
-import type { ConvertResult } from "@/lib/types";
+import type { ConvertProfile, ConvertResult } from "@/lib/types";
 
 type Tab = "preview" | "source";
 
-export function Converter() {
+interface ConverterProps {
+  profile?: ConvertProfile;
+}
+
+export function Converter({ profile = "general" }: ConverterProps) {
   const t = useTranslations("Converter");
   const [status, setStatus] = useState<"idle" | "working" | "done" | "error">(
     "idle"
@@ -27,7 +31,10 @@ export function Converter() {
     setErrorMsg("");
     try {
       const buffer = await file.arrayBuffer();
-      const res = await convertPdfToMarkdown(buffer);
+      const res = await convertPdfToMarkdown(buffer, {
+        profile,
+        fileName: file.name,
+      });
       setResult(res);
       setStatus("done");
     } catch (err) {
@@ -43,15 +50,23 @@ export function Converter() {
     setFileName("");
   };
 
+  const warningText = (code: string) => {
+    if (code === "warningNoText") return t("warningNoText");
+    if (code === "warningNoTables") return t("warningNoTables");
+    return code;
+  };
+
   return (
     <div className="w-full">
-      {status === "idle" && <Dropzone onFile={handleFile} />}
+      {status === "idle" && (
+        <Dropzone onFile={handleFile} profile={profile} />
+      )}
 
       {status === "working" && (
         <div className="flex items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white px-6 py-14">
           <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
           <span className="text-slate-600">
-            {t("statusParsing")}{" "}
+            {t(`statusParsing_${profile}`)}{" "}
             <span className="font-medium">{fileName}</span> …
           </span>
         </div>
@@ -94,10 +109,16 @@ export function Converter() {
                 </button>
               </div>
               <span className="text-xs text-slate-400">
-                {t("statsInfo", {
-                  pages: result.stats.pages,
-                  ms: result.stats.durationMs,
-                })}
+                {profile === "table"
+                  ? t("statsTables", {
+                      pages: result.stats.pages,
+                      tables: result.stats.tables,
+                      ms: result.stats.durationMs,
+                    })
+                  : t("statsInfo", {
+                      pages: result.stats.pages,
+                      ms: result.stats.durationMs,
+                    })}
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -113,11 +134,7 @@ export function Converter() {
 
           {result.warnings.length > 0 && (
             <div className="border-b border-amber-100 bg-amber-50 px-4 py-2 text-sm text-amber-700">
-              {result.warnings
-                .map((code) =>
-                  code === "warningNoText" ? t("warningNoText") : code
-                )
-                .join(" ")}
+              {result.warnings.map(warningText).join(" ")}
             </div>
           )}
 

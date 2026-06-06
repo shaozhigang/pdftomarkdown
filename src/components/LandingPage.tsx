@@ -4,6 +4,7 @@ import { Converter } from "@/components/Converter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { type LandingContent, type RelatedPage } from "@/lib/landing";
+import { slugToProfile } from "@/lib/profiles";
 
 interface LandingPageProps {
   content: LandingContent;
@@ -56,7 +57,7 @@ export async function LandingPage({
           </p>
         </header>
 
-        <Converter />
+        <Converter profile={slugToProfile(content.slug)} />
 
         <section className="mt-14 grid gap-5 sm:grid-cols-3">
           {content.features.map((f) => (

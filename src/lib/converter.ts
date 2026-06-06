@@ -2,36 +2,60 @@ import { parsePdf } from "@/lib/pdf/parse";
 import { linesToBlocks } from "@/lib/layout/blocks";
 import { blocksToMarkdown } from "@/lib/markdown/serialize";
 import {
+  applyProfileToMarkdown,
+  filterBlocksForProfile,
+  optionsForProfile,
+  type ProfileMeta,
+} from "@/lib/profiles";
+import {
   DEFAULT_OPTIONS,
   type ConvertOptions,
+  type ConvertProfile,
   type ConvertResult,
 } from "@/lib/types";
 
 export async function convertPdfToMarkdown(
   data: ArrayBuffer,
-  options: Partial<ConvertOptions> = {}
+  options: Partial<ConvertOptions> & { fileName?: string } = {}
 ): Promise<ConvertResult> {
-  const opts = { ...DEFAULT_OPTIONS, ...options };
+  const profile: ConvertProfile =
+    options.profile ?? DEFAULT_OPTIONS.profile;
+  const opts: ConvertOptions = {
+    ...optionsForProfile(profile),
+    ...options,
+    profile,
+  };
   const started = performance.now();
 
   const pages = await parsePdf(data);
   const totalLines = pages.reduce((n, p) => n + p.lines.length, 0);
 
-  const blocks = linesToBlocks(pages, opts);
-  const markdown = blocksToMarkdown(blocks);
+  const rawBlocks = linesToBlocks(pages, opts);
+  const blocks = filterBlocksForProfile(rawBlocks, opts);
+  const tableCount = blocks.filter((b) => b.type === "table").length;
+  const markdownCore = blocksToMarkdown(blocks);
+
+  const meta: ProfileMeta = {
+    fileName: options.fileName ?? "document.pdf",
+    pages: pages.length,
+  };
 
   const warnings: string[] = [];
   if (totalLines === 0) {
-    // "warningNoText" maps to the Converter.warningNoText key in messages
     warnings.push("warningNoText");
+  }
+  if (opts.tablesOnly && tableCount === 0 && totalLines > 0) {
+    warnings.push("warningNoTables");
   }
 
   return {
-    markdown,
+    markdown: applyProfileToMarkdown(markdownCore, profile, meta),
     warnings,
     stats: {
       pages: pages.length,
       durationMs: Math.round(performance.now() - started),
+      tables: tableCount,
+      blocks: blocks.length,
     },
   };
 }

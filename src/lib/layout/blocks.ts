@@ -139,7 +139,13 @@ export function linesToBlocks(
   };
   const flushTable = () => {
     if (tableRows.length) {
-      blocks.push({ type: "table", rows: normalizeTable(tableRows) });
+      if (isValidTable(tableRows)) {
+        blocks.push({ type: "table", rows: normalizeTable(tableRows) });
+      } else {
+        for (const row of tableRows) {
+          blocks.push({ type: "paragraph", text: row.join("  ").trim() });
+        }
+      }
       tableRows = [];
     }
   };
@@ -280,4 +286,39 @@ function normalizeTable(rows: string[][]): string[][] {
     while (copy.length < cols) copy.push("");
     return copy;
   });
+}
+
+/** Reject single-line "tables" and prose lines split by wide gaps. */
+function isValidTable(rows: string[][]): boolean {
+  if (rows.length < 2) return false;
+
+  const colCounts = rows.map((r) => r.length);
+  const maxCols = Math.max(...colCounts);
+  const minCols = Math.min(...colCounts);
+  if (maxCols - minCols > 1) return false;
+
+  const dominantCols = mode(colCounts);
+  const aligned = rows.filter((r) => r.length === dominantCols).length;
+  if (aligned / rows.length < 0.6) return false;
+
+  const flat = rows.flat();
+  const avgCellLen =
+    flat.reduce((sum, c) => sum + c.length, 0) / Math.max(flat.length, 1);
+  if (rows.length === 2 && maxCols === 2 && avgCellLen > 50) return false;
+
+  return true;
+}
+
+function mode(nums: number[]): number {
+  const freq = new Map<number, number>();
+  for (const n of nums) freq.set(n, (freq.get(n) ?? 0) + 1);
+  let best = nums[0];
+  let bestCount = 0;
+  for (const [n, count] of freq) {
+    if (count > bestCount) {
+      bestCount = count;
+      best = n;
+    }
+  }
+  return best;
 }

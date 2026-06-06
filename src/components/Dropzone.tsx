@@ -2,15 +2,21 @@
 
 import { useCallback, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import type { ConvertProfile } from "@/lib/types";
 
 interface DropzoneProps {
   onFile: (file: File) => void;
   disabled?: boolean;
+  profile?: ConvertProfile;
 }
 
 const MAX_SIZE = 50 * 1024 * 1024; // 50MB
 
-export function Dropzone({ onFile, disabled }: DropzoneProps) {
+export function Dropzone({
+  onFile,
+  disabled,
+  profile = "general",
+}: DropzoneProps) {
   const t = useTranslations("Converter");
   const [dragging, setDragging] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -78,10 +84,12 @@ export function Dropzone({ onFile, disabled }: DropzoneProps) {
           />
         </svg>
         <p className="text-base font-medium">
-          {t("dropTitleBefore")}{" "}
+          {t(`dropTitle_${profile}`)}{" "}
           <span className="text-brand">{t("dropClickBrowse")}</span>
         </p>
-        <p className="text-sm text-slate-500">{t("dropSubtitle")}</p>
+        <p className="text-sm text-slate-500">
+          {t(`dropSubtitle_${profile}`)}
+        </p>
         <input
           ref={inputRef}
           type="file"
