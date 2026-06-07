@@ -1,0 +1,347 @@
+{
+  "Nav": {
+    "home": "Strona główna",
+    "obsidian": "dla Obsidian",
+    "chatgpt": "dla ChatGPT i LLM",
+    "table": "Ekstraktor tabel"
+  },
+  "Footer": {
+    "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",
+    "privacyPolicy": "Polityka prywatności"
+  },
+  "Converter": {
+    "dropClickBrowse": "kliknij, aby wybrać plik",
+    "dropTitle_general": "Upuść plik PDF tutaj lub",
+    "dropTitle_obsidian": "Upuść PDF do importu do Obsidian lub",
+    "dropTitle_llm": "Upuść PDF, aby uzyskać Markdown gotowy dla LLM, lub",
+    "dropTitle_table": "Upuść PDF, aby wyodrębnić tabele, lub",
+    "dropSubtitle_general": "Cały dokument · 100% lokalnie · Maks. 50 MB",
+    "dropSubtitle_obsidian": "Plik .md gotowy do vault z frontmatter · 100% lokalnie · Maks. 50 MB",
+    "dropSubtitle_llm": "Kompaktowy Markdown + znaczniki chunków dla RAG · 100% lokalnie · Maks. 50 MB",
+    "dropSubtitle_table": "Tylko tabele · wynik GFM · 100% lokalnie · Maks. 50 MB",
+    "errorNotPdf": "Prześlij plik PDF.",
+    "errorTooLarge": "Plik przekracza 50 MB. Większe pliki nie są jeszcze obsługiwane.",
+    "statusParsing_general": "Konwersja dokumentu",
+    "statusParsing_obsidian": "Tworzenie notatki Obsidian",
+    "statusParsing_llm": "Optymalizacja dla LLM",
+    "statusParsing_table": "Wyodrębnianie tabel",
+    "chooseAnother": "Wybierz inny plik",
+    "conversionFailed": "Konwersja nie powiodła się",
+    "tabPreview": "Podgląd",
+    "tabSource": "Źródło",
+    "statsInfo": "{pages} stron · {ms} ms",
+    "statsTables": "{pages} stron · {tables} tabel · {ms} ms",
+    "actionCopy": "Kopiuj Markdown",
+    "actionCopied": "Skopiowano ✓",
+    "actionDownload": "Pobierz .md",
+    "actionNewFile": "Nowy plik",
+    "warningNoText": "Nie udało się wyodrębnić tekstu. Może to być zeskanowany PDF lub PDF zawierający tylko obrazy. Obsługa OCR jest w planie.",
+    "warningNoTables": "Nie wykryto tabel w tym pliku PDF. Spróbuj pełnego konwertera lub sprawdź, czy PDF zawiera tabele tekstowe z wyraźnymi odstępami między kolumnami."
+  },
+  "Landing": {
+    "faqTitle": "Często zadawane pytania",
+    "relatedTitle": "Powiązane narzędzia"
+  },
+  "Examples": {
+    "title": "Zobacz w działaniu",
+    "resultTitle": "Co otrzymujesz",
+    "trySample": "Wypróbuj przykładowy PDF",
+    "loadingSample": "Ładowanie przykładu…",
+    "errorSampleLoad": "Nie udało się załadować przykładu. Spróbuj ponownie.",
+    "specializedTitle": "Więcej przypadków użycia",
+    "general": {
+      "howToName": "Jak przekonwertować PDF na Markdown",
+      "steps": [
+        "Prześlij PDF oparty na tekście lub kliknij „Wypróbuj przykładowy PDF” powyżej, aby użyć naszego artykułu demonstracyjnego.",
+        "Przejrzyj Markdown w widoku Podgląd lub Źródło, a następnie skopiuj lub pobierz plik .md.",
+        "Wklej do edytora, bazy wiedzy lub promptu LLM — nagłówki, listy i tabele zostaną zachowane."
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "Jak zaimportować PDF do Obsidian jako Markdown",
+      "steps": [
+        "Prześlij PDF z notatkami badawczymi lub kliknij „Wypróbuj przykładowy PDF”, aby załadować plik demonstracyjny.",
+        "Pobierz plik .md — zawiera frontmatter YAML (tytuł, data, tagi) gotowy do vault.",
+        "Przenieś plik do dowolnego folderu w vault Obsidian. Natychmiast pojawi się jako uporządkowana notatka."
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "Jak przekonwertować PDF na Markdown gotowy dla LLM",
+      "steps": [
+        "Prześlij PDF z raportem lub artykułem lub kliknij „Wypróbuj przykładowy PDF”, aby wypróbować nasz artykuł demonstracyjny.",
+        "Skopiuj wynik Markdown — zawiera metadane YAML i znaczniki chunków dla pipeline'ów RAG.",
+        "Wklej do ChatGPT lub Claude w celu Q&A albo podziel według znaczników chunków i osadź w bazie wektorowej."
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "Jak wyodrębnić tabele z PDF do Markdown",
+      "steps": [
+        "Prześlij PDF zawierający tabele lub kliknij „Wypróbuj przykładowy PDF”, aby załadować demonstrację tabeli cen.",
+        "Wynik zawiera tylko tabele Markdown w stylu GitHub — bez otaczającego tekstu.",
+        "Skopiuj tabelę do GitHub, Notion, Obsidian lub dowolnego edytora renderującego tabele GFM."
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Import do Obsidian",
+        "subtitle": "Notatki gotowe do vault z frontmatter"
+      },
+      "llm": {
+        "title": "ChatGPT i RAG",
+        "subtitle": "Kompaktowy Markdown ze znacznikami chunków"
+      },
+      "table": {
+        "title": "Wyodrębnianie tabel",
+        "subtitle": "Tylko tabele GFM, bez dodatkowego tekstu"
+      }
+    }
+  },
+  "Home": {
+    "metaTitle": "PDF do Markdown — darmowy, prywatny, lokalny konwerter",
+    "metaDescription": "Konwertuj PDF na czysty Markdown bezpośrednio w przeglądarce. 100% lokalnie — pliki nigdy nie opuszczają urządzenia. Stworzony dla workflow LLM, RAG, Obsidian i Notion.",
+    "keywords": ["pdf do markdown", "konwertuj pdf na markdown", "pdf na md", "pdf do markdown online za darmo"],
+    "badge": "100% lokalnie · bez przesyłania",
+    "h1": "PDF do Markdown",
+    "subtitle": "Konwertuj PDF na czysty Markdown bezpośrednio w przeglądarce. Stworzony dla workflow LLM, RAG, Obsidian i Notion.",
+    "features": [
+      {
+        "title": "Prywatność od podstaw",
+        "body": "Wszystko dzieje się w przeglądarce. Bez przesyłania plików, serwerów ani śledzenia dokumentów."
+      },
+      {
+        "title": "Czysta struktura",
+        "body": "Nagłówki, listy, zagnieżdżone punkty i tabele są zachowane, więc Markdown jest gotowy do użycia."
+      },
+      {
+        "title": "Darmowy i bez limitów",
+        "body": "Bez rejestracji, znaku wodnego i dziennego limitu dla konwersji pojedynczych plików."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czy moje pliki są przesyłane na serwer?",
+        "a": "Nie. Konwersja odbywa się w całości w przeglądarce przy użyciu WebAssembly. Twój PDF nigdy nie opuszcza urządzenia, co czyni go bezpiecznym dla umów, badań i innych prywatnych dokumentów."
+      },
+      {
+        "q": "Co zachowuje konwerter?",
+        "a": "Nagłówki, akapity, listy numerowane i nienumerowane (w tym zagnieżdżone) oraz tabele. Powtarzające się nagłówki, stopki i numery stron są automatycznie usuwane."
+      },
+      {
+        "q": "Czy obsługuje zeskanowane pliki PDF?",
+        "a": "PDF oparte na tekście są w pełni obsługiwane. OCR dla zeskanowanych PDF lub PDF zawierających tylko obrazy jest w planie."
+      }
+    ]
+  },
+  "Obsidian": {
+    "metaTitle": "PDF do Markdown dla Obsidian — offline i czysto",
+    "metaDescription": "Zamień PDF na czyste notatki Markdown dla Obsidian. 100% offline w przeglądarce — wrzuć plik .md prosto do vault z zachowanymi nagłówkami, listami i tabelami.",
+    "keywords": ["pdf do markdown dla obsidian", "obsidian pdf do markdown", "import pdf do obsidian", "pdf na md obsidian"],
+    "badge": "Offline · gotowe do vault",
+    "h1": "PDF do Markdown dla Obsidian",
+    "subtitle": "Konwertuj PDF na czyste, offline notatki Markdown, które możesz od razu wrzucić do vault Obsidian — nagłówki, listy i tabele pozostają nienaruszone.",
+    "features": [
+      {
+        "title": "Wynik gotowy do vault",
+        "body": "Pobierz plik .md i przenieś go do vault. Nagłówki stają się strukturą notatki, a tabele pozostają tabelami Markdown."
+      },
+      {
+        "title": "W pełni offline",
+        "body": "Brak kroku przesyłania oznacza, że działa nawet bez sieci — idealne dla prywatnych notatek badawczych i wycinków."
+      },
+      {
+        "title": "Czyste notatki",
+        "body": "Numery stron i powtarzające się nagłówki/stopki są usuwane, więc notatki nie są zanieczyszczone artefaktami druku."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czy moje pliki są przesyłane na serwer?",
+        "a": "Nie. Konwersja odbywa się w całości w przeglądarce przy użyciu WebAssembly. Twój PDF nigdy nie opuszcza urządzenia, co czyni go bezpiecznym dla umów, badań i innych prywatnych dokumentów."
+      },
+      {
+        "q": "Jak zaimportować wynik do Obsidian?",
+        "a": "Kliknij „Pobierz .md” i przenieś plik do dowolnego folderu w vault Obsidian. Natychmiast pojawi się jako nowa notatka."
+      },
+      {
+        "q": "Czy tabele i listy przetrwają import?",
+        "a": "Tak. Tabele są konwertowane na tabele Markdown w stylu GitHub, a zagnieżdżone listy punktowane zachowują wcięcia."
+      }
+    ]
+  },
+  "ChatGPT": {
+    "metaTitle": "PDF do Markdown dla ChatGPT, LLM i RAG",
+    "metaDescription": "Konwertuj PDF na czysty Markdown gotowy dla ChatGPT, Claude i pipeline'ów RAG. Kompaktowy, ustrukturyzowany wynik, który LLM niezawodnie parsują — przetwarzany lokalnie w przeglądarce.",
+    "keywords": ["pdf do markdown dla chatgpt", "pdf do markdown dla llm", "pdf do markdown dla rag", "pdf do markdown dla ai"],
+    "badge": "Wynik gotowy dla LLM",
+    "h1": "PDF do Markdown dla ChatGPT i LLM",
+    "subtitle": "Konwertuj PDF na kompaktowy, ustrukturyzowany Markdown, który ChatGPT, Claude i pipeline'y RAG niezawodnie parsują — wszystko przetwarzane lokalnie w przeglądarce.",
+    "features": [
+      {
+        "title": "Oszczędność tokenów",
+        "body": "Markdown jest znacznie bardziej kompaktowy niż surowe zrzuty tekstu z PDF, więc zmieścisz więcej kontekstu w oknie modelu."
+      },
+      {
+        "title": "Struktura zrozumiała dla modelu",
+        "body": "Czyste nagłówki i listy dają modelowi hierarchię dokumentu, co poprawia grounding i zmniejsza halucynacje."
+      },
+      {
+        "title": "Gotowe do RAG",
+        "body": "Przewidywalny Markdown łatwo podzielić na chunki i osadzić w bazie wektorowej dla retrieval augmented generation."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czy moje pliki są przesyłane na serwer?",
+        "a": "Nie. Konwersja odbywa się w całości w przeglądarce przy użyciu WebAssembly. Twój PDF nigdy nie opuszcza urządzenia, co czyni go bezpiecznym dla umów, badań i innych prywatnych dokumentów."
+      },
+      {
+        "q": "Dlaczego Markdown jest lepszy niż surowy tekst PDF dla LLM?",
+        "a": "Markdown koduje strukturę (nagłówki, listy, tabele) przy bardzo małej liczbie dodatkowych tokenów, co pomaga modelowi interpretować dokument i utrzymuje prompty w małym rozmiarze."
+      },
+      {
+        "q": "Czy mogę użyć wyniku w pipeline RAG?",
+        "a": "Tak. Czysty Markdown łatwo podzielić na chunki i osadzić do retrieval, a nagłówki stanowią naturalne granice chunków."
+      }
+    ]
+  },
+  "Table": {
+    "metaTitle": "Tabela PDF do Markdown — czysta konwersja tabel",
+    "metaDescription": "Wyodrębnij tabele z PDF do tabel Markdown w stylu GitHub. Struktura kolumn jest wykrywana automatycznie i przetwarzana lokalnie w przeglądarce — bez przesyłania.",
+    "keywords": ["tabela pdf do markdown", "konwertuj tabelę pdf na markdown", "pdf do markdown tabela", "wyodrębnij tabelę z pdf do markdown"],
+    "badge": "Tabele · wynik GFM",
+    "h1": "Tabela PDF do Markdown",
+    "subtitle": "Wyodrębnij tabele z PDF do czystych tabel Markdown w stylu GitHub. Granice kolumn są wykrywane automatycznie — wszystko w przeglądarce.",
+    "features": [
+      {
+        "title": "Automatyczne wykrywanie kolumn",
+        "body": "Silnik wyrównuje komórki według pozycji poziomej, więc tabele wielokolumnowe mają poprawną strukturę."
+      },
+      {
+        "title": "Tabele GFM",
+        "body": "Wynik używa standardowych tabel Markdown w stylu GitHub, które renderują się w GitHub, Obsidian, Notion i większości edytorów."
+      },
+      {
+        "title": "Mieszane dokumenty mile widziane",
+        "body": "Tabele, nagłówki i tekst ciągły w tym samym PDF są obsługiwane razem w jednym przebiegu."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czy moje pliki są przesyłane na serwer?",
+        "a": "Nie. Konwersja odbywa się w całości w przeglądarce przy użyciu WebAssembly. Twój PDF nigdy nie opuszcza urządzenia, co czyni go bezpiecznym dla umów, badań i innych prywatnych dokumentów."
+      },
+      {
+        "q": "Jakie układy tabel są obsługiwane?",
+        "a": "Najlepiej konwertują się tabele tekstowe z wyraźnymi odstępami między kolumnami. Scalone komórki są spłaszczane, ponieważ tabele Markdown nie obsługują łączenia komórek."
+      },
+      {
+        "q": "Czy mogę skopiować tylko tabelę?",
+        "a": "Tak. Skonwertuj PDF, przełącz się na widok źródła i skopiuj potrzebny blok tabeli."
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "Polityka prywatności",
+    "metaDescription": "Dowiedz się, jak PDF to Markdown przetwarza Twoje dane. Konwersja PDF działa lokalnie w przeglądarce; używamy Google Analytics i Microsoft Clarity do analizy korzystania ze strony.",
+    "h1": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 4 czerwca 2026",
+    "intro": "PDF to Markdown (pdftomarkdown.run) to darmowe narzędzie w przeglądarce, które konwertuje pliki PDF na Markdown. Niniejsza polityka prywatności wyjaśnia, jakie informacje zbieramy, jak je wykorzystujemy i jakie masz możliwości wyboru.",
+    "sections": [
+      {
+        "title": "1. Konwersja PDF — pliki pozostają na urządzeniu",
+        "paragraphs": [
+          "Gdy konwertujesz PDF, całe przetwarzanie odbywa się w przeglądarce przy użyciu WebAssembly. Pliki PDF nigdy nie są przesyłane na nasze serwery ani do usług stron trzecich w celu konwersji.",
+          "Nie przechowujemy, nie uzyskujemy dostępu ani nie zatrzymujemy treści plików PDF ani wygenerowanego wyniku Markdown. Po zamknięciu karty przeglądarki te dane znikają z naszej perspektywy."
+        ]
+      },
+      {
+        "title": "2. Informacje zbierane automatycznie",
+        "paragraphs": [
+          "Gdy odwiedzasz naszą stronę, my i nasi partnerzy analityczni możemy automatycznie zbierać określone informacje techniczne i dotyczące użytkowania, takie jak:"
+        ],
+        "bullets": [
+          "Odwiedzone strony, kliknięte linki i czas spędzony na stronie",
+          "Typ przeglądarki, system operacyjny, typ urządzenia i rozdzielczość ekranu",
+          "Przybliżona lokalizacja geograficzna (poziom kraju/regionu, na podstawie adresu IP)",
+          "Strona odsyłająca lub zapytanie wyszukiwania",
+          "Interakcje w sesji, takie jak przewijanie, kliknięcia i ruchy myszy (przez Microsoft Clarity)"
+        ]
+      },
+      {
+        "title": "3. Usługi analityczne, których używamy",
+        "paragraphs": [
+          "Korzystamy z następujących narzędzi analitycznych stron trzecich, aby zrozumieć, jak odwiedzający korzystają ze strony i ulepszać produkt. Usługi te mogą ustawiać pliki cookie lub podobne technologie w przeglądarce."
+        ],
+        "bullets": [
+          "Google Analytics (GA4) — dostarczane przez Google LLC. Google Analytics zbiera dane o interakcji ze stroną, w tym oglądane strony i wyzwalane zdarzenia. Dane są przetwarzane zgodnie z polityką prywatności Google. Więcej informacji: https://policies.google.com/privacy; rezygnacja przez dodatek Google Analytics Opt-out Browser Add-on: https://tools.google.com/dlpage/gaoptout.",
+          "Microsoft Clarity — dostarczane przez Microsoft Corporation. Clarity używa plików cookie i podobnych technologii do nagrywania sesji, map cieplnych i danych interakcji, aby pomóc nam zrozumieć doświadczenie użytkownika i naprawiać problemy użyteczności. Dane są przetwarzane zgodnie z polityką prywatności Microsoft. Więcej informacji: https://privacy.microsoft.com/en-us/privacystatement."
+        ]
+      },
+      {
+        "title": "4. Pliki cookie i podobne technologie",
+        "paragraphs": [
+          "Nasi dostawcy analityki używają plików cookie, local storage i podobnych technologii śledzenia do zbierania opisanych powyżej danych użytkowania. Możesz kontrolować pliki cookie w ustawieniach przeglądarki — większość przeglądarek pozwala blokować lub usuwać pliki cookie.",
+          "Wyłączenie plików cookie zwykle nie wpływa na podstawową funkcję konwersji PDF, która działa w całości w przeglądarce bez wymagania plików cookie."
+        ]
+      },
+      {
+        "title": "5. Jak wykorzystujemy zebrane informacje",
+        "paragraphs": [
+          "Automatycznie zebrane informacje wykorzystujemy do:"
+        ],
+        "bullets": [
+          "Monitorowania wydajności strony i naprawy błędów",
+          "Zrozumienia, które funkcje i strony są najbardziej przydatne",
+          "Ulepszania doświadczenia użytkownika i priorytetyzacji rozwoju produktu",
+          "Wykrywania i zapobiegania nadużyciom lub oszustwom"
+        ]
+      },
+      {
+        "title": "6. Udostępnianie danych",
+        "paragraphs": [
+          "Nie sprzedajemy Twoich danych osobowych. Dane użytkowania zbierane przez Google Analytics i Microsoft Clarity są udostępniane odpowiednim dostawcom zgodnie z ich politykami prywatności.",
+          "Możemy również ujawnić informacje, jeśli wymaga tego prawo, nakaz sądowy lub w celu ochrony praw, własności lub bezpieczeństwa użytkowników lub publiczności."
+        ]
+      },
+      {
+        "title": "7. Przechowywanie danych",
+        "paragraphs": [
+          "Dane analityczne są przechowywane zgodnie z politykami retencji Google Analytics i Microsoft Clarity. Pliki PDF i wyniki konwersji nigdy nie są przechowywane na naszych serwerach."
+        ]
+      },
+      {
+        "title": "8. Twoje prawa i wybory",
+        "paragraphs": [
+          "W zależności od lokalizacji możesz mieć prawo dostępu, sprostowania lub usunięcia danych osobowych dotyczących Ciebie. Możesz również:"
+        ],
+        "bullets": [
+          "Zrezygnować z Google Analytics za pomocą dodatku do przeglądarki wskazanego powyżej",
+          "Blokować lub usuwać pliki cookie w ustawieniach przeglądarki",
+          "Używać przeglądarki lub rozszerzeń skoncentrowanych na prywatności, aby ograniczyć śledzenie"
+        ]
+      },
+      {
+        "title": "9. Prywatność dzieci",
+        "paragraphs": [
+          "Nasza usługa nie jest skierowana do dzieci poniżej 13. roku życia. Świadomie nie zbieramy danych osobowych od dzieci."
+        ]
+      },
+      {
+        "title": "10. Zmiany w niniejszej polityce",
+        "paragraphs": [
+          "Możemy od czasu do czasu aktualizować niniejszą politykę prywatności. W takim przypadku zaktualizujemy datę „Ostatnia aktualizacja” u góry tej strony. Dalsze korzystanie ze strony po zmianach oznacza akceptację zaktualizowanej polityki."
+        ]
+      },
+      {
+        "title": "11. Kontakt",
+        "paragraphs": [
+          "W razie pytań dotyczących niniejszej polityki prywatności skontaktuj się z nami: privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  }
+}
