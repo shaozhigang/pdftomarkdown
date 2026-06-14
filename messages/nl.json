@@ -7,6 +7,8 @@
   },
   "Footer": {
     "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",
+    "about": "Over ons",
+    "contact": "Contact",
     "privacyPolicy": "Privacybeleid"
   },
   "Converter": {
@@ -340,6 +342,98 @@
         "title": "11. Contact",
         "paragraphs": [
           "Als je vragen hebt over dit privacybeleid, neem dan contact met ons op via privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "Over PDF to Markdown — Gratis lokale converter",
+    "metaDescription": "Lees meer over PDF to Markdown (pdftomarkdown.run): een gratis, browsergebaseerde PDF-naar-Markdown-tool voor privacy, LLM-workflows en kennisbeheer.",
+    "h1": "Over PDF to Markdown",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is een gratis online tool die PDF-bestanden volledig in je browser omzet naar schone Markdown. Geen uploads, geen account nodig.",
+    "privacyLink": "Lees ons privacybeleid",
+    "contactLink": "Neem contact op",
+    "sections": [
+      {
+        "title": "Wat we doen",
+        "paragraphs": [
+          "We helpen ontwikkelaars, onderzoekers en kenniswerkers PDF-documenten om te zetten naar gestructureerde Markdown, klaar voor LLM's, RAG-pipelines, Obsidian, Notion en andere tools.",
+          "Onze converter behoudt koppen, lijsten, geneste bullets en tabellen, en verwijdert paginanummers en herhaalde headers zodat de output schoon en token-efficiënt is."
+        ]
+      },
+      {
+        "title": "Waarom we het hebben gebouwd",
+        "paragraphs": [
+          "De meeste online PDF-converters vereisen dat je bestanden naar een server uploadt, wat een dealbreaker is voor contracten, interne rapporten en onderzoeksnotities.",
+          "Bestaande tools produceren vaak rommelige Markdown waarbij tabellen breken en tokens verspillen bij taalmodellen. PDF to Markdown lost beide problemen op: bestanden blijven op je apparaat en de output is ontworpen voor moderne AI- en notitie-workflows."
+        ]
+      },
+      {
+        "title": "Hoe het werkt",
+        "paragraphs": [
+          "Wanneer je een PDF neerzet, draaien parsing en conversie lokaal in je browser via WebAssembly. Je bestand wordt nooit naar onze servers verzonden.",
+          "We gebruiken Google Analytics en Microsoft Clarity alleen om algemeen sitegebruik te begrijpen, niet om toegang te krijgen tot je documenten."
+        ],
+        "bullets": [
+          "100% lokale PDF-verwerking in de browser",
+          "Geen registratie, geen watermerk, geen daglimiet voor enkele bestanden",
+          "Werkt offline zodra de pagina is geladen"
+        ]
+      },
+      {
+        "title": "Wat komt eraan",
+        "paragraphs": [
+          "We verbeteren actief de conversiekwaliteit en voegen functies toe op basis van gebruikersfeedback."
+        ],
+        "bullets": [
+          "OCR-ondersteuning voor gescande en alleen-afbeelding PDF's",
+          "Batchconversie voor meerdere bestanden",
+          "Betere formule- en tabelverwerking",
+          "Een developer-API voor automatisering en RAG-pipelines"
+        ]
+      },
+      {
+        "title": "Neem contact op",
+        "paragraphs": [
+          "Vragen, feedback of samenwerkingsideeën? Ga naar onze contactpagina — we lezen elk bericht."
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "Contact PDF to Markdown — Neem contact op",
+    "metaDescription": "Neem contact op met het PDF to Markdown-team voor feedback, bugrapporten, privacyvragen of samenwerkingsverzoeken. We reageren meestal binnen 2–3 werkdagen.",
+    "h1": "Contact",
+    "intro": "We horen graag van je. Of je nu productfeedback hebt, een conversieprobleem hebt gevonden of een samenwerking wilt bespreken — stuur ons een e-mail en we nemen contact op.",
+    "emailHeading": "E-mail",
+    "responseTime": "We reageren meestal binnen 2–3 werkdagen.",
+    "aboutLink": "Over PDF to Markdown",
+    "privacyLink": "Privacybeleid",
+    "sections": [
+      {
+        "title": "Waarmee we kunnen helpen",
+        "paragraphs": [
+          "PDF to Markdown is een kleine, gerichte tool. Dit zijn de meest voorkomende redenen waarom mensen contact opnemen:"
+        ],
+        "bullets": [
+          "Bugrapporten of onverwachte conversieresultaten",
+          "Functieverzoeken (OCR, batchconversie, API-toegang)",
+          "Feedback over outputkwaliteit voor specifieke PDF-types",
+          "Partnerschap-, integratie- of persverzoeken",
+          "Vragen over privacy en gegevensverwerking"
+        ]
+      },
+      {
+        "title": "Voordat je schrijft",
+        "paragraphs": [
+          "Je PDF-bestanden worden lokaal in je browser verwerkt — we kunnen ze niet inzien of herstellen. Als je een conversieprobleem meldt, beschrijf het probleem en vermeld indien mogelijk het PDF-type (gescand, meerkoloms, veel tabellen, enz.). Voeg geen gevoelige documenten toe tenzij je daar comfortabel mee bent.",
+          "Voor privacygerelateerde verzoeken (gegevenstoegang, verwijdering of cookievragen), vermeld \"Privacyverzoek\" in het onderwerp zodat we je bericht kunnen prioriteren."
+        ]
+      },
+      {
+        "title": "Privacy en gegevensverzoeken",
+        "paragraphs": [
+          "PDF-conversie uploadt je bestanden niet naar onze servers. Analysegegevens worden beschreven in ons privacybeleid. Voor privacyvragen gebruik je hetzelfde e-mailadres hierboven."
         ]
       }
     ]

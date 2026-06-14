@@ -7,6 +7,8 @@
   },
   "Footer": {
     "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。",
+    "about": "关于我们",
+    "contact": "联系我们",
     "privacyPolicy": "隐私政策"
   },
   "Converter": {
@@ -340,6 +342,98 @@
         "title": "11. 联系我们",
         "paragraphs": [
           "如对本隐私政策有任何疑问，请发送邮件至 privacy@pdftomarkdown.run。"
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "关于 PDF to Markdown — 免费本地转换工具",
+    "metaDescription": "了解 PDF to Markdown（pdftomarkdown.run）：一款免费的浏览器端 PDF 转 Markdown 工具，专为隐私保护、LLM 工作流和知识管理而设计。",
+    "h1": "关于 PDF to Markdown",
+    "intro": "PDF to Markdown（pdftomarkdown.run）是一款免费的在线工具，可在浏览器中将 PDF 文件转换为干净的 Markdown。无需上传，无需注册。",
+    "privacyLink": "阅读我们的隐私政策",
+    "contactLink": "联系我们",
+    "sections": [
+      {
+        "title": "我们做什么",
+        "paragraphs": [
+          "我们帮助开发者、研究人员和知识工作者将 PDF 文档转换为结构化 Markdown，可直接用于 LLM、RAG 流水线、Obsidian、Notion 等工具。",
+          "转换器保留标题、列表、嵌套项目和表格，同时去除页码和重复的页眉页脚，使输出干净且节省 token。"
+        ]
+      },
+      {
+        "title": "为什么做这个工具",
+        "paragraphs": [
+          "大多数在线 PDF 转换器需要将文件上传到服务器，这对于合同、内部报告和研究笔记来说难以接受。",
+          "现有工具往往生成杂乱的 Markdown，表格容易损坏，输入语言模型时还会浪费 token。我们打造 PDF to Markdown，就是为了解决这两个问题：文件留在本地，输出专为现代 AI 和笔记工作流设计。"
+        ]
+      },
+      {
+        "title": "工作原理",
+        "paragraphs": [
+          "当您拖入 PDF 后，解析和转换完全在浏览器中通过 WebAssembly 完成。文件不会传输到我们的服务器。",
+          "我们仅使用 Google Analytics 和 Microsoft Clarity 了解网站整体使用情况，不会访问您的文档内容。"
+        ],
+        "bullets": [
+          "100% 浏览器本地处理 PDF",
+          "无需注册、无水印、单文件转换无每日限制",
+          "页面加载后可离线使用"
+        ]
+      },
+      {
+        "title": "后续计划",
+        "paragraphs": [
+          "我们正在根据用户反馈持续改进转换质量并增加新功能。"
+        ],
+        "bullets": [
+          "支持扫描件和图片型 PDF 的 OCR",
+          "多文件批量转换",
+          "更高保真度的公式和表格处理",
+          "面向自动化和 RAG 流水线的开发者 API"
+        ]
+      },
+      {
+        "title": "与我们取得联系",
+        "paragraphs": [
+          "有问题、反馈或合作想法？请访问我们的联系页面，我们会认真阅读每一封邮件。"
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "联系 PDF to Markdown — 与我们取得联系",
+    "metaDescription": "联系 PDF to Markdown 团队：产品反馈、问题报告、隐私咨询或合作洽谈。我们通常会在 2–3 个工作日内回复。",
+    "h1": "联系我们",
+    "intro": "我们很乐意听到您的声音。无论您有产品反馈、发现转换问题，还是希望探讨合作，请发送邮件，我们会尽快回复。",
+    "emailHeading": "电子邮箱",
+    "responseTime": "我们通常会在 2–3 个工作日内回复。",
+    "aboutLink": "关于 PDF to Markdown",
+    "privacyLink": "隐私政策",
+    "sections": [
+      {
+        "title": "我们可以帮您什么",
+        "paragraphs": [
+          "PDF to Markdown 是一款专注的小工具。以下是用户最常见的联系原因："
+        ],
+        "bullets": [
+          "错误报告或意外的转换结果",
+          "功能建议（OCR、批量转换、API 访问）",
+          "针对特定 PDF 类型的输出质量反馈",
+          "合作、集成或媒体报道咨询",
+          "隐私与数据处理相关问题"
+        ]
+      },
+      {
+        "title": "写信前请了解",
+        "paragraphs": [
+          "您的 PDF 文件在浏览器本地处理，我们无法查看或恢复。如果您报告转换问题，请描述具体情况，并尽量说明 PDF 类型（扫描件、多栏排版、大量表格等）。除非您愿意分享，否则请勿附上敏感文档。",
+          "如有隐私相关请求（数据访问、删除或 Cookie 问题），请在邮件主题中注明「隐私请求」，以便我们优先处理。"
+        ]
+      },
+      {
+        "title": "隐私与数据请求",
+        "paragraphs": [
+          "PDF 转换不会将文件上传到我们的服务器。分析数据的收集方式详见隐私政策。如有任何隐私相关问题，请使用上方的同一邮箱地址联系我们。"
         ]
       }
     ]

@@ -7,6 +7,8 @@
   },
   "Footer": {
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",
+    "about": "O nas",
+    "contact": "Kontakt",
     "privacyPolicy": "Polityka prywatności"
   },
   "Converter": {
@@ -340,6 +342,98 @@
         "title": "11. Kontakt",
         "paragraphs": [
           "W razie pytań dotyczących niniejszej polityki prywatności skontaktuj się z nami: privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "O PDF to Markdown — Darmowy lokalny konwerter",
+    "metaDescription": "Dowiedz się więcej o PDF to Markdown (pdftomarkdown.run): darmowym narzędziu do konwersji PDF na Markdown w przeglądarce, stworzonym z myślą o prywatności, workflow LLM i zarządzaniu wiedzą.",
+    "h1": "O PDF to Markdown",
+    "intro": "PDF to Markdown (pdftomarkdown.run) to darmowe narzędzie online, które konwertuje pliki PDF na czysty Markdown w całości w przeglądarce. Bez uploadu, bez konta.",
+    "privacyLink": "Przeczytaj naszą politykę prywatności",
+    "contactLink": "Skontaktuj się z nami",
+    "sections": [
+      {
+        "title": "Co robimy",
+        "paragraphs": [
+          "Pomagamy programistom, badaczom i pracownikom wiedzy zamieniać dokumenty PDF na ustrukturyzowany Markdown gotowy do LLM, pipeline'ów RAG, Obsidian, Notion i innych narzędzi.",
+          "Nasz konwerter zachowuje nagłówki, listy, zagnieżdżone punkty i tabele, usuwając numery stron i powtarzające się nagłówki, aby wynik był czysty i oszczędny pod względem tokenów."
+        ]
+      },
+      {
+        "title": "Dlaczego to zbudowaliśmy",
+        "paragraphs": [
+          "Większość konwerterów PDF online wymaga przesłania plików na serwer, co eliminuje je przy umowach, raportach wewnętrznych i notatkach badawczych.",
+          "Istniejące narzędzia często generują chaotyczny Markdown, psują tabele i marnują tokeny w modelach językowych. PDF to Markdown rozwiązuje oba problemy: pliki zostają na urządzeniu, a wynik jest zaprojektowany pod nowoczesne workflow AI i notatek."
+        ]
+      },
+      {
+        "title": "Jak to działa",
+        "paragraphs": [
+          "Po upuszczeniu pliku PDF parsowanie i konwersja odbywają się lokalnie w przeglądarce przez WebAssembly. Plik nigdy nie trafia na nasze serwery.",
+          "Korzystamy z Google Analytics i Microsoft Clarity wyłącznie do ogólnej analizy korzystania ze strony, nie do dostępu do Twoich dokumentów."
+        ],
+        "bullets": [
+          "100% lokalne przetwarzanie PDF w przeglądarce",
+          "Bez rejestracji, znaku wodnego i limitu dziennego dla pojedynczych plików",
+          "Działa offline po załadowaniu strony"
+        ]
+      },
+      {
+        "title": "Co dalej",
+        "paragraphs": [
+          "Aktywnie poprawiamy jakość konwersji i dodajemy funkcje na podstawie opinii użytkowników."
+        ],
+        "bullets": [
+          "Obsługa OCR dla skanów i PDF-ów tylko z obrazami",
+          "Konwersja wsadowa wielu plików",
+          "Lepsze odwzorowanie formuł i tabel",
+          "API dla deweloperów do automatyzacji i pipeline'ów RAG"
+        ]
+      },
+      {
+        "title": "Skontaktuj się z nami",
+        "paragraphs": [
+          "Masz pytania, opinię lub pomysł na współpracę? Odwiedź stronę kontaktową — czytamy każdą wiadomość."
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "Kontakt PDF to Markdown — Napisz do nas",
+    "metaDescription": "Skontaktuj się z zespołem PDF to Markdown w sprawie opinii, zgłoszeń błędów, pytań o prywatność lub współpracy. Zwykle odpowiadamy w ciągu 2–3 dni roboczych.",
+    "h1": "Kontakt",
+    "intro": "Chętnie Cię wysłuchamy. Niezależnie od tego, czy masz opinię o produkcie, znalazłeś problem z konwersją, czy chcesz omówić współpracę — napisz do nas, a odpowiemy.",
+    "emailHeading": "E-mail",
+    "responseTime": "Zwykle odpowiadamy w ciągu 2–3 dni roboczych.",
+    "aboutLink": "O PDF to Markdown",
+    "privacyLink": "Polityka prywatności",
+    "sections": [
+      {
+        "title": "W czym możemy pomóc",
+        "paragraphs": [
+          "PDF to Markdown to małe, wyspecjalizowane narzędzie. Oto najczęstsze powody kontaktu:"
+        ],
+        "bullets": [
+          "Zgłoszenia błędów lub nieoczekiwane wyniki konwersji",
+          "Prośby o funkcje (OCR, konwersja wsadowa, dostęp do API)",
+          "Opinie o jakości wyniku dla konkretnych typów PDF",
+          "Zapytania o partnerstwo, integrację lub media",
+          "Pytania dotyczące prywatności i przetwarzania danych"
+        ]
+      },
+      {
+        "title": "Zanim napiszesz",
+        "paragraphs": [
+          "Pliki PDF są przetwarzane lokalnie w przeglądarce — nie mamy do nich wglądu ani nie możemy ich odzyskać. Zgłaszając problem z konwersją, opisz sytuację i jeśli możliwe podaj typ PDF (skan, wielokolumnowy, dużo tabel itd.). Nie dołączaj wrażliwych dokumentów, chyba że czujesz się z tym komfortowo.",
+          "W przypadku próśb dotyczących prywatności (dostęp do danych, usunięcie, pytania o cookies) wpisz w temacie „Prośba o prywatność”, abyśmy mogli priorytetowo obsłużyć wiadomość."
+        ]
+      },
+      {
+        "title": "Prywatność i prośby o dane",
+        "paragraphs": [
+          "Konwersja PDF nie przesyła plików na nasze serwery. Dane analityczne opisuje nasza polityka prywatności. W sprawach prywatności użyj tego samego adresu e-mail powyżej."
         ]
       }
     ]

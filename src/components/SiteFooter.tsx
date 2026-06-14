@@ -23,6 +23,18 @@ export async function SiteFooter() {
             </Link>
           ))}
           <Link
+            href="/about"
+            className="text-slate-600 hover:text-slate-900"
+          >
+            {tFooter("about")}
+          </Link>
+          <Link
+            href="/contact"
+            className="text-slate-600 hover:text-slate-900"
+          >
+            {tFooter("contact")}
+          </Link>
+          <Link
             href="/privacy-policy"
             className="text-slate-600 hover:text-slate-900"
           >

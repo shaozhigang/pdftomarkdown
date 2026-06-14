@@ -26,6 +26,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     entries.push({
+      url: `${SITE_URL}/${locale}/about`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+
+    entries.push({
+      url: `${SITE_URL}/${locale}/contact`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+
+    entries.push({
       url: `${SITE_URL}/${locale}/privacy-policy`,
       lastModified: now,
       changeFrequency: "monthly",

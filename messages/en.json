@@ -7,6 +7,8 @@
   },
   "Footer": {
     "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",
+    "about": "About",
+    "contact": "Contact",
     "privacyPolicy": "Privacy Policy"
   },
   "Converter": {
@@ -340,6 +342,98 @@
         "title": "11. Contact",
         "paragraphs": [
           "If you have questions about this Privacy Policy, please contact us at privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "About PDF to Markdown — Free Local Converter",
+    "metaDescription": "Learn about PDF to Markdown (pdftomarkdown.run): a free, browser-based PDF to Markdown tool built for privacy, LLM workflows, and knowledge management.",
+    "h1": "About PDF to Markdown",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is a free online tool that converts PDF files to clean Markdown entirely in your browser. No uploads, no account required.",
+    "privacyLink": "Read our Privacy Policy",
+    "contactLink": "Contact us",
+    "sections": [
+      {
+        "title": "What we do",
+        "paragraphs": [
+          "We help developers, researchers, and knowledge workers turn PDF documents into structured Markdown ready for LLMs, RAG pipelines, Obsidian, Notion, and other tools.",
+          "Our converter preserves headings, lists, nested bullets, and tables while stripping page numbers and repeated headers so the output is clean and token-efficient."
+        ]
+      },
+      {
+        "title": "Why we built it",
+        "paragraphs": [
+          "Most online PDF converters require uploading files to a server, which is a dealbreaker for contracts, internal reports, and research notes.",
+          "Existing tools often produce messy Markdown that breaks tables and wastes tokens when fed to language models. We built PDF to Markdown to solve both problems: keep files on your device and produce output designed for modern AI and note-taking workflows."
+        ]
+      },
+      {
+        "title": "How it works",
+        "paragraphs": [
+          "When you drop a PDF, parsing and conversion run locally in your browser using WebAssembly. Your file is never transmitted to our servers.",
+          "We use Google Analytics and Microsoft Clarity only to understand general site usage, not to access your documents."
+        ],
+        "bullets": [
+          "100% local PDF processing in the browser",
+          "No sign-up, no watermark, no daily limit for single files",
+          "Works offline once the page is loaded"
+        ]
+      },
+      {
+        "title": "What's next",
+        "paragraphs": [
+          "We are actively improving conversion quality and adding capabilities based on user feedback."
+        ],
+        "bullets": [
+          "OCR support for scanned and image-only PDFs",
+          "Batch conversion for multiple files",
+          "Higher-fidelity formula and table handling",
+          "A developer API for automation and RAG pipelines"
+        ]
+      },
+      {
+        "title": "Get in touch",
+        "paragraphs": [
+          "Questions, feedback, or partnership ideas? Head to our contact page — we read every message."
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "Contact PDF to Markdown — Get in Touch",
+    "metaDescription": "Contact the PDF to Markdown team for feedback, bug reports, privacy questions, or partnership inquiries. We typically respond within 2–3 business days.",
+    "h1": "Contact Us",
+    "intro": "We would love to hear from you. Whether you have product feedback, found a conversion issue, or want to explore a partnership, send us an email and we will get back to you.",
+    "emailHeading": "Email",
+    "responseTime": "We typically respond within 2–3 business days.",
+    "aboutLink": "About PDF to Markdown",
+    "privacyLink": "Privacy Policy",
+    "sections": [
+      {
+        "title": "What we can help with",
+        "paragraphs": [
+          "PDF to Markdown is a small, focused tool. Here are the most common reasons people reach out:"
+        ],
+        "bullets": [
+          "Bug reports or unexpected conversion results",
+          "Feature requests (OCR, batch conversion, API access)",
+          "Feedback on output quality for specific PDF types",
+          "Partnership, integration, or press inquiries",
+          "Privacy and data-handling questions"
+        ]
+      },
+      {
+        "title": "Before you write",
+        "paragraphs": [
+          "Your PDF files are processed locally in your browser — we cannot see or recover them. If you are reporting a conversion issue, please describe the problem and, if possible, note the PDF type (scanned, multi-column, heavy tables, etc.). Do not attach sensitive documents unless you are comfortable sharing them.",
+          "For privacy-specific requests (data access, deletion, or cookie questions), mention \"Privacy request\" in the subject line so we can prioritize your message."
+        ]
+      },
+      {
+        "title": "Privacy & data requests",
+        "paragraphs": [
+          "PDF conversion does not upload your files to our servers. Analytics data is described in our Privacy Policy. For any privacy-related question, use the same email address above."
         ]
       }
     ]
