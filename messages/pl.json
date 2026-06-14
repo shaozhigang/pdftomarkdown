@@ -9,6 +9,7 @@
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",
     "about": "O nas",
     "contact": "Kontakt",
+    "guide": "Poradnik",
     "privacyPolicy": "Polityka prywatności"
   },
   "Converter": {
@@ -17,16 +18,22 @@
     "dropTitle_obsidian": "Upuść PDF do importu do Obsidian lub",
     "dropTitle_llm": "Upuść PDF, aby uzyskać Markdown gotowy dla LLM, lub",
     "dropTitle_table": "Upuść PDF, aby wyodrębnić tabele, lub",
+    "dropTitle_notion": "Upuść PDF do importu do Notion, lub",
+    "dropTitle_python": "Upuść PDF, aby uzyskać Markdown, lub",
     "dropSubtitle_general": "Cały dokument · 100% lokalnie · Maks. 50 MB",
     "dropSubtitle_obsidian": "Plik .md gotowy do vault z frontmatter · 100% lokalnie · Maks. 50 MB",
     "dropSubtitle_llm": "Kompaktowy Markdown + znaczniki chunków dla RAG · 100% lokalnie · Maks. 50 MB",
     "dropSubtitle_table": "Tylko tabele · wynik GFM · 100% lokalnie · Maks. 50 MB",
+    "dropSubtitle_notion": "Markdown gotowy do Notion · 100% lokalnie · Maks. 50 MB",
+    "dropSubtitle_python": "Do skryptów i notebooków · 100% lokalnie · Maks. 50 MB",
     "errorNotPdf": "Prześlij plik PDF.",
     "errorTooLarge": "Plik przekracza 50 MB. Większe pliki nie są jeszcze obsługiwane.",
     "statusParsing_general": "Konwersja dokumentu",
     "statusParsing_obsidian": "Tworzenie notatki Obsidian",
     "statusParsing_llm": "Optymalizacja dla LLM",
     "statusParsing_table": "Wyodrębnianie tabel",
+    "statusParsing_notion": "Przygotowywanie importu do Notion",
+    "statusParsing_python": "Generowanie Markdown",
     "chooseAnother": "Wybierz inny plik",
     "conversionFailed": "Konwersja nie powiodła się",
     "tabPreview": "Podgląd",
@@ -87,6 +94,24 @@
       ],
       "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
     },
+    "notion": {
+      "howToName": "Jak zaimportować PDF do Notion jako Markdown",
+      "steps": [
+        "Prześlij raport lub dokument PDF albo kliknij „Wypróbuj przykładowy PDF”.",
+        "Skopiuj Markdown lub pobierz plik .md — nagłówki, listy i tabele są zachowane.",
+        "Otwórz Notion, utwórz stronę i wklej treść. Notion automatycznie konwertuje Markdown przy wklejaniu."
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "Jak przekonwertować PDF na Markdown dla workflow Python",
+      "steps": [
+        "Prześlij PDF powyżej — bez pip i virtualenv do szybkiej konwersji.",
+        "Skopiuj ciąg Markdown do notebooka Jupyter, aplikacji Flask lub pipeline'u danych.",
+        "Do zadań wsadowych lub CI użyj dziś narzędzia w przeglądarce; REST API jest w planie."
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
     "cards": {
       "obsidian": {
         "title": "Import do Obsidian",
@@ -99,15 +124,23 @@
       "table": {
         "title": "Wyodrębnianie tabel",
         "subtitle": "Tylko tabele GFM, bez dodatkowego tekstu"
+      },
+      "notion": {
+        "title": "Import do Notion",
+        "subtitle": "Markdown gotowy do wklejenia w Notion"
+      },
+      "python": {
+        "title": "Python i automatyzacja",
+        "subtitle": "Markdown do notebooków i skryptów"
       }
     }
   },
   "Home": {
-    "metaTitle": "PDF do Markdown — darmowy, prywatny, lokalny konwerter",
-    "metaDescription": "Konwertuj PDF na czysty Markdown bezpośrednio w przeglądarce. 100% lokalnie — pliki nigdy nie opuszczają urządzenia. Stworzony dla workflow LLM, RAG, Obsidian i Notion.",
-    "keywords": ["pdf do markdown", "konwertuj pdf na markdown", "pdf na md", "pdf do markdown online za darmo"],
+    "metaTitle": "Konwerter PDF do Markdown — darmowy, prywatny i lokalny",
+    "metaDescription": "Darmowy konwerter PDF do Markdown w przeglądarce. 100% lokalnie — pliki nigdy nie opuszczają urządzenia. Stworzony dla workflow LLM, RAG, Obsidian i Notion.",
+    "keywords": ["konwerter pdf do markdown", "pdf do markdown", "konwertuj pdf na markdown", "pdf na md", "pdf do markdown online za darmo"],
     "badge": "100% lokalnie · bez przesyłania",
-    "h1": "PDF do Markdown",
+    "h1": "Konwerter PDF do Markdown",
     "subtitle": "Konwertuj PDF na czysty Markdown bezpośrednio w przeglądarce. Stworzony dla workflow LLM, RAG, Obsidian i Notion.",
     "features": [
       {
@@ -135,6 +168,46 @@
       {
         "q": "Czy obsługuje zeskanowane pliki PDF?",
         "a": "PDF oparte na tekście są w pełni obsługiwane. OCR dla zeskanowanych PDF lub PDF zawierających tylko obrazy jest w planie."
+      }
+    ]
+  },
+  "Guide": {
+    "metaTitle": "Jak przekonwertować PDF na Markdown — darmowy przewodnik krok po kroku",
+    "metaDescription": "Dowiedz się, jak przekonwertować PDF na Markdown w 3 krokach. Darmowy konwerter w przeglądarce — bez uploadu i konta. Działa z PDF opartymi na tekście dla LLM, Obsidian i dokumentów.",
+    "keywords": ["jak przekonwertować pdf na markdown", "convert pdf to markdown", "pdf do markdown tutorial", "pdf do markdown krok po kroku"],
+    "badge": "Przewodnik krok po kroku",
+    "h1": "Jak przekonwertować PDF na Markdown",
+    "subtitle": "Zamień dowolny PDF oparty na tekście w czysty Markdown w przeglądarce — za darmo, prywatnie i w kilka sekund. Użyj konwertera poniżej i postępuj według kroków.",
+    "features": [
+      {
+        "title": "1. Prześlij PDF",
+        "body": "Przeciągnij PDF oparty na tekście do konwertera powyżej lub kliknij, aby wybrać plik. Obsługiwane pliki do 50 MB. Wypróbuj przykładowy PDF, aby zobaczyć wynik."
+      },
+      {
+        "title": "2. Sprawdź Markdown",
+        "body": "Przełączaj się między podglądem a kodem źródłowym, aby sprawdzić nagłówki, listy i tabele. Edycja online nie jest jeszcze dostępna — skopiuj wynik do edytora, jeśli chcesz coś poprawić."
+      },
+      {
+        "title": "3. Kopiuj lub pobierz",
+        "body": "Kliknij Kopiuj Markdown, aby wkleić do ChatGPT, Obsidian lub edytora kodu. Albo pobierz plik .md do vault, repozytorium lub pipeline RAG."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Jaki typ PDF działa najlepiej?",
+        "a": "PDF oparte na tekście — raporty, artykuły, ebooki wyeksportowane z Worda lub Google Docs — konwertują się najpewniej. Skany i PDF tylko z obrazami wymagają OCR, które jest w planie."
+      },
+      {
+        "q": "Czy konwersja jest naprawdę lokalna?",
+        "a": "Tak. Parsowanie i generowanie Markdown odbywa się w całości w przeglądarce przez WebAssembly. PDF nie jest przesyłany na nasze serwery."
+      },
+      {
+        "q": "Dlaczego Markdown zamiast kopiowania tekstu z PDF?",
+        "a": "Kopiowanie często psuje kolumny tabel, traci hierarchię nagłówków i zostawia nagłówki stron. Ustrukturyzowany Markdown zachowuje układ dokumentu przy mniejszej liczbie tokenów — idealny dla LLM i aplikacji do notatek."
+      },
+      {
+        "q": "Czy mogę konwertować wiele PDF naraz?",
+        "a": "Jeszcze nie. Konwersja wsadowa jest planowana. Na razie konwertuj pliki pojedynczo — każda konwersja jest darmowa i bez limitu."
       }
     ]
   },
@@ -243,6 +316,78 @@
       {
         "q": "Czy mogę skopiować tylko tabelę?",
         "a": "Tak. Skonwertuj PDF, przełącz się na widok źródła i skopiuj potrzebny blok tabeli."
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "PDF do Markdown dla Notion — czysty import",
+    "metaDescription": "Konwertuj PDF na Markdown dla Notion. Czyste nagłówki, listy i tabele — wklej na stronę Notion w kilka sekund. 100% lokalnie w przeglądarce.",
+    "keywords": ["pdf do markdown dla notion", "notion pdf do markdown", "import pdf do notion", "pdf to markdown for notion"],
+    "badge": "Gotowe do Notion · wklej i importuj",
+    "h1": "PDF do Markdown dla Notion",
+    "subtitle": "Zamień raporty, specyfikacje i dokumenty PDF na czysty Markdown do wklejenia w Notion — nagłówki, listy i tabele intact, całość lokalnie.",
+    "features": [
+      {
+        "title": "Wynik gotowy do wklejenia",
+        "body": "Notion rozpoznaje Markdown przy wklejaniu — nagłówki stają się blokami, listy pozostają zagnieżdżone, tabele GFM renderują się jako tabele Notion."
+      },
+      {
+        "title": "Prywatność domyślnie",
+        "body": "Wewnętrzne wiki i dokumenty strategiczne zostają na urządzeniu. Bez uploadu wrażliwe PDF nie trafiają na serwery stron trzecich."
+      },
+      {
+        "title": "Działa w każdym workspace Notion",
+        "body": "Wklej do wiki zespołu, notatek osobistych lub dokumentów projektu. Pobierz plik .md, jeśli wolisz import inną drogą."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Jak dostać Markdown do Notion?",
+        "a": "Skonwertuj PDF, kliknij Kopiuj Markdown i wklej na nową stronę Notion. Notion automatycznie zamieni nagłówki, listy i tabele na bloki. Duże dokumenty wklejaj sekcjami."
+      },
+      {
+        "q": "Czy tabele z PDF dobrze wchodzą do Notion?",
+        "a": "Tabele tekstowe z PDF eksportują się jako GFM, które Notion dobrze renderuje. Złożone scalone komórki mogą zostać spłaszczone."
+      },
+      {
+        "q": "Czy pliki są przesyłane?",
+        "a": "Nie. Konwersja odbywa się w całości w przeglądarce. PDF nie opuszcza urządzenia."
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF do Markdown Python — narzędzie w przeglądarce i wskazówki",
+    "metaDescription": "Konwertuj PDF na Markdown bez pisania Pythona — darmowe lokalne narzędzie w przeglądarce. Plus wskazówki o pymupdf, pdfplumber i nadchodzącym API.",
+    "keywords": ["pdf do markdown python", "python pdf do markdown", "convert pdf to markdown python", "pdf to markdown api"],
+    "badge": "Bez pip · natychmiastowy wynik",
+    "h1": "PDF do Markdown dla Python",
+    "subtitle": "Potrzebujesz Markdown z PDF do notebooka, ETL lub prototypu? Konwertuj lokalnie w przeglądarce i wklej ciąg do workflow Python — bez konfiguracji środowiska.",
+    "features": [
+      {
+        "title": "Konwersja bez setupu",
+        "body": "Pomiń instalację pymupdf, pdfplumber czy zależności Java dla pojedynczych plików. Prześlij, skopiuj Markdown, wklej do skryptu."
+      },
+      {
+        "title": "Struktura do parsowania",
+        "body": "Przewidywalne poziomy nagłówków i tabele GFM ułatwiają dzielenie sekcji lub zasilanie LangChain, LlamaIndex i innych stosów RAG w Pythonie."
+      },
+      {
+        "title": "API wkrótce",
+        "body": "Konwersja wsadowa i REST API są w planie. Skontaktuj się po wczesny dostęp do pipeline'ów produkcyjnych."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czy jest biblioteka Python lub pakiet pip?",
+        "a": "Ta strona to konwerter w przeglądarce, nie moduł pip. Do szybkich pojedynczych plików użyj narzędzia powyżej. Do pełnej automatyzacji: PyMuPDF, pdfplumber, marker — lub poczekaj na nasze API."
+      },
+      {
+        "q": "Czy mogę użyć wyniku w Jupyter lub pandas?",
+        "a": "Tak. Wklej Markdown do komórki notebooka jako dokumentację lub parsuj tabele GFM do DataFrame przez pandas.read_table."
+      },
+      {
+        "q": "Czy to zastępuje skrypt Python w produkcji?",
+        "a": "Do pracy ad-hoc i prototypów narzędzie w przeglądarce startuje szybciej. Do zautomatyzowanych zadań wsadowych w CI lub cron lepszy jest skrypt lub API — planujemy API pod ten przypadek."
       }
     ]
   },

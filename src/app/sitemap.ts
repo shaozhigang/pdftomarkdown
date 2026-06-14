@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL, SECONDARY_SLUGS } from "@/lib/landing";
+import { SITE_URL, SECONDARY_SLUGS, GUIDE_SLUGS } from "@/lib/landing";
 import { routing } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,6 +22,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "weekly",
         priority: 0.8,
+      });
+    }
+
+    for (const slug of GUIDE_SLUGS) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/${slug}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
       });
     }
 

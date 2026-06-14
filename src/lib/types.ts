@@ -39,7 +39,7 @@ export interface Block {
   rows?: string[][]; // table rows (incl. header as row 0)
 }
 
-export type ConvertProfile = "general" | "obsidian" | "llm" | "table";
+export type ConvertProfile = "general" | "obsidian" | "llm" | "table" | "notion" | "python";
 
 export interface ConvertOptions {
   profile: ConvertProfile;

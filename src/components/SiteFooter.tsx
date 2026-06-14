@@ -35,6 +35,12 @@ export async function SiteFooter() {
             {tFooter("contact")}
           </Link>
           <Link
+            href="/how-to-convert-pdf-to-markdown"
+            className="text-slate-600 hover:text-slate-900"
+          >
+            {tFooter("guide")}
+          </Link>
+          <Link
             href="/privacy-policy"
             className="text-slate-600 hover:text-slate-900"
           >

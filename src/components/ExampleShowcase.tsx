@@ -46,7 +46,7 @@ export async function ExampleShowcase({ profile }: ExampleShowcaseProps) {
           <h3 className="mb-3 text-base font-semibold text-slate-800">
             {t("specializedTitle")}
           </h3>
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {SPECIALIZED_MODE_LINKS.map((link) => (
               <Link
                 key={link.profile}

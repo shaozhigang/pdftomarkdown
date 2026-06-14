@@ -9,6 +9,7 @@
     "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",
     "about": "About",
     "contact": "Contact",
+    "guide": "How-to Guide",
     "privacyPolicy": "Privacy Policy"
   },
   "Converter": {
@@ -17,16 +18,22 @@
     "dropTitle_obsidian": "Drop a PDF to import into Obsidian, or",
     "dropTitle_llm": "Drop a PDF for LLM-ready Markdown, or",
     "dropTitle_table": "Drop a PDF to extract tables, or",
+    "dropTitle_notion": "Drop a PDF to import into Notion, or",
+    "dropTitle_python": "Drop a PDF for Markdown output, or",
     "dropSubtitle_general": "Full document · 100% local · Max 50MB",
     "dropSubtitle_obsidian": "Vault-ready .md with frontmatter · 100% local · Max 50MB",
     "dropSubtitle_llm": "Compact Markdown + chunk markers for RAG · 100% local · Max 50MB",
     "dropSubtitle_table": "Tables only · GFM output · 100% local · Max 50MB",
+    "dropSubtitle_notion": "Notion-ready Markdown · 100% local · Max 50MB",
+    "dropSubtitle_python": "Copy into scripts & notebooks · 100% local · Max 50MB",
     "errorNotPdf": "Please upload a PDF file.",
     "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
     "statusParsing_general": "Converting document",
     "statusParsing_obsidian": "Building Obsidian note",
     "statusParsing_llm": "Optimizing for LLM",
     "statusParsing_table": "Extracting tables",
+    "statusParsing_notion": "Preparing Notion import",
+    "statusParsing_python": "Generating Markdown",
     "chooseAnother": "Choose another file",
     "conversionFailed": "Conversion failed",
     "tabPreview": "Preview",
@@ -87,6 +94,24 @@
       ],
       "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
     },
+    "notion": {
+      "howToName": "How to import a PDF into Notion as Markdown",
+      "steps": [
+        "Upload a report or doc PDF, or click \"Try sample PDF\" to load our demo article.",
+        "Copy the Markdown or download the .md file — headings, lists and tables are preserved.",
+        "Open Notion, create a page, and paste the content. Notion converts Markdown blocks automatically on paste."
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "How to convert PDF to Markdown for Python workflows",
+      "steps": [
+        "Upload a PDF above — no pip install or virtual environment required for a quick conversion.",
+        "Copy the Markdown string into your Jupyter notebook, Flask app, or data pipeline.",
+        "For batch jobs or CI, use our browser tool for ad-hoc files today; a REST API is on the roadmap."
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
     "cards": {
       "obsidian": {
         "title": "Obsidian import",
@@ -99,15 +124,23 @@
       "table": {
         "title": "Table extraction",
         "subtitle": "GFM tables only, no extra prose"
+      },
+      "notion": {
+        "title": "Notion import",
+        "subtitle": "Paste-ready Markdown for Notion pages"
+      },
+      "python": {
+        "title": "Python & automation",
+        "subtitle": "Markdown for notebooks and scripts"
       }
     }
   },
   "Home": {
-    "metaTitle": "PDF to Markdown — Free, Private, Local Converter",
-    "metaDescription": "Convert PDF to clean Markdown right in your browser. 100% local — files never leave your device. Built for LLM, RAG, Obsidian and Notion workflows.",
-    "keywords": ["pdf to markdown", "convert pdf to markdown", "pdf to md", "pdf to markdown online free"],
+    "metaTitle": "PDF to Markdown Converter — Free, Private & Local",
+    "metaDescription": "Free PDF to Markdown converter that runs in your browser. 100% local — files never leave your device. Built for LLM, RAG, Obsidian and Notion workflows.",
+    "keywords": ["pdf to markdown converter", "pdf to markdown", "convert pdf to markdown", "pdf to md", "convert pdf to markdown online free"],
     "badge": "100% local · no upload",
-    "h1": "PDF to Markdown",
+    "h1": "PDF to Markdown Converter",
     "subtitle": "Convert PDF to clean Markdown right in your browser. Built for LLM, RAG, Obsidian and Notion workflows.",
     "features": [
       {
@@ -135,6 +168,46 @@
       {
         "q": "Does it support scanned PDFs?",
         "a": "Text-based PDFs are fully supported today. OCR for scanned or image-only PDFs is on the roadmap."
+      }
+    ]
+  },
+  "Guide": {
+    "metaTitle": "How to Convert PDF to Markdown — Free Step-by-Step Guide",
+    "metaDescription": "Learn how to convert PDF to Markdown in 3 steps. Free browser-based converter — no upload, no account. Works with text-based PDFs for LLM, Obsidian and docs.",
+    "keywords": ["how to convert pdf to markdown", "convert pdf to markdown", "pdf to markdown tutorial", "pdf to markdown step by step"],
+    "badge": "Step-by-step guide",
+    "h1": "How to Convert PDF to Markdown",
+    "subtitle": "Turn any text-based PDF into clean Markdown in your browser — free, private, and ready in seconds. Use the converter below and follow the steps.",
+    "features": [
+      {
+        "title": "1. Upload your PDF",
+        "body": "Drag and drop a text-based PDF onto the converter above, or click to browse. Files up to 50 MB are supported. Try the sample PDF if you want to see the output first."
+      },
+      {
+        "title": "2. Review the Markdown",
+        "body": "Switch between Preview and Source view to check headings, lists, and tables. Edit is not built in yet — copy the output into your editor if you need to tweak it."
+      },
+      {
+        "title": "3. Copy or download",
+        "body": "Click Copy Markdown to paste into ChatGPT, Obsidian, or a code editor. Or download the .md file and move it into your vault, repo, or RAG pipeline."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What type of PDF works best?",
+        "a": "Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. Scanned or image-only PDFs need OCR, which is on our roadmap."
+      },
+      {
+        "q": "Is conversion really local?",
+        "a": "Yes. Parsing and Markdown generation run entirely in your browser via WebAssembly. Your PDF is never uploaded to our servers."
+      },
+      {
+        "q": "Why use Markdown instead of copying text from the PDF?",
+        "a": "Copy-paste often breaks table columns, loses heading hierarchy, and includes page headers. Structured Markdown preserves document layout with fewer tokens — ideal for LLMs and note apps."
+      },
+      {
+        "q": "Can I convert multiple PDFs at once?",
+        "a": "Not yet. Batch conversion is planned for a future release. For now, convert files one at a time — each run is free and unlimited."
       }
     ]
   },
@@ -243,6 +316,78 @@
       {
         "q": "Can I copy just the table?",
         "a": "Yes. Convert the PDF, switch to the source view, and copy the table block you need."
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "PDF to Markdown for Notion — Import Pages Cleanly",
+    "metaDescription": "Convert PDFs to Markdown for Notion. Clean headings, lists and tables — paste into a Notion page in seconds. 100% local in your browser, no upload.",
+    "keywords": ["pdf to markdown for notion", "notion pdf to markdown", "import pdf into notion", "pdf to notion markdown"],
+    "badge": "Notion-ready · paste to import",
+    "h1": "PDF to Markdown for Notion",
+    "subtitle": "Turn PDF reports, specs and docs into clean Markdown you can paste straight into Notion — headings, lists and tables intact, all processed locally.",
+    "features": [
+      {
+        "title": "Paste-friendly output",
+        "body": "Notion recognizes Markdown on paste — headings become blocks, lists stay nested, and GFM tables render as Notion tables."
+      },
+      {
+        "title": "Private by default",
+        "body": "Internal wikis and strategy docs stay on your device. No upload step means sensitive PDFs never hit a third-party server."
+      },
+      {
+        "title": "Works with any Notion workspace",
+        "body": "Copy into team wikis, personal notes, or project docs. Download the .md file if you prefer importing via another tool."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get the Markdown into Notion?",
+        "a": "Convert your PDF, click Copy Markdown, then paste into a new Notion page. Notion converts headings, lists and tables into blocks automatically. For large docs, paste section by section."
+      },
+      {
+        "q": "Do Notion tables from PDF convert correctly?",
+        "a": "Text-based PDF tables export as GitHub-flavored Markdown tables, which Notion renders well. Complex merged cells may flatten because Markdown tables do not support cell spanning."
+      },
+      {
+        "q": "Are my files uploaded?",
+        "a": "No. Conversion runs entirely in your browser. Your PDF never leaves your device."
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF to Markdown Python — Browser Tool & Script Tips",
+    "metaDescription": "Convert PDF to Markdown without writing Python first — free local browser tool. Plus tips for pymupdf, pdfplumber and our upcoming API for automation.",
+    "keywords": ["pdf to markdown python", "python pdf to markdown", "convert pdf to markdown python", "pdf to markdown api"],
+    "badge": "No pip install · instant output",
+    "h1": "PDF to Markdown for Python",
+    "subtitle": "Need Markdown from a PDF for a notebook, ETL job or prototype? Convert locally in the browser, then copy the string into your Python workflow — no environment setup.",
+    "features": [
+      {
+        "title": "Zero-setup conversion",
+        "body": "Skip installing pymupdf, pdfplumber or Java dependencies for one-off files. Upload, copy the Markdown string, and paste into your script."
+      },
+      {
+        "title": "Structured for parsing",
+        "body": "Predictable heading levels and GFM tables make it easy to split sections with regex or feed into LangChain, LlamaIndex and other Python RAG stacks."
+      },
+      {
+        "title": "API coming soon",
+        "body": "Batch conversion and a REST API for programmatic access are on the roadmap. Contact us if you want early access for production pipelines."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there a Python library or pip package?",
+        "a": "This site is a browser-based converter, not a pip module. For quick one-file jobs, use the tool above. For fully programmatic pipelines, common libraries include PyMuPDF, pdfplumber and marker — or wait for our upcoming API."
+      },
+      {
+        "q": "Can I use the output in Jupyter or pandas?",
+        "a": "Yes. Copy the Markdown into a notebook cell for documentation, or parse GFM tables into DataFrames with pandas.read_table on the table blocks."
+      },
+      {
+        "q": "Does this replace a Python script in production?",
+        "a": "For ad-hoc and prototype work, the browser tool is faster to start. For automated batch jobs in CI or cron, a script or API is better — our API is planned for that use case."
       }
     ]
   },

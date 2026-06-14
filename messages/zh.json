@@ -9,6 +9,7 @@
     "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。",
     "about": "关于我们",
     "contact": "联系我们",
+    "guide": "使用教程",
     "privacyPolicy": "隐私政策"
   },
   "Converter": {
@@ -17,16 +18,22 @@
     "dropTitle_obsidian": "拖入 PDF，生成 Obsidian 笔记，或",
     "dropTitle_llm": "拖入 PDF，生成 LLM 就绪 Markdown，或",
     "dropTitle_table": "拖入 PDF，提取表格，或",
+    "dropTitle_notion": "拖入 PDF，导入 Notion，或",
+    "dropTitle_python": "拖入 PDF，生成 Markdown，或",
     "dropSubtitle_general": "完整文档 · 100% 本地处理 · 最大 50MB",
     "dropSubtitle_obsidian": "含 frontmatter 的 Vault 笔记 · 100% 本地 · 最大 50MB",
     "dropSubtitle_llm": "紧凑 Markdown + RAG 分块标记 · 100% 本地 · 最大 50MB",
     "dropSubtitle_table": "仅输出表格 · GFM 格式 · 100% 本地 · 最大 50MB",
+    "dropSubtitle_notion": "Notion 就绪 Markdown · 100% 本地 · 最大 50MB",
+    "dropSubtitle_python": "可粘贴到脚本和笔记本 · 100% 本地 · 最大 50MB",
     "errorNotPdf": "请上传 PDF 文件。",
     "errorTooLarge": "文件超过 50MB，暂不支持更大的文件。",
     "statusParsing_general": "正在转换文档",
     "statusParsing_obsidian": "正在生成 Obsidian 笔记",
     "statusParsing_llm": "正在优化 LLM 输出",
     "statusParsing_table": "正在提取表格",
+    "statusParsing_notion": "正在准备 Notion 导入",
+    "statusParsing_python": "正在生成 Markdown",
     "chooseAnother": "选择其他文件",
     "conversionFailed": "转换失败",
     "tabPreview": "预览",
@@ -87,6 +94,24 @@
       ],
       "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
     },
+    "notion": {
+      "howToName": "如何将 PDF 导入 Notion",
+      "steps": [
+        "上传报告或文档 PDF，或点击「试用示例 PDF」加载演示文章。",
+        "复制 Markdown 或下载 .md 文件，标题、列表和表格均完整保留。",
+        "打开 Notion 新建页面并粘贴，Notion 会自动将 Markdown 转为块。"
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "如何为 Python 工作流转换 PDF 为 Markdown",
+      "steps": [
+        "在上方上传 PDF，无需 pip 安装或虚拟环境即可完成快速转换。",
+        "将 Markdown 字符串复制到 Jupyter 笔记本、Flask 应用或数据流水线中。",
+        "批量任务或 CI 场景可先用浏览器工具处理临时文件；REST API 已在路线图中。"
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
     "cards": {
       "obsidian": {
         "title": "Obsidian 导入",
@@ -99,15 +124,23 @@
       "table": {
         "title": "表格提取",
         "subtitle": "仅输出 GFM 表格，无多余正文"
+      },
+      "notion": {
+        "title": "Notion 导入",
+        "subtitle": "可直接粘贴的 Notion Markdown"
+      },
+      "python": {
+        "title": "Python 与自动化",
+        "subtitle": "适用于笔记本和脚本的 Markdown"
       }
     }
   },
   "Home": {
-    "metaTitle": "PDF 转 Markdown — 免费、私密、本地转换器",
-    "metaDescription": "在浏览器中将 PDF 转为干净的 Markdown，100% 本地处理，文件永不离开您的设备。专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
-    "keywords": ["pdf转markdown", "pdf to markdown", "pdf转md", "在线pdf转markdown"],
+    "metaTitle": "PDF 转 Markdown 转换器 — 免费、私密、本地",
+    "metaDescription": "免费 PDF 转 Markdown 转换器，在浏览器中运行。100% 本地处理，文件永不离开您的设备。专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
+    "keywords": ["pdf转markdown转换器", "pdf to markdown converter", "pdf转markdown", "convert pdf to markdown", "pdf转md", "在线pdf转markdown"],
     "badge": "100% 本地 · 无上传",
-    "h1": "PDF 转 Markdown",
+    "h1": "PDF 转 Markdown 转换器",
     "subtitle": "在浏览器中将 PDF 转为干净的 Markdown，专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
     "features": [
       {
@@ -135,6 +168,46 @@
       {
         "q": "支持扫描版 PDF 吗？",
         "a": "当前完全支持文本型 PDF。扫描件 / 纯图片型 PDF 的 OCR 功能已在路线图中。"
+      }
+    ]
+  },
+  "Guide": {
+    "metaTitle": "如何将 PDF 转换为 Markdown — 免费分步教程",
+    "metaDescription": "3 步学会 PDF 转 Markdown。免费浏览器转换器，无需上传、无需注册。适用于文本型 PDF，可用于 LLM、Obsidian 和文档工作流。",
+    "keywords": ["如何将pdf转为markdown", "pdf转markdown教程", "convert pdf to markdown", "pdf to markdown step by step"],
+    "badge": "分步教程",
+    "h1": "如何将 PDF 转换为 Markdown",
+    "subtitle": "在浏览器中将文本型 PDF 转为干净的 Markdown，免费、私密、数秒完成。使用下方转换器并按步骤操作即可。",
+    "features": [
+      {
+        "title": "1. 上传 PDF",
+        "body": "将文本型 PDF 拖放到上方转换区，或点击浏览文件。支持最大 50 MB。可先点击「试用示例 PDF」查看输出效果。"
+      },
+      {
+        "title": "2. 检查 Markdown 输出",
+        "body": "在预览和源码视图间切换，检查标题、列表和表格。暂不支持在线编辑，如需修改可复制到编辑器中调整。"
+      },
+      {
+        "title": "3. 复制或下载",
+        "body": "点击「复制 Markdown」粘贴到 ChatGPT、Obsidian 或代码编辑器，或下载 .md 文件导入知识库、仓库或 RAG 流水线。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "什么类型的 PDF 转换效果最好？",
+        "a": "文本型 PDF（报告、论文、从 Word 或 Google Docs 导出的电子书）转换最可靠。扫描件或纯图片 PDF 需要 OCR，该功能已在路线图中。"
+      },
+      {
+        "q": "转换真的是本地完成的吗？",
+        "a": "是的。解析和 Markdown 生成完全在浏览器中通过 WebAssembly 运行，PDF 不会上传到我们的服务器。"
+      },
+      {
+        "q": "为什么不直接从 PDF 复制文本？",
+        "a": "复制粘贴常破坏表格列、丢失标题层级，还会带入页眉页脚。结构化 Markdown 保留文档布局且 token 更少，更适合 LLM 和笔记应用。"
+      },
+      {
+        "q": "可以同时转换多个 PDF 吗？",
+        "a": "暂不支持。批量转换已在规划中。目前可逐个免费转换，无次数限制。"
       }
     ]
   },
@@ -243,6 +316,78 @@
       {
         "q": "可以只复制表格部分吗？",
         "a": "可以。转换完成后切换到源码视图，复制所需的表格区块即可。"
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "PDF 转 Markdown（Notion 专用）— 干净导入",
+    "metaDescription": "将 PDF 转为适合 Notion 的 Markdown。保留标题、列表和表格，粘贴即可导入页面。100% 浏览器本地处理，无需上传。",
+    "keywords": ["pdf转markdown notion", "notion pdf转markdown", "pdf导入notion", "pdf to markdown for notion"],
+    "badge": "Notion 就绪 · 粘贴导入",
+    "h1": "PDF 转 Markdown（Notion 专用）",
+    "subtitle": "将 PDF 报告、规格和文档转为干净 Markdown，直接粘贴到 Notion，标题、列表和表格完整保留，全程本地处理。",
+    "features": [
+      {
+        "title": "粘贴即用",
+        "body": "Notion 识别粘贴的 Markdown：标题变为块、列表保持嵌套、GFM 表格渲染为 Notion 表格。"
+      },
+      {
+        "title": "默认私密",
+        "body": "内部 wiki 和战略文档留在本地，无上传步骤，敏感 PDF 不会进入第三方服务器。"
+      },
+      {
+        "title": "适用任意工作区",
+        "body": "可粘贴到团队 wiki、个人笔记或项目文档。也可下载 .md 文件通过其他方式导入。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "如何把 Markdown 导入 Notion？",
+        "a": "转换 PDF 后点击「复制 Markdown」，在新 Notion 页面粘贴即可。Notion 会自动将标题、列表和表格转为块。大文档建议分段粘贴。"
+      },
+      {
+        "q": "PDF 中的表格能正确导入 Notion 吗？",
+        "a": "文本型 PDF 表格会导出为 GFM 表格，Notion 渲染效果良好。复杂合并单元格可能被展平，因为 Markdown 表格不支持跨格。"
+      },
+      {
+        "q": "文件会上传吗？",
+        "a": "不会。转换完全在浏览器中运行，PDF 不会离开您的设备。"
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF 转 Markdown Python — 浏览器工具与脚本指南",
+    "metaDescription": "无需先写 Python 即可将 PDF 转为 Markdown — 免费本地浏览器工具。另含 pymupdf、pdfplumber 使用提示及即将推出的 API。",
+    "keywords": ["pdf转markdown python", "python pdf转markdown", "pdf to markdown python", "pdf to markdown api"],
+    "badge": "无需 pip · 即时输出",
+    "h1": "PDF 转 Markdown（Python 专用）",
+    "subtitle": "需要 PDF 的 Markdown 用于笔记本、ETL 或原型？在浏览器本地转换，复制字符串到 Python 工作流，无需配置环境。",
+    "features": [
+      {
+        "title": "零配置转换",
+        "body": "临时文件无需安装 pymupdf、pdfplumber 或 Java 依赖。上传、复制 Markdown 字符串、粘贴到脚本即可。"
+      },
+      {
+        "title": "便于解析的结构",
+        "body": "可预测的标题层级和 GFM 表格，便于用正则分段或输入 LangChain、LlamaIndex 等 Python RAG 框架。"
+      },
+      {
+        "title": "API 即将推出",
+        "body": "批量转换和 REST API 已在路线图中。如需生产流水线早期访问，请联系我们。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "有 Python 库或 pip 包吗？",
+        "a": "本站是浏览器转换工具，不是 pip 模块。单文件快速处理请用上方工具。全自动化流水线可使用 PyMuPDF、pdfplumber、marker 等库，或等待我们即将推出的 API。"
+      },
+      {
+        "q": "输出能用于 Jupyter 或 pandas 吗？",
+        "a": "可以。将 Markdown 粘贴到 notebook 单元格作文档说明，或用 pandas.read_table 解析 GFM 表格块为 DataFrame。"
+      },
+      {
+        "q": "这能替代生产环境的 Python 脚本吗？",
+        "a": "临时和原型工作，浏览器工具启动更快。CI 或 cron 自动化批量任务更适合脚本或 API — 我们正规划 API 应对此场景。"
       }
     ]
   },

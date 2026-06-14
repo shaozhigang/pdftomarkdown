@@ -9,6 +9,7 @@
     "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",
     "about": "Over ons",
     "contact": "Contact",
+    "guide": "Handleiding",
     "privacyPolicy": "Privacybeleid"
   },
   "Converter": {
@@ -17,16 +18,22 @@
     "dropTitle_obsidian": "Sleep een PDF voor Obsidian-import, of",
     "dropTitle_llm": "Sleep een PDF voor LLM-klare Markdown, of",
     "dropTitle_table": "Sleep een PDF om tabellen te extraheren, of",
+    "dropTitle_notion": "Sleep een PDF voor Notion-import, of",
+    "dropTitle_python": "Sleep een PDF voor Markdown-output, of",
     "dropSubtitle_general": "Volledig document · 100% lokaal · Max. 50 MB",
     "dropSubtitle_obsidian": "Vault-klare .md met frontmatter · 100% lokaal · Max. 50 MB",
     "dropSubtitle_llm": "Compacte Markdown + chunk-markers voor RAG · 100% lokaal · Max. 50 MB",
     "dropSubtitle_table": "Alleen tabellen · GFM-output · 100% lokaal · Max. 50 MB",
+    "dropSubtitle_notion": "Notion-klare Markdown · 100% lokaal · Max. 50 MB",
+    "dropSubtitle_python": "Voor scripts & notebooks · 100% lokaal · Max. 50 MB",
     "errorNotPdf": "Upload een PDF-bestand.",
     "errorTooLarge": "Bestand is groter dan 50 MB. Grotere bestanden worden nog niet ondersteund.",
     "statusParsing_general": "Document converteren",
     "statusParsing_obsidian": "Obsidian-notitie opbouwen",
     "statusParsing_llm": "Optimaliseren voor LLM",
     "statusParsing_table": "Tabellen extraheren",
+    "statusParsing_notion": "Notion-import voorbereiden",
+    "statusParsing_python": "Markdown genereren",
     "chooseAnother": "Ander bestand kiezen",
     "conversionFailed": "Conversie mislukt",
     "tabPreview": "Voorbeeld",
@@ -87,6 +94,24 @@
       ],
       "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
     },
+    "notion": {
+      "howToName": "Hoe je een PDF in Notion importeert als Markdown",
+      "steps": [
+        "Upload een rapport- of document-PDF, of klik op \"Probeer voorbeeld-PDF\" voor onze demo.",
+        "Kopieer de Markdown of download het .md-bestand — koppen, lijsten en tabellen blijven behouden.",
+        "Open Notion, maak een pagina en plak de inhoud. Notion zet Markdown-blokken automatisch om bij plakken."
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "PDF naar Markdown voor Python-workflows",
+      "steps": [
+        "Upload hierboven een PDF — geen pip-installatie of virtualenv nodig voor een snelle conversie.",
+        "Kopieer de Markdown-string naar je Jupyter-notebook, Flask-app of datapipeline.",
+        "Voor batchjobs of CI: gebruik vandaag onze browsertool voor ad-hoc bestanden; een REST API komt eraan."
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
     "cards": {
       "obsidian": {
         "title": "Obsidian-import",
@@ -99,15 +124,23 @@
       "table": {
         "title": "Tabelextractie",
         "subtitle": "Alleen GFM-tabellen, geen extra tekst"
+      },
+      "notion": {
+        "title": "Notion-import",
+        "subtitle": "Plakklare Markdown voor Notion-pagina's"
+      },
+      "python": {
+        "title": "Python & automatisering",
+        "subtitle": "Markdown voor notebooks en scripts"
       }
     }
   },
   "Home": {
-    "metaTitle": "PDF naar Markdown — Gratis, privé, lokale converter",
-    "metaDescription": "Converteer PDF naar schone Markdown direct in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
-    "keywords": ["pdf naar markdown", "pdf converteren naar markdown", "pdf naar md", "pdf naar markdown online gratis"],
+    "metaTitle": "PDF naar Markdown Converter — Gratis, privé & lokaal",
+    "metaDescription": "Gratis PDF naar Markdown converter in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
+    "keywords": ["pdf naar markdown converter", "pdf naar markdown", "pdf converteren naar markdown", "pdf naar md", "pdf naar markdown online gratis"],
     "badge": "100% lokaal · geen upload",
-    "h1": "PDF naar Markdown",
+    "h1": "PDF naar Markdown Converter",
     "subtitle": "Converteer PDF naar schone Markdown direct in je browser. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
     "features": [
       {
@@ -135,6 +168,46 @@
       {
         "q": "Ondersteunt het gescande PDF's?",
         "a": "Tekstgebaseerde PDF's worden vandaag volledig ondersteund. OCR voor gescande of alleen-afbeelding-PDF's staat op de roadmap."
+      }
+    ]
+  },
+  "Guide": {
+    "metaTitle": "PDF naar Markdown converteren — Gratis stapsgewijze gids",
+    "metaDescription": "Leer in 3 stappen hoe je PDF naar Markdown converteert. Gratis browserconverter — geen upload, geen account. Werkt met tekstgebaseerde PDF's voor LLM, Obsidian en docs.",
+    "keywords": ["pdf naar markdown converteren", "convert pdf to markdown", "pdf naar markdown tutorial", "pdf naar markdown stap voor stap"],
+    "badge": "Stapsgewijze gids",
+    "h1": "PDF naar Markdown converteren",
+    "subtitle": "Zet elke tekstgebaseerde PDF om in schone Markdown in je browser — gratis, privé en binnen seconden klaar. Gebruik de converter hierboven en volg de stappen.",
+    "features": [
+      {
+        "title": "1. Upload je PDF",
+        "body": "Sleep een tekstgebaseerde PDF naar de converter hierboven, of klik om te bladeren. Bestanden tot 50 MB worden ondersteund. Probeer het voorbeeld-PDF om de output te bekijken."
+      },
+      {
+        "title": "2. Controleer de Markdown",
+        "body": "Wissel tussen Preview en Bron om koppen, lijsten en tabellen te controleren. Online bewerken is nog niet ingebouwd — kopieer de output naar je editor als je iets wilt aanpassen."
+      },
+      {
+        "title": "3. Kopiëren of downloaden",
+        "body": "Klik op Markdown kopiëren om te plakken in ChatGPT, Obsidian of een code-editor. Of download het .md-bestand voor je vault, repo of RAG-pipeline."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Welk type PDF werkt het best?",
+        "a": "Tekstgebaseerde PDF's — rapporten, papers, ebooks geëxporteerd uit Word of Google Docs — converteren het meest betrouwbaar. Gescande of alleen-afbeelding-PDF's vereisen OCR, wat op onze roadmap staat."
+      },
+      {
+        "q": "Is conversie echt lokaal?",
+        "a": "Ja. Parsing en Markdown-generatie draaien volledig in je browser via WebAssembly. Je PDF wordt nooit naar onze servers geüpload."
+      },
+      {
+        "q": "Waarom Markdown gebruiken in plaats van tekst kopiëren uit de PDF?",
+        "a": "Kopiëren-plakken breekt vaak tabelkolommen, verliest koppenhiërarchie en neemt paginakoppen mee. Gestructureerde Markdown behoudt de documentopbouw met minder tokens — ideaal voor LLM's en notitie-apps."
+      },
+      {
+        "q": "Kan ik meerdere PDF's tegelijk converteren?",
+        "a": "Nog niet. Batchconversie is gepland voor een toekomstige release. Converteer voorlopig bestanden één voor één — elke run is gratis en onbeperkt."
       }
     ]
   },
@@ -243,6 +316,78 @@
       {
         "q": "Kan ik alleen de tabel kopiëren?",
         "a": "Ja. Converteer de PDF, schakel naar de bronweergave en kopieer het tabelblok dat je nodig hebt."
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "PDF naar Markdown voor Notion — Schoon importeren",
+    "metaDescription": "Converteer PDF's naar Markdown voor Notion. Schone koppen, lijsten en tabellen — plak in een Notion-pagina in seconden. 100% lokaal in je browser.",
+    "keywords": ["pdf naar markdown voor notion", "notion pdf naar markdown", "pdf importeren in notion", "pdf to markdown for notion"],
+    "badge": "Notion-klaar · plak om te importeren",
+    "h1": "PDF naar Markdown voor Notion",
+    "subtitle": "Zet PDF-rapporten, specs en docs om in schone Markdown die je direct in Notion plakt — koppen, lijsten en tabellen intact, volledig lokaal verwerkt.",
+    "features": [
+      {
+        "title": "Plakvriendelijke output",
+        "body": "Notion herkent Markdown bij plakken — koppen worden blokken, lijsten blijven genest en GFM-tabellen renderen als Notion-tabellen."
+      },
+      {
+        "title": "Privé by default",
+        "body": "Interne wiki's en strategiedocs blijven op je apparaat. Geen upload betekent dat gevoelige PDF's nooit een third-party server raken."
+      },
+      {
+        "title": "Werkt met elke Notion-workspace",
+        "body": "Plak in teamwiki's, persoonlijke notities of projectdocs. Download het .md-bestand als je liever via een andere tool importeert."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Hoe krijg ik de Markdown in Notion?",
+        "a": "Converteer je PDF, klik Markdown kopiëren en plak in een nieuwe Notion-pagina. Notion zet koppen, lijsten en tabellen automatisch om in blokken. Plak grote docs sectie voor sectie."
+      },
+      {
+        "q": "Converteren Notion-tabellen uit PDF goed?",
+        "a": "Tekstgebaseerde PDF-tabellen worden GFM-tabellen, die Notion goed rendert. Complexe samengevoegde cellen kunnen worden afgevlakt."
+      },
+      {
+        "q": "Worden mijn bestanden geüpload?",
+        "a": "Nee. Conversie draait volledig in je browser. Je PDF verlaat je apparaat nooit."
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF naar Markdown Python — Browsertool & scripttips",
+    "metaDescription": "Converteer PDF naar Markdown zonder eerst Python te schrijven — gratis lokale browsertool. Plus tips voor pymupdf, pdfplumber en onze aankomende API.",
+    "keywords": ["pdf naar markdown python", "python pdf naar markdown", "convert pdf to markdown python", "pdf to markdown api"],
+    "badge": "Geen pip · direct output",
+    "h1": "PDF naar Markdown voor Python",
+    "subtitle": "Markdown uit een PDF nodig voor een notebook, ETL-job of prototype? Converteer lokaal in de browser en kopieer de string naar je Python-workflow — geen omgevingssetup.",
+    "features": [
+      {
+        "title": "Conversie zonder setup",
+        "body": "Sla pymupdf, pdfplumber of Java-afhankelijkheden over voor eenmalige bestanden. Upload, kopieer de Markdown-string, plak in je script."
+      },
+      {
+        "title": "Gestructureerd voor parsing",
+        "body": "Voorspelbare kopniveaus en GFM-tabellen maken het makkelijk om secties te splitsen of te voeden aan LangChain, LlamaIndex en andere Python RAG-stacks."
+      },
+      {
+        "title": "API komt binnenkort",
+        "body": "Batchconversie en een REST API staan op de roadmap. Neem contact op voor vroege toegang voor productiepipelines."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is er een Python-library of pip-pakket?",
+        "a": "Deze site is een browserconverter, geen pip-module. Voor snelle eenmalige jobs gebruik je de tool hierboven. Voor volledig programmatische pipelines: PyMuPDF, pdfplumber, marker — of wacht op onze API."
+      },
+      {
+        "q": "Kan ik de output in Jupyter of pandas gebruiken?",
+        "a": "Ja. Kopieer Markdown naar een notebookcel voor documentatie, of parse GFM-tabellen naar DataFrames met pandas.read_table."
+      },
+      {
+        "q": "Vervangt dit een Python-script in productie?",
+        "a": "Voor ad-hoc en prototypewerk is de browsertool sneller te starten. Voor geautomatiseerde batchjobs in CI of cron is een script of API beter — onze API is daarvoor gepland."
       }
     ]
   },

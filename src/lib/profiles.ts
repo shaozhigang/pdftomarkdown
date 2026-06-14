@@ -8,6 +8,10 @@ export function slugToProfile(slug: string): ConvertProfile {
       return "llm";
     case "pdf-table-to-markdown":
       return "table";
+    case "pdf-to-markdown-for-notion":
+      return "notion";
+    case "pdf-to-markdown-python":
+      return "python";
     default:
       return "general";
   }
@@ -32,6 +36,14 @@ export function optionsForProfile(profile: ConvertProfile): ConvertOptions {
     case "llm":
       return {
         profile: "llm",
+        detectTables: true,
+        detectHeadings: true,
+        tablesOnly: false,
+      };
+    case "notion":
+    case "python":
+      return {
+        profile,
         detectTables: true,
         detectHeadings: true,
         tablesOnly: false,

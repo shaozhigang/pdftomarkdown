@@ -4,22 +4,24 @@ import { LandingPage } from "@/components/LandingPage";
 import { SITE_URL, type Feature, type Faq, type RelatedPage } from "@/lib/landing";
 import { localeAlternates } from "@/lib/seo";
 
+const SLUG = "pdf-to-markdown-python";
+
 export async function generateMetadata({
   params,
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
   const { locale } = params;
-  const t = await getTranslations({ locale, namespace: "Home" });
+  const t = await getTranslations({ locale, namespace: "Python" });
   return {
     title: { absolute: t("metaTitle") },
     description: t("metaDescription"),
     keywords: t.raw("keywords") as string[],
-    alternates: localeAlternates(locale),
+    alternates: localeAlternates(locale, `/${SLUG}`),
     openGraph: {
       title: t("metaTitle"),
       description: t("metaDescription"),
-      url: `/${locale}`,
+      url: `/${locale}/${SLUG}`,
       siteName: "PDF to Markdown",
       type: "website",
     },
@@ -31,7 +33,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function HomePage({
+export default async function PythonPage({
   params,
 }: {
   params: { locale: string };
@@ -39,16 +41,13 @@ export default async function HomePage({
   const { locale } = params;
   setRequestLocale(locale);
 
-  const t = await getTranslations("Home");
-  const tGuide = await getTranslations("Guide");
-  const tObs = await getTranslations("Obsidian");
+  const t = await getTranslations("Python");
+  const tHome = await getTranslations("Home");
   const tChat = await getTranslations("ChatGPT");
   const tTable = await getTranslations("Table");
-  const tNotion = await getTranslations("Notion");
-  const tPython = await getTranslations("Python");
 
   const content = {
-    slug: "",
+    slug: SLUG,
     metaTitle: t("metaTitle"),
     metaDescription: t("metaDescription"),
     keywords: t.raw("keywords") as string[],
@@ -60,16 +59,7 @@ export default async function HomePage({
   };
 
   const related: RelatedPage[] = [
-    {
-      slug: "how-to-convert-pdf-to-markdown",
-      h1: tGuide("h1"),
-      subtitle: tGuide("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-for-obsidian",
-      h1: tObs("h1"),
-      subtitle: tObs("subtitle"),
-    },
+    { slug: "", h1: tHome("h1"), subtitle: tHome("subtitle") },
     {
       slug: "pdf-to-markdown-for-chatgpt",
       h1: tChat("h1"),
@@ -80,19 +70,9 @@ export default async function HomePage({
       h1: tTable("h1"),
       subtitle: tTable("subtitle"),
     },
-    {
-      slug: "pdf-to-markdown-for-notion",
-      h1: tNotion("h1"),
-      subtitle: tNotion("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-python",
-      h1: tPython("h1"),
-      subtitle: tPython("subtitle"),
-    },
   ];
 
-  const pageUrl = SITE_URL;
+  const pageUrl = `${SITE_URL}/${SLUG}`;
 
   return <LandingPage content={content} related={related} pageUrl={pageUrl} />;
 }

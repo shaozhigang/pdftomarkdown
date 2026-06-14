@@ -40,7 +40,11 @@ export const SECONDARY_SLUGS = [
   "pdf-to-markdown-for-obsidian",
   "pdf-to-markdown-for-chatgpt",
   "pdf-table-to-markdown",
+  "pdf-to-markdown-for-notion",
+  "pdf-to-markdown-python",
 ] as const;
+
+export const GUIDE_SLUGS = ["how-to-convert-pdf-to-markdown"] as const;
 
 // Maps each secondary slug to its Nav message key (see messages/en.json "Nav").
 export const NAV_ITEMS = [

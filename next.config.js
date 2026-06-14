@@ -29,6 +29,16 @@ const nextConfig = {
         destination: "/en/pdf-table-to-markdown",
         permanent: true,
       },
+      {
+        source: "/pdf-to-markdown-for-notion",
+        destination: "/en/pdf-to-markdown-for-notion",
+        permanent: true,
+      },
+      {
+        source: "/pdf-to-markdown-python",
+        destination: "/en/pdf-to-markdown-python",
+        permanent: true,
+      },
     ];
   },
 };
