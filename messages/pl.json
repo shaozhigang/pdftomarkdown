@@ -3,7 +3,8 @@
     "home": "Strona główna",
     "obsidian": "dla Obsidian",
     "chatgpt": "dla ChatGPT i LLM",
-    "table": "Ekstraktor tabel"
+    "table": "Ekstraktor tabel",
+    "mdToPdf": "Markdown → PDF"
   },
   "Footer": {
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",

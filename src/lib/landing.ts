@@ -42,6 +42,7 @@ export const SECONDARY_SLUGS = [
   "pdf-table-to-markdown",
   "pdf-to-markdown-for-notion",
   "pdf-to-markdown-python",
+  "markdown-to-pdf",
 ] as const;
 
 export const GUIDE_SLUGS = ["how-to-convert-pdf-to-markdown"] as const;
@@ -51,4 +52,5 @@ export const NAV_ITEMS = [
   { slug: "pdf-to-markdown-for-obsidian", msgKey: "obsidian" as const },
   { slug: "pdf-to-markdown-for-chatgpt", msgKey: "chatgpt" as const },
   { slug: "pdf-table-to-markdown", msgKey: "table" as const },
+  { slug: "markdown-to-pdf", msgKey: "mdToPdf" as const },
 ] as const;

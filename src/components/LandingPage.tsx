@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Converter } from "@/components/Converter";
@@ -12,18 +13,35 @@ interface LandingPageProps {
   content: LandingContent;
   related: RelatedPage[];
   pageUrl: string;
+  /** Override the default PDF→Markdown converter with a custom tool. */
+  tool?: ReactNode;
+  /** Override the HowTo structured data (defaults to the Examples profile). */
+  howTo?: { name: string; steps: string[] };
+  /** Show the PDF example showcase (default true). Disable for non-PDF tools. */
+  showExamples?: boolean;
 }
 
 export async function LandingPage({
   content,
   related,
   pageUrl,
+  tool,
+  howTo,
+  showExamples = true,
 }: LandingPageProps) {
   const t = await getTranslations("Landing");
-  const tExamples = await getTranslations("Examples");
   const profile: ConvertProfile = slugToProfile(content.slug);
-  const steps = tExamples.raw(`${profile}.steps`) as string[];
-  const howToName = tExamples(`${profile}.howToName`);
+
+  let steps: string[];
+  let howToName: string;
+  if (howTo) {
+    steps = howTo.steps;
+    howToName = howTo.name;
+  } else {
+    const tExamples = await getTranslations("Examples");
+    steps = tExamples.raw(`${profile}.steps`) as string[];
+    howToName = tExamples(`${profile}.howToName`);
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -73,11 +91,11 @@ export async function LandingPage({
         </header>
 
         <div className="mx-auto max-w-5xl">
-          <Converter profile={profile} />
+          {tool ?? <Converter profile={profile} />}
         </div>
 
         <div className="mx-auto max-w-3xl">
-          <ExampleShowcase profile={profile} />
+          {showExamples && <ExampleShowcase profile={profile} />}
 
           <section className="mt-14 grid gap-5 sm:grid-cols-3">
           {content.features.map((f) => (

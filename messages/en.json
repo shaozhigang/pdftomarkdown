@@ -3,7 +3,70 @@
     "home": "Home",
     "obsidian": "for Obsidian",
     "chatgpt": "for ChatGPT & LLMs",
-    "table": "Table Extractor"
+    "table": "Table Extractor",
+    "mdToPdf": "Markdown → PDF"
+  },
+  "MdToPdf": {
+    "metaTitle": "Markdown to PDF — Free Online Converter",
+    "metaDescription": "Convert Markdown to a polished, print-ready PDF right in your browser. Live preview, clean typography, tables and code blocks. 100% private — nothing is uploaded.",
+    "keywords": [
+      "markdown to pdf",
+      "md to pdf",
+      "markdown to pdf converter",
+      "convert markdown to pdf",
+      "markdown pdf online",
+      "markdown to pdf free"
+    ],
+    "badge": "Markdown → PDF",
+    "h1": "Markdown to PDF",
+    "subtitle": "Write or paste Markdown and export a clean, print-ready PDF. Live preview, zero upload, completely free.",
+    "editorLabel": "Markdown",
+    "previewLabel": "PDF preview",
+    "placeholder": "Type or paste your Markdown here…",
+    "download": "Download PDF",
+    "paperA4": "A4",
+    "paperLetter": "Letter",
+    "privacyBadge": "100% private — runs entirely in your browser",
+    "docTitle": "document",
+    "howToName": "How to convert Markdown to PDF",
+    "howToSteps": [
+      "Write or paste your Markdown into the editor on the left.",
+      "Check the live PDF preview on the right and choose A4 or Letter.",
+      "Click Download PDF, then pick \"Save as PDF\" to export your document."
+    ],
+    "sampleContent": "# Project Brief\n\nWelcome to **Markdown to PDF**. Edit on the left — the preview on the right updates instantly.\n\n## Features\n\n- Clean, readable typography\n- Tables, lists and code blocks\n- Runs 100% in your browser\n\n## Example table\n\n| Feature | Supported |\n| --- | --- |\n| Headings | Yes |\n| Tables | Yes |\n| Code | Yes |\n\n## Code\n\n```js\nconsole.log(\"hello, pdf\");\n```\n\n> Tip: click \"Download PDF\" and choose \"Save as PDF\" to export this document.\n",
+    "features": [
+      {
+        "title": "Live preview",
+        "body": "See exactly how your PDF will look as you type. Headings, tables, lists and code render instantly."
+      },
+      {
+        "title": "100% private",
+        "body": "Conversion runs entirely in your browser. Your Markdown never leaves your device."
+      },
+      {
+        "title": "Clean typography",
+        "body": "Professional spacing, readable fonts and styled tables and code blocks — ready to share or print."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I convert Markdown to PDF?",
+        "a": "Write or paste your Markdown on the left, check the live preview on the right, then click Download PDF and choose \"Save as PDF\" in the print dialog."
+      },
+      {
+        "q": "Is it free and private?",
+        "a": "Yes. The tool is completely free and runs entirely in your browser — your content is never uploaded to any server."
+      },
+      {
+        "q": "Does it support tables and code blocks?",
+        "a": "Yes. GitHub-flavored Markdown is supported, including tables, task lists, fenced code blocks, bold text and links."
+      },
+      {
+        "q": "Can I choose the page size?",
+        "a": "Yes. Switch between A4 and Letter before exporting your PDF."
+      }
+    ]
   },
   "Footer": {
     "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",

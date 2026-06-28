@@ -3,7 +3,70 @@
     "home": "首页",
     "obsidian": "适用于 Obsidian",
     "chatgpt": "适用于 ChatGPT & LLM",
-    "table": "表格提取"
+    "table": "表格提取",
+    "mdToPdf": "Markdown 转 PDF"
+  },
+  "MdToPdf": {
+    "metaTitle": "Markdown 转 PDF — 免费在线转换器",
+    "metaDescription": "在浏览器里把 Markdown 转换成排版精美、可直接打印的 PDF。实时预览，干净的排版，支持表格与代码块。100% 隐私安全，文件不上传。",
+    "keywords": [
+      "markdown 转 pdf",
+      "markdown to pdf",
+      "md 转 pdf",
+      "markdown 转 pdf 在线",
+      "markdown 导出 pdf",
+      "markdown 转 pdf 免费"
+    ],
+    "badge": "Markdown → PDF",
+    "h1": "Markdown 转 PDF",
+    "subtitle": "输入或粘贴 Markdown，导出干净、可打印的 PDF。实时预览，零上传，完全免费。",
+    "editorLabel": "Markdown",
+    "previewLabel": "PDF 预览",
+    "placeholder": "在这里输入或粘贴你的 Markdown…",
+    "download": "下载 PDF",
+    "paperA4": "A4",
+    "paperLetter": "Letter",
+    "privacyBadge": "100% 隐私安全 · 全程在你的浏览器内运行",
+    "docTitle": "document",
+    "howToName": "如何将 Markdown 转换为 PDF",
+    "howToSteps": [
+      "在左侧编辑器中输入或粘贴你的 Markdown。",
+      "在右侧查看实时 PDF 预览，并选择 A4 或 Letter 纸张。",
+      "点击「下载 PDF」，在打印对话框中选择「另存为 PDF」即可导出。"
+    ],
+    "sampleContent": "# 项目简介\n\n欢迎使用 **Markdown 转 PDF**。在左侧编辑，右侧预览会即时更新。\n\n## 功能\n\n- 干净易读的排版\n- 支持表格、列表与代码块\n- 100% 在浏览器内运行\n\n## 示例表格\n\n| 功能 | 是否支持 |\n| --- | --- |\n| 标题 | 是 |\n| 表格 | 是 |\n| 代码 | 是 |\n\n## 代码\n\n```js\nconsole.log(\"hello, pdf\");\n```\n\n> 提示：点击「下载 PDF」并选择「另存为 PDF」即可导出本文档。\n",
+    "features": [
+      {
+        "title": "实时预览",
+        "body": "边输入边看到 PDF 的真实效果。标题、表格、列表与代码即时渲染。"
+      },
+      {
+        "title": "100% 隐私安全",
+        "body": "转换全程在浏览器内完成，你的 Markdown 绝不会离开本机。"
+      },
+      {
+        "title": "精美排版",
+        "body": "专业的间距、易读的字体，以及带样式的表格和代码块——随时可分享或打印。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "如何把 Markdown 转换成 PDF？",
+        "a": "在左侧输入或粘贴 Markdown，在右侧查看实时预览，然后点击「下载 PDF」，在打印对话框里选择「另存为 PDF」即可。"
+      },
+      {
+        "q": "免费吗？安全吗？",
+        "a": "完全免费，并且全程在你的浏览器内运行——内容不会上传到任何服务器。"
+      },
+      {
+        "q": "支持表格和代码块吗？",
+        "a": "支持。兼容 GitHub 风格 Markdown，包括表格、任务列表、代码块、加粗与链接。"
+      },
+      {
+        "q": "可以选择纸张大小吗？",
+        "a": "可以，导出前可在 A4 与 Letter 之间切换。"
+      }
+    ]
   },
   "Footer": {
     "tagline": "PDF to Markdown · 所有转换均在浏览器本地完成，文件永不离开您的设备。",

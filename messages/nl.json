@@ -3,7 +3,8 @@
     "home": "Home",
     "obsidian": "voor Obsidian",
     "chatgpt": "voor ChatGPT & LLM's",
-    "table": "Tabelextractor"
+    "table": "Tabelextractor",
+    "mdToPdf": "Markdown → PDF"
   },
   "Footer": {
     "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",
