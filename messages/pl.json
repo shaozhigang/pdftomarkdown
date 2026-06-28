@@ -14,6 +14,8 @@
   },
   "Converter": {
     "dropClickBrowse": "kliknij, aby wybrać plik",
+    "privacyBadge": "100% prywatnie — pliki nigdy nie opuszczają przeglądarki",
+    "paneOriginal": "Oryginalny PDF",
     "dropTitle_general": "Upuść plik PDF tutaj lub",
     "dropTitle_obsidian": "Upuść PDF do importu do Obsidian lub",
     "dropTitle_llm": "Upuść PDF, aby uzyskać Markdown gotowy dla LLM, lub",
@@ -41,7 +43,7 @@
     "statsInfo": "{pages} stron · {ms} ms",
     "statsTables": "{pages} stron · {tables} tabel · {ms} ms",
     "actionCopy": "Kopiuj Markdown",
-    "actionCopied": "Skopiowano ✓",
+    "actionCopied": "Skopiowano",
     "actionDownload": "Pobierz .md",
     "actionNewFile": "Nowy plik",
     "warningNoText": "Nie udało się wyodrębnić tekstu. Może to być zeskanowany PDF lub PDF zawierający tylko obrazy. Obsługa OCR jest w planie.",

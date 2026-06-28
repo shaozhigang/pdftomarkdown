@@ -14,6 +14,8 @@
   },
   "Converter": {
     "dropClickBrowse": "klik om te bladeren",
+    "privacyBadge": "100% privé — bestanden verlaten je browser nooit",
+    "paneOriginal": "Origineel PDF",
     "dropTitle_general": "Sleep je PDF hierheen, of",
     "dropTitle_obsidian": "Sleep een PDF voor Obsidian-import, of",
     "dropTitle_llm": "Sleep een PDF voor LLM-klare Markdown, of",
@@ -41,7 +43,7 @@
     "statsInfo": "{pages} pagina's · {ms} ms",
     "statsTables": "{pages} pagina's · {tables} tabellen · {ms} ms",
     "actionCopy": "Markdown kopiëren",
-    "actionCopied": "Gekopieerd ✓",
+    "actionCopied": "Gekopieerd",
     "actionDownload": ".md downloaden",
     "actionNewFile": "Nieuw bestand",
     "warningNoText": "Er kon geen tekst worden geëxtraheerd. Dit kan een gescande of alleen-afbeelding-PDF zijn. OCR-ondersteuning staat op de roadmap.",

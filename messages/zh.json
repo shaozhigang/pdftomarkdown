@@ -14,6 +14,8 @@
   },
   "Converter": {
     "dropClickBrowse": "点击浏览文件",
+    "privacyBadge": "100% 隐私安全 · 文件不会离开你的浏览器",
+    "paneOriginal": "PDF 原文",
     "dropTitle_general": "将 PDF 拖放到此处，或",
     "dropTitle_obsidian": "拖入 PDF，生成 Obsidian 笔记，或",
     "dropTitle_llm": "拖入 PDF，生成 LLM 就绪 Markdown，或",
@@ -41,7 +43,7 @@
     "statsInfo": "{pages} 页 · {ms} ms",
     "statsTables": "{pages} 页 · {tables} 个表格 · {ms} ms",
     "actionCopy": "复制 Markdown",
-    "actionCopied": "已复制 ✓",
+    "actionCopied": "已复制",
     "actionDownload": "下载 .md",
     "actionNewFile": "新文件",
     "warningNoText": "无法提取文本。这可能是扫描件或纯图片型 PDF，OCR 支持已在路线图中。",

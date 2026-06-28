@@ -59,8 +59,8 @@ export async function LandingPage({
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-4 py-12">
-        <header className="mb-8 text-center">
+      <main className="px-4 py-12">
+        <header className="mx-auto mb-8 max-w-3xl text-center">
           <span className="inline-block rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-brand-dark">
             {content.badge}
           </span>
@@ -72,11 +72,14 @@ export async function LandingPage({
           </p>
         </header>
 
-        <Converter profile={profile} />
+        <div className="mx-auto max-w-5xl">
+          <Converter profile={profile} />
+        </div>
 
-        <ExampleShowcase profile={profile} />
+        <div className="mx-auto max-w-3xl">
+          <ExampleShowcase profile={profile} />
 
-        <section className="mt-14 grid gap-5 sm:grid-cols-3">
+          <section className="mt-14 grid gap-5 sm:grid-cols-3">
           {content.features.map((f) => (
             <div
               key={f.title}
@@ -120,6 +123,7 @@ export async function LandingPage({
             </div>
           </section>
         )}
+        </div>
       </main>
       <SiteFooter />
 

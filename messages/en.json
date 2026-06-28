@@ -14,6 +14,8 @@
   },
   "Converter": {
     "dropClickBrowse": "click to browse",
+    "privacyBadge": "100% private — files never leave your browser",
+    "paneOriginal": "Original PDF",
     "dropTitle_general": "Drop your PDF here, or",
     "dropTitle_obsidian": "Drop a PDF to import into Obsidian, or",
     "dropTitle_llm": "Drop a PDF for LLM-ready Markdown, or",
@@ -41,7 +43,7 @@
     "statsInfo": "{pages} pages · {ms} ms",
     "statsTables": "{pages} pages · {tables} tables · {ms} ms",
     "actionCopy": "Copy Markdown",
-    "actionCopied": "Copied ✓",
+    "actionCopied": "Copied",
     "actionDownload": "Download .md",
     "actionNewFile": "New file",
     "warningNoText": "No text could be extracted. This may be a scanned or image-only PDF. OCR support is on the roadmap.",

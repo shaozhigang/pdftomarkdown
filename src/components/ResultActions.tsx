@@ -32,8 +32,21 @@ export function ResultActions({ markdown, fileName }: ResultActionsProps) {
     <div className="flex gap-2">
       <button
         onClick={copy}
-        className="rounded-lg bg-brand px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-dark"
+        className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-white transition-colors ${
+          copied ? "bg-emerald-600" : "bg-brand hover:bg-brand-dark"
+        }`}
       >
+        {copied && (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="m5 13 4 4L19 7"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        )}
         {copied ? t("actionCopied") : t("actionCopy")}
       </button>
       <button
