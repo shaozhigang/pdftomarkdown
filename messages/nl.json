@@ -4,7 +4,8 @@
     "obsidian": "voor Obsidian",
     "chatgpt": "voor ChatGPT & LLM's",
     "table": "Tabelextractor",
-    "mdToPdf": "Markdown → PDF"
+    "mdToPdf": "Markdown → PDF",
+    "ocr": "Gescande PDF (OCR)"
   },
   "Footer": {
     "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",

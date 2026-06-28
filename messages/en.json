@@ -4,7 +4,8 @@
     "obsidian": "for Obsidian",
     "chatgpt": "for ChatGPT & LLMs",
     "table": "Table Extractor",
-    "mdToPdf": "Markdown → PDF"
+    "mdToPdf": "Markdown → PDF",
+    "ocr": "Scanned PDF (OCR)"
   },
   "MdToPdf": {
     "metaTitle": "Markdown to PDF — Free Online Converter",
@@ -65,6 +66,77 @@
       {
         "q": "Can I choose the page size?",
         "a": "Yes. Switch between A4 and Letter before exporting your PDF."
+      }
+    ]
+  },
+  "Ocr": {
+    "metaTitle": "Scanned PDF to Markdown — Free OCR Converter",
+    "metaDescription": "Turn scanned or image-only PDFs into Markdown with built-in OCR. Recognizes text in 100+ languages, runs in your browser, and your file is never uploaded.",
+    "keywords": [
+      "scanned pdf to markdown",
+      "pdf to markdown ocr",
+      "ocr pdf to markdown",
+      "image pdf to markdown",
+      "convert scanned pdf to markdown"
+    ],
+    "badge": "OCR · Scanned PDF",
+    "h1": "Scanned PDF to Markdown",
+    "subtitle": "Extract text from scanned or image-only PDFs and get clean Markdown. OCR runs entirely in your browser — your file never leaves your device.",
+    "privacyBadge": "100% private — files never leave your browser",
+    "languageLabel": "Document language",
+    "dropTitle": "Drop a scanned PDF here, or",
+    "dropClickBrowse": "click to browse",
+    "dropSubtitle": "Image or scanned PDF · OCR in your browser · Max 50MB",
+    "samplePrompt": "No PDF handy?",
+    "trySample": "Try a sample",
+    "modelNote": "First run downloads a language model (~2–15MB). After that it works offline — your file is processed locally.",
+    "paneOriginal": "Original PDF",
+    "rendering": "Rendering pages",
+    "recognizing": "Recognizing text",
+    "tabPreview": "Preview",
+    "tabSource": "Source",
+    "ocrProgress": "Page {page}/{total} · {pct}%",
+    "actionNewFile": "New file",
+    "errorNotPdf": "Please upload a PDF file.",
+    "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
+    "errorNoPages": "Could not read any pages from this PDF.",
+    "errorFailed": "OCR failed. Please try another file.",
+    "howToName": "How to convert a scanned PDF to Markdown",
+    "howToSteps": [
+      "Choose the document language, then drop your scanned or image-only PDF.",
+      "Watch each page get rendered and recognized in your browser, side by side.",
+      "Copy the Markdown or download the .md file once OCR finishes."
+    ],
+    "features": [
+      {
+        "title": "Built-in OCR",
+        "body": "Reads text from scanned and image-only PDFs that normal converters can't, powered by Tesseract in your browser."
+      },
+      {
+        "title": "100+ languages",
+        "body": "Recognize English, Chinese, Japanese, Korean, Spanish, French, German, Russian and many more."
+      },
+      {
+        "title": "Private by design",
+        "body": "OCR runs locally via WebAssembly. Only the language model is fetched — your document never leaves your device."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is a scanned PDF?",
+        "a": "A scanned or image-only PDF has no selectable text layer — it's essentially pictures of pages. Regular converters return nothing, so OCR is needed to read the text."
+      },
+      {
+        "q": "Is the OCR free and private?",
+        "a": "Yes. Recognition runs entirely in your browser using WebAssembly. Only the language model is downloaded from a CDN; your PDF is never uploaded."
+      },
+      {
+        "q": "Which languages are supported?",
+        "a": "Pick from English, Simplified and Traditional Chinese, Japanese, Korean, Spanish, French, German, Russian and more before you start."
+      },
+      {
+        "q": "Why is OCR slower than a normal conversion?",
+        "a": "OCR analyzes each page image pixel by pixel to recognize characters, which is heavier than reading an existing text layer. Larger documents take longer."
       }
     ]
   },

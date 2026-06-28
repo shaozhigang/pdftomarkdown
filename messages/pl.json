@@ -4,7 +4,8 @@
     "obsidian": "dla Obsidian",
     "chatgpt": "dla ChatGPT i LLM",
     "table": "Ekstraktor tabel",
-    "mdToPdf": "Markdown → PDF"
+    "mdToPdf": "Markdown → PDF",
+    "ocr": "Zeskanowany PDF (OCR)"
   },
   "Footer": {
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",
