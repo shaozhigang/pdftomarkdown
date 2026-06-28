@@ -22,9 +22,11 @@ export async function generateMetadata({
       url: `/${locale}`,
       siteName: "PDF to Markdown",
       type: "website",
+      images: ["/opengraph-image.png"],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
+      images: ["/opengraph-image.png"],
       title: t("metaTitle"),
       description: t("metaDescription"),
     },

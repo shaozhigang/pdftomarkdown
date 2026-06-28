@@ -22,6 +22,7 @@ export async function generateMetadata({
       url: `/${locale}/contact`,
       siteName: "PDF to Markdown",
       type: "website",
+      images: ["/opengraph-image.png"],
     },
   };
 }
