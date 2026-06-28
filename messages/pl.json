@@ -56,7 +56,8 @@
   "Examples": {
     "title": "Zobacz w działaniu",
     "resultTitle": "Co otrzymujesz",
-    "trySample": "Wypróbuj przykładowy PDF",
+    "samplePrompt": "Nie masz PDF-a?",
+    "trySample": "Wypróbuj przykład",
     "loadingSample": "Ładowanie przykładu…",
     "errorSampleLoad": "Nie udało się załadować przykładu. Spróbuj ponownie.",
     "specializedTitle": "Więcej przypadków użycia",

@@ -115,6 +115,23 @@ export function Dropzone({
         <p className="text-sm text-slate-500">
           {t(`dropSubtitle_${profile}`)}
         </p>
+
+        <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
+          <span>{tExamples("samplePrompt")}</span>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              trySample();
+            }}
+            disabled={disabled || loadingSample}
+            className="inline-flex items-center gap-1 font-medium text-brand transition hover:text-brand-dark hover:underline disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {loadingSample ? tExamples("loadingSample") : tExamples("trySample")}
+            {!loadingSample && <span aria-hidden="true">→</span>}
+          </button>
+        </div>
+
         <input
           ref={inputRef}
           type="file"
@@ -122,17 +139,6 @@ export function Dropzone({
           className="hidden"
           onChange={(e) => handleFile(e.target.files?.[0])}
         />
-      </div>
-
-      <div className="mt-3 flex justify-center">
-        <button
-          type="button"
-          onClick={trySample}
-          disabled={disabled || loadingSample}
-          className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-brand/60 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
-        >
-          {loadingSample ? tExamples("loadingSample") : tExamples("trySample")}
-        </button>
       </div>
 
       {error && <p className="mt-2 text-center text-sm text-red-600">{error}</p>}

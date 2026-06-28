@@ -56,7 +56,8 @@
   "Examples": {
     "title": "Bekijk het in actie",
     "resultTitle": "Wat je krijgt",
-    "trySample": "Probeer voorbeeld-PDF",
+    "samplePrompt": "Geen PDF bij de hand?",
+    "trySample": "Probeer een voorbeeld",
     "loadingSample": "Voorbeeld laden…",
     "errorSampleLoad": "Voorbeeld laden mislukt. Probeer het opnieuw.",
     "specializedTitle": "Meer use cases",

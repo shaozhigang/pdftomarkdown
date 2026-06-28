@@ -56,7 +56,8 @@
   "Examples": {
     "title": "看看效果",
     "resultTitle": "你会得到",
-    "trySample": "试用示例 PDF",
+    "samplePrompt": "没有 PDF？",
+    "trySample": "试用示例文件",
     "loadingSample": "正在加载示例…",
     "errorSampleLoad": "示例加载失败，请稍后重试",
     "specializedTitle": "更多使用场景",
