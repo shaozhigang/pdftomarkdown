@@ -9,6 +9,14 @@ import { type LandingContent, type RelatedPage } from "@/lib/landing";
 import { slugToProfile } from "@/lib/profiles";
 import type { ConvertProfile } from "@/lib/types";
 
+export interface ComparisonTable {
+  title: string;
+  /** Column headers; the first is the feature/row label column. */
+  columns: string[];
+  /** Each row: [featureLabel, cell, cell, …]. Use "✓" / "✗" for icons. */
+  rows: string[][];
+}
+
 interface LandingPageProps {
   content: LandingContent;
   related: RelatedPage[];
@@ -19,6 +27,8 @@ interface LandingPageProps {
   howTo?: { name: string; steps: string[] };
   /** Show the PDF example showcase (default true). Disable for non-PDF tools. */
   showExamples?: boolean;
+  /** Optional feature-comparison table rendered before the FAQ. */
+  comparison?: ComparisonTable;
 }
 
 export async function LandingPage({
@@ -28,6 +38,7 @@ export async function LandingPage({
   tool,
   howTo,
   showExamples = true,
+  comparison,
 }: LandingPageProps) {
   const t = await getTranslations("Landing");
   const profile: ConvertProfile = slugToProfile(content.slug);
@@ -109,6 +120,48 @@ export async function LandingPage({
           ))}
         </section>
 
+        {comparison && (
+          <section className="mt-14">
+            <h2 className="mb-4 text-xl font-semibold">{comparison.title}</h2>
+            <div className="overflow-x-auto rounded-xl border border-slate-200">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr className="bg-slate-50">
+                    {comparison.columns.map((col, i) => (
+                      <th
+                        key={col}
+                        className={`border-b border-slate-200 px-4 py-3 font-semibold ${
+                          i === 0 ? "text-left text-slate-700" : "text-center"
+                        } ${i === 1 ? "text-brand-dark" : "text-slate-600"}`}
+                      >
+                        {col}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparison.rows.map((row) => (
+                    <tr key={row[0]} className="even:bg-slate-50/40">
+                      {row.map((cell, ci) => (
+                        <td
+                          key={ci}
+                          className={`border-b border-slate-100 px-4 py-3 ${
+                            ci === 0
+                              ? "text-left font-medium text-slate-700"
+                              : "text-center"
+                          }`}
+                        >
+                          <ComparisonCell value={cell} highlight={ci === 1} />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
         <section className="mt-14">
           <h2 className="mb-4 text-xl font-semibold">{t("faqTitle")}</h2>
           <div className="space-y-3">
@@ -151,4 +204,48 @@ export async function LandingPage({
       />
     </>
   );
+}
+
+function ComparisonCell({
+  value,
+  highlight,
+}: {
+  value: string;
+  highlight: boolean;
+}) {
+  if (value === "✓") {
+    return (
+      <span
+        className={`inline-flex ${
+          highlight ? "text-emerald-600" : "text-emerald-500"
+        }`}
+        aria-label="Yes"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="m5 13 4 4L19 7"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
+    );
+  }
+  if (value === "✗") {
+    return (
+      <span className="inline-flex text-slate-300" aria-label="No">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M6 6l12 12M18 6 6 18"
+            stroke="currentColor"
+            strokeWidth="2.2"
+            strokeLinecap="round"
+          />
+        </svg>
+      </span>
+    );
+  }
+  return <span className="text-slate-500">{value}</span>;
 }

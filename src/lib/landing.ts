@@ -46,6 +46,7 @@ export const SECONDARY_SLUGS = [
   "scanned-pdf-to-markdown",
   "pdf-to-markdown-with-images",
   "batch-pdf-to-markdown",
+  "best-pdf-to-markdown-converter",
 ] as const;
 
 export const GUIDE_SLUGS = ["how-to-convert-pdf-to-markdown"] as const;

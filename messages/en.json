@@ -85,6 +85,70 @@
       }
     ]
   },
+  "Best": {
+    "metaTitle": "Best PDF to Markdown Converter (Free & Private) — Compared",
+    "metaDescription": "Looking for the best free PDF to Markdown converter? Try our private, browser-based tool and see how it compares to CloudConvert, Pandoc and manual copy-paste.",
+    "keywords": [
+      "best pdf to markdown converter",
+      "free pdf to markdown converter",
+      "pdf to markdown converter online",
+      "best free pdf to markdown",
+      "pdf to markdown tool"
+    ],
+    "badge": "Free · Private · Compared",
+    "h1": "The Best PDF to Markdown Converter",
+    "subtitle": "A free, private, browser-based converter — plus an honest, feature-by-feature comparison with the alternatives. Try it right here, then see how it stacks up.",
+    "howToName": "How to convert a PDF to Markdown",
+    "howToSteps": [
+      "Drop your PDF into the converter above — it runs instantly in your browser.",
+      "Review the Markdown in preview or source view.",
+      "Copy the result or download the .md file."
+    ],
+    "features": [
+      {
+        "title": "Privacy first",
+        "body": "The best converter keeps files on your device. Ours runs 100% in the browser — no uploads, no accounts, no tracking."
+      },
+      {
+        "title": "Real structure",
+        "body": "Look beyond raw text: good tools preserve headings, lists and true Markdown tables. Ours keeps your document's structure intact."
+      },
+      {
+        "title": "Handles hard cases",
+        "body": "Scanned PDFs, embedded images and dozens of files at once — a great tool covers them with OCR, image extraction and batch mode."
+      }
+    ],
+    "comparisonTitle": "How it compares",
+    "comparisonColumns": ["Feature", "This tool", "CloudConvert", "Pandoc", "Copy & paste"],
+    "comparisonRows": [
+      ["Free & unlimited", "✓", "Limited", "✓", "✓"],
+      ["No upload (private)", "✓", "✗", "✓", "✓"],
+      ["Nothing to install", "✓", "✓", "✗", "✓"],
+      ["Tables → Markdown", "✓", "Partial", "✓", "✗"],
+      ["Keeps images", "✓", "✓", "✓", "✗"],
+      ["OCR for scans", "✓", "✓", "✗", "✗"],
+      ["Batch + ZIP", "✓", "✓", "Manual", "✗"],
+      ["Live preview", "✓", "✗", "✗", "✗"]
+    ],
+    "faqs": [
+      {
+        "q": "What is the best PDF to Markdown converter?",
+        "a": "The best converter is the one that keeps your document structure, respects your privacy, and handles your file types. A browser-based tool that needs no upload or install — with tables, images, OCR and batch support — covers most needs for free."
+      },
+      {
+        "q": "What is the best free PDF to Markdown converter?",
+        "a": "This tool is free with no limits and runs entirely in your browser. Unlike many free online converters, it never uploads your files, and it supports tables, images, scanned PDFs and batch conversion."
+      },
+      {
+        "q": "Are online PDF to Markdown converters safe?",
+        "a": "It depends on whether they upload your file. Many do, which is risky for confidential documents. This converter processes everything locally in your browser, so your files never leave your device."
+      },
+      {
+        "q": "Do I need to install software?",
+        "a": "No. Command-line tools like Pandoc are powerful but require installation and setup. This converter works instantly in any modern browser, on any device."
+      }
+    ]
+  },
   "Images": {
     "metaTitle": "PDF to Markdown with Images — Free Online Converter",
     "metaDescription": "Convert PDF to Markdown and keep the images. Embedded pictures and charts are extracted and inlined right where they appear. 100% in your browser — no upload.",
