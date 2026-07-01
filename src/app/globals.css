@@ -63,3 +63,10 @@ body {
 .prose-md code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
+.prose-md img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
