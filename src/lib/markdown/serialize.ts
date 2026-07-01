@@ -110,6 +110,9 @@ export function blocksToMarkdown(blocks: Block[]): string {
       case "table":
         if (block.rows?.length) out.push(serializeTable(block.rows));
         break;
+      case "image":
+        if (block.src) out.push(`![${block.alt ?? ""}](${block.src})`);
+        break;
     }
   }
 

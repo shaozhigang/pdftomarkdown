@@ -148,10 +148,16 @@ export function Converter({ profile = "general" }: ConverterProps) {
                           tables: result.stats.tables,
                           ms: result.stats.durationMs,
                         })
-                      : t("statsInfo", {
-                          pages: result.stats.pages,
-                          ms: result.stats.durationMs,
-                        })}
+                      : profile === "images"
+                        ? t("statsImages", {
+                            pages: result.stats.pages,
+                            images: result.stats.images,
+                            ms: result.stats.durationMs,
+                          })
+                        : t("statsInfo", {
+                            pages: result.stats.pages,
+                            ms: result.stats.durationMs,
+                          })}
                   </span>
                 )}
               </div>

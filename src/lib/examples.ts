@@ -8,6 +8,7 @@ export const DEMO_PDF_BY_PROFILE: Record<ConvertProfile, string> = {
   table: "/samples/demo-table.pdf",
   notion: "/samples/demo-article.pdf",
   python: "/samples/demo-article.pdf",
+  images: "/samples/demo-images.pdf",
 };
 
 export const DEMO_FILE_NAME_BY_PROFILE: Record<ConvertProfile, string> = {
@@ -17,6 +18,7 @@ export const DEMO_FILE_NAME_BY_PROFILE: Record<ConvertProfile, string> = {
   table: "demo-table.pdf",
   notion: "demo-article.pdf",
   python: "demo-article.pdf",
+  images: "demo-images.pdf",
 };
 
 /** Slugs for specialized mode cards on the home page showcase. */

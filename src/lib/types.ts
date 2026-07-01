@@ -15,11 +15,20 @@ export interface Line {
   height: number; // dominant font size
 }
 
+export interface PageImage {
+  dataUrl: string;
+  x: number; // left edge in PDF user space
+  y: number; // top edge in PDF user space (used for reading-order placement)
+  width: number; // rendered width in device px
+  height: number; // rendered height in device px
+}
+
 export interface PageContent {
   pageNumber: number;
   width: number;
   height: number;
   lines: Line[];
+  images?: PageImage[];
 }
 
 export type BlockType =
@@ -27,7 +36,8 @@ export type BlockType =
   | "paragraph"
   | "list"
   | "table"
-  | "code";
+  | "code"
+  | "image";
 
 export interface Block {
   type: BlockType;
@@ -37,15 +47,25 @@ export interface Block {
   levels?: number[]; // nesting level per item (parallel to items)
   ordered?: boolean; // ordered (numbered) list
   rows?: string[][]; // table rows (incl. header as row 0)
+  src?: string; // image data URL
+  alt?: string; // image alt text
 }
 
-export type ConvertProfile = "general" | "obsidian" | "llm" | "table" | "notion" | "python";
+export type ConvertProfile =
+  | "general"
+  | "obsidian"
+  | "llm"
+  | "table"
+  | "notion"
+  | "python"
+  | "images";
 
 export interface ConvertOptions {
   profile: ConvertProfile;
   detectTables: boolean;
   detectHeadings: boolean;
   tablesOnly: boolean;
+  includeImages: boolean;
 }
 
 export interface ConvertResult {
@@ -56,6 +76,7 @@ export interface ConvertResult {
     durationMs: number;
     tables: number;
     blocks: number;
+    images: number;
   };
 }
 
@@ -64,4 +85,5 @@ export const DEFAULT_OPTIONS: ConvertOptions = {
   detectTables: true,
   detectHeadings: true,
   tablesOnly: false,
+  includeImages: true,
 };

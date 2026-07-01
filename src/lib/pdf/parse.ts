@@ -2,6 +2,7 @@ import * as pdfjs from "pdfjs-dist";
 import type { TextItem } from "pdfjs-dist/types/src/display/api";
 import type { PageContent, TextPiece } from "@/lib/types";
 import { layoutPageLines } from "@/lib/pdf/lines";
+import { extractPageImages } from "@/lib/pdf/images";
 
 // Point pdf.js to its worker. The file is copied into /public by the
 // `copy-pdf-worker` script (see package.json) so webpack never processes it.
@@ -27,7 +28,10 @@ export function piecesFromItems(items: unknown[]): TextPiece[] {
   return pieces;
 }
 
-export async function parsePdf(data: ArrayBuffer): Promise<PageContent[]> {
+export async function parsePdf(
+  data: ArrayBuffer,
+  opts: { extractImages?: boolean } = {}
+): Promise<PageContent[]> {
   const loadingTask = pdfjs.getDocument({ data });
   const doc = await loadingTask.promise;
   const pages: PageContent[] = [];
@@ -37,11 +41,16 @@ export async function parsePdf(data: ArrayBuffer): Promise<PageContent[]> {
     const viewport = page.getViewport({ scale: 1 });
     const content = await page.getTextContent();
 
+    const images = opts.extractImages
+      ? await extractPageImages(page)
+      : undefined;
+
     pages.push({
       pageNumber: i,
       width: viewport.width,
       height: viewport.height,
       lines: layoutPageLines(piecesFromItems(content.items), viewport.width),
+      images,
     });
   }
 

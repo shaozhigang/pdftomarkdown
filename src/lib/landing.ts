@@ -44,15 +44,21 @@ export const SECONDARY_SLUGS = [
   "pdf-to-markdown-python",
   "markdown-to-pdf",
   "scanned-pdf-to-markdown",
+  "pdf-to-markdown-with-images",
+  "batch-pdf-to-markdown",
 ] as const;
 
 export const GUIDE_SLUGS = ["how-to-convert-pdf-to-markdown"] as const;
 
-// Maps each secondary slug to its Nav message key (see messages/en.json "Nav").
-export const NAV_ITEMS = [
-  { slug: "pdf-to-markdown-for-obsidian", msgKey: "obsidian" as const },
-  { slug: "pdf-to-markdown-for-chatgpt", msgKey: "chatgpt" as const },
-  { slug: "pdf-table-to-markdown", msgKey: "table" as const },
+// All tool pages, shown in the header "Tools" dropdown (msgKey -> Nav.*).
+export const TOOL_LINKS = [
   { slug: "markdown-to-pdf", msgKey: "mdToPdf" as const },
   { slug: "scanned-pdf-to-markdown", msgKey: "ocr" as const },
+  { slug: "pdf-to-markdown-with-images", msgKey: "images" as const },
+  { slug: "batch-pdf-to-markdown", msgKey: "batch" as const },
+  { slug: "pdf-table-to-markdown", msgKey: "table" as const },
+  { slug: "pdf-to-markdown-for-obsidian", msgKey: "obsidian" as const },
+  { slug: "pdf-to-markdown-for-notion", msgKey: "notion" as const },
+  { slug: "pdf-to-markdown-for-chatgpt", msgKey: "chatgpt" as const },
+  { slug: "pdf-to-markdown-python", msgKey: "python" as const },
 ] as const;

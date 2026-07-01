@@ -12,6 +12,8 @@ export function slugToProfile(slug: string): ConvertProfile {
       return "notion";
     case "pdf-to-markdown-python":
       return "python";
+    case "pdf-to-markdown-with-images":
+      return "images";
     default:
       return "general";
   }
@@ -25,6 +27,7 @@ export function optionsForProfile(profile: ConvertProfile): ConvertOptions {
         detectTables: true,
         detectHeadings: false,
         tablesOnly: true,
+        includeImages: false,
       };
     case "obsidian":
       return {
@@ -32,6 +35,7 @@ export function optionsForProfile(profile: ConvertProfile): ConvertOptions {
         detectTables: true,
         detectHeadings: true,
         tablesOnly: false,
+        includeImages: true,
       };
     case "llm":
       return {
@@ -39,14 +43,31 @@ export function optionsForProfile(profile: ConvertProfile): ConvertOptions {
         detectTables: true,
         detectHeadings: true,
         tablesOnly: false,
+        includeImages: false,
       };
     case "notion":
-    case "python":
       return {
-        profile,
+        profile: "notion",
         detectTables: true,
         detectHeadings: true,
         tablesOnly: false,
+        includeImages: true,
+      };
+    case "python":
+      return {
+        profile: "python",
+        detectTables: true,
+        detectHeadings: true,
+        tablesOnly: false,
+        includeImages: false,
+      };
+    case "images":
+      return {
+        profile: "images",
+        detectTables: true,
+        detectHeadings: true,
+        tablesOnly: false,
+        includeImages: true,
       };
     default:
       return {
@@ -54,6 +75,7 @@ export function optionsForProfile(profile: ConvertProfile): ConvertOptions {
         detectTables: true,
         detectHeadings: true,
         tablesOnly: false,
+        includeImages: true,
       };
   }
 }

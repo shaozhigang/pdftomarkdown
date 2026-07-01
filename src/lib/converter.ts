@@ -27,12 +27,13 @@ export async function convertPdfToMarkdown(
   };
   const started = performance.now();
 
-  const pages = await parsePdf(data);
+  const pages = await parsePdf(data, { extractImages: opts.includeImages });
   const totalLines = pages.reduce((n, p) => n + p.lines.length, 0);
 
   const rawBlocks = linesToBlocks(pages, opts);
   const blocks = filterBlocksForProfile(rawBlocks, opts);
   const tableCount = blocks.filter((b) => b.type === "table").length;
+  const imageCount = blocks.filter((b) => b.type === "image").length;
   const markdownCore = blocksToMarkdown(blocks);
 
   const meta: ProfileMeta = {
@@ -56,6 +57,7 @@ export async function convertPdfToMarkdown(
       durationMs: Math.round(performance.now() - started),
       tables: tableCount,
       blocks: blocks.length,
+      images: imageCount,
     },
   };
 }

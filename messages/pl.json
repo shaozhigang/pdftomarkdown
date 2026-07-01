@@ -1,11 +1,16 @@
 {
   "Nav": {
     "home": "Strona główna",
+    "tools": "Narzędzia",
     "obsidian": "dla Obsidian",
     "chatgpt": "dla ChatGPT i LLM",
+    "notion": "dla Notion",
+    "python": "z Pythonem",
     "table": "Ekstraktor tabel",
     "mdToPdf": "Markdown → PDF",
-    "ocr": "Zeskanowany PDF (OCR)"
+    "ocr": "Zeskanowany PDF (OCR)",
+    "images": "z obrazami",
+    "batch": "Konwersja wsadowa"
   },
   "Footer": {
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",

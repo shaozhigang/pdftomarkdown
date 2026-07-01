@@ -1,11 +1,16 @@
 {
   "Nav": {
     "home": "Home",
+    "tools": "Tools",
     "obsidian": "voor Obsidian",
     "chatgpt": "voor ChatGPT & LLM's",
+    "notion": "voor Notion",
+    "python": "met Python",
     "table": "Tabelextractor",
     "mdToPdf": "Markdown → PDF",
-    "ocr": "Gescande PDF (OCR)"
+    "ocr": "Gescande PDF (OCR)",
+    "images": "met afbeeldingen",
+    "batch": "Batchconversie"
   },
   "Footer": {
     "tagline": "PDF naar Markdown · alle conversies draaien lokaal in je browser, je bestanden verlaten nooit je apparaat.",

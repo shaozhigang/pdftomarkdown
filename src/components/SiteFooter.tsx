@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { NAV_ITEMS } from "@/lib/landing";
+import { TOOL_LINKS } from "@/lib/landing";
 
 export async function SiteFooter() {
   const tNav = await getTranslations("Nav");
@@ -13,7 +13,7 @@ export async function SiteFooter() {
           <Link href="/" className="text-slate-600 hover:text-slate-900">
             {tNav("home")}
           </Link>
-          {NAV_ITEMS.map((item) => (
+          {TOOL_LINKS.map((item) => (
             <Link
               key={item.slug}
               href={`/${item.slug}`}

@@ -1,11 +1,141 @@
 {
   "Nav": {
     "home": "首页",
+    "tools": "工具",
     "obsidian": "适用于 Obsidian",
     "chatgpt": "适用于 ChatGPT & LLM",
+    "notion": "适用于 Notion",
+    "python": "用 Python",
     "table": "表格提取",
     "mdToPdf": "Markdown 转 PDF",
-    "ocr": "扫描件 OCR"
+    "ocr": "扫描件 OCR",
+    "images": "保留图片",
+    "batch": "批量转换"
+  },
+  "Batch": {
+    "metaTitle": "批量 PDF 转 Markdown — 一次转换多个 PDF",
+    "metaDescription": "一次性把多个 PDF 转换成 Markdown，并打包成 ZIP 下载。文件在浏览器内处理，不上传。免费、不限量。",
+    "keywords": [
+      "批量 pdf 转 markdown",
+      "batch pdf to markdown",
+      "多个 pdf 转 markdown",
+      "pdf 批量转 markdown",
+      "bulk pdf to markdown"
+    ],
+    "badge": "批量 · ZIP",
+    "h1": "批量 PDF 转 Markdown",
+    "subtitle": "拖入一整个文件夹的 PDF，一次性全部转换成 Markdown。可预览任意文件，再一键打包成 ZIP 下载——全程在浏览器内完成。",
+    "privacyBadge": "100% 隐私安全 · 文件不会离开你的浏览器",
+    "dropTitle": "把多个 PDF 拖到这里，或",
+    "dropClickBrowse": "点击浏览",
+    "dropSubtitle": "可多选 PDF · 100% 本地 · 单个最大 50MB",
+    "samplePrompt": "没有 PDF？",
+    "trySamples": "试用示例",
+    "filesCount": "已转换 {done}/{total}",
+    "addMore": "继续添加",
+    "clear": "清空",
+    "pagesShort": "{pages} 页",
+    "status_queued": "排队中",
+    "status_working": "转换中",
+    "status_done": "完成",
+    "status_error": "失败",
+    "downloadZip": "打包下载全部（{count}）ZIP",
+    "zipping": "正在打包 ZIP…",
+    "convertingHint": "转换中……已完成的文件可随时下载。",
+    "tabPreview": "预览",
+    "tabSource": "源码",
+    "converting": "正在转换",
+    "errorFailed": "转换失败",
+    "howToName": "如何批量把 PDF 转换成 Markdown",
+    "howToSteps": [
+      "拖入或选择多个 PDF 文件，或点击「试用示例」。",
+      "每个文件都会在浏览器内转换，并在队列中显示预览。",
+      "点击「打包下载全部 ZIP」，把所有 .md 文件打包成一个压缩包。"
+    ],
+    "features": [
+      {
+        "title": "批量转换",
+        "body": "想加多少 PDF 都行。每个文件依次在浏览器内被转换成干净的 Markdown。"
+      },
+      {
+        "title": "一键打包 ZIP",
+        "body": "把所有转换结果打包成一个 ZIP 下载，每个 PDF 对应一个 .md 文件。"
+      },
+      {
+        "title": "100% 隐私安全",
+        "body": "全部转换在本地完成，文件绝不上传——即使是大批量文档也只留在你的设备上。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "一次能转换多少个 PDF？",
+        "a": "没有固定上限，想加多少都行。文件在浏览器内逐个处理，因此超大批量只是会多花一点时间。"
+      },
+      {
+        "q": "我的文件会被上传吗？",
+        "a": "不会。每个 PDF 都在你的浏览器内本地转换，绝不会发送到服务器，因此机密文档也能保持私密。"
+      },
+      {
+        "q": "怎么下载全部结果？",
+        "a": "文件转换完成后，点击「打包下载全部 ZIP」，即可获得包含每个 PDF 对应 .md 文件的压缩包。"
+      },
+      {
+        "q": "可以单独预览某个文件吗？",
+        "a": "可以。在队列中选择任意文件，即可在预览或源码视图中查看它的 Markdown，并单独复制或下载。"
+      }
+    ]
+  },
+  "Images": {
+    "metaTitle": "PDF 转 Markdown 并保留图片 — 免费在线转换器",
+    "metaDescription": "把 PDF 转换成保留图片的 Markdown。内嵌的图片和图表会被提取并就地插入到出现的位置。100% 在浏览器内运行，无需上传。",
+    "keywords": [
+      "pdf 转 markdown 保留图片",
+      "pdf to markdown with images",
+      "pdf 提取图片 markdown",
+      "pdf 转 markdown 带图",
+      "pdf 图片转 markdown"
+    ],
+    "badge": "文字 + 图片",
+    "h1": "PDF 转 Markdown（保留图片）",
+    "subtitle": "把 PDF 转换成保留图片和图表的干净 Markdown——每张图片都会被提取并插入到它原本出现的位置。全程在你的浏览器内运行。",
+    "howToName": "如何将 PDF 转换为带图片的 Markdown",
+    "howToSteps": [
+      "拖入你的 PDF，或点击「试用示例」加载一个含图表的文档。",
+      "每一页都会在浏览器内被解析，并提取出其中的内嵌图片。",
+      "复制或下载 .md——图片以 base64 内嵌，文件完全自包含。"
+    ],
+    "features": [
+      {
+        "title": "保留你的图片",
+        "body": "照片、图表和示意图会从 PDF 中提取出来，并按原位置内嵌进 Markdown。"
+      },
+      {
+        "title": "自包含的 .md",
+        "body": "图片以 base64 数据 URL 内嵌，Markdown 文件走到哪都能用，无需额外的图片文件夹。"
+      },
+      {
+        "title": "100% 隐私安全",
+        "body": "解析与图片提取通过 WebAssembly 和 canvas 在本地完成，你的 PDF 绝不会离开本机。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "转换时图片是怎么保留的？",
+        "a": "转换器会识别每张图片在页面上的绘制位置，从高分辨率渲染中裁剪出来，并按对应位置内嵌进 Markdown。"
+      },
+      {
+        "q": "图片会被上传到哪里吗？",
+        "a": "不会。全部处理都在你的浏览器内完成，PDF 及其图片在本地处理，绝不会发送到服务器。"
+      },
+      {
+        "q": "提取出的图片是什么格式？",
+        "a": "图片以 PNG 数据 URL 直接内嵌在 Markdown 中，因此单个 .md 文件即同时包含文字和图片。"
+      },
+      {
+        "q": "很小的图标也会被包含吗？",
+        "a": "项目符号、细线等极小图形会被跳过，因此你得到的是有意义的插图和图表，而不是界面杂项。"
+      }
+    ]
   },
   "MdToPdf": {
     "metaTitle": "Markdown 转 PDF — 免费在线转换器",
@@ -157,12 +287,14 @@
     "dropTitle_table": "拖入 PDF，提取表格，或",
     "dropTitle_notion": "拖入 PDF，导入 Notion，或",
     "dropTitle_python": "拖入 PDF，生成 Markdown，或",
+    "dropTitle_images": "拖入 PDF，保留其中图片，或",
     "dropSubtitle_general": "完整文档 · 100% 本地处理 · 最大 50MB",
     "dropSubtitle_obsidian": "含 frontmatter 的 Vault 笔记 · 100% 本地 · 最大 50MB",
     "dropSubtitle_llm": "紧凑 Markdown + RAG 分块标记 · 100% 本地 · 最大 50MB",
     "dropSubtitle_table": "仅输出表格 · GFM 格式 · 100% 本地 · 最大 50MB",
     "dropSubtitle_notion": "Notion 就绪 Markdown · 100% 本地 · 最大 50MB",
     "dropSubtitle_python": "可粘贴到脚本和笔记本 · 100% 本地 · 最大 50MB",
+    "dropSubtitle_images": "文字 + 内嵌图片就地保留 · 100% 本地 · 最大 50MB",
     "errorNotPdf": "请上传 PDF 文件。",
     "errorTooLarge": "文件超过 50MB，暂不支持更大的文件。",
     "statusParsing_general": "正在转换文档",
@@ -171,12 +303,14 @@
     "statusParsing_table": "正在提取表格",
     "statusParsing_notion": "正在准备 Notion 导入",
     "statusParsing_python": "正在生成 Markdown",
+    "statusParsing_images": "正在提取文字与图片",
     "chooseAnother": "选择其他文件",
     "conversionFailed": "转换失败",
     "tabPreview": "预览",
     "tabSource": "源码",
     "statsInfo": "{pages} 页 · {ms} ms",
     "statsTables": "{pages} 页 · {tables} 个表格 · {ms} ms",
+    "statsImages": "{pages} 页 · {images} 张图片 · {ms} ms",
     "actionCopy": "复制 Markdown",
     "actionCopied": "已复制",
     "actionDownload": "下载 .md",

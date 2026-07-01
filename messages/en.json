@@ -1,11 +1,141 @@
 {
   "Nav": {
     "home": "Home",
+    "tools": "Tools",
     "obsidian": "for Obsidian",
     "chatgpt": "for ChatGPT & LLMs",
+    "notion": "for Notion",
+    "python": "with Python",
     "table": "Table Extractor",
     "mdToPdf": "Markdown → PDF",
-    "ocr": "Scanned PDF (OCR)"
+    "ocr": "Scanned PDF (OCR)",
+    "images": "with Images",
+    "batch": "Batch Convert"
+  },
+  "Batch": {
+    "metaTitle": "Batch PDF to Markdown — Convert Multiple PDFs at Once",
+    "metaDescription": "Convert many PDFs to Markdown in one go and download them all as a ZIP. Files are processed in your browser — nothing is uploaded. Free and unlimited.",
+    "keywords": [
+      "batch pdf to markdown",
+      "bulk pdf to markdown",
+      "convert multiple pdf to markdown",
+      "pdf to markdown batch converter",
+      "mass pdf to markdown"
+    ],
+    "badge": "Batch · ZIP",
+    "h1": "Batch PDF to Markdown",
+    "subtitle": "Drop a whole folder of PDFs and convert them all to Markdown at once. Preview any file, then download everything as a ZIP — all in your browser.",
+    "privacyBadge": "100% private — files never leave your browser",
+    "dropTitle": "Drop your PDFs here, or",
+    "dropClickBrowse": "click to browse",
+    "dropSubtitle": "Select multiple PDFs · 100% local · Max 50MB each",
+    "samplePrompt": "No PDFs handy?",
+    "trySamples": "Try samples",
+    "filesCount": "{done}/{total} converted",
+    "addMore": "Add more",
+    "clear": "Clear",
+    "pagesShort": "{pages}p",
+    "status_queued": "Queued",
+    "status_working": "Converting",
+    "status_done": "Done",
+    "status_error": "Failed",
+    "downloadZip": "Download all ({count}) as ZIP",
+    "zipping": "Preparing ZIP…",
+    "convertingHint": "Converting… you can download finished files anytime.",
+    "tabPreview": "Preview",
+    "tabSource": "Source",
+    "converting": "Converting",
+    "errorFailed": "Conversion failed",
+    "howToName": "How to batch convert PDFs to Markdown",
+    "howToSteps": [
+      "Drop or select multiple PDF files, or click \"Try samples\".",
+      "Each file is converted in your browser and appears in the queue with a preview.",
+      "Click \"Download all as ZIP\" to get every .md file in one archive."
+    ],
+    "features": [
+      {
+        "title": "Convert in bulk",
+        "body": "Queue as many PDFs as you like. Each is converted to clean Markdown, one after another, right in your browser."
+      },
+      {
+        "title": "One-click ZIP",
+        "body": "Download every converted file as a single ZIP archive, with each PDF saved as its own .md file."
+      },
+      {
+        "title": "100% private",
+        "body": "All conversion happens locally. Your files are never uploaded, so even large batches stay on your device."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How many PDFs can I convert at once?",
+        "a": "There's no fixed limit — add as many as you like. Files are processed one at a time in your browser, so very large batches simply take a little longer."
+      },
+      {
+        "q": "Are my files uploaded?",
+        "a": "No. Every PDF is converted locally in your browser and never sent to a server, which keeps even confidential documents private."
+      },
+      {
+        "q": "How do I download everything?",
+        "a": "Once files finish converting, click \"Download all as ZIP\" to get a single archive containing one .md file per PDF."
+      },
+      {
+        "q": "Can I preview individual files?",
+        "a": "Yes. Select any file in the queue to see its Markdown in preview or source view, and copy or download it on its own."
+      }
+    ]
+  },
+  "Images": {
+    "metaTitle": "PDF to Markdown with Images — Free Online Converter",
+    "metaDescription": "Convert PDF to Markdown and keep the images. Embedded pictures and charts are extracted and inlined right where they appear. 100% in your browser — no upload.",
+    "keywords": [
+      "pdf to markdown with images",
+      "pdf to markdown keep images",
+      "extract images from pdf to markdown",
+      "pdf to markdown images",
+      "convert pdf to markdown with pictures"
+    ],
+    "badge": "Text + Images",
+    "h1": "PDF to Markdown with Images",
+    "subtitle": "Convert a PDF to clean Markdown that keeps its pictures and charts — each image is extracted and placed inline where it belongs. Runs entirely in your browser.",
+    "howToName": "How to convert a PDF to Markdown with images",
+    "howToSteps": [
+      "Drop your PDF, or click \"Try a sample\" to load a document with a chart.",
+      "Each page is parsed and its embedded images are extracted right in your browser.",
+      "Copy or download the .md — images are inlined as base64 so the file is fully self-contained."
+    ],
+    "features": [
+      {
+        "title": "Keeps your images",
+        "body": "Photos, charts and diagrams are pulled out of the PDF and inlined in the Markdown, positioned where they appear."
+      },
+      {
+        "title": "Self-contained .md",
+        "body": "Images are embedded as base64 data URLs, so the Markdown file works anywhere with no separate image folder."
+      },
+      {
+        "title": "100% private",
+        "body": "Parsing and image extraction run locally via WebAssembly and canvas. Your PDF never leaves your device."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How are images kept during conversion?",
+        "a": "The converter detects where each image is drawn on the page, crops it from a high-resolution render, and inlines it in the Markdown at the matching position."
+      },
+      {
+        "q": "Are the images uploaded anywhere?",
+        "a": "No. Everything happens in your browser — the PDF and its images are processed locally and never sent to a server."
+      },
+      {
+        "q": "What format are the extracted images?",
+        "a": "Images are embedded as PNG data URLs directly in the Markdown, so a single .md file contains both text and pictures."
+      },
+      {
+        "q": "Will very small icons be included?",
+        "a": "Tiny graphics like bullets and hairline rules are skipped, so you get the meaningful figures and charts rather than UI clutter."
+      }
+    ]
   },
   "MdToPdf": {
     "metaTitle": "Markdown to PDF — Free Online Converter",
@@ -157,12 +287,14 @@
     "dropTitle_table": "Drop a PDF to extract tables, or",
     "dropTitle_notion": "Drop a PDF to import into Notion, or",
     "dropTitle_python": "Drop a PDF for Markdown output, or",
+    "dropTitle_images": "Drop a PDF to keep its images, or",
     "dropSubtitle_general": "Full document · 100% local · Max 50MB",
     "dropSubtitle_obsidian": "Vault-ready .md with frontmatter · 100% local · Max 50MB",
     "dropSubtitle_llm": "Compact Markdown + chunk markers for RAG · 100% local · Max 50MB",
     "dropSubtitle_table": "Tables only · GFM output · 100% local · Max 50MB",
     "dropSubtitle_notion": "Notion-ready Markdown · 100% local · Max 50MB",
     "dropSubtitle_python": "Copy into scripts & notebooks · 100% local · Max 50MB",
+    "dropSubtitle_images": "Text + embedded images inline · 100% local · Max 50MB",
     "errorNotPdf": "Please upload a PDF file.",
     "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
     "statusParsing_general": "Converting document",
@@ -171,12 +303,14 @@
     "statusParsing_table": "Extracting tables",
     "statusParsing_notion": "Preparing Notion import",
     "statusParsing_python": "Generating Markdown",
+    "statusParsing_images": "Extracting text & images",
     "chooseAnother": "Choose another file",
     "conversionFailed": "Conversion failed",
     "tabPreview": "Preview",
     "tabSource": "Source",
     "statsInfo": "{pages} pages · {ms} ms",
     "statsTables": "{pages} pages · {tables} tables · {ms} ms",
+    "statsImages": "{pages} pages · {images} images · {ms} ms",
     "actionCopy": "Copy Markdown",
     "actionCopied": "Copied",
     "actionDownload": "Download .md",

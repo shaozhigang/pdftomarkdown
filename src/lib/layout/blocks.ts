@@ -1,4 +1,4 @@
-import type { Block, ConvertOptions, Line, PageContent } from "@/lib/types";
+import type { Block, ConvertOptions, Line, PageContent, PageImage } from "@/lib/types";
 import { stripRunningHeadersFooters } from "@/lib/layout/cleanup";
 
 const BULLET_RE = /^[\u2022\u2023\u25E6\u2043\u2219•·‣◦*-]\s+/;
@@ -158,10 +158,34 @@ export function linesToBlocks(
 
   let prev: Line | null = null;
 
+  const emitImage = (img: PageImage) => {
+    flushAll();
+    blocks.push({ type: "image", src: img.dataUrl, alt: "" });
+    prev = null;
+  };
+
   for (const page of cleanPages) {
     const lines = page.lines;
+    // Images sorted top-to-bottom; inserted into the line stream by vertical
+    // position so reading order (incl. two-column pages) stays intact.
+    const images =
+      opts.includeImages && page.images
+        ? [...page.images].sort((a, b) => b.y - a.y)
+        : [];
+    let ii = 0;
+    const emitImagesAbove = (yThreshold: number | null) => {
+      while (
+        ii < images.length &&
+        (yThreshold === null || images[ii].y >= yThreshold)
+      ) {
+        emitImage(images[ii]);
+        ii++;
+      }
+    };
+
     for (let li = 0; li < lines.length; li++) {
       const line = lines[li];
+      emitImagesAbove(line.y);
       if (line.text.trim() === "") {
         flushAll();
         prev = null;
@@ -230,6 +254,8 @@ export function linesToBlocks(
       }
       prev = line;
     }
+    // Any images below the last line of the page.
+    emitImagesAbove(null);
   }
 
   flushAll();
