@@ -29,6 +29,8 @@ interface LandingPageProps {
   showExamples?: boolean;
   /** Optional feature-comparison table rendered before the FAQ. */
   comparison?: ComparisonTable;
+  /** Optional "who uses it" section rendered after the feature cards. */
+  audience?: { title: string; items: { title: string; body: string }[] };
 }
 
 export async function LandingPage({
@@ -39,6 +41,7 @@ export async function LandingPage({
   howTo,
   showExamples = true,
   comparison,
+  audience,
 }: LandingPageProps) {
   const t = await getTranslations("Landing");
   const profile: ConvertProfile = slugToProfile(content.slug);
@@ -119,6 +122,31 @@ export async function LandingPage({
             </div>
           ))}
         </section>
+
+        {audience && (
+          <section className="mt-14">
+            <h2 className="mb-4 text-xl font-semibold">{audience.title}</h2>
+            <div className="grid gap-5 sm:grid-cols-3">
+              {audience.items.map((a) => (
+                <div key={a.title} className="rounded-xl border border-slate-200 bg-white p-5">
+                  <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-100 text-brand-dark">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path
+                        d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM22 20v-2a4 4 0 0 0-3-3.87M16 4.13A4 4 0 0 1 16 12"
+                        stroke="currentColor"
+                        strokeWidth="1.7"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-base font-semibold">{a.title}</h3>
+                  <p className="mt-1 text-sm text-slate-600">{a.body}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {comparison && (
           <section className="mt-14">

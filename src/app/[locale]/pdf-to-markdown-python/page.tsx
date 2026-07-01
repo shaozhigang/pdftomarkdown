@@ -74,7 +74,19 @@ export default async function PythonPage({
     },
   ];
 
+  const audience = {
+    title: t("audienceTitle"),
+    items: t.raw("audience") as { title: string; body: string }[],
+  };
+
   const pageUrl = `${SITE_URL}/${SLUG}`;
 
-  return <LandingPage content={content} related={related} pageUrl={pageUrl} />;
+  return (
+    <LandingPage
+      content={content}
+      related={related}
+      pageUrl={pageUrl}
+      audience={audience}
+    />
+  );
 }

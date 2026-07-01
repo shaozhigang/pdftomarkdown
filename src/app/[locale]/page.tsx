@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { LandingPage } from "@/components/LandingPage";
+import { LandingPage, type ComparisonTable } from "@/components/LandingPage";
 import { SITE_URL, type Feature, type Faq, type RelatedPage } from "@/lib/landing";
 import { localeAlternates } from "@/lib/seo";
 
@@ -94,7 +94,26 @@ export default async function HomePage({
     },
   ];
 
+  const audience = {
+    title: t("audienceTitle"),
+    items: t.raw("audience") as { title: string; body: string }[],
+  };
+
+  const comparison: ComparisonTable = {
+    title: t("comparisonTitle"),
+    columns: t.raw("comparisonColumns") as string[],
+    rows: t.raw("comparisonRows") as string[][],
+  };
+
   const pageUrl = SITE_URL;
 
-  return <LandingPage content={content} related={related} pageUrl={pageUrl} />;
+  return (
+    <LandingPage
+      content={content}
+      related={related}
+      pageUrl={pageUrl}
+      audience={audience}
+      comparison={comparison}
+    />
+  );
 }

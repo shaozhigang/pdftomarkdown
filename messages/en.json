@@ -503,8 +503,35 @@
       },
       {
         "q": "Does it support scanned PDFs?",
-        "a": "Text-based PDFs are fully supported today. OCR for scanned or image-only PDFs is on the roadmap."
+        "a": "Yes. Text-based PDFs work here, and for scanned or image-only PDFs use our built-in OCR converter, which recognizes text right in your browser."
       }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "LLM & RAG builders",
+        "body": "Turn source PDFs into clean, structured Markdown to chunk, embed and feed into ChatGPT, Claude or a vector database."
+      },
+      {
+        "title": "Note-takers",
+        "body": "Move reports and papers into Obsidian or Notion with headings, lists and tables intact — no messy copy-paste."
+      },
+      {
+        "title": "Developers & writers",
+        "body": "Drop PDFs straight into docs, READMEs and static sites as Markdown, with tables and images preserved."
+      }
+    ],
+    "comparisonTitle": "How it compares",
+    "comparisonColumns": ["Feature", "This tool", "CloudConvert", "Pandoc", "Copy & paste"],
+    "comparisonRows": [
+      ["Free & unlimited", "✓", "Limited", "✓", "✓"],
+      ["No upload (private)", "✓", "✗", "✓", "✓"],
+      ["Nothing to install", "✓", "✓", "✗", "✓"],
+      ["Tables → Markdown", "✓", "Partial", "✓", "✗"],
+      ["Keeps images", "✓", "✓", "✓", "✗"],
+      ["OCR for scans", "✓", "✓", "✗", "✗"],
+      ["Batch + ZIP", "✓", "✓", "Manual", "✗"],
+      ["Live preview", "✓", "✗", "✗", "✗"]
     ]
   },
   "Guide": {
@@ -581,6 +608,21 @@
         "q": "Will tables and lists survive the import?",
         "a": "Yes. Tables are converted to GitHub-flavored Markdown tables and nested bullet lists keep their indentation."
       }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Researchers & students",
+        "body": "Pull papers and lecture PDFs into your vault as linkable, searchable notes."
+      },
+      {
+        "title": "PKM enthusiasts",
+        "body": "Feed clippings and reports into your Zettelkasten with structure intact."
+      },
+      {
+        "title": "Writers",
+        "body": "Draft from source PDFs inside Obsidian without losing headings or tables."
+      }
     ]
   },
   "ChatGPT": {
@@ -616,6 +658,21 @@
       {
         "q": "Can I use the output in a RAG pipeline?",
         "a": "Yes. The clean Markdown is straightforward to split into chunks and embed for retrieval, with headings acting as natural chunk boundaries."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Prompt engineers",
+        "body": "Paste compact Markdown into ChatGPT or Claude to fit more context per prompt."
+      },
+      {
+        "title": "RAG developers",
+        "body": "Chunk and embed clean Markdown for reliable retrieval augmented generation."
+      },
+      {
+        "title": "Data teams",
+        "body": "Standardize messy PDFs into structured text for downstream AI pipelines."
       }
     ]
   },
@@ -653,6 +710,21 @@
         "q": "Can I copy just the table?",
         "a": "Yes. Convert the PDF, switch to the source view, and copy the table block you need."
       }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Analysts",
+        "body": "Pull pricing, financial and data tables out of reports into editable Markdown."
+      },
+      {
+        "title": "Developers",
+        "body": "Drop PDF tables into docs and READMEs as GitHub-flavored Markdown tables."
+      },
+      {
+        "title": "Researchers",
+        "body": "Extract result tables from papers for notes or further analysis."
+      }
     ]
   },
   "Notion": {
@@ -689,6 +761,21 @@
         "q": "Are my files uploaded?",
         "a": "No. Conversion runs entirely in your browser. Your PDF never leaves your device."
       }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Teams",
+        "body": "Move specs, wikis and reports into Notion pages with structure preserved."
+      },
+      {
+        "title": "Product managers",
+        "body": "Turn PDF briefs into editable Notion docs in seconds."
+      },
+      {
+        "title": "Knowledge managers",
+        "body": "Build a searchable Notion knowledge base from scattered PDFs."
+      }
     ]
   },
   "Python": {
@@ -724,6 +811,21 @@
       {
         "q": "Does this replace a Python script in production?",
         "a": "For ad-hoc and prototype work, the browser tool is faster to start. For automated batch jobs in CI or cron, a script or API is better — our API is planned for that use case."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Data scientists",
+        "body": "Grab Markdown for notebooks without setting up a PDF parsing library."
+      },
+      {
+        "title": "ML engineers",
+        "body": "Prep documents for LangChain and LlamaIndex RAG stacks."
+      },
+      {
+        "title": "Automation builders",
+        "body": "Prototype conversions in the browser before scripting the full pipeline."
       }
     ]
   },
