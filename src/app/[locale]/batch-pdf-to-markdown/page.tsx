@@ -73,6 +73,11 @@ export default async function BatchPdfToMarkdownPage({
     },
   ];
 
+  const audience = {
+    title: t("audienceTitle"),
+    items: t.raw("audience") as { title: string; body: string }[],
+  };
+
   const pageUrl = `${SITE_URL}/${SLUG}`;
 
   return (
@@ -82,6 +87,7 @@ export default async function BatchPdfToMarkdownPage({
       pageUrl={pageUrl}
       tool={<BatchConverter />}
       showExamples={false}
+      audience={audience}
       howTo={{
         name: t("howToName"),
         steps: t.raw("howToSteps") as string[],

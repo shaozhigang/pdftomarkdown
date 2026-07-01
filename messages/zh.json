@@ -46,6 +46,21 @@
     "tabSource": "源码",
     "converting": "正在转换",
     "errorFailed": "转换失败",
+    "audienceTitle": "适用人群",
+    "audience": [
+      {
+        "title": "团队",
+        "body": "一次性把整个文件夹的 PDF 全部转成 Markdown。"
+      },
+      {
+        "title": "研究者",
+        "body": "把一整个论文库转成 Markdown，用于笔记或 RAG。"
+      },
+      {
+        "title": "开发者",
+        "body": "迁移到新系统时批量把文档转成 Markdown。"
+      }
+    ],
     "howToName": "如何批量把 PDF 转换成 Markdown",
     "howToSteps": [
       "拖入或选择多个 PDF 文件，或点击「试用示例」。",
@@ -162,6 +177,21 @@
     "badge": "文字 + 图片",
     "h1": "PDF 转 Markdown（保留图片）",
     "subtitle": "把 PDF 转换成保留图片和图表的干净 Markdown——每张图片都会被提取并插入到它原本出现的位置。全程在你的浏览器内运行。",
+    "audienceTitle": "适用人群",
+    "audience": [
+      {
+        "title": "报告阅读者",
+        "body": "把商业报告转成 Markdown 时保留其中的图表与插图。"
+      },
+      {
+        "title": "研究者",
+        "body": "让论文中的示意图和图表与正文一起保留下来。"
+      },
+      {
+        "title": "内容团队",
+        "body": "把带插图的 PDF 搬进文档和 wiki，不丢失视觉内容。"
+      }
+    ],
     "howToName": "如何将 PDF 转换为带图片的 Markdown",
     "howToSteps": [
       "拖入你的 PDF，或点击「试用示例」加载一个含图表的文档。",
@@ -223,6 +253,21 @@
     "paperLetter": "Letter",
     "privacyBadge": "100% 隐私安全 · 全程在你的浏览器内运行",
     "docTitle": "document",
+    "audienceTitle": "适用人群",
+    "audience": [
+      {
+        "title": "写作者与博主",
+        "body": "把 Markdown 草稿和 README 变成排版精美的 PDF，方便分享或打印。"
+      },
+      {
+        "title": "开发者",
+        "body": "把文档和笔记从 Markdown 导出为干净、分页的 PDF。"
+      },
+      {
+        "title": "学生",
+        "body": "把用 Markdown 写的笔记和作业交成整洁的 PDF 文档。"
+      }
+    ],
     "howToName": "如何将 Markdown 转换为 PDF",
     "howToSteps": [
       "在左侧编辑器中输入或粘贴你的 Markdown。",
@@ -295,6 +340,21 @@
     "errorTooLarge": "文件超过 50MB，暂不支持更大的文件。",
     "errorNoPages": "无法读取该 PDF 的任何页面。",
     "errorFailed": "OCR 识别失败，请换一个文件再试。",
+    "audienceTitle": "适用人群",
+    "audience": [
+      {
+        "title": "档案工作者",
+        "body": "把扫描的书籍、票据和旧文档数字化成可编辑的 Markdown。"
+      },
+      {
+        "title": "学生",
+        "body": "把拍下的讲义幻灯片和讲义变成可搜索的笔记。"
+      },
+      {
+        "title": "办公人员",
+        "body": "从扫描的合同和表单中提取文字，无需重新录入。"
+      }
+    ],
     "howToName": "如何将扫描件 PDF 转换为 Markdown",
     "howToSteps": [
       "选择文档语言，然后拖入你的扫描件或图片型 PDF。",
@@ -379,7 +439,7 @@
     "actionCopied": "已复制",
     "actionDownload": "下载 .md",
     "actionNewFile": "新文件",
-    "warningNoText": "无法提取文本。这可能是扫描件或纯图片型 PDF，OCR 支持已在路线图中。",
+    "warningNoText": "无法提取文本。这可能是扫描件或纯图片型 PDF——请试试我们的 OCR 转换器，可在浏览器内识别扫描件文字。",
     "warningNoTables": "未检测到表格。请尝试完整转换模式，或确认 PDF 含有文本型表格且列间距清晰。"
   },
   "Landing": {
@@ -558,7 +618,7 @@
     "faqs": [
       {
         "q": "什么类型的 PDF 转换效果最好？",
-        "a": "文本型 PDF（报告、论文、从 Word 或 Google Docs 导出的电子书）转换最可靠。扫描件或纯图片 PDF 需要 OCR，该功能已在路线图中。"
+        "a": "文本型 PDF（报告、论文、从 Word 或 Google Docs 导出的电子书）转换最可靠。扫描件或纯图片 PDF 请用我们的 OCR 转换器，在浏览器内即可识别文字。"
       },
       {
         "q": "转换真的是本地完成的吗？",
@@ -570,7 +630,7 @@
       },
       {
         "q": "可以同时转换多个 PDF 吗？",
-        "a": "暂不支持。批量转换已在规划中。目前可逐个免费转换，无次数限制。"
+        "a": "支持。用我们的批量转换器可一次拖入多个 PDF 并打包成 ZIP 下载——免费不限量，全程在浏览器内完成。"
       }
     ]
   },

@@ -75,6 +75,11 @@ export default async function ScannedPdfToMarkdownPage({
     },
   ];
 
+  const audience = {
+    title: t("audienceTitle"),
+    items: t.raw("audience") as { title: string; body: string }[],
+  };
+
   const pageUrl = `${SITE_URL}/${SLUG}`;
 
   return (
@@ -84,6 +89,7 @@ export default async function ScannedPdfToMarkdownPage({
       pageUrl={pageUrl}
       tool={<OcrConverter />}
       showExamples={false}
+      audience={audience}
       howTo={{
         name: t("howToName"),
         steps: t.raw("howToSteps") as string[],

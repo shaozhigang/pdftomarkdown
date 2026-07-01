@@ -46,6 +46,21 @@
     "tabSource": "Source",
     "converting": "Converting",
     "errorFailed": "Conversion failed",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Teams",
+        "body": "Convert entire folders of PDFs to Markdown in a single sitting."
+      },
+      {
+        "title": "Researchers",
+        "body": "Turn a whole library of papers into Markdown for notes or RAG."
+      },
+      {
+        "title": "Developers",
+        "body": "Bulk-convert docs into Markdown when migrating to a new system."
+      }
+    ],
     "howToName": "How to batch convert PDFs to Markdown",
     "howToSteps": [
       "Drop or select multiple PDF files, or click \"Try samples\".",
@@ -162,6 +177,21 @@
     "badge": "Text + Images",
     "h1": "PDF to Markdown with Images",
     "subtitle": "Convert a PDF to clean Markdown that keeps its pictures and charts — each image is extracted and placed inline where it belongs. Runs entirely in your browser.",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Report readers",
+        "body": "Keep charts and figures when turning business reports into Markdown."
+      },
+      {
+        "title": "Researchers",
+        "body": "Preserve diagrams and plots from papers right alongside the text."
+      },
+      {
+        "title": "Content teams",
+        "body": "Move illustrated PDFs into docs and wikis without losing the visuals."
+      }
+    ],
     "howToName": "How to convert a PDF to Markdown with images",
     "howToSteps": [
       "Drop your PDF, or click \"Try a sample\" to load a document with a chart.",
@@ -223,6 +253,21 @@
     "paperLetter": "Letter",
     "privacyBadge": "100% private — runs entirely in your browser",
     "docTitle": "document",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Writers & bloggers",
+        "body": "Turn Markdown drafts and README files into polished PDFs for sharing or printing."
+      },
+      {
+        "title": "Developers",
+        "body": "Export documentation and notes from Markdown to clean, paginated PDF."
+      },
+      {
+        "title": "Students",
+        "body": "Hand in Markdown-written notes and assignments as tidy PDF documents."
+      }
+    ],
     "howToName": "How to convert Markdown to PDF",
     "howToSteps": [
       "Write or paste your Markdown into the editor on the left.",
@@ -295,6 +340,21 @@
     "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
     "errorNoPages": "Could not read any pages from this PDF.",
     "errorFailed": "OCR failed. Please try another file.",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Archivists",
+        "body": "Digitize scanned books, receipts and old documents into editable Markdown."
+      },
+      {
+        "title": "Students",
+        "body": "Turn photographed lecture slides and handouts into searchable notes."
+      },
+      {
+        "title": "Offices",
+        "body": "Extract text from scanned contracts and forms without retyping."
+      }
+    ],
     "howToName": "How to convert a scanned PDF to Markdown",
     "howToSteps": [
       "Choose the document language, then drop your scanned or image-only PDF.",
@@ -379,7 +439,7 @@
     "actionCopied": "Copied",
     "actionDownload": "Download .md",
     "actionNewFile": "New file",
-    "warningNoText": "No text could be extracted. This may be a scanned or image-only PDF. OCR support is on the roadmap.",
+    "warningNoText": "No text could be extracted. This may be a scanned or image-only PDF — try our OCR converter, which recognizes text from scanned PDFs in your browser.",
     "warningNoTables": "No tables were detected in this PDF. Try the full converter, or check that the PDF has text-based tables with clear column spacing."
   },
   "Landing": {
@@ -558,7 +618,7 @@
     "faqs": [
       {
         "q": "What type of PDF works best?",
-        "a": "Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. Scanned or image-only PDFs need OCR, which is on our roadmap."
+        "a": "Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. For scanned or image-only PDFs, use our OCR converter, which recognizes the text in your browser."
       },
       {
         "q": "Is conversion really local?",
@@ -570,7 +630,7 @@
       },
       {
         "q": "Can I convert multiple PDFs at once?",
-        "a": "Not yet. Batch conversion is planned for a future release. For now, convert files one at a time — each run is free and unlimited."
+        "a": "Yes. Use our batch converter to drop many PDFs at once and download them all as a ZIP — free and unlimited, all in your browser."
       }
     ]
   },
