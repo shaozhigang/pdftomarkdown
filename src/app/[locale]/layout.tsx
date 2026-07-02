@@ -8,6 +8,7 @@ import "../globals.css";
 
 const GA_ID = "G-3ZRZ6Q2S78";
 const CLARITY_ID = "x1sgxuakjj";
+const ADSENSE_CLIENT = "ca-pub-9781504165951570";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,6 +39,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
