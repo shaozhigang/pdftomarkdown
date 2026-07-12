@@ -7,10 +7,89 @@
     "notion": "for Notion",
     "python": "with Python",
     "table": "Table Extractor",
+    "word": "PDF → Word",
     "mdToPdf": "Markdown → PDF",
     "ocr": "Scanned PDF (OCR)",
     "images": "with Images",
     "batch": "Batch Convert"
+  },
+  "PdfToWord": {
+    "metaTitle": "PDF to Word Converter — Free, Private & Local",
+    "metaDescription": "Convert PDF to editable Word (.docx) right in your browser. Keeps headings, lists, tables and images. 100% local — your file is never uploaded. Free and unlimited.",
+    "keywords": [
+      "pdf to word",
+      "pdf to docx",
+      "convert pdf to word",
+      "pdf to word converter",
+      "pdf to word online free",
+      "pdf to editable word"
+    ],
+    "badge": "PDF → Word · 100% local",
+    "h1": "PDF to Word Converter",
+    "subtitle": "Turn a PDF into a clean, editable Word (.docx) document — headings, lists, tables and images kept intact. Runs entirely in your browser, nothing is uploaded.",
+    "privacyBadge": "100% private — files never leave your browser",
+    "paneOriginal": "Original PDF",
+    "previewLabel": "Word preview",
+    "statusParsing": "Building Word document",
+    "statsInfo": "{pages} pages · {ms} ms",
+    "actionDownload": "Download .docx",
+    "actionNewFile": "New file",
+    "chooseAnother": "Choose another file",
+    "conversionFailed": "Conversion failed",
+    "warningNoText": "No text could be extracted. This may be a scanned or image-only PDF — try our OCR converter first, then export the Markdown.",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Office workers",
+        "body": "Turn contracts, reports and memos into editable Word docs without retyping."
+      },
+      {
+        "title": "Students",
+        "body": "Convert lecture PDFs into Word so you can annotate and rewrite them."
+      },
+      {
+        "title": "Writers & editors",
+        "body": "Bring PDF drafts into Word for collaboration, track-changes and final polish."
+      }
+    ],
+    "howToName": "How to convert a PDF to Word",
+    "howToSteps": [
+      "Drop your PDF into the converter above, or click to browse.",
+      "Review the structure preview — headings, lists, tables and images are detected locally in your browser.",
+      "Click Download .docx and open the file in Word, Google Docs or LibreOffice."
+    ],
+    "features": [
+      {
+        "title": "Editable .docx",
+        "body": "Output is a real Word document — not a flattened screenshot. Edit text, restyle headings and keep working in Word."
+      },
+      {
+        "title": "Structure preserved",
+        "body": "Headings, nested lists, tables and embedded images are mapped into native Word elements so the document stays useful."
+      },
+      {
+        "title": "100% private",
+        "body": "Parsing and .docx generation run locally in your browser. Your PDF never leaves your device — ideal for contracts and confidential reports."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is the PDF uploaded to a server?",
+        "a": "No. The PDF is parsed and the Word file is generated entirely in your browser. Nothing is sent to our servers, so sensitive documents stay on your device."
+      },
+      {
+        "q": "How faithful is the conversion?",
+        "a": "We preserve document structure — headings, paragraphs, lists, tables and images — into a clean, editable .docx. Exact pixel-level layout (multi-column pages, precise font positioning) is not reproduced; the goal is a usable Word file, not a visual clone."
+      },
+      {
+        "q": "What apps can open the .docx?",
+        "a": "Microsoft Word, Google Docs, LibreOffice Writer, WPS Office and any other app that supports the Open XML (.docx) format."
+      },
+      {
+        "q": "Does it work with scanned PDFs?",
+        "a": "Scanned or image-only PDFs have no text layer. Use our OCR converter to extract text first; this tool is for text-based PDFs."
+      }
+    ]
   },
   "Batch": {
     "metaTitle": "Batch PDF to Markdown — Convert Multiple PDFs at Once",

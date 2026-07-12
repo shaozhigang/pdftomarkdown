@@ -37,6 +37,7 @@ export interface RelatedPage {
 // ---- Navigation structure ----
 // Slugs for secondary (non-home) landing pages, used for sitemap and nav.
 export const SECONDARY_SLUGS = [
+  "pdf-to-word",
   "pdf-to-markdown-for-obsidian",
   "pdf-to-markdown-for-chatgpt",
   "pdf-table-to-markdown",
@@ -53,6 +54,7 @@ export const GUIDE_SLUGS = ["how-to-convert-pdf-to-markdown"] as const;
 
 // All tool pages, shown in the header "Tools" dropdown (msgKey -> Nav.*).
 export const TOOL_LINKS = [
+  { slug: "pdf-to-word", msgKey: "word" as const },
   { slug: "markdown-to-pdf", msgKey: "mdToPdf" as const },
   { slug: "scanned-pdf-to-markdown", msgKey: "ocr" as const },
   { slug: "pdf-to-markdown-with-images", msgKey: "images" as const },
