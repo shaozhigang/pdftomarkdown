@@ -51,10 +51,10 @@ export async function ContactPage({ locale }: ContactPageProps) {
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("h1")}
           </h1>
-          <p className="mt-4 text-slate-600">{t("intro")}</p>
+          <p className="mt-4 text-zinc-600">{t("intro")}</p>
         </header>
 
-        <section className="rounded-xl border border-slate-200 bg-white p-6">
+        <section className="rounded-md border border-zinc-200 bg-white p-6">
           <h2 className="text-lg font-semibold">{t("emailHeading")}</h2>
           <p className="mt-2">
             <a
@@ -64,14 +64,14 @@ export async function ContactPage({ locale }: ContactPageProps) {
               {CONTACT_EMAIL}
             </a>
           </p>
-          <p className="mt-3 text-sm text-slate-600">{t("responseTime")}</p>
+          <p className="mt-3 text-sm text-zinc-600">{t("responseTime")}</p>
         </section>
 
         <div className="mt-10 space-y-10">
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-xl font-semibold">{section.title}</h2>
-              <div className="mt-3 space-y-3 text-slate-600">
+              <div className="mt-3 space-y-3 text-zinc-600">
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
@@ -87,7 +87,7 @@ export async function ContactPage({ locale }: ContactPageProps) {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-500">
+        <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-zinc-500">
           <Link href="/about" className="text-brand-dark hover:underline">
             {t("aboutLink")}
           </Link>

@@ -111,8 +111,8 @@ export function OcrConverter() {
   return (
     <div className="w-full">
       <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-brand">
             <path
               d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
               stroke="currentColor"
@@ -133,7 +133,7 @@ export function OcrConverter() {
 
       {/* Language selector */}
       <div className="mb-3 flex items-center justify-center gap-2 text-sm">
-        <label htmlFor="ocr-lang" className="text-slate-600">
+        <label htmlFor="ocr-lang" className="text-zinc-600">
           {t("languageLabel")}
         </label>
         <select
@@ -141,7 +141,7 @@ export function OcrConverter() {
           value={lang}
           onChange={(e) => setLang(e.target.value)}
           disabled={status === "working"}
-          className="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-sm text-slate-700 outline-none focus:border-brand disabled:opacity-60"
+          className="rounded-md border border-zinc-300 bg-white px-2.5 py-1.5 text-sm text-zinc-700 outline-none focus:border-brand disabled:opacity-60"
         >
           {LANGUAGES.map((l) => (
             <option key={l.code} value={l.code}>
@@ -153,66 +153,93 @@ export function OcrConverter() {
 
       {(status === "idle" || status === "error") && (
         <>
-          <div
-            role="button"
-            tabIndex={0}
-            onClick={() => inputRef.current?.click()}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") inputRef.current?.click();
-            }}
-            onDragOver={(e) => {
-              e.preventDefault();
-              setDragging(true);
-            }}
-            onDragLeave={() => setDragging(false)}
-            onDrop={(e) => {
-              e.preventDefault();
-              setDragging(false);
-              handleFile(e.dataTransfer.files?.[0]);
-            }}
-            className={[
-              "flex cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed px-6 py-14 text-center transition",
-              dragging
-                ? "border-brand bg-indigo-50"
-                : "border-slate-300 bg-white hover:border-brand/60",
-            ].join(" ")}
-          >
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" className="text-brand">
-              <path
-                d="M12 16V4m0 0L8 8m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <p className="text-base font-medium">
-              {t("dropTitle")} <span className="text-brand">{t("dropClickBrowse")}</span>
-            </p>
-            <p className="text-sm text-slate-500">{t("dropSubtitle")}</p>
-            <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
-              <span>{t("samplePrompt")}</span>
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  trySample();
-                }}
-                className="inline-flex items-center gap-1 font-medium text-brand hover:text-brand-dark hover:underline"
+          <div className="rounded-lg border border-zinc-200 bg-white p-2 shadow-sm">
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={() => inputRef.current?.click()}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") inputRef.current?.click();
+              }}
+              onDragOver={(e) => {
+                e.preventDefault();
+                setDragging(true);
+              }}
+              onDragLeave={() => setDragging(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragging(false);
+                handleFile(e.dataTransfer.files?.[0]);
+              }}
+              className={[
+                "flex cursor-pointer flex-col items-center justify-center gap-4 rounded-md border-2 border-dashed px-6 py-12 text-center transition-colors",
+                dragging
+                  ? "border-brand bg-teal-50/60"
+                  : "border-zinc-300 bg-white hover:border-zinc-400",
+              ].join(" ")}
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                className={`transition-transform ${
+                  dragging ? "scale-110 text-brand" : "text-zinc-400"
+                }`}
               >
-                {t("trySample")}
-                <span aria-hidden="true">→</span>
-              </button>
+                <path
+                  d="M12 16V4m0 0L8 8m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div className="space-y-3">
+                <p className="text-base font-medium text-zinc-900">{t("dropTitle")}</p>
+                <span className="inline-flex items-center gap-2 rounded-md bg-zinc-950 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800">
+                  {t("dropClickBrowse")}
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-1.5">
+                {t("dropSubtitle")
+                  .split("·")
+                  .map((s) => s.trim())
+                  .filter(Boolean)
+                  .map((spec) => (
+                    <span
+                      key={spec}
+                      className="rounded bg-zinc-100 px-2 py-0.5 font-mono text-[11px] text-zinc-600"
+                    >
+                      {spec}
+                    </span>
+                  ))}
+              </div>
+              <div className="flex items-center gap-1.5 text-sm text-zinc-500">
+                <span>{t("samplePrompt")}</span>
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    trySample();
+                  }}
+                  className="inline-flex items-center gap-1 font-medium text-brand hover:text-brand-dark hover:underline"
+                >
+                  {t("trySample")}
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+              <input
+                ref={inputRef}
+                type="file"
+                accept="application/pdf,.pdf"
+                className="hidden"
+                onChange={(e) => handleFile(e.target.files?.[0])}
+              />
             </div>
-            <input
-              ref={inputRef}
-              type="file"
-              accept="application/pdf,.pdf"
-              className="hidden"
-              onChange={(e) => handleFile(e.target.files?.[0])}
-            />
           </div>
-          <p className="mt-2 text-center text-xs text-slate-400">{t("modelNote")}</p>
+          <p className="mt-2 text-center font-mono text-xs text-zinc-400">{t("modelNote")}</p>
           {status === "error" && errorMsg && (
             <p className="mt-2 text-center text-sm text-red-600">{errorMsg}</p>
           )}
@@ -222,16 +249,16 @@ export function OcrConverter() {
       {(status === "working" || status === "done") && (
         <div className="grid gap-4 lg:grid-cols-2">
           {/* Left: original pages */}
-          <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
-            <div className="flex items-center justify-between border-b border-slate-200 bg-white px-4 py-2.5">
-              <span className="text-sm font-medium text-slate-700">{t("paneOriginal")}</span>
-              <span className="max-w-[60%] truncate text-xs text-slate-400">{fileName}</span>
+          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-zinc-50">
+            <div className="flex items-center justify-between border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+              <span className="text-sm font-medium text-zinc-700">{t("paneOriginal")}</span>
+              <span className="max-w-[60%] truncate font-mono text-xs text-zinc-400">{fileName}</span>
             </div>
             <div className="max-h-[60vh] overflow-auto p-3">
               {pages.length === 0 ? (
-                <div className="flex min-h-[180px] items-center justify-center gap-3 text-slate-400">
+                <div className="flex min-h-[180px] items-center justify-center gap-3 text-zinc-400">
                   <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                  <span className="text-sm">{t("rendering")} …</span>
+                  <span className="font-mono text-xs">{t("rendering")} …</span>
                 </div>
               ) : (
                 <div className="space-y-3">
@@ -240,7 +267,7 @@ export function OcrConverter() {
                       key={p.pageNumber}
                       src={p.dataUrl}
                       alt={`Page ${p.pageNumber}`}
-                      className="mx-auto w-full rounded-md border border-slate-200 bg-white shadow-sm"
+                      className="mx-auto w-full rounded border border-zinc-200 bg-white shadow-sm"
                     />
                   ))}
                 </div>
@@ -249,21 +276,25 @@ export function OcrConverter() {
           </div>
 
           {/* Right: recognized Markdown */}
-          <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-4 py-2.5">
-              <div className="inline-flex rounded-lg bg-slate-100 p-0.5 text-sm">
+          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+              <div className="inline-flex rounded-md border border-zinc-200 bg-white p-0.5 text-sm">
                 <button
                   onClick={() => setTab("preview")}
-                  className={`rounded-md px-3 py-1 ${
-                    tab === "preview" ? "bg-white shadow-sm" : "text-slate-500"
+                  className={`rounded px-3 py-1 ${
+                    tab === "preview"
+                      ? "bg-zinc-950 font-medium text-white"
+                      : "text-zinc-500 hover:text-zinc-800"
                   }`}
                 >
                   {t("tabPreview")}
                 </button>
                 <button
                   onClick={() => setTab("source")}
-                  className={`rounded-md px-3 py-1 ${
-                    tab === "source" ? "bg-white shadow-sm" : "text-slate-500"
+                  className={`rounded px-3 py-1 ${
+                    tab === "source"
+                      ? "bg-zinc-950 font-medium text-white"
+                      : "text-zinc-500 hover:text-zinc-800"
                   }`}
                 >
                   {t("tabSource")}
@@ -274,13 +305,13 @@ export function OcrConverter() {
                   <ResultActions markdown={markdown} fileName={fileName} />
                   <button
                     onClick={reset}
-                    className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+                    className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-50"
                   >
                     {t("actionNewFile")}
                   </button>
                 </div>
               ) : (
-                <span className="text-xs text-slate-400">
+                <span className="font-mono text-xs text-zinc-400">
                   {progress
                     ? t("ocrProgress", {
                         page: progress.page,
@@ -293,7 +324,7 @@ export function OcrConverter() {
             </div>
 
             {status === "working" && (
-              <div className="h-1 w-full bg-slate-100">
+              <div className="h-1 w-full bg-zinc-100">
                 <div
                   className="h-1 bg-brand transition-all"
                   style={{
@@ -314,14 +345,14 @@ export function OcrConverter() {
                 tab === "preview" ? (
                   <MarkdownPreview markdown={markdown} />
                 ) : (
-                  <pre className="whitespace-pre-wrap break-words font-mono text-xs text-slate-700">
+                  <pre className="whitespace-pre-wrap break-words font-mono text-xs text-zinc-700">
                     {markdown}
                   </pre>
                 )
               ) : (
-                <div className="flex min-h-[180px] items-center justify-center gap-3 text-slate-400">
+                <div className="flex min-h-[180px] items-center justify-center gap-3 text-zinc-400">
                   <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                  <span className="text-sm">{t("recognizing")} …</span>
+                  <span className="font-mono text-xs">{t("recognizing")} …</span>
                 </div>
               )}
             </div>

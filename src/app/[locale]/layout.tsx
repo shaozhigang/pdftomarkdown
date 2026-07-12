@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/landing";
 import "../globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 const GA_ID = "G-3ZRZ6Q2S78";
 const CLARITY_ID = "x1sgxuakjj";
@@ -37,7 +50,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
         <Script
           async
@@ -67,7 +80,7 @@ export default async function LocaleLayout({
           `}
         </Script>
       </head>
-      <body className="bg-slate-50 text-slate-900 antialiased">
+      <body className="bg-white font-sans text-zinc-950 antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

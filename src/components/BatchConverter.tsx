@@ -154,8 +154,8 @@ export function BatchConverter() {
   return (
     <div className="w-full">
       <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-brand">
             <path
               d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
               stroke="currentColor"
@@ -175,7 +175,7 @@ export function BatchConverter() {
       </div>
 
       {items.length === 0 ? (
-        <>
+        <div className="rounded-lg border border-zinc-200 bg-white p-2 shadow-sm">
           <div
             role="button"
             tabIndex={0}
@@ -194,13 +194,22 @@ export function BatchConverter() {
               onInput(e.dataTransfer.files);
             }}
             className={[
-              "flex cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed px-6 py-14 text-center transition",
+              "flex cursor-pointer flex-col items-center justify-center gap-4 rounded-md border-2 border-dashed px-6 py-12 text-center transition-colors",
               dragging
-                ? "border-brand bg-indigo-50"
-                : "border-slate-300 bg-white hover:border-brand/60",
+                ? "border-brand bg-teal-50/60"
+                : "border-zinc-300 bg-white hover:border-zinc-400",
             ].join(" ")}
           >
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" className="text-brand">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              className={`transition-transform ${
+                dragging ? "scale-110 text-brand" : "text-zinc-400"
+              }`}
+            >
               <path
                 d="M12 16V4m0 0L8 8m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
                 stroke="currentColor"
@@ -209,11 +218,27 @@ export function BatchConverter() {
                 strokeLinejoin="round"
               />
             </svg>
-            <p className="text-base font-medium">
-              {t("dropTitle")} <span className="text-brand">{t("dropClickBrowse")}</span>
-            </p>
-            <p className="text-sm text-slate-500">{t("dropSubtitle")}</p>
-            <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
+            <div className="space-y-3">
+              <p className="text-base font-medium text-zinc-900">{t("dropTitle")}</p>
+              <span className="inline-flex items-center gap-2 rounded-md bg-zinc-950 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800">
+                {t("dropClickBrowse")}
+              </span>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-1.5">
+              {t("dropSubtitle")
+                .split("·")
+                .map((s) => s.trim())
+                .filter(Boolean)
+                .map((spec) => (
+                  <span
+                    key={spec}
+                    className="rounded bg-zinc-100 px-2 py-0.5 font-mono text-[11px] text-zinc-600"
+                  >
+                    {spec}
+                  </span>
+                ))}
+            </div>
+            <div className="flex items-center gap-1.5 text-sm text-zinc-500">
               <span>{t("samplePrompt")}</span>
               <button
                 type="button"
@@ -236,25 +261,25 @@ export function BatchConverter() {
               onChange={(e) => onInput(e.target.files)}
             />
           </div>
-        </>
+        </div>
       ) : (
         <div className="grid gap-4 lg:grid-cols-2">
           {/* Left: queue */}
-          <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-4 py-2.5">
-              <span className="text-sm font-medium text-slate-700">
+          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+              <span className="text-sm font-medium text-zinc-700">
                 {t("filesCount", { done: doneCount, total: items.length })}
               </span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => inputRef.current?.click()}
-                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+                  className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-50"
                 >
                   {t("addMore")}
                 </button>
                 <button
                   onClick={clearAll}
-                  className="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
+                  className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-50"
                 >
                   {t("clear")}
                 </button>
@@ -268,20 +293,20 @@ export function BatchConverter() {
                 />
               </div>
             </div>
-            <ul className="max-h-[52vh] divide-y divide-slate-100 overflow-auto">
+            <ul className="max-h-[52vh] divide-y divide-zinc-100 overflow-auto">
               {items.map((it) => (
                 <li key={it.id}>
                   <button
                     onClick={() => setSelectedId(it.id)}
-                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-left transition hover:bg-slate-50 ${
-                      selectedId === it.id ? "bg-indigo-50/60" : ""
+                    className={`flex w-full items-center gap-3 px-4 py-2.5 text-left transition hover:bg-zinc-50 ${
+                      selectedId === it.id ? "bg-zinc-100" : ""
                     }`}
                   >
                     <StatusIcon status={it.status} />
-                    <span className="min-w-0 flex-1 truncate text-sm text-slate-700">
+                    <span className="min-w-0 flex-1 truncate text-sm text-zinc-700">
                       {it.name}
                     </span>
-                    <span className="shrink-0 text-xs text-slate-400">
+                    <span className="shrink-0 font-mono text-xs text-zinc-400">
                       {it.status === "done" && it.result
                         ? t("pagesShort", { pages: it.result.stats.pages })
                         : t(`status_${it.status}`)}
@@ -290,11 +315,11 @@ export function BatchConverter() {
                 </li>
               ))}
             </ul>
-            <div className="border-t border-slate-100 p-3">
+            <div className="border-t border-zinc-100 p-3">
               <button
                 onClick={downloadZip}
                 disabled={doneCount === 0 || zipping}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-brand px-3 py-2 text-sm font-medium text-white hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-60"
+                className="flex w-full items-center justify-center gap-2 rounded-md bg-zinc-950 px-3 py-2 text-sm font-medium text-white hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
@@ -310,7 +335,7 @@ export function BatchConverter() {
                   : t("downloadZip", { count: doneCount })}
               </button>
               {converting && (
-                <p className="mt-2 text-center text-xs text-slate-400">
+                <p className="mt-2 text-center font-mono text-xs text-zinc-400">
                   {t("convertingHint")}
                 </p>
               )}
@@ -318,21 +343,25 @@ export function BatchConverter() {
           </div>
 
           {/* Right: preview of selected file */}
-          <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-4 py-2.5">
-              <div className="inline-flex rounded-lg bg-slate-100 p-0.5 text-sm">
+          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+              <div className="inline-flex rounded-md border border-zinc-200 bg-white p-0.5 text-sm">
                 <button
                   onClick={() => setTab("preview")}
-                  className={`rounded-md px-3 py-1 ${
-                    tab === "preview" ? "bg-white shadow-sm" : "text-slate-500"
+                  className={`rounded px-3 py-1 ${
+                    tab === "preview"
+                      ? "bg-zinc-950 font-medium text-white"
+                      : "text-zinc-500 hover:text-zinc-800"
                   }`}
                 >
                   {t("tabPreview")}
                 </button>
                 <button
                   onClick={() => setTab("source")}
-                  className={`rounded-md px-3 py-1 ${
-                    tab === "source" ? "bg-white shadow-sm" : "text-slate-500"
+                  className={`rounded px-3 py-1 ${
+                    tab === "source"
+                      ? "bg-zinc-950 font-medium text-white"
+                      : "text-zinc-500 hover:text-zinc-800"
                   }`}
                 >
                   {t("tabSource")}
@@ -347,7 +376,7 @@ export function BatchConverter() {
                 tab === "preview" ? (
                   <MarkdownPreview markdown={selected.markdown} />
                 ) : (
-                  <pre className="whitespace-pre-wrap break-words font-mono text-xs text-slate-700">
+                  <pre className="whitespace-pre-wrap break-words font-mono text-xs text-zinc-700">
                     {selected.markdown}
                   </pre>
                 )
@@ -356,9 +385,9 @@ export function BatchConverter() {
                   {t("errorFailed")}: {selected.error}
                 </p>
               ) : (
-                <div className="flex min-h-[180px] items-center justify-center gap-3 text-slate-400">
+                <div className="flex min-h-[180px] items-center justify-center gap-3 text-zinc-400">
                   <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                  <span className="text-sm">{t("converting")} …</span>
+                  <span className="font-mono text-xs">{t("converting")} …</span>
                 </div>
               )}
             </div>
@@ -372,7 +401,7 @@ export function BatchConverter() {
 function StatusIcon({ status }: { status: ItemStatus }) {
   if (status === "done") {
     return (
-      <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-emerald-100 text-emerald-700">
+      <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-teal-100 text-brand-dark">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
             d="m5 13 4 4L19 7"
@@ -399,5 +428,5 @@ function StatusIcon({ status }: { status: ItemStatus }) {
       <span className="h-5 w-5 shrink-0 animate-spin rounded-full border-2 border-brand border-t-transparent" />
     );
   }
-  return <span className="h-5 w-5 shrink-0 rounded-full border-2 border-slate-200" />;
+  return <span className="h-5 w-5 shrink-0 rounded-full border-2 border-zinc-200" />;
 }

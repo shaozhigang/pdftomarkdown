@@ -12,6 +12,33 @@ body {
   margin: 0;
 }
 
+/* Subtle dot-grid texture behind the hero, fading out toward the edges. */
+.hero-dots {
+  background-image: radial-gradient(circle, rgb(212 212 216) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 20%, black 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 90% at 50% 20%, black 30%, transparent 100%);
+}
+
+/* FAQ disclosure: monospace +/− indicator instead of the default marker. */
+details.faq > summary {
+  list-style: none;
+}
+details.faq > summary::-webkit-details-marker {
+  display: none;
+}
+details.faq > summary::after {
+  content: "+";
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 1rem;
+  line-height: 1;
+  color: #a1a1aa;
+  flex-shrink: 0;
+}
+details.faq[open] > summary::after {
+  content: "−";
+}
+
 .prose-md h1,
 .prose-md h2,
 .prose-md h3 {

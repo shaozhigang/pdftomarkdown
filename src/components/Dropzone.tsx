@@ -64,81 +64,106 @@ export function Dropzone({
     }
   }, [disabled, loadingSample, onFile, profile, tExamples]);
 
+  const specs = t(`dropSubtitle_${profile}`)
+    .split("·")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
   return (
     <div className="w-full">
-      <div
-        role="button"
-        tabIndex={0}
-        onClick={() => !disabled && inputRef.current?.click()}
-        onKeyDown={(e) => {
-          if ((e.key === "Enter" || e.key === " ") && !disabled)
-            inputRef.current?.click();
-        }}
-        onDragOver={(e) => {
-          e.preventDefault();
-          if (!disabled) setDragging(true);
-        }}
-        onDragLeave={() => setDragging(false)}
-        onDrop={(e) => {
-          e.preventDefault();
-          setDragging(false);
-          if (disabled) return;
-          handleFile(e.dataTransfer.files?.[0]);
-        }}
-        className={[
-          "flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed px-6 py-14 text-center transition",
-          dragging
-            ? "border-brand bg-indigo-50"
-            : "border-slate-300 bg-white hover:border-brand/60",
-          disabled ? "cursor-not-allowed opacity-60" : "cursor-pointer",
-        ].join(" ")}
-      >
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          className="text-brand"
+      <div className="rounded-lg border border-zinc-200 bg-white p-2 shadow-sm">
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={() => !disabled && inputRef.current?.click()}
+          onKeyDown={(e) => {
+            if ((e.key === "Enter" || e.key === " ") && !disabled)
+              inputRef.current?.click();
+          }}
+          onDragOver={(e) => {
+            e.preventDefault();
+            if (!disabled) setDragging(true);
+          }}
+          onDragLeave={() => setDragging(false)}
+          onDrop={(e) => {
+            e.preventDefault();
+            setDragging(false);
+            if (disabled) return;
+            handleFile(e.dataTransfer.files?.[0]);
+          }}
+          className={[
+            "flex flex-col items-center justify-center gap-4 rounded-md border-2 border-dashed px-6 py-12 text-center transition-colors",
+            dragging
+              ? "border-brand bg-teal-50/60"
+              : "border-zinc-300 bg-white hover:border-zinc-400",
+            disabled ? "cursor-not-allowed opacity-60" : "cursor-pointer",
+          ].join(" ")}
         >
-          <path
-            d="M12 16V4m0 0L8 8m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        <p className="text-base font-medium">
-          {t(`dropTitle_${profile}`)}{" "}
-          <span className="text-brand">{t("dropClickBrowse")}</span>
-        </p>
-        <p className="text-sm text-slate-500">
-          {t(`dropSubtitle_${profile}`)}
-        </p>
-
-        <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-500">
-          <span>{tExamples("samplePrompt")}</span>
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              trySample();
-            }}
-            disabled={disabled || loadingSample}
-            className="inline-flex items-center gap-1 font-medium text-brand transition hover:text-brand-dark hover:underline disabled:cursor-not-allowed disabled:opacity-60"
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+            className={`transition-transform ${
+              dragging ? "scale-110 text-brand" : "text-zinc-400"
+            }`}
           >
-            {loadingSample ? tExamples("loadingSample") : tExamples("trySample")}
-            {!loadingSample && <span aria-hidden="true">→</span>}
-          </button>
-        </div>
+            <path
+              d="M12 16V4m0 0L8 8m4-4 4 4M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
 
-        <input
-          ref={inputRef}
-          type="file"
-          accept="application/pdf,.pdf"
-          className="hidden"
-          onChange={(e) => handleFile(e.target.files?.[0])}
-        />
+          <div className="space-y-3">
+            <p className="text-base font-medium text-zinc-900">
+              {t(`dropTitle_${profile}`)}
+            </p>
+            <span className="inline-flex items-center gap-2 rounded-md bg-zinc-950 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800">
+              {t("dropClickBrowse")}
+            </span>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-1.5">
+            {specs.map((spec) => (
+              <span
+                key={spec}
+                className="rounded bg-zinc-100 px-2 py-0.5 font-mono text-[11px] text-zinc-600"
+              >
+                {spec}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-1.5 text-sm text-zinc-500">
+            <span>{tExamples("samplePrompt")}</span>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                trySample();
+              }}
+              disabled={disabled || loadingSample}
+              className="inline-flex items-center gap-1 font-medium text-brand transition hover:text-brand-dark hover:underline disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {loadingSample
+                ? tExamples("loadingSample")
+                : tExamples("trySample")}
+              {!loadingSample && <span aria-hidden="true">→</span>}
+            </button>
+          </div>
+
+          <input
+            ref={inputRef}
+            type="file"
+            accept="application/pdf,.pdf"
+            className="hidden"
+            onChange={(e) => handleFile(e.target.files?.[0])}
+          />
+        </div>
       </div>
 
       {error && <p className="mt-2 text-center text-sm text-red-600">{error}</p>}

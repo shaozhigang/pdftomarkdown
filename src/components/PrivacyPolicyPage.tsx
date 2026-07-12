@@ -20,15 +20,15 @@ export async function PrivacyPolicyPage() {
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             {t("h1")}
           </h1>
-          <p className="mt-3 text-sm text-slate-500">{t("lastUpdated")}</p>
-          <p className="mt-4 text-slate-600">{t("intro")}</p>
+          <p className="mt-3 font-mono text-xs text-zinc-500">{t("lastUpdated")}</p>
+          <p className="mt-4 text-zinc-600">{t("intro")}</p>
         </header>
 
         <div className="space-y-10">
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-xl font-semibold">{section.title}</h2>
-              <div className="mt-3 space-y-3 text-slate-600">
+              <div className="mt-3 space-y-3 text-zinc-600">
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}

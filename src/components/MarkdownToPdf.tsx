@@ -13,7 +13,7 @@ const PRINT_CSS = `
   h1, h2, h3, h4 { font-weight: 700; line-height: 1.25; margin: 1.2em 0 0.5em; }
   h1 { font-size: 1.9rem; } h2 { font-size: 1.5rem; } h3 { font-size: 1.2rem; }
   p { margin: 0.6em 0; }
-  a { color: #4f46e5; }
+  a { color: #0d9488; }
   ul, ol { margin: 0.6em 0; padding-left: 1.4em; }
   li { margin: 0.2em 0; }
   blockquote { margin: 0.8em 0; padding: 0.2em 1em; border-left: 4px solid #e5e7eb; color: #4b5563; }
@@ -50,8 +50,8 @@ export function MarkdownToPdf() {
   return (
     <div className="w-full">
       <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-brand">
             <path
               d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
               stroke="currentColor"
@@ -72,36 +72,38 @@ export function MarkdownToPdf() {
 
       <div className="grid gap-4 lg:grid-cols-2">
         {/* Editor */}
-        <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
-          <div className="flex items-center justify-between border-b border-slate-100 px-4 py-2.5">
-            <span className="text-sm font-medium text-slate-700">
+        <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
+          <div className="flex items-center justify-between border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+            <span className="text-sm font-medium text-zinc-700">
               {t("editorLabel")}
             </span>
-            <span className="text-xs text-slate-400">{md.length}</span>
+            <span className="font-mono text-xs text-zinc-400">{md.length}</span>
           </div>
           <textarea
             value={md}
             onChange={(e) => setMd(e.target.value)}
             spellCheck={false}
             placeholder={t("placeholder")}
-            className="h-[60vh] w-full resize-none p-4 font-mono text-sm text-slate-800 outline-none"
+            className="h-[60vh] w-full resize-none p-4 font-mono text-sm text-zinc-800 outline-none"
           />
         </div>
 
         {/* Preview */}
-        <div className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-4 py-2.5">
-            <span className="text-sm font-medium text-slate-700">
+        <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+            <span className="text-sm font-medium text-zinc-700">
               {t("previewLabel")}
             </span>
             <div className="flex items-center gap-2">
-              <div className="inline-flex rounded-lg bg-slate-100 p-0.5 text-xs">
+              <div className="inline-flex rounded-md border border-zinc-200 bg-white p-0.5 font-mono text-xs">
                 {(["a4", "letter"] as Paper[]).map((p) => (
                   <button
                     key={p}
                     onClick={() => setPaper(p)}
-                    className={`rounded-md px-2.5 py-1 ${
-                      paper === p ? "bg-white shadow-sm" : "text-slate-500"
+                    className={`rounded px-2.5 py-1 ${
+                      paper === p
+                        ? "bg-zinc-950 font-medium text-white"
+                        : "text-zinc-500 hover:text-zinc-800"
                     }`}
                   >
                     {t(p === "a4" ? "paperA4" : "paperLetter")}
@@ -110,7 +112,7 @@ export function MarkdownToPdf() {
               </div>
               <button
                 onClick={downloadPdf}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-brand px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-dark"
+                className="inline-flex items-center gap-1.5 rounded-md bg-zinc-950 px-3 py-1.5 text-sm font-medium text-white hover:bg-zinc-800"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path

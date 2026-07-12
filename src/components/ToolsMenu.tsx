@@ -33,7 +33,7 @@ export function ToolsMenu() {
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="true"
         aria-expanded={open}
-        className="flex items-center gap-1 rounded-md px-2.5 py-1.5 text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+        className="flex items-center gap-1 rounded-md px-2.5 py-1.5 text-sm text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
       >
         {t("tools")}
         <svg
@@ -55,13 +55,13 @@ export function ToolsMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 z-30 mt-2 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-lg">
+        <div className="absolute right-0 z-30 mt-2 w-64 rounded-md border border-zinc-200 bg-white p-1.5 shadow-lg">
           {TOOL_LINKS.map((item) => (
             <Link
               key={item.slug}
               href={`/${item.slug}`}
               onClick={() => setOpen(false)}
-              className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-brand-dark"
+              className="block rounded px-3 py-2 text-sm text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950"
             >
               {t(item.msgKey)}
             </Link>

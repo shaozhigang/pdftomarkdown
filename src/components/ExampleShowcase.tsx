@@ -15,25 +15,29 @@ export async function ExampleShowcase({ profile }: ExampleShowcaseProps) {
 
   return (
     <section className="mt-14">
-      <h2 className="mb-6 text-xl font-semibold">{t("title")}</h2>
+      <h2 className="mb-6 text-xl font-semibold tracking-tight">{t("title")}</h2>
 
       <div className="grid gap-6 sm:grid-cols-2">
-        <ol className="space-y-4">
+        <ol className="space-y-5">
           {steps.map((step, i) => (
             <li key={i} className="flex gap-3">
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-semibold text-white">
-                {i + 1}
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded border border-zinc-200 bg-zinc-50 font-mono text-xs font-medium text-brand-dark">
+                {String(i + 1).padStart(2, "0")}
               </span>
-              <p className="pt-0.5 text-sm text-slate-600">{step}</p>
+              <p className="pt-1 text-sm text-zinc-600">{step}</p>
             </li>
           ))}
         </ol>
 
-        <div className="rounded-xl border border-slate-200 bg-slate-50">
-          <div className="border-b border-slate-200 px-4 py-2.5">
-            <span className="text-sm font-medium text-slate-700">
-              {t("resultTitle")}
+        <div className="overflow-hidden rounded-md border border-zinc-200 bg-white">
+          <div className="flex items-center gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+            <span className="flex gap-1.5" aria-hidden="true">
+              <span className="h-2.5 w-2.5 rounded-full bg-zinc-300" />
+              <span className="h-2.5 w-2.5 rounded-full bg-zinc-300" />
+              <span className="h-2.5 w-2.5 rounded-full bg-zinc-300" />
             </span>
+            <span className="font-mono text-xs text-zinc-500">output.md</span>
+            <span className="sr-only">{t("resultTitle")}</span>
           </div>
           <div className="max-h-64 overflow-auto p-4">
             <MarkdownPreview markdown={resultPreview} />
@@ -43,7 +47,7 @@ export async function ExampleShowcase({ profile }: ExampleShowcaseProps) {
 
       {profile === "general" && (
         <div className="mt-8">
-          <h3 className="mb-3 text-base font-semibold text-slate-800">
+          <h3 className="mb-3 text-base font-semibold tracking-tight text-zinc-800">
             {t("specializedTitle")}
           </h3>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -51,12 +55,12 @@ export async function ExampleShowcase({ profile }: ExampleShowcaseProps) {
               <Link
                 key={link.profile}
                 href={`/${link.slug}`}
-                className="rounded-lg border border-slate-200 bg-white p-4 transition hover:border-brand/60 hover:shadow-sm"
+                className="group rounded-md border border-zinc-200 bg-white p-4 transition hover:border-zinc-400 hover:bg-zinc-50"
               >
-                <span className="font-medium text-brand-dark">
+                <span className="font-medium text-zinc-900 group-hover:text-brand-dark">
                   {t(`cards.${link.msgKey}.title`)}
                 </span>
-                <p className="mt-1 text-sm text-slate-600">
+                <p className="mt-1 text-sm text-zinc-600">
                   {t(`cards.${link.msgKey}.subtitle`)}
                 </p>
               </Link>

@@ -49,7 +49,7 @@ export function LocaleSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="flex items-center gap-1 rounded px-1.5 py-0.5 font-medium ring-1 ring-brand text-brand transition hover:bg-indigo-50"
+        className="flex items-center gap-1 rounded border border-zinc-300 px-1.5 py-0.5 font-mono font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900"
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-label="Select language"
@@ -73,7 +73,7 @@ export function LocaleSwitcher() {
         <ul
           role="listbox"
           aria-label="Languages"
-          className="absolute right-0 z-50 mt-1 min-w-[9rem] overflow-hidden rounded-md border border-slate-200 bg-white py-1 shadow-lg"
+          className="absolute right-0 z-50 mt-1 min-w-[9rem] overflow-hidden rounded-md border border-zinc-200 bg-white py-1 shadow-lg"
         >
           {routing.locales.map((l) => {
             const label = LOCALE_LABELS[l] ?? {
@@ -89,8 +89,8 @@ export function LocaleSwitcher() {
                   onClick={() => switchLocale(l)}
                   className={`flex w-full items-center justify-between px-3 py-1.5 text-left transition ${
                     selected
-                      ? "bg-indigo-50 font-medium text-brand"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                      ? "bg-zinc-100 font-medium text-zinc-950"
+                      : "text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900"
                   }`}
                 >
                   <span>{label.native}</span>

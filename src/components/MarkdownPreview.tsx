@@ -14,7 +14,7 @@ function urlTransform(url: string): string {
 
 export function MarkdownPreview({ markdown }: { markdown: string }) {
   return (
-    <div className="prose-md max-w-none text-sm text-slate-800">
+    <div className="prose-md max-w-none text-sm text-zinc-800">
       <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
         {markdown}
       </ReactMarkdown>
