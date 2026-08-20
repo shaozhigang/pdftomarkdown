@@ -15,14 +15,14 @@ const SAMPLE_PDF = "/samples/demo-article.pdf";
 
 const LANGUAGES: { code: string; label: string }[] = [
   { code: "eng", label: "English" },
-  { code: "chi_sim", label: "中文 (简体)" },
-  { code: "chi_tra", label: "中文 (繁體)" },
-  { code: "spa", label: "Español" },
-  { code: "fra", label: "Français" },
+  { code: "chi_sim", label: "ä¸­ć (çŽä˝)" },
+  { code: "chi_tra", label: "ä¸­ć (çšéŤ)" },
+  { code: "spa", label: "EspaĂąol" },
+  { code: "fra", label: "FranĂ§ais" },
   { code: "deu", label: "Deutsch" },
-  { code: "jpn", label: "日本語" },
-  { code: "kor", label: "한국어" },
-  { code: "rus", label: "Русский" },
+  { code: "jpn", label: "ćĽćŹčŞ" },
+  { code: "kor", label: "íęľ­ě´" },
+  { code: "rus", label: "Đ ŃŃŃĐşĐ¸Đš" },
 ];
 
 export function OcrConverter() {
@@ -111,8 +111,8 @@ export function OcrConverter() {
   return (
     <div className="w-full">
       <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-brand">
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-home-muted">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-home-md-bright">
             <path
               d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
               stroke="currentColor"
@@ -153,7 +153,7 @@ export function OcrConverter() {
 
       {(status === "idle" || status === "error") && (
         <>
-          <div className="rounded-lg border border-zinc-200 bg-white p-2 shadow-sm">
+          <div className="rounded-2xl border border-black/10 bg-home-white p-2 shadow-home">
             <div
               role="button"
               tabIndex={0}
@@ -204,7 +204,7 @@ export function OcrConverter() {
               </div>
               <div className="flex flex-wrap items-center justify-center gap-1.5">
                 {t("dropSubtitle")
-                  .split("·")
+                  .split("Âˇ")
                   .map((s) => s.trim())
                   .filter(Boolean)
                   .map((spec) => (
@@ -227,7 +227,7 @@ export function OcrConverter() {
                   className="inline-flex items-center gap-1 font-medium text-brand hover:text-brand-dark hover:underline"
                 >
                   {t("trySample")}
-                  <span aria-hidden="true">→</span>
+                  <span aria-hidden="true">â</span>
                 </button>
               </div>
               <input
@@ -249,8 +249,8 @@ export function OcrConverter() {
       {(status === "working" || status === "done") && (
         <div className="grid gap-4 lg:grid-cols-2">
           {/* Left: original pages */}
-          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-zinc-50">
-            <div className="flex items-center justify-between border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-paper shadow-sm">
+            <div className="flex items-center justify-between border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
               <span className="text-sm font-medium text-zinc-700">{t("paneOriginal")}</span>
               <span className="max-w-[60%] truncate font-mono text-xs text-zinc-400">{fileName}</span>
             </div>
@@ -258,7 +258,7 @@ export function OcrConverter() {
               {pages.length === 0 ? (
                 <div className="flex min-h-[180px] items-center justify-center gap-3 text-zinc-400">
                   <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                  <span className="font-mono text-xs">{t("rendering")} …</span>
+                  <span className="font-mono text-xs">{t("rendering")} âŚ</span>
                 </div>
               ) : (
                 <div className="space-y-3">
@@ -276,8 +276,8 @@ export function OcrConverter() {
           </div>
 
           {/* Right: recognized Markdown */}
-          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-white shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
               <div className="inline-flex rounded-md border border-zinc-200 bg-white p-0.5 text-sm">
                 <button
                   onClick={() => setTab("preview")}
@@ -352,7 +352,7 @@ export function OcrConverter() {
               ) : (
                 <div className="flex min-h-[180px] items-center justify-center gap-3 text-zinc-400">
                   <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
-                  <span className="font-mono text-xs">{t("recognizing")} …</span>
+                  <span className="font-mono text-xs">{t("recognizing")} âŚ</span>
                 </div>
               )}
             </div>

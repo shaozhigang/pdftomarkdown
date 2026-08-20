@@ -46,32 +46,32 @@ export async function ContactPage({ locale }: ContactPageProps) {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-4 py-12">
+      <main className="bg-home-paper mx-auto max-w-3xl px-4 py-12 pb-16">
         <header className="mb-10">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-home-ink sm:text-4xl">
             {t("h1")}
           </h1>
-          <p className="mt-4 text-zinc-600">{t("intro")}</p>
+          <p className="mt-4 text-home-ink-soft">{t("intro")}</p>
         </header>
 
-        <section className="rounded-md border border-zinc-200 bg-white p-6">
+        <section className="rounded-2xl border border-black/10 bg-home-white p-6 shadow-sm">
           <h2 className="text-lg font-semibold">{t("emailHeading")}</h2>
           <p className="mt-2">
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="text-brand-dark hover:underline"
+              className="text-home-md hover:text-home-md-bright hover:underline"
             >
               {CONTACT_EMAIL}
             </a>
           </p>
-          <p className="mt-3 text-sm text-zinc-600">{t("responseTime")}</p>
+          <p className="mt-3 text-sm text-home-ink-soft">{t("responseTime")}</p>
         </section>
 
         <div className="mt-10 space-y-10">
           {sections.map((section) => (
             <section key={section.title}>
               <h2 className="text-xl font-semibold">{section.title}</h2>
-              <div className="mt-3 space-y-3 text-zinc-600">
+              <div className="mt-3 space-y-3 text-home-ink-soft">
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
@@ -87,11 +87,11 @@ export async function ContactPage({ locale }: ContactPageProps) {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-zinc-500">
-          <Link href="/about" className="text-brand-dark hover:underline">
+        <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 text-sm text-home-muted">
+          <Link href="/about" className="text-home-md hover:text-home-md-bright hover:underline">
             {t("aboutLink")}
           </Link>
-          <Link href="/privacy-policy" className="text-brand-dark hover:underline">
+          <Link href="/privacy-policy" className="text-home-md hover:text-home-md-bright hover:underline">
             {t("privacyLink")}
           </Link>
         </div>

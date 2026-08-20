@@ -91,20 +91,20 @@ export async function LandingPage({
   return (
     <>
       <SiteHeader />
-      <main className="relative px-4 py-12">
+      <main className="relative bg-home-paper px-4 py-12 pb-16">
         <div
           aria-hidden="true"
           className="hero-dots pointer-events-none absolute inset-x-0 top-0 h-[420px]"
         />
         <header className="relative mx-auto mb-10 max-w-3xl text-center">
-          <p className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-500">
-            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-sm bg-brand" />
+          <p className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-home-muted">
+            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-sm bg-home-md-bright" />
             {content.badge}
           </p>
-          <h1 className="mt-5 text-4xl font-bold tracking-tight text-zinc-950 sm:text-5xl">
+          <h1 className="mt-5 text-4xl font-bold tracking-tight text-home-ink sm:text-5xl">
             {content.h1}
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-600">
+          <p className="mx-auto mt-4 max-w-xl text-home-ink-soft">
             {content.subtitle}
           </p>
         </header>
@@ -120,10 +120,10 @@ export async function LandingPage({
           {content.features.map((f) => (
             <div
               key={f.title}
-              className="rounded-md border border-zinc-200 bg-white p-5"
+              className="rounded-2xl border border-black/10 bg-home-white p-5 shadow-sm"
             >
               <h2 className="text-base font-semibold tracking-tight">{f.title}</h2>
-              <p className="mt-2 text-sm text-zinc-600">{f.body}</p>
+              <p className="mt-2 text-sm text-home-ink-soft">{f.body}</p>
             </div>
           ))}
         </section>
@@ -133,8 +133,8 @@ export async function LandingPage({
             <h2 className="mb-4 text-xl font-semibold tracking-tight">{audience.title}</h2>
             <div className="grid gap-5 sm:grid-cols-3">
               {audience.items.map((a) => (
-                <div key={a.title} className="rounded-md border border-zinc-200 bg-white p-5">
-                  <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-md border border-zinc-200 bg-zinc-50 text-zinc-700">
+                <div key={a.title} className="rounded-2xl border border-black/10 bg-home-white p-5 shadow-sm">
+                  <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-xl border border-black/10 bg-home-paper text-home-ink-soft">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                       <path
                         d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM22 20v-2a4 4 0 0 0-3-3.87M16 4.13A4 4 0 0 1 16 12"
@@ -146,7 +146,7 @@ export async function LandingPage({
                     </svg>
                   </div>
                   <h3 className="text-base font-semibold tracking-tight">{a.title}</h3>
-                  <p className="mt-1 text-sm text-zinc-600">{a.body}</p>
+                  <p className="mt-1 text-sm text-home-ink-soft">{a.body}</p>
                 </div>
               ))}
             </div>
@@ -156,16 +156,16 @@ export async function LandingPage({
         {comparison && (
           <section className="mt-14">
             <h2 className="mb-4 text-xl font-semibold tracking-tight">{comparison.title}</h2>
-            <div className="overflow-x-auto rounded-md border border-zinc-200">
+            <div className="overflow-x-auto rounded-2xl border border-black/10 bg-home-white shadow-sm">
               <table className="w-full border-collapse text-sm">
                 <thead>
-                  <tr className="bg-zinc-50">
+                  <tr className="bg-home-paper-2">
                     {comparison.columns.map((col, i) => (
                       <th
                         key={col}
-                        className={`border-b border-zinc-200 px-4 py-3 font-semibold ${
-                          i === 0 ? "text-left text-zinc-700" : "text-center"
-                        } ${i === 1 ? "text-zinc-950" : "text-zinc-600"}`}
+                        className={`border-b border-black/10 px-4 py-3 font-semibold ${
+                          i === 0 ? "text-left text-home-ink-soft" : "text-center"
+                        } ${i === 1 ? "text-home-ink" : "text-home-muted"}`}
                       >
                         {col}
                       </th>
@@ -174,13 +174,13 @@ export async function LandingPage({
                 </thead>
                 <tbody>
                   {comparison.rows.map((row) => (
-                    <tr key={row[0]} className="even:bg-zinc-50/50">
+                    <tr key={row[0]} className="even:bg-home-paper/60">
                       {row.map((cell, ci) => (
                         <td
                           key={ci}
-                          className={`border-b border-zinc-100 px-4 py-3 ${
+                          className={`border-b border-black/5 px-4 py-3 ${
                             ci === 0
-                              ? "text-left font-medium text-zinc-700"
+                              ? "text-left font-medium text-home-ink-soft"
                               : "text-center"
                           }`}
                         >
@@ -201,12 +201,12 @@ export async function LandingPage({
             {content.faqs.map((f) => (
               <details
                 key={f.q}
-                className="faq rounded-md border border-zinc-200 bg-white p-4"
+                className="faq rounded-2xl border border-black/10 bg-home-white p-4 shadow-sm"
               >
                 <summary className="flex cursor-pointer items-center justify-between gap-3 font-medium">
                   {f.q}
                 </summary>
-                <p className="mt-2 text-sm text-zinc-600">{f.a}</p>
+                <p className="mt-2 text-sm text-home-ink-soft">{f.a}</p>
               </details>
             ))}
           </div>
@@ -220,12 +220,12 @@ export async function LandingPage({
                 <Link
                   key={p.slug || "home"}
                   href={p.slug ? `/${p.slug}` : "/"}
-                  className="group rounded-md border border-zinc-200 bg-white p-4 transition hover:border-zinc-400"
+                  className="group rounded-2xl border border-black/10 bg-home-white p-4 shadow-sm transition hover:border-home-cream"
                 >
-                  <span className="font-medium text-zinc-900 group-hover:text-brand-dark">
+                  <span className="font-medium text-home-ink group-hover:text-home-md">
                     {p.h1}
                   </span>
-                  <p className="mt-1 text-sm text-zinc-600">{p.subtitle}</p>
+                  <p className="mt-1 text-sm text-home-ink-soft">{p.subtitle}</p>
                 </Link>
               ))}
             </div>
@@ -254,7 +254,7 @@ function ComparisonCell({
     return (
       <span
         className={`inline-flex ${
-          highlight ? "text-brand" : "text-teal-500"
+          highlight ? "text-home-md-bright" : "text-home-md"
         }`}
         aria-label="Yes"
       >
@@ -272,7 +272,7 @@ function ComparisonCell({
   }
   if (value === "✗") {
     return (
-      <span className="inline-flex text-zinc-300" aria-label="No">
+      <span className="inline-flex text-home-cream" aria-label="No">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
             d="M6 6l12 12M18 6 6 18"
@@ -284,5 +284,5 @@ function ComparisonCell({
       </span>
     );
   }
-  return <span className="text-zinc-500">{value}</span>;
+  return <span className="text-home-muted">{value}</span>;
 }

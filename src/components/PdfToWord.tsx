@@ -69,13 +69,13 @@ export function PdfToWord() {
       {status === "idle" && <Dropzone onFile={handleFile} profile="general" />}
 
       {status === "error" && (
-        <div className="rounded-md border border-red-200 bg-red-50 px-6 py-10 text-center">
+        <div className="rounded-2xl border border-red-200 bg-red-50 px-6 py-10 text-center">
           <p className="text-red-700">
             {t("conversionFailed")}: {errorMsg}
           </p>
           <button
             onClick={reset}
-            className="mt-3 rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm hover:bg-zinc-50"
+            className="mt-3 rounded-full border border-black/10 bg-home-white px-4 py-1.5 text-sm text-home-ink hover:bg-home-paper"
           >
             {t("chooseAnother")}
           </button>
@@ -85,12 +85,12 @@ export function PdfToWord() {
       {(status === "working" || status === "done") && (
         <div className="grid gap-4 lg:grid-cols-2">
           {/* Left: original PDF */}
-          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-zinc-50">
-            <div className="flex items-center justify-between border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
-              <span className="text-sm font-medium text-zinc-700">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-paper shadow-sm">
+            <div className="flex items-center justify-between border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
+              <span className="text-sm font-medium text-home-ink-soft">
                 {t("paneOriginal")}
               </span>
-              <span className="max-w-[60%] truncate font-mono text-xs text-zinc-400">
+              <span className="max-w-[60%] truncate font-mono text-xs text-home-muted">
                 {fileName}
               </span>
             </div>
@@ -104,7 +104,7 @@ export function PdfToWord() {
                       key={p.pageNumber}
                       src={p.dataUrl}
                       alt={`Page ${p.pageNumber}`}
-                      className="mx-auto w-full rounded border border-zinc-200 bg-white shadow-sm"
+                      className="mx-auto w-full rounded-lg border border-black/10 bg-home-white shadow-sm"
                     />
                   ))}
                 </div>
@@ -113,14 +113,14 @@ export function PdfToWord() {
           </div>
 
           {/* Right: Word result */}
-          <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-white shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-zinc-700">
+                <span className="text-sm font-medium text-home-ink-soft">
                   {t("previewLabel")}
                 </span>
                 {result && (
-                  <span className="hidden font-mono text-xs text-zinc-400 sm:inline">
+                  <span className="hidden font-mono text-xs text-home-muted sm:inline">
                     {t("statsInfo", {
                       pages: result.stats.pages,
                       ms: result.stats.durationMs,
@@ -132,7 +132,7 @@ export function PdfToWord() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={download}
-                    className="inline-flex items-center gap-1.5 rounded-md bg-zinc-950 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-home-ink px-4 py-1.5 text-sm font-medium text-home-white transition-colors hover:bg-home-ink-soft"
                   >
                     <svg
                       width="14"
@@ -153,7 +153,7 @@ export function PdfToWord() {
                   </button>
                   <button
                     onClick={reset}
-                    className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-50"
+                    className="rounded-full border border-black/10 bg-home-white px-3 py-1.5 text-sm text-home-ink-soft hover:bg-home-paper"
                   >
                     {t("actionNewFile")}
                   </button>
@@ -184,14 +184,14 @@ export function PdfToWord() {
 function PrivacyBadge({ label }: { label: string }) {
   return (
     <div className="mb-4 flex justify-center">
-      <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
+      <span className="inline-flex items-center gap-1.5 font-mono text-xs text-home-muted">
         <svg
           width="13"
           height="13"
           viewBox="0 0 24 24"
           fill="none"
           aria-hidden="true"
-          className="text-brand"
+          className="text-home-md-bright"
         >
           <path
             d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
@@ -215,8 +215,8 @@ function PrivacyBadge({ label }: { label: string }) {
 
 function PaneSkeleton({ label }: { label: string }) {
   return (
-    <div className="flex h-full min-h-[180px] flex-col items-center justify-center gap-3 text-zinc-400">
-      <span className="h-5 w-5 animate-spin rounded-full border-2 border-brand border-t-transparent" />
+    <div className="flex h-full min-h-[180px] flex-col items-center justify-center gap-3 text-home-muted">
+      <span className="h-5 w-5 animate-spin rounded-full border-2 border-home-md-bright border-t-transparent" />
       <span className="font-mono text-xs">{label} …</span>
     </div>
   );

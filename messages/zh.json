@@ -77,16 +77,70 @@
       }
     ],
     "comparisonTitle": "对比一览",
-    "comparisonColumns": ["功能", "本工具", "iLovePDF", "Smallpdf", "Adobe"],
+    "comparisonColumns": [
+      "功能",
+      "本工具",
+      "iLovePDF",
+      "Smallpdf",
+      "Adobe"
+    ],
     "comparisonRows": [
-      ["免费且无限制", "✓", "有限", "有限", "试用"],
-      ["无需注册 / 账号", "✓", "部分", "部分", "✗"],
-      ["文件保留在本机", "✓", "✗", "✗", "✗"],
-      ["完全离线可用", "✓", "✗", "✗", "✗"],
-      ["导出可编辑 .docx", "✓", "✓", "✓", "✓"],
-      ["保留表格和图片", "✓", "✓", "✓", "✓"],
-      ["无水印", "✓", "✓", "✓", "✓"],
-      ["无需安装", "✓", "✓", "✓", "✗"]
+      [
+        "免费且无限制",
+        "✓",
+        "有限",
+        "有限",
+        "试用"
+      ],
+      [
+        "无需注册 / 账号",
+        "✓",
+        "部分",
+        "部分",
+        "✗"
+      ],
+      [
+        "文件保留在本机",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ],
+      [
+        "完全离线可用",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ],
+      [
+        "导出可编辑 .docx",
+        "✓",
+        "✓",
+        "✓",
+        "✓"
+      ],
+      [
+        "保留表格和图片",
+        "✓",
+        "✓",
+        "✓",
+        "✓"
+      ],
+      [
+        "无水印",
+        "✓",
+        "✓",
+        "✓",
+        "✓"
+      ],
+      [
+        "无需安装",
+        "✓",
+        "✓",
+        "✓",
+        "✗"
+      ]
     ],
     "faqs": [
       {
@@ -245,16 +299,70 @@
       }
     ],
     "comparisonTitle": "对比一览",
-    "comparisonColumns": ["功能", "本工具", "CloudConvert", "Pandoc", "手动复制粘贴"],
+    "comparisonColumns": [
+      "功能",
+      "本工具",
+      "CloudConvert",
+      "Pandoc",
+      "手动复制粘贴"
+    ],
     "comparisonRows": [
-      ["免费且不限量", "✓", "有限", "✓", "✓"],
-      ["无需上传（隐私）", "✓", "✗", "✓", "✓"],
-      ["无需安装", "✓", "✓", "✗", "✓"],
-      ["表格 → Markdown", "✓", "部分", "✓", "✗"],
-      ["保留图片", "✓", "✓", "✓", "✗"],
-      ["扫描件 OCR", "✓", "✓", "✗", "✗"],
-      ["批量 + ZIP", "✓", "✓", "手动", "✗"],
-      ["实时预览", "✓", "✗", "✗", "✗"]
+      [
+        "免费且不限量",
+        "✓",
+        "有限",
+        "✓",
+        "✓"
+      ],
+      [
+        "无需上传（隐私）",
+        "✓",
+        "✗",
+        "✓",
+        "✓"
+      ],
+      [
+        "无需安装",
+        "✓",
+        "✓",
+        "✗",
+        "✓"
+      ],
+      [
+        "表格 → Markdown",
+        "✓",
+        "部分",
+        "✓",
+        "✗"
+      ],
+      [
+        "保留图片",
+        "✓",
+        "✓",
+        "✓",
+        "✗"
+      ],
+      [
+        "扫描件 OCR",
+        "✓",
+        "✓",
+        "✗",
+        "✗"
+      ],
+      [
+        "批量 + ZIP",
+        "✓",
+        "✓",
+        "手动",
+        "✗"
+      ],
+      [
+        "实时预览",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ]
     ],
     "faqs": [
       {
@@ -644,71 +752,660 @@
   },
   "Home": {
     "metaTitle": "PDF 转 Markdown 转换器 — 免费、私密、本地",
-    "metaDescription": "免费 PDF 转 Markdown 转换器，在浏览器中运行。100% 本地处理，文件永不离开您的设备。专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
-    "keywords": ["pdf转markdown转换器", "pdf to markdown converter", "pdf转markdown", "convert pdf to markdown", "pdf转md", "在线pdf转markdown"],
-    "badge": "100% 本地 · 无上传",
+    "metaDescription": "免费的 PDF 转 Markdown 转换器，在浏览器内运行。100% 本地 — 文件不会离开你的设备。保住标题、表格和大纲，用于编辑、搜索、AI 与 RAG。",
+    "keywords": [
+      "pdf 转 markdown",
+      "pdf to markdown",
+      "pdf 转 md",
+      "pdf 转 markdown 转换器",
+      "免费 pdf 转 markdown"
+    ],
     "h1": "PDF 转 Markdown 转换器",
-    "subtitle": "在浏览器中将 PDF 转为干净的 Markdown，专为 LLM、RAG、Obsidian 和 Notion 工作流打造。",
-    "features": [
+    "nav": {
+      "skip": "跳到正文",
+      "problem": "PDF 为何难用",
+      "markdown": "为何是 Markdown",
+      "how": "如何工作",
+      "use": "使用场景",
+      "faq": "常见问题",
+      "convert": "转换 PDF",
+      "open": "打开菜单",
+      "close": "关闭菜单"
+    },
+    "hero": {
+      "title": "把 PDF 转成可<em>编辑、搜索、检索</em>的 Markdown。",
+      "lede": "PDF 适合阅读和分享，却不适合编辑、搜索或 RAG。我们把 PDF 转成 Markdown，保住标题、表格、列表和大纲，便于文档、检索和 AI 使用。",
+      "cta": "将 PDF 转为 Markdown",
+      "sample": "查看转换示例",
+      "support": "提取的不只是文字，还有文档本身：标题、表格、列表、链接和层级——不是一堆没有结构的字符。",
+      "privacy": "100% 在浏览器本地完成 — 文件不会离开你的设备。最大 50 MB。可在转换器中试用示例 PDF。",
+      "chipsAria": "常见用途",
+      "chips": [
+        "RAG",
+        "LLMs",
+        "知识库",
+        "文档",
+        "搜索",
+        "网站"
+      ]
+    },
+    "preview": {
+      "channel": "方式",
+      "share": "用途"
+    },
+    "convert": {
+      "eyebrow": "在浏览器里转换",
+      "title": "放下 PDF，得到有结构的 Markdown。",
+      "lede": "不上传。标题、表格、列表和大纲得以保留 — 然后复制或下载。"
+    },
+    "th": {
+      "trait": "特点",
+      "means": "实际意味着什么",
+      "hurts": "为何拖累现代工作流",
+      "use": "场景",
+      "whyPdf": "为什么用 PDF",
+      "whyMd": "为什么用 Markdown"
+    },
+    "problem": {
+      "eyebrow": "问题",
+      "title": "PDF 记住的是页面长什么样，而不是内容是什么意思。",
+      "lede": "PDF（Portable Document Format）用来保存和交换电子文档，让它在每台设备、每个软件里看起来都一样。做合同、报告、打印手册时，这是优点。但当你需要的是<em>内容</em>时，这就是问题。",
+      "quote": "PDF 保存的是「这份文档应该长什么样」，而不是「这份文档的内容是什么结构」。",
+      "goodTag": "PDF 擅长什么",
+      "goodH": "为呈现而设计",
+      "badTag": "这种设计在哪里失效",
+      "badH": "不利于工作，更不利于 AI",
+      "goodRows": [
+        {
+          "trait": "固定排版",
+          "means": "字体、图片、表格、间距、页眉页脚通常不会因设备不同而明显变化。"
+        },
+        {
+          "trait": "跨平台",
+          "means": "Windows、macOS、Linux、iOS、Android 都可以打开。"
+        },
+        {
+          "trait": "适合打印",
+          "means": "页面尺寸和打印排版能很好保留，因此广泛用于合同、报告、论文、手册。"
+        },
+        {
+          "trait": "适合分发",
+          "means": "生成后可以比较稳定地作为最终版本阅读、分享和归档。"
+        },
+        {
+          "trait": "内容类型复杂",
+          "means": "一个 PDF 不只是文字，还可能包含图片、表格、链接、矢量图形、字体、扫描页面。"
+        }
+      ],
+      "badRows": [
+        {
+          "trait": "结构不够友好",
+          "hurts": "PDF 更关心页面长什么样，而不是内容是什么结构。机器很难还原标题、段落、列表和表格。"
+        },
+        {
+          "trait": "编辑不方便",
+          "hurts": "相比 Word、Markdown，PDF 并不是为频繁编辑和重新组织内容设计的。"
+        },
+        {
+          "trait": "解析困难",
+          "hurts": "字体嵌入、多栏排版、表格、图片、脚注都会增加内容解析难度。"
+        },
+        {
+          "trait": "可能根本不是文字",
+          "hurts": "有些 PDF 其实是图片，需要 OCR 才能提取文字。"
+        }
+      ],
+      "see": "你看到的",
+      "seeP": "在页面上，一份 PDF 看起来可能是章节、小节、列表、表格。",
+      "seeCode": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+      "soft": "程序看到的",
+      "softP": "程序往往看到的是另一回事：散落在画布上的文字、坐标、字体和图片。要还原<em>真正的</em>标题、段落边界、列表和表格，并不总是容易。",
+      "gap1": "<strong>PDF</strong> 面向人阅读，强调视觉排版。",
+      "gap2": "<strong>Markdown</strong> 面向结构化内容、编辑、程序处理和 AI。",
+      "gap3": "有了 Markdown，同一份文档就更适合搜索、知识库、RAG、Embedding 和 LLM。",
+      "close": "把 PDF 直接丢进知识库，往往不是最好的第一步。模型可能拿到文字，但拿不到结构。"
+    },
+    "md": {
+      "eyebrow": "目的地",
+      "title": "Markdown 保住内容，并把结构写清楚。",
+      "lede": "Markdown 是一种轻量级标记语言。用简单的文本符号表示标题、段落、列表、表格、链接、代码。即使不渲染，源文件本身也比较容易阅读。",
+      "sample": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+      "diff": "Markdown 有什么不同",
+      "traits": [
+        {
+          "title": "结构清晰",
+          "body": "#、##、- 等符号明确表示标题和列表。"
+        },
+        {
+          "title": "纯文本",
+          "body": "本质上是文本文件，不依赖复杂排版格式。"
+        },
+        {
+          "title": "易于编辑",
+          "body": "用任何文本编辑器就能改，不需要专业办公软件。"
+        },
+        {
+          "title": "易于阅读",
+          "body": "原始 Markdown 本身也有较好的可读性。"
+        },
+        {
+          "title": "体积小",
+          "body": "相比 PDF、Word，通常更加轻量。"
+        },
+        {
+          "title": "易于搜索",
+          "body": "结构化文本可以方便地进行全文搜索。"
+        },
+        {
+          "title": "易于转换",
+          "body": "可以转换成 HTML、PDF、Word 等格式。"
+        },
+        {
+          "title": "适合程序处理",
+          "body": "标题、段落、列表结构明确，方便程序解析。"
+        },
+        {
+          "title": "适合版本管理",
+          "body": "纯文本非常适合 Git 等版本控制系统。"
+        },
+        {
+          "title": "跨平台",
+          "body": "Windows、macOS、Linux 都可以处理。"
+        },
+        {
+          "title": "AI 友好",
+          "body": "结构化文本更容易被 LLM、Embedding、RAG 处理。"
+        }
+      ],
+      "why": "真正的原因",
+      "sep": "Markdown 把<strong>内容</strong>和<strong>视觉排版</strong>分开了。",
+      "pdfAsks": "PDF 问的是：<em>这份文档在页面上应该长什么样？</em>",
+      "mdAsks": "Markdown 问的是：<em>这份内容是什么，它的结构是什么？</em>",
+      "notCosmetic": "这不是外观差异，而是工作方式的差异。",
+      "whyCode": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+      "tree": "你得到的不只是文字，还有一棵树。",
+      "treeP": "这种层级，正是现代内容工作流所依赖的。",
+      "treeCode": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+      "aiNeed": "AI 不只需要「文字」，还需要理解文字之间的结构和关系。对 AI / RAG 来说，标题层级、段落边界、列表、表格一下子变得明确。",
+      "fits": "因此 Markdown 非常适合：",
+      "chips": [
+        "LLMs",
+        "RAG",
+        "向量数据库",
+        "Embeddings",
+        "AI 知识库",
+        "AI Agent",
+        "语义搜索",
+        "文档系统",
+        "内容管理"
+      ],
+      "close": "如果下一步是编辑、检索或生成，Markdown 已经是那个工作该有的格式。"
+    },
+    "cmp": {
+      "eyebrow": "两种格式，两份工作",
+      "title": "PDF 负责交付。Markdown 负责工作。",
+      "quote": "PDF 保存文档长什么样，Markdown 保存文档是什么。",
+      "rows": [
+        {
+          "label": "核心目的",
+          "pdf": "保持页面和视觉排版",
+          "md": "表达内容和结构"
+        },
+        {
+          "label": "可编辑性",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "机器解析",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "内容搜索",
+          "pdf": "★★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "AI 处理",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "RAG",
+          "pdf": "不太适合直接处理",
+          "md": "非常适合"
+        },
+        {
+          "label": "版本控制",
+          "pdf": "不方便",
+          "md": "非常方便"
+        },
+        {
+          "label": "文件大小",
+          "pdf": "通常较大",
+          "md": "通常很小"
+        },
+        {
+          "label": "跨平台",
+          "pdf": "是",
+          "md": "是"
+        },
+        {
+          "label": "人类阅读",
+          "pdf": "是",
+          "md": "是"
+        },
+        {
+          "label": "页面布局",
+          "pdf": "强",
+          "md": "弱"
+        }
+      ],
+      "still": "你仍然需要 PDF。合同、报告、论文必须对每位读者看起来一样。当同一份材料要被复用、查询、更新或交给模型时，你需要 Markdown。",
+      "close": "这两种格式不是敌人，只是分工不同。缺的是中间这一步转换。"
+    },
+    "bridge": {
+      "eyebrow": "产品",
+      "title": "PDF to Markdown 是缺失的那一步，不是新奇转换器。",
+      "lede": "大量重要资料已经是 PDF。你接下来要做的工作却不是：改写、搜索、检索、总结、发布。这些工作需要结构。",
+      "p1": "PDF — 固定排版，机器难以理解",
+      "p3": "Markdown — 可编辑、可搜索、AI 友好",
+      "p4": "LLM / RAG / 知识库 / 工作流",
+      "notText": "你买到的不是「从 PDF 里抠出来的字」，而是后续系统真正能用的文档。",
+      "recover": "转换应当还原什么",
+      "extract": [
+        {
+          "title": "正文",
+          "body": "按阅读顺序的文字"
+        },
+        {
+          "title": "标题与大纲",
+          "body": "章、节、小节"
+        },
+        {
+          "title": "表格",
+          "body": "行列结构，而不是表格的图片"
+        },
+        {
+          "title": "列表",
+          "body": "条目，而不是画布上剩下的项目符号"
+        },
+        {
+          "title": "链接",
+          "body": "仍然可以跟随的目标地址"
+        },
+        {
+          "title": "文档结构",
+          "body": "关系，而不只是字符"
+        }
+      ],
+      "ctaLine": "把 PDF 转成干净、有结构的 Markdown —— 可用于编辑、搜索、AI、RAG 等场景。"
+    },
+    "when": {
+      "eyebrow": "选对格式",
+      "title": "一条内容链路，三份工作。",
+      "lede": "把它们当成链条，而不是三选一：<strong>PDF</strong> 用于交付和阅读 → <strong>Markdown</strong> 用于编辑和处理 → <strong>PDF to Markdown</strong> 把已有 PDF 变成真正能用的结构化内容。",
+      "tabsAria": "何时使用哪种格式",
+      "tabPdf": "何时用 PDF",
+      "tabMd": "何时用 Markdown",
+      "tabNeed": "何时需要转换",
+      "pdfH": "当内容已经定稿",
+      "pdfP": "PDF 最适合内容已经确定，需要稳定展示、分享、打印或归档。",
+      "pdfJob": "PDF 的工作，一句话：别人看到的，要和我做出来的尽可能一样。",
+      "mdH": "当内容还要继续活下去",
+      "mdP": "Markdown 适合还需要编辑、更新、搜索、转换，或交给程序处理的内容。",
+      "mdJob": "Markdown 的工作，一句话：让内容容易编辑、管理、搜索和被程序理解。",
+      "needH": "当重要资料已经是 PDF",
+      "needP": "现实是：大量重要资料已经是 PDF。然后你需要：",
+      "needClose": "这就是转换。<strong>PDF → Markdown。</strong>",
+      "pdfRows": [
+        {
+          "use": "合同",
+          "why": "格式固定，方便双方确认和归档。"
+        },
+        {
+          "use": "报告",
+          "why": "图表、文字、页面布局保持一致。"
+        },
+        {
+          "use": "论文 / 研究",
+          "why": "适合正式发布和阅读。"
+        },
+        {
+          "use": "电子书",
+          "why": "章节、图片、页面排版得以保持。"
+        },
+        {
+          "use": "产品手册",
+          "why": "下载后可以直接阅读或打印。"
+        },
+        {
+          "use": "发票 / 收据",
+          "why": "表单不会跑版。"
+        },
+        {
+          "use": "公司文档",
+          "why": "适合正式文件分发。"
+        },
+        {
+          "use": "课程资料",
+          "why": "课件、教材可以整理成一份 PDF。"
+        },
+        {
+          "use": "打印",
+          "why": "页面几何结构能较好保证打印效果。"
+        },
+        {
+          "use": "归档",
+          "why": "适合保存最终版本。"
+        }
+      ],
+      "mdRows": [
+        {
+          "use": "技术文档",
+          "why": "开发者可以直接编辑。"
+        },
+        {
+          "use": "知识库",
+          "why": "内容结构清晰，方便组织。"
+        },
+        {
+          "use": "博客 / 写作",
+          "why": "写起来简单，容易变成网页。"
+        },
+        {
+          "use": "产品文档",
+          "why": "章节、代码块等结构是一等公民。"
+        },
+        {
+          "use": "AI 知识库",
+          "why": "模型处理结构化文本更可靠。"
+        },
+        {
+          "use": "搜索",
+          "why": "纯文本更容易索引。"
+        },
+        {
+          "use": "RAG",
+          "why": "更利于切分、Embedding 和检索。"
+        },
+        {
+          "use": "Git / GitHub",
+          "why": "纯文本就是版本控制该有的样子。"
+        },
+        {
+          "use": "项目 README",
+          "why": "GitHub 等平台原生支持。"
+        },
+        {
+          "use": "内容转换",
+          "why": "一份源文件 → HTML、PDF 等输出。"
+        }
+      ],
+      "needs": [
+        "修改内容",
+        "提取文字",
+        "做知识库",
+        "做 RAG",
+        "喂给 AI",
+        "搜索文档",
+        "分析论文",
+        "提取表格",
+        "转成网站",
+        "转成 Markdown 文档"
+      ]
+    },
+    "how": {
+      "eyebrow": "如何工作",
+      "title": "三步把 PDF 转成 Markdown。",
+      "s1": "上传",
+      "s1p": "报告、手册、论文、员工手册、SOP 或归档 PDF —— 也包括文字、表格、图片、链接混在一起的文件。",
+      "s2": "转换",
+      "s2p": "我们还原的不只是一堆字：还有标题、列表、表格、链接和阅读顺序，让 Markdown 仍然像一份文档。",
+      "s3": "使用",
+      "s3p": "编辑、搜索、切分、Embedding、发布、交给 LLM、放进 Git。",
+      "p2": "转换",
+      "p3": "结构化 Markdown",
+      "p4": "你的工作流"
+    },
+    "uc": {
+      "eyebrow": "使用场景",
+      "title": "PDF to Markdown 用于 RAG、文档和内容复用。",
+      "tabsAria": "使用场景",
+      "tab1": "AI / RAG",
+      "tab2": "喂给大模型",
+      "tab3": "研究",
+      "tab4": "技术文档",
+      "tab5": "网站",
+      "tab6": "内容再利用",
+      "primary": "最核心的场景"
+    },
+    "uc1": {
+      "h": "AI / RAG 知识库",
+      "p": "公司往往已经有上千份 PDF：产品手册、技术文档、内部 SOP、合同、研究报告、培训资料。目标是做一个能根据<em>这些</em>资料回答问题的助手。把 PDF 直接扔进流水线，通常不是最佳方案。",
+      "pile": "你已经有的那一堆",
+      "list": [
+        "产品手册",
+        "技术文档",
+        "内部 SOP",
+        "合同",
+        "研究报告",
+        "培训资料"
+      ],
+      "pipe": "真正能跑通的流水线",
+      "pipeCode": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+      "close": "<strong>PDF to Markdown 是 AI 知识库的数据准备阶段。</strong>没有结构，切分会切错位置，Embedding 会混进无关段落，检索返回的是一团文字而不是答案。有了 Markdown，标题就是标题，表格就是表格，一个章节可以按章节被检索到。"
+    },
+    "uc2": {
+      "h": "把长 PDF 喂给大模型",
+      "p": "你有一份 100 页的文件：<em>2026 Global Market Research Report</em>。你想让 ChatGPT / Claude / Gemini 帮你总结报告、提取关键数据、分析竞争对手、找出市场趋势、回答报告里的问题。",
+      "want": "你希望模型做的事",
+      "list": [
+        "总结报告",
+        "提取关键数据",
+        "分析竞争对手",
+        "找出市场趋势",
+        "回答报告中的问题"
+      ],
+      "close": "转换之后，模型可以顺着大纲走，而不必靠猜。这就是「粘贴一堵字墙」和「给模型一份文档」的差别。",
+      "code": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n..."
+    },
+    "uc3": {
+      "h": "论文与研究",
+      "p": "研究人员经常活在 PDF 里。转成 Markdown 后，可以搜索全文、提取章节、整理研究资料、做文献知识库、用 AI 总结、对语料做 RAG，并比较不同论文。",
+      "codeIn": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+      "codeOut": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+      "close": "论文仍可作为 PDF 引用。工作副本则变成你可以查询的内容。"
+    },
+    "uc4": {
+      "h": "技术文档",
+      "p": "很多现有技术资料仍以 PDF 交付。团队想要可维护的文件 —— 然后放进 GitHub、GitLab、Notion、文档网站或内部知识库。",
+      "from": "从锁死的手册",
+      "to": "到可以持续维护的文件",
+      "close": "后续维护会便宜很多：diff、评审、搜索、重新发布，都按软件已有的方式工作。"
+    },
+    "uc5": {
+      "h": "PDF → 网站",
+      "p": "原来只能下载的产品手册，可以变成一个站点。PDF 是人们保存的文件；Markdown 这条路变成可以搜索、导航、在线打开的文档网站。",
+      "code": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website"
+    },
+    "uc6": {
+      "h": "内容再利用",
+      "p": "公司已经有一份 <file>Company Handbook.pdf</file>。它不该被困在这一个文件里。这就是内容再利用：一个事实来源，多种输出 —— 因为结构终于独立于页面存在了。",
+      "code": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation"
+    },
+    "tools": {
+      "chatgpt": "适用于 ChatGPT 与 RAG 的 PDF 转 Markdown",
+      "obsidian": "适用于 Obsidian 的 PDF 转 Markdown",
+      "notion": "适用于 Notion 的 PDF 转 Markdown"
+    },
+    "ba": {
+      "eyebrow": "转换前后",
+      "title": "提取文字，并不等于理解文档。",
+      "before": "之前 — 程序眼里的 PDF 常常是这样",
+      "after": "之后 — 同样的内容变成 Markdown",
+      "beforeCode": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "afterCode": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "p": "页面上的一行行字。顺序也许对，也许不对。标题层级只能猜。转换之后，标题、边界和层级都明确了 —— 这就是从页面上抠字符串，和还原一份文档的差别。",
+      "close": "AI 用这种层级，搜索用它，编辑也用它。PDF 不会把它交给你。"
+    },
+    "map": {
+      "eyebrow": "转换之后",
+      "title": "一次转换，三个去向。",
+      "p": "把 PDF 留给人看。当下一个读者是编辑、搜索索引、模型或网站时，再转换。",
+      "pdf": "阅读 / 分享 / 打印 / 归档",
+      "read": "阅读 / 分发",
+      "readD": "人在读这一页",
+      "convert": "转换",
+      "extract": "提取内容",
+      "md": "结构化的内容源",
+      "edit": "人工编辑",
+      "editD": "内容运营",
+      "aiD": "知识库",
+      "web": "网站",
+      "webD": "HTML / 文档站"
+    },
+    "job": {
+      "pdf": "阅读 / 分享 / 打印",
+      "md": "写作 / 结构 / 处理",
+      "conv": "提取 / 转换 / 再利用"
+    },
+    "who": {
+      "eyebrow": "给谁用",
+      "title": "写给继承了一堆 PDF、却还要把事情做下去的人。",
+      "people": [
+        {
+          "title": "AI 与平台团队",
+          "body": "把手册、SOP、合同、培训材料做成带 RAG 的助手。"
+        },
+        {
+          "title": "研究人员与分析师",
+          "body": "在论文和长报告之间搜索、比较、提问。"
+        },
+        {
+          "title": "文档与内容团队",
+          "body": "把 API PDF、用户手册、员工手册迁进 Git、Notion 或文档站。"
+        },
+        {
+          "title": "任何被 PDF 卡住的人",
+          "body": "编辑、抽表格、做成网站，或复用一份从来不是工作文件的 PDF。"
+        }
+      ],
+      "close": "如果 PDF 已经完成使命，就让它继续做 PDF。如果工作还没做完，就转换它。"
+    },
+    "intent": {
+      "eyebrow": "人们会搜什么",
+      "title": "扫描件、表格、RAG、对话框，还有整夹文件。",
+      "lede": "这些查询就挨在主词旁边。每一项都是文件必须扛住的工作，不是再讲一遍格式。"
+    },
+    "intents": [
       {
-        "title": "隐私优先设计",
-        "body": "所有处理均在浏览器内完成，无上传、无服务器、不追踪您的文档。"
+        "id": "intent-ocr",
+        "tag": "OCR",
+        "tagKind": "pdf",
+        "h": "用 OCR 把扫描 PDF 转成 Markdown",
+        "p": "扫描件没有文字层，必须先 OCR；只有 OCR 仍是一串字。有用的路径是 OCR 加结构：阅读顺序、标题层级，表格写成表格而不是格子照片。这样扫描件才能被搜索、切分或编辑。合同、发票常是扫描件；数字原件可跳过 OCR，扫描件不能跳过大纲。对比度差、歪斜、手写混排仍会失败。把 OCR 原文直接进知识库，索引的是噪声。",
+        "href": "/scanned-pdf-to-markdown",
+        "link": "打开 OCR 转换器"
       },
       {
-        "title": "结构完整还原",
-        "body": "标题、列表、嵌套列表和表格均被完整保留，输出即可直接使用。"
+        "id": "intent-rag",
+        "tag": "RAG",
+        "tagKind": "md",
+        "h": "给 RAG 和 Embedding 用的结构化文件",
+        "p": "把 PDF 原样做 Embedding，切分器常切在表格或章节中间，因为它没看到标题。检索回来的是看起来相关的一团字。先给流水线带明确标题和真表格的 Markdown，切分才能按大纲走：一节、一张表、一个列表。Embedding 更接近单一主题。chunk 大小仍要你选。转换避免模型把页眉、页脚和页码当成答案。",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "面向 LLM 与 RAG 的 Markdown"
       },
       {
-        "title": "免费无限制",
-        "body": "无需注册、无水印、单文件转换无每日限额。"
+        "id": "intent-tables",
+        "tag": "结构",
+        "tagKind": "bridge",
+        "h": "保住表格和标题",
+        "p": "复制粘贴和粗暴提取会把双栏报告拍扁：标题只是字号大，表格变成空格。下游不能按列排序，也不能检索「4.2 节」。转换应输出 Markdown 标题和管道表格，阅读顺序跟人读的一致，多栏也尽量保住。表格若是截图，必须对图做 OCR。检验很简单：能否跳大纲，能否复制一行。",
+        "href": "/pdf-table-to-markdown",
+        "link": "提取表格为 Markdown"
+      },
+      {
+        "id": "intent-chatgpt",
+        "tag": "ChatGPT",
+        "tagKind": "pdf",
+        "h": "转换，还是复制粘贴进 ChatGPT",
+        "p": "粘进 ChatGPT、Claude 或 Gemini 适合偶发总结，不适合当资料库。模型拿到顺序不稳的文本块，标题和表格只能猜。无法给源文件做版本、重新切分，或把干净文件交给同事。先转换再提问：大纲在文件里，同一份可给别的模型、内部 RAG 或 Git。聊天窗口用来问问题，不要当唯一提取器。",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "为 ChatGPT 与 LLM 转换"
+      },
+      {
+        "id": "intent-batch",
+        "tag": "批量",
+        "tagKind": "md",
+        "h": "批量把 PDF 转成 Markdown",
+        "p": "一份文件是演示。真正的工作是整夹手册、合同归档、论文库。批量应保留文件名，跳过已有 .md 的，并在扫描件需要 OCR 或表格塌掉时明确失败。输出放原件旁或平行目录，方便 diff 和重跑。之后可建索引、做 Embedding 或发布。先拿难看样本试跑，再对全集开任务。",
+        "href": "/batch-pdf-to-markdown",
+        "link": "打开批量转换器"
       }
     ],
+    "faq": {
+      "eyebrow": "常见问题",
+      "title": "转换之前，值得先回答这些问题。"
+    },
     "faqs": [
       {
-        "q": "我的文件会上传到服务器吗？",
-        "a": "不会。转换完全在浏览器中通过 WebAssembly 运行，PDF 文件永远不会离开您的设备，合同、研究资料等私密文档均可放心使用。"
+        "q": "为什么不直接把 PDF 上传给 ChatGPT、Claude 或 Gemini？",
+        "a": "单次问答可以。但一份 100 页报告往往仍是结构很弱的文本块：标题、表格、章节边界不可靠。转成 Markdown 后，大纲是明确的——Executive Summary、Market Size、Competitive Landscape——总结、抽取和问答才有抓手。做知识库时差距更大：RAG 需要带真实标题的切片，而不是页面坐标。转换仍完全在浏览器内进行，文件不会上传到我们这边。"
       },
       {
-        "q": "转换器能保留哪些格式？",
-        "a": "标题层级、段落、有序和无序列表（包括嵌套）以及表格。页眉、页脚和页码会被自动过滤。"
+        "q": "为什么是 Markdown，而不是 Word 或纯文本？",
+        "a": "Word 仍把排版混进文件里。纯文本丢掉了层级。Markdown 保留内容和结构，去掉页面设计——这正是编辑、Git、搜索、Embedding 和 LLM 需要的。"
       },
       {
-        "q": "支持扫描版 PDF 吗？",
-        "a": "支持。文本型 PDF 可直接转换；扫描件 / 纯图片型 PDF 请用我们内置的 OCR 转换器，在浏览器内即可识别文字。"
+        "q": "你们实际提取什么？",
+        "a": "文字、标题、表格、列表、链接和文档结构。重点不是生硬倒出一堆字，而是得到一份仍有大纲的文件。页眉、页脚和页码会自动去掉。"
+      },
+      {
+        "q": "扫描件怎么办？",
+        "a": "很多 PDF 其实是页面的图片。那些需要先 OCR，才谈得上结构。请使用内置 OCR 转换器，它会在浏览器里识别文字。扫描件，正是「直接解析 PDF」在现实中失败的原因之一。"
+      },
+      {
+        "q": "多栏排版、脚注、嵌入字体、混排表格能保住吗？",
+        "a": "这些是难点——而且很常见。这也是为什么需要专门的 PDF → Markdown 步骤。只把字符串拼在一起的转换，会打乱阅读顺序，也抓不到大纲。"
+      },
+      {
+        "q": "这是给单文件用，还是给整个归档用？",
+        "a": "两者都是。一份报告，方便你拿去问大模型。一千份手册、SOP、培训 PDF，方便切分、Embedding 和检索。整夹文件请用批量转换器。产品都是这个准备步骤——并且始终在本地完成。"
+      },
+      {
+        "q": "原来的 PDF 还要留着吗？",
+        "a": "要，当你需要一份稳定、保真打印、可分享的原件时。转换并不取代合同、发票或归档副本。它给同一份内容第二次生命。"
+      },
+      {
+        "q": "Markdown 还能再变成网站或其他格式吗？",
+        "a": "这正是转换的原因之一。Markdown 很容易变成 HTML、PDF、Word、文档站、FAQ、博客和 AI 数据集。PDF 是下载文件，Markdown 是源文件。"
       }
     ],
-    "audienceTitle": "适用人群",
-    "audience": [
-      {
-        "title": "LLM 与 RAG 开发者",
-        "body": "把源 PDF 转成干净、结构化的 Markdown，用于分块、嵌入并喂给 ChatGPT、Claude 或向量数据库。"
-      },
-      {
-        "title": "笔记用户",
-        "body": "把报告和论文搬进 Obsidian 或 Notion，标题、列表和表格完整保留——告别混乱的复制粘贴。"
-      },
-      {
-        "title": "开发者与写作者",
-        "body": "把 PDF 直接作为 Markdown 放进文档、README 和静态站点，保留表格与图片。"
-      }
-    ],
-    "comparisonTitle": "对比一览",
-    "comparisonColumns": ["功能", "本工具", "CloudConvert", "Pandoc", "手动复制粘贴"],
-    "comparisonRows": [
-      ["免费且不限量", "✓", "有限", "✓", "✓"],
-      ["无需上传（隐私）", "✓", "✗", "✓", "✓"],
-      ["无需安装", "✓", "✓", "✗", "✓"],
-      ["表格 → Markdown", "✓", "部分", "✓", "✗"],
-      ["保留图片", "✓", "✓", "✓", "✗"],
-      ["扫描件 OCR", "✓", "✓", "✗", "✗"],
-      ["批量 + ZIP", "✓", "✓", "手动", "✗"],
-      ["实时预览", "✓", "✗", "✗", "✗"]
-    ]
+    "cta": {
+      "eyebrow": "开始使用",
+      "title": "别再把 PDF 当成终点。",
+      "p1": "PDF 适合阅读和分享，但并不是为现代内容工作流设计的。Markdown 让内容结构化、可编辑、可搜索，并且对 AI 友好。",
+      "p2": "把 PDF 转成干净、有结构的 Markdown —— 可用于编辑、搜索、AI、RAG 等场景。"
+    },
+    "footer": {
+      "aria": "页脚",
+      "convert": "转换",
+      "line": "PDF — 阅读 / 分享 / 打印 · Markdown — 写作 / 结构 / 处理 · PDF to Markdown — 提取 / 转换 / 再利用"
+    },
+    "subtitle": "在浏览器中将 PDF 转为干净的 Markdown，专为 LLM、RAG、Obsidian 和 Notion 工作流打造。"
   },
   "Guide": {
     "metaTitle": "如何将 PDF 转换为 Markdown — 免费分步教程",
     "metaDescription": "3 步学会 PDF 转 Markdown。免费浏览器转换器，无需上传、无需注册。适用于文本型 PDF，可用于 LLM、Obsidian 和文档工作流。",
-    "keywords": ["如何将pdf转为markdown", "pdf转markdown教程", "convert pdf to markdown", "pdf to markdown step by step"],
+    "keywords": [
+      "如何将pdf转为markdown",
+      "pdf转markdown教程",
+      "convert pdf to markdown",
+      "pdf to markdown step by step"
+    ],
     "badge": "分步教程",
     "h1": "如何将 PDF 转换为 Markdown",
     "subtitle": "在浏览器中将文本型 PDF 转为干净的 Markdown，免费、私密、数秒完成。使用下方转换器并按步骤操作即可。",
@@ -748,7 +1445,12 @@
   "Obsidian": {
     "metaTitle": "PDF 转 Markdown（Obsidian 专用）— 离线 & 干净",
     "metaDescription": "将 PDF 转为适合 Obsidian 的干净 Markdown 笔记，100% 离线处理，标题、列表和表格完整保留，直接拖入 Vault 即用。",
-    "keywords": ["obsidian pdf转markdown", "pdf转obsidian笔记", "pdf导入obsidian", "obsidian pdf to markdown"],
+    "keywords": [
+      "obsidian pdf转markdown",
+      "pdf转obsidian笔记",
+      "pdf导入obsidian",
+      "obsidian pdf to markdown"
+    ],
     "badge": "离线 · Vault 即用",
     "h1": "PDF 转 Markdown（Obsidian 专用）",
     "subtitle": "将 PDF 转为干净的离线 Markdown 笔记，标题、列表和表格完整保留，直接拖入 Obsidian Vault 即可使用。",
@@ -799,7 +1501,12 @@
   "ChatGPT": {
     "metaTitle": "PDF 转 Markdown（ChatGPT / LLM / RAG 专用）",
     "metaDescription": "将 PDF 转为适合 ChatGPT、Claude 和 RAG 流水线的干净 Markdown，结构清晰、Token 高效，全程在浏览器本地处理。",
-    "keywords": ["pdf转markdown chatgpt", "pdf to markdown llm", "pdf转markdown rag", "pdf转markdown 大模型"],
+    "keywords": [
+      "pdf转markdown chatgpt",
+      "pdf to markdown llm",
+      "pdf转markdown rag",
+      "pdf转markdown 大模型"
+    ],
     "badge": "LLM 就绪输出",
     "h1": "PDF 转 Markdown（ChatGPT & LLM 专用）",
     "subtitle": "将 PDF 转为结构清晰、Token 高效的 Markdown，ChatGPT、Claude 和 RAG 流水线均可可靠解析，全程在浏览器本地处理。",
@@ -850,7 +1557,12 @@
   "Table": {
     "metaTitle": "PDF 表格转 Markdown — 精准提取表格",
     "metaDescription": "从 PDF 中提取表格并转为 GitHub Flavored Markdown 表格，列结构自动检测，全程在浏览器本地处理，无需上传。",
-    "keywords": ["pdf表格转markdown", "pdf table to markdown", "pdf转markdown表格", "从pdf提取表格"],
+    "keywords": [
+      "pdf表格转markdown",
+      "pdf table to markdown",
+      "pdf转markdown表格",
+      "从pdf提取表格"
+    ],
     "badge": "表格 · GFM 输出",
     "h1": "PDF 表格转 Markdown",
     "subtitle": "从 PDF 中提取表格并转为干净的 GitHub Flavored Markdown 表格，列边界自动检测，全程在浏览器内完成。",
@@ -901,7 +1613,12 @@
   "Notion": {
     "metaTitle": "PDF 转 Markdown（Notion 专用）— 干净导入",
     "metaDescription": "将 PDF 转为适合 Notion 的 Markdown。保留标题、列表和表格，粘贴即可导入页面。100% 浏览器本地处理，无需上传。",
-    "keywords": ["pdf转markdown notion", "notion pdf转markdown", "pdf导入notion", "pdf to markdown for notion"],
+    "keywords": [
+      "pdf转markdown notion",
+      "notion pdf转markdown",
+      "pdf导入notion",
+      "pdf to markdown for notion"
+    ],
     "badge": "Notion 就绪 · 粘贴导入",
     "h1": "PDF 转 Markdown（Notion 专用）",
     "subtitle": "将 PDF 报告、规格和文档转为干净 Markdown，直接粘贴到 Notion，标题、列表和表格完整保留，全程本地处理。",
@@ -952,7 +1669,12 @@
   "Python": {
     "metaTitle": "PDF 转 Markdown Python — 浏览器工具与脚本指南",
     "metaDescription": "无需先写 Python 即可将 PDF 转为 Markdown — 免费本地浏览器工具。另含 pymupdf、pdfplumber 使用提示及即将推出的 API。",
-    "keywords": ["pdf转markdown python", "python pdf转markdown", "pdf to markdown python", "pdf to markdown api"],
+    "keywords": [
+      "pdf转markdown python",
+      "python pdf转markdown",
+      "pdf to markdown python",
+      "pdf to markdown api"
+    ],
     "badge": "无需 pip · 即时输出",
     "h1": "PDF 转 Markdown（Python 专用）",
     "subtitle": "需要 PDF 的 Markdown 用于笔记本、ETL 或原型？在浏览器本地转换，复制字符串到 Python 工作流，无需配置环境。",

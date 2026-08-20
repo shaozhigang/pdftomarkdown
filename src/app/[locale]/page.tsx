@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { LandingPage, type ComparisonTable } from "@/components/LandingPage";
-import { SITE_URL, type Feature, type Faq, type RelatedPage } from "@/lib/landing";
+import { HomeLanding } from "@/components/HomeLanding";
+import { homeFontClass } from "@/lib/home-fonts";
 import { localeAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -41,79 +41,9 @@ export default async function HomePage({
   const { locale } = params;
   setRequestLocale(locale);
 
-  const t = await getTranslations("Home");
-  const tGuide = await getTranslations("Guide");
-  const tObs = await getTranslations("Obsidian");
-  const tChat = await getTranslations("ChatGPT");
-  const tTable = await getTranslations("Table");
-  const tNotion = await getTranslations("Notion");
-  const tPython = await getTranslations("Python");
-
-  const content = {
-    slug: "",
-    metaTitle: t("metaTitle"),
-    metaDescription: t("metaDescription"),
-    keywords: t.raw("keywords") as string[],
-    badge: t("badge"),
-    h1: t("h1"),
-    subtitle: t("subtitle"),
-    features: t.raw("features") as Feature[],
-    faqs: t.raw("faqs") as Faq[],
-  };
-
-  const related: RelatedPage[] = [
-    {
-      slug: "how-to-convert-pdf-to-markdown",
-      h1: tGuide("h1"),
-      subtitle: tGuide("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-for-obsidian",
-      h1: tObs("h1"),
-      subtitle: tObs("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-for-chatgpt",
-      h1: tChat("h1"),
-      subtitle: tChat("subtitle"),
-    },
-    {
-      slug: "pdf-table-to-markdown",
-      h1: tTable("h1"),
-      subtitle: tTable("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-for-notion",
-      h1: tNotion("h1"),
-      subtitle: tNotion("subtitle"),
-    },
-    {
-      slug: "pdf-to-markdown-python",
-      h1: tPython("h1"),
-      subtitle: tPython("subtitle"),
-    },
-  ];
-
-  const audience = {
-    title: t("audienceTitle"),
-    items: t.raw("audience") as { title: string; body: string }[],
-  };
-
-  const comparison: ComparisonTable = {
-    title: t("comparisonTitle"),
-    columns: t.raw("comparisonColumns") as string[],
-    rows: t.raw("comparisonRows") as string[][],
-  };
-
-  const pageUrl = SITE_URL;
-
   return (
-    <LandingPage
-      content={content}
-      related={related}
-      pageUrl={pageUrl}
-      audience={audience}
-      comparison={comparison}
-    />
+    <div className={homeFontClass}>
+      <HomeLanding locale={locale} />
+    </div>
   );
 }

@@ -80,7 +80,7 @@ export default async function LocaleLayout({
           `}
         </Script>
       </head>
-      <body className="bg-white font-sans text-zinc-950 antialiased">
+      <body className="bg-home-paper font-sans text-home-ink antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

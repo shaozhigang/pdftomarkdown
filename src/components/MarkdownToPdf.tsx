@@ -50,8 +50,8 @@ export function MarkdownToPdf() {
   return (
     <div className="w-full">
       <div className="mb-4 flex flex-wrap items-center justify-center gap-3">
-        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-zinc-500">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-brand">
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs text-home-muted">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-home-md-bright">
             <path
               d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"
               stroke="currentColor"
@@ -72,8 +72,8 @@ export function MarkdownToPdf() {
 
       <div className="grid gap-4 lg:grid-cols-2">
         {/* Editor */}
-        <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
-          <div className="flex items-center justify-between border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+        <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-white shadow-sm">
+          <div className="flex items-center justify-between border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
             <span className="text-sm font-medium text-zinc-700">
               {t("editorLabel")}
             </span>
@@ -89,8 +89,8 @@ export function MarkdownToPdf() {
         </div>
 
         {/* Preview */}
-        <div className="flex flex-col overflow-hidden rounded-md border border-zinc-200 bg-white">
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5">
+        <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-home-white shadow-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-black/10 bg-home-paper-2 px-4 py-2.5">
             <span className="text-sm font-medium text-zinc-700">
               {t("previewLabel")}
             </span>

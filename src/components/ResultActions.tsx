@@ -32,8 +32,8 @@ export function ResultActions({ markdown, fileName }: ResultActionsProps) {
     <div className="flex gap-2">
       <button
         onClick={copy}
-        className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium text-white transition-colors ${
-          copied ? "bg-brand" : "bg-zinc-950 hover:bg-zinc-800"
+        className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-medium text-home-white transition-colors ${
+          copied ? "bg-home-md-bright" : "bg-home-ink hover:bg-home-ink-soft"
         }`}
       >
         {copied && (
@@ -51,7 +51,7 @@ export function ResultActions({ markdown, fileName }: ResultActionsProps) {
       </button>
       <button
         onClick={download}
-        className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm font-medium text-zinc-700 hover:bg-zinc-50"
+        className="rounded-full border border-black/10 bg-home-white px-4 py-1.5 text-sm font-medium text-home-ink-soft hover:bg-home-paper"
       >
         {t("actionDownload")}
       </button>

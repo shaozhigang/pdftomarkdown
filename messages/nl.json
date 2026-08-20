@@ -147,44 +147,660 @@
   },
   "Home": {
     "metaTitle": "PDF naar Markdown Converter — Gratis, privé & lokaal",
-    "metaDescription": "Gratis PDF naar Markdown converter in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
-    "keywords": ["pdf naar markdown converter", "pdf naar markdown", "pdf converteren naar markdown", "pdf naar md", "pdf naar markdown online gratis"],
-    "badge": "100% lokaal · geen upload",
+    "metaDescription": "Gratis PDF naar Markdown converter in je browser. 100% lokaal — bestanden verlaten je apparaat nooit. Koppen, tabellen en outline blijven intact — klaar voor bewerken, zoeken, AI en RAG.",
+    "keywords": [
+      "pdf naar markdown converter",
+      "pdf naar markdown",
+      "pdf converteren naar markdown",
+      "pdf naar md",
+      "pdf naar markdown online gratis"
+    ],
     "h1": "PDF naar Markdown Converter",
-    "subtitle": "Converteer PDF naar schone Markdown direct in je browser. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows.",
-    "features": [
+    "nav": {
+      "skip": "Ga naar inhoud",
+      "problem": "Waarom PDF's falen",
+      "markdown": "Waarom Markdown",
+      "how": "Hoe het werkt",
+      "use": "Toepassingen",
+      "faq": "FAQ",
+      "convert": "Converteer een PDF",
+      "open": "Menu openen",
+      "close": "Menu sluiten"
+    },
+    "hero": {
+      "title": "PDF naar Markdown die je kunt <em>bewerken, zoeken en ophalen</em>.",
+      "lede": "PDF's zijn gemaakt om te lezen en te delen, niet om te bewerken, te zoeken of voor RAG. Wij converteren PDF naar Markdown met koppen, tabellen, lijsten en outline intact — klaar voor docs, retrieval en AI.",
+      "cta": "Converteer PDF naar Markdown",
+      "sample": "Bekijk een voorbeeldconversie",
+      "support": "Haal de tekst <em>én</em> het document eruit: koppen, tabellen, lijsten, links en hiërarchie — geen stapel ongestructureerde tekens.",
+      "privacy": "100% lokaal in je browser — bestanden verlaten je apparaat nooit. Max 50 MB. Probeer een voorbeeld-PDF in de converter.",
+      "chipsAria": "Veelgebruikte bestemmingen",
+      "chips": [
+        "RAG",
+        "LLMs",
+        "Kennisbanken",
+        "Docs",
+        "Zoeken",
+        "Websites"
+      ]
+    },
+    "preview": {
+      "channel": "Methode",
+      "share": "Gebruik"
+    },
+    "convert": {
+      "eyebrow": "Converteren in de browser",
+      "title": "Sleep een PDF. Krijg gestructureerde Markdown.",
+      "lede": "Geen upload. Koppen, tabellen, lijsten en outline blijven intact — daarna kopiëren of downloaden."
+    },
+    "th": {
+      "trait": "Kenmerk",
+      "means": "Wat het in de praktijk betekent",
+      "hurts": "Waarom het moderne workflows schaadt",
+      "use": "Gebruik",
+      "whyPdf": "Waarom PDF",
+      "whyMd": "Waarom Markdown"
+    },
+    "problem": {
+      "eyebrow": "Het probleem",
+      "title": "Een PDF onthoudt hoe een pagina eruitziet. Niet wat de inhoud betekent.",
+      "lede": "PDF (Portable Document Format) is gemaakt om elektronische documenten zo te bewaren dat ze er overal hetzelfde uitzien. Dat is een voordeel bij een contract, rapport of gedrukt handboek. Het is een probleem als je de <em>inhoud</em> nodig hebt.",
+      "quote": "Een PDF bewaart “hoe dit document eruit moet zien”, niet “waaruit dit document bestaat.”",
+      "goodTag": "Waar een PDF goed in is",
+      "goodH": "Gemaakt voor presentatie",
+      "badTag": "Waar dat ontwerp faalt",
+      "badH": "Lastig voor werk — en voor AI",
+      "goodRows": [
+        {
+          "trait": "Vaste layout",
+          "means": "Lettertypen, afbeeldingen, tabellen, spatiëring, kop- en voetteksten blijven staan. De pagina reflowt niet op een ander apparaat."
+        },
+        {
+          "trait": "Cross-platform",
+          "means": "Windows, macOS, Linux, iOS en Android kunnen het allemaal openen."
+        },
+        {
+          "trait": "Drukklaar",
+          "means": "Paginaformaat en printlayout houden stand, daarom gaan contracten, rapporten, papers en handleidingen als PDF de deur uit."
+        },
+        {
+          "trait": "Stabiele distributie",
+          "means": "Eenmaal gegenereerd werkt het als eindversie: lezen, delen, archiveren."
+        },
+        {
+          "trait": "Complexe inhoud",
+          "means": "Een PDF is zelden “alleen tekst.” Afbeeldingen, tabellen, links, vectoren, embedded fonts en scans horen er vaak bij."
+        }
+      ],
+      "badRows": [
+        {
+          "trait": "Structuur-onvriendelijk",
+          "hurts": "PDF geeft om de pagina, niet om de outline. Machines hebben moeite koppen, alinea's, lijsten en tabellen terug te vinden."
+        },
+        {
+          "trait": "Onhandig te bewerken",
+          "hurts": "Anders dan Word of Markdown is PDF niet ontworpen voor frequent herschrijven."
+        },
+        {
+          "trait": "Moeilijk te parsen",
+          "hurts": "Embedded fonts, meerkoloms layouts, tabellen, afbeeldingen en voetnoten maken extractie lastiger."
+        },
+        {
+          "trait": "Soms geen tekst",
+          "hurts": "Veel PDF's zijn scans — afbeeldingen van pagina's. Je hebt OCR nodig voordat er woorden zijn."
+        }
+      ],
+      "see": "Wat jij ziet",
+      "seeP": "Op de pagina kan een PDF een hoofdstuk, sectie, lijst of tabel lijken.",
+      "seeCode": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+      "soft": "Wat software ziet",
+      "softP": "Een programma ziet vaak iets anders: strings, coördinaten, fonts en afbeeldingen over een canvas. De <em>echte</em> titel, alineagrenzen, lijst en tabel terughalen is niet gegarandeerd.",
+      "gap1": "<strong>PDF</strong> is voor mensen. Het benadrukt visuele layout.",
+      "gap2": "<strong>Markdown</strong> is voor gestructureerde inhoud — bewerken, software en AI.",
+      "gap3": "Met Markdown is hetzelfde document klaar voor zoeken, kennisbanken, RAG, embeddings en LLM's.",
+      "close": "Een PDF rechtstreeks in een kennisbank droppen is vaak de verkeerde eerste stap. Het model krijgt tekst. Het krijgt geen structuur."
+    },
+    "md": {
+      "eyebrow": "De bestemming",
+      "title": "Markdown bewaart de inhoud. En maakt de structuur expliciet.",
+      "lede": "Markdown is een lichte opmaaktaal. Een paar platte-tekstsymbolen staan voor koppen, alinea's, lijsten, tabellen, links en code. Je kunt de bron lezen zonder te renderen.",
+      "sample": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+      "diff": "Wat Markdown anders maakt",
+      "traits": [
+        {
+          "title": "Duidelijke structuur",
+          "body": "#, ##, - en vergelijkbare markeringen maken koppen en lijsten expliciet."
+        },
+        {
+          "title": "Platte tekst",
+          "body": "Het is een tekstbestand. Je zit niet vast in een layoutformaat."
+        },
+        {
+          "title": "Makkelijk te bewerken",
+          "body": "Elke teksteditor werkt. Geen kantoorsuite nodig."
+        },
+        {
+          "title": "Makkelijk te lezen",
+          "body": "Zelfs het ruwe bestand is leesbaar."
+        },
+        {
+          "title": "Klein",
+          "body": "Meestal veel lichter dan PDF of Word."
+        },
+        {
+          "title": "Makkelijk te zoeken",
+          "body": "Gestructureerde tekst is eenvoudig full-text te doorzoeken."
+        },
+        {
+          "title": "Makkelijk te converteren",
+          "body": "Markdown wordt HTML, PDF, Word en meer."
+        },
+        {
+          "title": "Programma-vriendelijk",
+          "body": "Koppen, alinea's en lijsten zijn expliciet, zodat software ze kan parsen."
+        },
+        {
+          "title": "Versiebeheer-vriendelijk",
+          "body": "Platte tekst hoort in Git."
+        },
+        {
+          "title": "Cross-platform",
+          "body": "Windows, macOS, Linux — allemaal."
+        },
+        {
+          "title": "AI-vriendelijk",
+          "body": "Gestructureerde tekst is makkelijker voor LLM's, embeddings en RAG."
+        }
+      ],
+      "why": "De echte reden om het te gebruiken",
+      "sep": "Markdown scheidt <strong>inhoud</strong> van <strong>visuele layout</strong>.",
+      "pdfAsks": "PDF vraagt: <em>Hoe moet dit er op de pagina uitzien?</em>",
+      "mdAsks": "Markdown vraagt: <em>Wat is dit, en hoe is het gestructureerd?</em>",
+      "notCosmetic": "Dat is geen cosmetisch verschil. Het is een werkverschil.",
+      "whyCode": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+      "tree": "Je hebt niet alleen woorden. Je hebt een boom.",
+      "treeP": "Die hiërarchie is waar moderne contentworkflows op draaien.",
+      "treeCode": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+      "aiNeed": "AI heeft niet alleen “de tekst” nodig. Het heeft de relaties tussen stukken tekst nodig. Voor AI of RAG worden kopniveaus, alineagrenzen, lijsten en tabellen ineens ondubbelzinnig.",
+      "fits": "Daarom past Markdown bij:",
+      "chips": [
+        "LLMs",
+        "RAG",
+        "Vectordatabases",
+        "Embeddings",
+        "AI-kennisbanken",
+        "AI-agents",
+        "Semantisch zoeken",
+        "Documentatie",
+        "Contentbeheer"
+      ],
+      "close": "Als de volgende stap bewerken, retrieval of generatie is, is Markdown het formaat dat al op die klus lijkt."
+    },
+    "cmp": {
+      "eyebrow": "Twee formaten, twee taken",
+      "title": "PDF is voor levering. Markdown is voor werk.",
+      "quote": "PDF bewaart hoe een document eruitziet. Markdown bewaart wat een document is.",
+      "rows": [
+        {
+          "label": "Kern doel",
+          "pdf": "Pagina en visuele layout bewaren",
+          "md": "Inhoud en structuur uitdrukken"
+        },
+        {
+          "label": "Bewerkbaarheid",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "Machine-parsing",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "Zoeken",
+          "pdf": "★★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "AI-verwerking",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "RAG",
+          "pdf": "Slechte fit as-is",
+          "md": "Natuurlijke fit"
+        },
+        {
+          "label": "Versiebeheer",
+          "pdf": "Onhandig",
+          "md": "Native"
+        },
+        {
+          "label": "Bestandsgrootte",
+          "pdf": "Meestal groter",
+          "md": "Meestal klein"
+        },
+        {
+          "label": "Cross-platform",
+          "pdf": "Ja",
+          "md": "Ja"
+        },
+        {
+          "label": "Menselijk lezen",
+          "pdf": "Ja",
+          "md": "Ja"
+        },
+        {
+          "label": "Paginalayout",
+          "pdf": "Sterk",
+          "md": "Zwak"
+        }
+      ],
+      "still": "Je hebt nog steeds PDF's nodig. Contracten, rapporten en papers moeten er voor elke lezer hetzelfde uitzien. Je hebt Markdown nodig als hetzelfde materiaal hergebruikt, bevraagd, bijgewerkt of aan een model gegeven moet worden.",
+      "close": "De formaten zijn geen vijanden. Ze hebben verschillende taken. Het ontbrekende stuk is de conversie ertussen."
+    },
+    "bridge": {
+      "eyebrow": "Het product",
+      "title": "PDF naar Markdown is de ontbrekende stap — geen novelty-converter.",
+      "lede": "Het belangrijkste materiaal leeft al als PDF. Het werk dat je daarna wilt niet: herschrijven, zoeken, ophalen, samenvatten, publiceren. Dat werk heeft structuur nodig.",
+      "p1": "PDF — vergrendelde layout, lastig voor machines",
+      "p3": "Markdown — bewerkbaar, doorzoekbaar, AI-vriendelijk",
+      "p4": "LLM / RAG / kennisbank / workflow",
+      "notText": "Je koopt geen “tekst uit een PDF.” Je koopt een document dat de rest van je stack kan gebruiken.",
+      "recover": "Wat conversie moet terughalen",
+      "extract": [
+        {
+          "title": "Lopende tekst",
+          "body": "De woorden, in leesvolgorde"
+        },
+        {
+          "title": "Koppen & outline",
+          "body": "Hoofdstuk, sectie, subsectie"
+        },
+        {
+          "title": "Tabellen",
+          "body": "Rijen en kolommen, geen foto van een raster"
+        },
+        {
+          "title": "Lijsten",
+          "body": "Items, geen hintergebleven bullets op een canvas"
+        },
+        {
+          "title": "Links",
+          "body": "Bestemmingen die je nog kunt volgen"
+        },
+        {
+          "title": "Documentstructuur",
+          "body": "De relaties, niet alleen de tekens"
+        }
+      ],
+      "ctaLine": "Zet je PDF's om in schone, gestructureerde Markdown — klaar voor bewerken, zoeken, AI, RAG en meer."
+    },
+    "when": {
+      "eyebrow": "Kies het juiste formaat",
+      "title": "Eén contentpijplijn. Drie taken.",
+      "lede": "Zie ze als een keten, niet als een keuze: <strong>PDF</strong> is voor levering en lezen → <strong>Markdown</strong> is voor bewerken en verwerken → <strong>PDF naar Markdown</strong> maakt van bestaande PDF's gestructureerde inhoud waar je mee kunt werken.",
+      "tabsAria": "Wanneer welk formaat",
+      "tabPdf": "Wanneer PDF klopt",
+      "tabMd": "Wanneer Markdown klopt",
+      "tabNeed": "Wanneer je conversie nodig hebt",
+      "pdfH": "Als de inhoud klaar is",
+      "pdfP": "PDF is op z'n best als de inhoud getoond, gedeeld, gedrukt of gearchiveerd moet worden zonder drift.",
+      "pdfJob": "De taak van PDF, in één zin: Wat zij zien moet matchen met wat ik maakte.",
+      "mdH": "Als de inhoud nog een leven heeft",
+      "mdP": "Markdown is op z'n best als je nog moet bewerken, bijwerken, zoeken, converteren of software laten lezen.",
+      "mdJob": "De taak van Markdown, in één zin: Maak de inhoud makkelijk te bewerken, beheren, zoeken en parsen.",
+      "needH": "Als het belangrijke materiaal al PDF is",
+      "needP": "Realiteit: een enorme hoeveelheid belangrijk materiaal is al PDF. Daarna moet je:",
+      "needClose": "Dat is de conversie. <strong>PDF → Markdown.</strong>",
+      "pdfRows": [
+        {
+          "use": "Contracten",
+          "why": "Layout blijft vast voor beide partijen en het archief."
+        },
+        {
+          "use": "Rapporten",
+          "why": "Grafieken, tekst en paginalayout blijven consistent."
+        },
+        {
+          "use": "Papers / onderzoek",
+          "why": "Formeel publiceren en lezen."
+        },
+        {
+          "use": "E-books",
+          "why": "Hoofdstukken, figuren en pagina-ontwerp blijven staan."
+        },
+        {
+          "use": "Producthandleidingen",
+          "why": "Mensen kunnen downloaden, lezen of printen."
+        },
+        {
+          "use": "Facturen / bonnen",
+          "why": "Het formulier schuift niet."
+        },
+        {
+          "use": "Bedrijfsdocumenten",
+          "why": "Formele distributie."
+        },
+        {
+          "use": "Cursusmateriaal",
+          "why": "Colleges en leerboeken in één bestand."
+        },
+        {
+          "use": "Print",
+          "why": "Paginageometrie overleeft de printer."
+        },
+        {
+          "use": "Archieven",
+          "why": "Een stabiele eindversie."
+        }
+      ],
+      "mdRows": [
+        {
+          "use": "Technische docs",
+          "why": "Ontwikkelaars kunnen het direct bewerken."
+        },
+        {
+          "use": "Kennisbanken",
+          "why": "Structuur is helder; organiseren is makkelijk."
+        },
+        {
+          "use": "Blogs / schrijven",
+          "why": "Snel schrijven; makkelijk een pagina van maken."
+        },
+        {
+          "use": "Productdocumentatie",
+          "why": "Hoofdstukken, secties en codeblokken zijn first-class."
+        },
+        {
+          "use": "AI-kennisbanken",
+          "why": "Modellen gaan beter om met gestructureerde tekst."
+        },
+        {
+          "use": "Zoeken",
+          "why": "Platte tekst is makkelijker te indexeren."
+        },
+        {
+          "use": "RAG",
+          "why": "Schonere chunking, embedding en retrieval."
+        },
+        {
+          "use": "Git / GitHub",
+          "why": "Platte tekst is waar versiebeheer voor is."
+        },
+        {
+          "use": "Project-READMEs",
+          "why": "Native op GitHub en vergelijkbare platforms."
+        },
+        {
+          "use": "Contentconversie",
+          "why": "Eén bron → HTML, PDF en andere output."
+        }
+      ],
+      "needs": [
+        "De inhoud bewerken",
+        "De tekst extraheren",
+        "Een kennisbank bouwen",
+        "RAG bouwen",
+        "Aan een AI voeren",
+        "Documenten doorzoeken",
+        "Papers analyseren",
+        "Tabellen extraheren",
+        "Er een website van maken",
+        "Er Markdown-docs van maken"
+      ]
+    },
+    "how": {
+      "eyebrow": "Hoe het werkt",
+      "title": "Converteer PDF naar Markdown in drie stappen.",
+      "s1": "Upload",
+      "s1p": "Een rapport, handleiding, paper, handboek, SOP of archief-PDF — inclusief bestanden die tekst, tabellen, afbeeldingen en links mengen.",
+      "s2": "Converteer",
+      "s2p": "We halen meer terug dan een tekstdump: koppen, lijsten, tabellen, links en leesvolgorde, zodat de Markdown nog documentvorm heeft.",
+      "s3": "Gebruik het",
+      "s3p": "Bewerk. Zoek. Chunk. Embed. Publiceer. Geef het aan een LLM. Zet het in Git.",
+      "p2": "Converteer",
+      "p3": "gestructureerde Markdown",
+      "p4": "jouw workflow"
+    },
+    "uc": {
+      "eyebrow": "Toepassingen",
+      "title": "PDF naar Markdown voor RAG, docs en hergebruik.",
+      "tabsAria": "Toepassingen",
+      "tab1": "AI / RAG",
+      "tab2": "Voer een LLM",
+      "tab3": "Onderzoek",
+      "tab4": "Tech docs",
+      "tab5": "Website",
+      "tab6": "Hergebruik",
+      "primary": "Primaire taak"
+    },
+    "uc1": {
+      "h": "AI / RAG-kennisbanken",
+      "p": "Een bedrijf heeft al duizend PDF's: producthandleidingen, technische docs, interne SOP's, contracten, onderzoeksrapporten, trainingsmateriaal. Het doel is een assistent die uit <em>die</em> bestanden antwoordt. PDF's in de pijplijn dumpen is meestal niet de beste eerste zet.",
+      "pile": "De stapel die je al hebt",
+      "list": [
+        "Producthandleidingen",
+        "Technische documentatie",
+        "Interne SOP's",
+        "Contracten",
+        "Onderzoeksrapporten",
+        "Trainingsmateriaal"
+      ],
+      "pipe": "De pijplijn die werkt",
+      "pipeCode": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+      "close": "<strong>PDF naar Markdown is de dataprep-stap voor een AI-kennisbank.</strong> Zonder structuur snijdt chunking op de verkeerde plek, mengen embeddings losse secties, en geeft retrieval blobs in plaats van antwoorden. Met Markdown is een kop een kop, een tabel een tabel, en kan een sectie als sectie worden opgehaald."
+    },
+    "uc2": {
+      "h": "Voer een lange PDF aan een LLM",
+      "p": "Je hebt een bestand van 100 pagina's: <em>2026 Global Market Research Report</em>. Je wilt dat ChatGPT, Claude of Gemini het rapport samenvat, kerncijfers haalt, concurrenten analyseert, markttrends vindt en vragen uit het document beantwoordt.",
+      "want": "Wat je van het model wilt",
+      "list": [
+        "Het rapport samenvatten",
+        "Kerncijfers halen",
+        "Concurrenten analyseren",
+        "Markttrends vinden",
+        "Vragen uit het document beantwoorden"
+      ],
+      "close": "Na conversie kan het model de outline volgen in plaats van te gokken. Dat is het verschil tussen “plak een muur tekst” en “geef het model een document.”",
+      "code": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n..."
+    },
+    "uc3": {
+      "h": "Papers en onderzoek",
+      "p": "Onderzoekers leven in PDF's. Als Markdown kun je de volledige tekst zoeken, secties extraheren, een onderzoeksbibliotheek organiseren, een literatuurkennisbank bouwen, samenvatten met AI, RAG over het corpus draaien en papers vergelijken.",
+      "codeIn": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+      "codeOut": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+      "close": "De papers blijven citeerbaar als PDF. De werk kopie wordt iets waar je queries op kunt doen."
+    },
+    "uc4": {
+      "h": "Technische documentatie",
+      "p": "Veel bestaand technisch materiaal gaat nog als PDF de deur uit. Teams willen levende bestanden — dan horen ze in GitHub, GitLab, Notion, een documentatiesite of een interne kennisbank.",
+      "from": "Van vergrendelde handleidingen",
+      "to": "Naar bestanden die je kunt onderhouden",
+      "close": "Onderhoud wordt goedkoper: diffs, reviews, zoeken en opnieuw publiceren werken zoals software al werkt."
+    },
+    "uc5": {
+      "h": "PDF → website",
+      "p": "Een producthandleiding die een download was, kan een site worden. De PDF is een bestand dat mensen bewaren. Het Markdown-pad wordt documentatie die je kunt zoeken, navigeren en op het web openen.",
+      "code": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website"
+    },
+    "uc6": {
+      "h": "Content hergebruik",
+      "p": "Het bedrijf heeft al <file>Company Handbook.pdf</file>. Dat mag niet in dat ene bestand gevangen blijven. Dat is hergebruik: één bron van waarheid, veel output — omdat de structuur eindelijk los van de pagina bestaat.",
+      "code": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation"
+    },
+    "tools": {
+      "chatgpt": "PDF naar Markdown voor ChatGPT & RAG",
+      "obsidian": "PDF naar Markdown voor Obsidian",
+      "notion": "PDF naar Markdown voor Notion"
+    },
+    "ba": {
+      "eyebrow": "Voor / na",
+      "title": "Tekstextractie is geen documentbegrip.",
+      "before": "Voor — wat een PDF vaak is voor software",
+      "after": "Na — dezelfde inhoud als Markdown",
+      "beforeCode": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "afterCode": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "p": "Regels op een pagina. Misschien de juiste volgorde. Misschien niet. Kopniveau is een gok. Na conversie zijn koppen, grenzen en hiërarchie expliciet — dat is het verschil tussen strings van een pagina trekken en een document terughalen.",
+      "close": "AI-systemen gebruiken die hiërarchie. Zoeken ook. Editors ook. Een PDF geeft hem niet cadeau."
+    },
+    "map": {
+      "eyebrow": "Na conversie",
+      "title": "Eén conversie. Drie richtingen.",
+      "p": "Houd de PDF voor mensen. Converteer als de volgende lezer een editor, zoekindex, model of site is.",
+      "pdf": "Lezen / delen / printen / archiveren",
+      "read": "Lezen / delen",
+      "readD": "Een persoon leest de pagina",
+      "convert": "Converteer",
+      "extract": "Inhoud extraheren",
+      "md": "Gestructureerde bron van waarheid",
+      "edit": "Menselijk bewerken",
+      "editD": "Content ops",
+      "aiD": "Kennisbank",
+      "web": "Website",
+      "webD": "HTML / docs-site"
+    },
+    "job": {
+      "pdf": "Lezen / Delen / Printen",
+      "md": "Schrijven / Structuur / Verwerken",
+      "conv": "Extraheren / Converteren / Hergebruiken"
+    },
+    "who": {
+      "eyebrow": "Voor wie",
+      "title": "Gebouwd voor mensen die een stapel PDF's erfden en daarna iets moeten doen.",
+      "people": [
+        {
+          "title": "AI- en platformteams",
+          "body": "Handleidingen, SOP's, contracten en training decks omzetten in RAG-assistenten."
+        },
+        {
+          "title": "Onderzoekers en analisten",
+          "body": "Zoeken, vergelijken en vragen stellen over papers en lange rapporten."
+        },
+        {
+          "title": "Docs- en contentteams",
+          "body": "API-PDF's, gebruikershandleidingen en handboeken naar Git, Notion of een docs-site."
+        },
+        {
+          "title": "Iedereen die een PDF los moet trekken",
+          "body": "Bewerken, tabellen extraheren, als website herpubliceren, of een bestand hergebruiken dat nooit een werkkopie was."
+        }
+      ],
+      "close": "Als de PDF klaar is, laat hem PDF. Als het werk niet klaar is, converteer."
+    },
+    "intent": {
+      "eyebrow": "Waar mensen op zoeken",
+      "title": "Scans, tabellen, RAG, chatvensters en hele mappen.",
+      "lede": "Die queries zitten naast de hoofdquery. Elke is een klus die het bestand moet overleven — geen extra college over formaten."
+    },
+    "intents": [
       {
-        "title": "Privacy by design",
-        "body": "Alles gebeurt in je browser. Geen uploads, geen servers, geen tracking van je documenten."
+        "id": "intent-ocr",
+        "tag": "OCR",
+        "tagKind": "pdf",
+        "h": "Gescande PDF's converteren met OCR",
+        "p": "Een gescand handboek is een stapel afbeeldingen. Er is geen tekstlaag tot OCR draait — en OCR alleen laat een stroom tekens achter. Het nuttige pad is OCR plus structuur: leesvolgorde, kopniveaus, tabellen als tabellen, niet als foto van een raster. Zo wordt een scan iets dat je kunt zoeken, chunking of bewerken. Contracten, facturen en oudere papers zijn vaak scans; born-digital bestanden kunnen OCR overslaan, scans kunnen de outline niet overslaan.",
+        "href": "/scanned-pdf-to-markdown",
+        "link": "Open de OCR-converter"
       },
       {
-        "title": "Schone structuur",
-        "body": "Koppen, lijsten, geneste opsommingen en tabellen blijven behouden, zodat de Markdown direct klaar is voor gebruik."
+        "id": "intent-rag",
+        "tag": "RAG",
+        "tagKind": "md",
+        "h": "Gestructureerde bestanden voor RAG en embeddings",
+        "p": "Als je een PDF as-is embed, snijdt de splitter vaak midden in een tabel of sectie omdat hij nooit een kop zag. Retrieval geeft dan een blob die gerelateerd lijkt en het niet is. Geef de pijplijn Markdown met expliciete koppen en echte tabellen, en chunking kan de outline volgen. Conversie vervangt je chunk size niet. Het voorkomt dat het model kop- en voetteksten als antwoord embedt.",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "LLM- & RAG-klare Markdown"
       },
       {
-        "title": "Gratis & onbeperkt",
-        "body": "Geen registratie, geen watermerk, geen daglimiet voor conversies van enkele bestanden."
+        "id": "intent-tables",
+        "tag": "Structuur",
+        "tagKind": "bridge",
+        "h": "Tabellen en koppen behouden",
+        "p": "Kopiëren-plakken en naïeve extractors pletten een tweekoloms rapport tot één stroom: de kop is alleen grotere letters, de tabel restspaties. Downstream kun je geen kolom sorteren of “sectie 4.2” ophalen. Conversie moet Markdown-koppen en pipe-tabellen uitgeven, met leesvolgorde zoals een mens de pagina leest.",
+        "href": "/pdf-table-to-markdown",
+        "link": "Extraheer tabellen naar Markdown"
+      },
+      {
+        "id": "intent-chatgpt",
+        "tag": "ChatGPT",
+        "tagKind": "pdf",
+        "h": "Conversie vs plakken in ChatGPT",
+        "p": "Pagina's plakken in ChatGPT, Claude of Gemini is prima voor een eenmalige samenvatting. Het is een zwak plan voor een bibliotheek. Het model krijgt een zwak geordende blob. Converteer eerst, prompt daarna: de outline zit in het bestand, en dezelfde Markdown kan naar een ander model, interne RAG of Git.",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "Converteer voor ChatGPT & LLM's"
+      },
+      {
+        "id": "intent-batch",
+        "tag": "Batch",
+        "tagKind": "md",
+        "h": "PDF's in batch naar Markdown",
+        "p": "Eén bestand is een demo. Operaties zien eruit als een map: tweehonderd handleidingen, een contractarchief, een paper-corpus. Batchconversie moet bestandsnamen behouden, bestaande .md overslaan, en zichtbaar falen als een scan OCR nodig heeft. Begin met lelijke samples voordat je de job op alles zet.",
+        "href": "/batch-pdf-to-markdown",
+        "link": "Open de batchconverter"
       }
     ],
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Vragen die de moeite waard zijn vóór je converteert."
+    },
     "faqs": [
       {
-        "q": "Worden mijn bestanden naar een server geüpload?",
-        "a": "Nee. De conversie draait volledig in je browser met WebAssembly. Je PDF verlaat je apparaat nooit, wat het veilig maakt voor contracten, onderzoek en andere privédocumenten."
+        "q": "Waarom de PDF niet gewoon uploaden naar ChatGPT, Claude of Gemini?",
+        "a": "Dat kan, voor één keer. Een rapport van 100 pagina's landt nog steeds als een zwak gestructureerde blob. Geconverteerde Markdown maakt de outline expliciet, zodat samenvatting, extractie en Q&A iets hebben om vast te houden. Voor een kennisbank is het gat groter: RAG wil chunks met echte koppen, geen paginacoördinaten. Conversie draait volledig in je browser; het bestand wordt niet naar ons geüpload."
       },
       {
-        "q": "Wat behoudt de converter?",
-        "a": "Koppen, alinea's, genummerde en ongenummerde lijsten (inclusief geneste lijsten) en tabellen. Lopende kop- en voetteksten en paginanummers worden automatisch verwijderd."
+        "q": "Waarom Markdown in plaats van Word of platte tekst?",
+        "a": "Word mengt layout nog in het bestand. Platte tekst gooit de hiërarchie weg. Markdown bewaart inhoud en structuur en laat het pagina-ontwerp vallen — precies wat bewerken, Git, zoeken, embeddings en LLM's nodig hebben."
       },
       {
-        "q": "Ondersteunt het gescande PDF's?",
-        "a": "Tekstgebaseerde PDF's worden vandaag volledig ondersteund. OCR voor gescande of alleen-afbeelding-PDF's staat op de roadmap."
+        "q": "Wat extraheer je eigenlijk?",
+        "a": "Tekst, koppen, tabellen, lijsten, links en documentstructuur. Het punt is geen ruwe dump. Het punt is een bestand dat nog een outline heeft. Paginaheaders, voetteksten en paginanummers worden automatisch verwijderd."
+      },
+      {
+        "q": "En gescande PDF's?",
+        "a": "Veel PDF's zijn afbeeldingen van pagina's. Die hebben OCR nodig voordat er tekst is om te structureren. Gebruik de ingebouwde OCR-converter, die tekst herkent in je browser."
+      },
+      {
+        "q": "Overleven meerkoloms layouts, voetnoten, embedded fonts en gemengde tabellen?",
+        "a": "Dat zijn de lastige gevallen — en ze komen vaak voor. Daarom bestaat er een dedicated PDF → Markdown-stap. Conversie die alleen strings plakt, verstoort leesvolgorde en mist de outline."
+      },
+      {
+        "q": "Is dit voor één bestand of een heel archief?",
+        "a": "Beide. Eén rapport, zodat je een LLM ernaar kunt vragen. Duizend handleidingen, SOP's en trainings-PDF's, zodat je kunt chunking, embedden en ophalen. Gebruik de batchconverter voor mappen. Het blijft lokaal."
+      },
+      {
+        "q": "Heb ik de originele PDF nog nodig?",
+        "a": "Ja, als je een stabiel, printgetrouw, deelbaar origineel nodig hebt. Conversie vervangt PDF niet voor contracten, facturen of archiefkopieën. Het ontgrendelt een tweede leven voor dezelfde inhoud."
+      },
+      {
+        "q": "Kan ik de Markdown weer een site of ander formaat van maken?",
+        "a": "Dat is een van de redenen om te converteren. Markdown wordt makkelijk HTML, PDF, Word, docs-sites, FAQ's, blogposts en AI-datasets. De PDF was een download. De Markdown is een bron."
       }
-    ]
+    ],
+    "cta": {
+      "eyebrow": "Aan de slag",
+      "title": "Stop met PDF's als doodlopende weg te behandelen.",
+      "p1": "PDF's zijn geweldig om te lezen en te delen, maar niet ontworpen voor moderne contentworkflows. Markdown maakt inhoud gestructureerd, bewerkbaar, doorzoekbaar en AI-vriendelijk.",
+      "p2": "Zet je PDF's om in schone, gestructureerde Markdown — klaar voor bewerken, zoeken, AI, RAG en meer."
+    },
+    "footer": {
+      "aria": "Footer",
+      "convert": "Converteren",
+      "line": "PDF — Lezen / Delen / Printen · Markdown — Schrijven / Structuur / Verwerken · PDF naar Markdown — Extraheren / Converteren / Hergebruiken"
+    },
+    "subtitle": "Converteer PDF naar schone Markdown direct in je browser. Gebouwd voor LLM-, RAG-, Obsidian- en Notion-workflows."
   },
   "Guide": {
     "metaTitle": "PDF naar Markdown converteren — Gratis stapsgewijze gids",
     "metaDescription": "Leer in 3 stappen hoe je PDF naar Markdown converteert. Gratis browserconverter — geen upload, geen account. Werkt met tekstgebaseerde PDF's voor LLM, Obsidian en docs.",
-    "keywords": ["pdf naar markdown converteren", "convert pdf to markdown", "pdf naar markdown tutorial", "pdf naar markdown stap voor stap"],
+    "keywords": [
+      "pdf naar markdown converteren",
+      "convert pdf to markdown",
+      "pdf naar markdown tutorial",
+      "pdf naar markdown stap voor stap"
+    ],
     "badge": "Stapsgewijze gids",
     "h1": "PDF naar Markdown converteren",
     "subtitle": "Zet elke tekstgebaseerde PDF om in schone Markdown in je browser — gratis, privé en binnen seconden klaar. Gebruik de converter hierboven en volg de stappen.",
@@ -224,7 +840,12 @@
   "Obsidian": {
     "metaTitle": "PDF naar Markdown voor Obsidian — Offline & schoon",
     "metaDescription": "Zet PDF's om in schone Markdown-notities voor Obsidian. 100% offline in je browser — sleep het .md-bestand direct je vault in, met koppen, lijsten en tabellen intact.",
-    "keywords": ["pdf naar markdown voor obsidian", "obsidian pdf naar markdown", "pdf importeren in obsidian", "pdf naar md obsidian"],
+    "keywords": [
+      "pdf naar markdown voor obsidian",
+      "obsidian pdf naar markdown",
+      "pdf importeren in obsidian",
+      "pdf naar md obsidian"
+    ],
     "badge": "Offline · vault-klaar",
     "h1": "PDF naar Markdown voor Obsidian",
     "subtitle": "Converteer PDF's naar schone, offline Markdown-notities die je direct in je Obsidian-vault kunt plaatsen — koppen, lijsten en tabellen blijven intact.",
@@ -260,7 +881,12 @@
   "ChatGPT": {
     "metaTitle": "PDF naar Markdown voor ChatGPT, LLM's & RAG",
     "metaDescription": "Converteer PDF's naar schone Markdown die klaar is voor ChatGPT, Claude en RAG-pipelines. Compacte, gestructureerde output die LLM's betrouwbaar kunnen verwerken — lokaal verwerkt in je browser.",
-    "keywords": ["pdf naar markdown voor chatgpt", "pdf naar markdown voor llm", "pdf naar markdown voor rag", "pdf naar markdown voor ai"],
+    "keywords": [
+      "pdf naar markdown voor chatgpt",
+      "pdf naar markdown voor llm",
+      "pdf naar markdown voor rag",
+      "pdf naar markdown voor ai"
+    ],
     "badge": "LLM-klaar resultaat",
     "h1": "PDF naar Markdown voor ChatGPT & LLM's",
     "subtitle": "Converteer PDF's naar compacte, gestructureerde Markdown die ChatGPT, Claude en RAG-pipelines betrouwbaar kunnen verwerken — alles lokaal in je browser.",
@@ -296,7 +922,12 @@
   "Table": {
     "metaTitle": "PDF-tabel naar Markdown — Tabellen netjes converteren",
     "metaDescription": "Extraheer tabellen uit PDF's naar GitHub-flavored Markdown-tabellen. Kolomstructuur wordt automatisch gedetecteerd en lokaal in je browser verwerkt — geen upload.",
-    "keywords": ["pdf tabel naar markdown", "pdf tabel converteren naar markdown", "pdf naar markdown tabel", "tabel uit pdf extraheren naar markdown"],
+    "keywords": [
+      "pdf tabel naar markdown",
+      "pdf tabel converteren naar markdown",
+      "pdf naar markdown tabel",
+      "tabel uit pdf extraheren naar markdown"
+    ],
     "badge": "Tabellen · GFM-output",
     "h1": "PDF-tabel naar Markdown",
     "subtitle": "Extraheer tabellen uit je PDF's naar schone GitHub-flavored Markdown-tabellen. Kolomgrenzen worden automatisch gedetecteerd, alles in je browser.",
@@ -332,7 +963,12 @@
   "Notion": {
     "metaTitle": "PDF naar Markdown voor Notion — Schoon importeren",
     "metaDescription": "Converteer PDF's naar Markdown voor Notion. Schone koppen, lijsten en tabellen — plak in een Notion-pagina in seconden. 100% lokaal in je browser.",
-    "keywords": ["pdf naar markdown voor notion", "notion pdf naar markdown", "pdf importeren in notion", "pdf to markdown for notion"],
+    "keywords": [
+      "pdf naar markdown voor notion",
+      "notion pdf naar markdown",
+      "pdf importeren in notion",
+      "pdf to markdown for notion"
+    ],
     "badge": "Notion-klaar · plak om te importeren",
     "h1": "PDF naar Markdown voor Notion",
     "subtitle": "Zet PDF-rapporten, specs en docs om in schone Markdown die je direct in Notion plakt — koppen, lijsten en tabellen intact, volledig lokaal verwerkt.",
@@ -368,7 +1004,12 @@
   "Python": {
     "metaTitle": "PDF naar Markdown Python — Browsertool & scripttips",
     "metaDescription": "Converteer PDF naar Markdown zonder eerst Python te schrijven — gratis lokale browsertool. Plus tips voor pymupdf, pdfplumber en onze aankomende API.",
-    "keywords": ["pdf naar markdown python", "python pdf naar markdown", "convert pdf to markdown python", "pdf to markdown api"],
+    "keywords": [
+      "pdf naar markdown python",
+      "python pdf naar markdown",
+      "convert pdf to markdown python",
+      "pdf to markdown api"
+    ],
     "badge": "Geen pip · direct output",
     "h1": "PDF naar Markdown voor Python",
     "subtitle": "Markdown uit een PDF nodig voor een notebook, ETL-job of prototype? Converteer lokaal in de browser en kopieer de string naar je Python-workflow — geen omgevingssetup.",

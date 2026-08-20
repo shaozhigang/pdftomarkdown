@@ -6,15 +6,29 @@
   color-scheme: light;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
 }
 
-/* Subtle dot-grid texture behind the hero, fading out toward the edges. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Warm dot-grid on tool pages — matches home paper palette. */
 .hero-dots {
-  background-image: radial-gradient(circle, rgb(212 212 216) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    rgba(20, 19, 17, 0.08) 1px,
+    transparent 1px
+  );
   background-size: 22px 22px;
   -webkit-mask-image: radial-gradient(ellipse 75% 90% at 50% 20%, black 30%, transparent 100%);
   mask-image: radial-gradient(ellipse 75% 90% at 50% 20%, black 30%, transparent 100%);
@@ -32,7 +46,7 @@ details.faq > summary::after {
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 1rem;
   line-height: 1;
-  color: #a1a1aa;
+  color: #6b6860;
   flex-shrink: 0;
 }
 details.faq[open] > summary::after {

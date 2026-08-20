@@ -5,10 +5,15 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { TOOL_LINKS } from "@/lib/landing";
 
-export function ToolsMenu() {
+interface ToolsMenuProps {
+  tone?: "light" | "dark";
+}
+
+export function ToolsMenu({ tone = "light" }: ToolsMenuProps) {
   const t = useTranslations("Nav");
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const dark = tone === "dark";
 
   useEffect(() => {
     if (!open) return;
@@ -33,7 +38,11 @@ export function ToolsMenu() {
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="true"
         aria-expanded={open}
-        className="flex items-center gap-1 rounded-md px-2.5 py-1.5 text-sm text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
+        className={
+          dark
+            ? "flex min-h-11 items-center gap-1 rounded-full px-2.5 py-1.5 text-sm text-[#A8A59C] hover:bg-white/5 hover:text-[#EDEAE3]"
+            : "flex items-center gap-1 rounded-md px-2.5 py-1.5 text-sm text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
+        }
       >
         {t("tools")}
         <svg
@@ -55,7 +64,7 @@ export function ToolsMenu() {
       </button>
 
       {open && (
-        <div className="absolute right-0 z-30 mt-2 w-64 rounded-md border border-zinc-200 bg-white p-1.5 shadow-lg">
+        <div className="absolute right-0 z-50 mt-2 w-64 rounded-md border border-zinc-200 bg-white p-1.5 shadow-lg">
           {TOOL_LINKS.map((item) => (
             <Link
               key={item.slug}

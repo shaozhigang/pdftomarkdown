@@ -6,12 +6,17 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { LOCALE_LABELS } from "@/i18n/locales";
 import { routing } from "@/i18n/routing";
 
-export function LocaleSwitcher() {
+interface LocaleSwitcherProps {
+  tone?: "light" | "dark";
+}
+
+export function LocaleSwitcher({ tone = "light" }: LocaleSwitcherProps) {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const dark = tone === "dark";
 
   const current = LOCALE_LABELS[locale] ?? {
     short: locale.toUpperCase(),
@@ -49,7 +54,11 @@ export function LocaleSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="flex items-center gap-1 rounded border border-zinc-300 px-1.5 py-0.5 font-mono font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900"
+        className={
+          dark
+            ? "flex min-h-11 min-w-[44px] items-center gap-1 rounded-full border border-[rgba(237,234,227,0.1)] px-2.5 py-1 font-mono font-medium text-[#A8A59C] transition hover:bg-white/5 hover:text-[#EDEAE3]"
+            : "flex items-center gap-1 rounded border border-zinc-300 px-1.5 py-0.5 font-mono font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-900"
+        }
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-label="Select language"
