@@ -1,0 +1,5693 @@
+[
+  {
+    "en": "Home",
+    "fr": "Accueil",
+    "paths": [
+      "Nav.home"
+    ]
+  },
+  {
+    "en": "Tools",
+    "fr": "Outils",
+    "paths": [
+      "Nav.tools"
+    ]
+  },
+  {
+    "en": "for Obsidian",
+    "fr": "pour Obsidian",
+    "paths": [
+      "Nav.obsidian"
+    ]
+  },
+  {
+    "en": "for ChatGPT & LLMs",
+    "fr": "pour ChatGPT & LLM",
+    "paths": [
+      "Nav.chatgpt"
+    ]
+  },
+  {
+    "en": "for Notion",
+    "fr": "pour Notion",
+    "paths": [
+      "Nav.notion"
+    ]
+  },
+  {
+    "en": "with Python",
+    "fr": "avec Python",
+    "paths": [
+      "Nav.python"
+    ]
+  },
+  {
+    "en": "Table Extractor",
+    "fr": "Extracteur de tableaux",
+    "paths": [
+      "Nav.table"
+    ]
+  },
+  {
+    "en": "PDF → Word",
+    "fr": "PDF → Word",
+    "paths": [
+      "Nav.word"
+    ]
+  },
+  {
+    "en": "Markdown → PDF",
+    "fr": "Markdown → PDF",
+    "paths": [
+      "Nav.mdToPdf"
+    ]
+  },
+  {
+    "en": "Scanned PDF (OCR)",
+    "fr": "PDF scanné (OCR)",
+    "paths": [
+      "Nav.ocr"
+    ]
+  },
+  {
+    "en": "with Images",
+    "fr": "avec images",
+    "paths": [
+      "Nav.images"
+    ]
+  },
+  {
+    "en": "Batch Convert",
+    "fr": "Conversion par lot",
+    "paths": [
+      "Nav.batch"
+    ]
+  },
+  {
+    "en": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",
+    "fr": "PDF vers Markdown · toutes les conversions s'exécutent localement dans votre navigateur, vos fichiers ne quittent jamais votre appareil.",
+    "paths": [
+      "Footer.tagline"
+    ]
+  },
+  {
+    "en": "About",
+    "fr": "À propos",
+    "paths": [
+      "Footer.about"
+    ]
+  },
+  {
+    "en": "Contact",
+    "fr": "Contact",
+    "paths": [
+      "Footer.contact"
+    ]
+  },
+  {
+    "en": "How-to Guide",
+    "fr": "Guide",
+    "paths": [
+      "Footer.guide"
+    ]
+  },
+  {
+    "en": "Privacy Policy",
+    "fr": "Politique de confidentialité",
+    "paths": [
+      "Footer.privacyPolicy",
+      "PrivacyPolicy.metaTitle",
+      "PrivacyPolicy.h1",
+      "Contact.privacyLink"
+    ]
+  },
+  {
+    "en": "click to browse",
+    "fr": "cliquez pour parcourir",
+    "paths": [
+      "Converter.dropClickBrowse",
+      "Ocr.dropClickBrowse"
+    ]
+  },
+  {
+    "en": "100% private — files never leave your browser",
+    "fr": "100 % privé — les fichiers ne quittent jamais votre navigateur",
+    "paths": [
+      "Converter.privacyBadge",
+      "Ocr.privacyBadge"
+    ]
+  },
+  {
+    "en": "Original PDF",
+    "fr": "PDF original",
+    "paths": [
+      "Converter.paneOriginal",
+      "Ocr.paneOriginal"
+    ]
+  },
+  {
+    "en": "Drop your PDF here, or",
+    "fr": "Déposez votre PDF ici, ou",
+    "paths": [
+      "Converter.dropTitle_general"
+    ]
+  },
+  {
+    "en": "Drop a PDF to import into Obsidian, or",
+    "fr": "Déposez un PDF pour l'import Obsidian, ou",
+    "paths": [
+      "Converter.dropTitle_obsidian"
+    ]
+  },
+  {
+    "en": "Drop a PDF for LLM-ready Markdown, or",
+    "fr": "Déposez un PDF pour du Markdown prêt pour LLM, ou",
+    "paths": [
+      "Converter.dropTitle_llm"
+    ]
+  },
+  {
+    "en": "Drop a PDF to extract tables, or",
+    "fr": "Déposez un PDF pour extraire les tableaux, ou",
+    "paths": [
+      "Converter.dropTitle_table"
+    ]
+  },
+  {
+    "en": "Drop a PDF to import into Notion, or",
+    "fr": "Déposez un PDF pour l'import Notion, ou",
+    "paths": [
+      "Converter.dropTitle_notion"
+    ]
+  },
+  {
+    "en": "Drop a PDF for Markdown output, or",
+    "fr": "Déposez un PDF pour la sortie Markdown, ou",
+    "paths": [
+      "Converter.dropTitle_python"
+    ]
+  },
+  {
+    "en": "Drop a PDF to keep its images, or",
+    "fr": "Déposez un PDF pour conserver les images, ou",
+    "paths": [
+      "Converter.dropTitle_images"
+    ]
+  },
+  {
+    "en": "Full document · 100% local · Max 50MB",
+    "fr": "Document complet · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_general"
+    ]
+  },
+  {
+    "en": "Vault-ready .md with frontmatter · 100% local · Max 50MB",
+    "fr": ".md prêt pour le vault avec frontmatter · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_obsidian"
+    ]
+  },
+  {
+    "en": "Compact Markdown + chunk markers for RAG · 100% local · Max 50MB",
+    "fr": "Markdown compact + marqueurs de chunks pour RAG · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_llm"
+    ]
+  },
+  {
+    "en": "Tables only · GFM output · 100% local · Max 50MB",
+    "fr": "Tableaux uniquement · sortie GFM · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_table"
+    ]
+  },
+  {
+    "en": "Notion-ready Markdown · 100% local · Max 50MB",
+    "fr": "Markdown prêt pour Notion · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_notion"
+    ]
+  },
+  {
+    "en": "Copy into scripts & notebooks · 100% local · Max 50MB",
+    "fr": "Pour scripts & notebooks · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_python"
+    ]
+  },
+  {
+    "en": "Text + embedded images inline · 100% local · Max 50MB",
+    "fr": "Texte + images intégrées inline · 100 % local · Max. 50 Mo",
+    "paths": [
+      "Converter.dropSubtitle_images"
+    ]
+  },
+  {
+    "en": "Please upload a PDF file.",
+    "fr": "Veuillez téléverser un fichier PDF.",
+    "paths": [
+      "Converter.errorNotPdf",
+      "Ocr.errorNotPdf"
+    ]
+  },
+  {
+    "en": "File exceeds 50MB. Larger files are not supported yet.",
+    "fr": "Le fichier dépasse 50 Mo. Les fichiers plus volumineux ne sont pas encore pris en charge.",
+    "paths": [
+      "Converter.errorTooLarge",
+      "Ocr.errorTooLarge"
+    ]
+  },
+  {
+    "en": "Converting document",
+    "fr": "Conversion du document",
+    "paths": [
+      "Converter.statusParsing_general"
+    ]
+  },
+  {
+    "en": "Building Obsidian note",
+    "fr": "Création de la note Obsidian",
+    "paths": [
+      "Converter.statusParsing_obsidian"
+    ]
+  },
+  {
+    "en": "Optimizing for LLM",
+    "fr": "Optimisation pour LLM",
+    "paths": [
+      "Converter.statusParsing_llm"
+    ]
+  },
+  {
+    "en": "Extracting tables",
+    "fr": "Extraction des tableaux",
+    "paths": [
+      "Converter.statusParsing_table"
+    ]
+  },
+  {
+    "en": "Preparing Notion import",
+    "fr": "Préparation de l'import Notion",
+    "paths": [
+      "Converter.statusParsing_notion"
+    ]
+  },
+  {
+    "en": "Generating Markdown",
+    "fr": "Génération du Markdown",
+    "paths": [
+      "Converter.statusParsing_python"
+    ]
+  },
+  {
+    "en": "Extracting text & images",
+    "fr": "Extraction des images",
+    "paths": [
+      "Converter.statusParsing_images"
+    ]
+  },
+  {
+    "en": "Choose another file",
+    "fr": "Choisir un autre fichier",
+    "paths": [
+      "Converter.chooseAnother"
+    ]
+  },
+  {
+    "en": "Conversion failed",
+    "fr": "Échec de la conversion",
+    "paths": [
+      "Converter.conversionFailed"
+    ]
+  },
+  {
+    "en": "Preview",
+    "fr": "Aperçu",
+    "paths": [
+      "Converter.tabPreview",
+      "Ocr.tabPreview"
+    ]
+  },
+  {
+    "en": "Source",
+    "fr": "Source",
+    "paths": [
+      "Converter.tabSource",
+      "Ocr.tabSource"
+    ]
+  },
+  {
+    "en": "{pages} pages · {ms} ms",
+    "fr": "{pages} pages · {ms} ms",
+    "paths": [
+      "Converter.statsInfo"
+    ]
+  },
+  {
+    "en": "{pages} pages · {tables} tables · {ms} ms",
+    "fr": "{pages} pages · {tables} tableaux · {ms} ms",
+    "paths": [
+      "Converter.statsTables"
+    ]
+  },
+  {
+    "en": "{pages} pages · {images} images · {ms} ms",
+    "fr": "{pages} pages · {images} images · {ms} ms",
+    "paths": [
+      "Converter.statsImages"
+    ]
+  },
+  {
+    "en": "Copy Markdown",
+    "fr": "Copier le Markdown",
+    "paths": [
+      "Converter.actionCopy"
+    ]
+  },
+  {
+    "en": "Copied",
+    "fr": "Copié",
+    "paths": [
+      "Converter.actionCopied"
+    ]
+  },
+  {
+    "en": "Download .md",
+    "fr": "Télécharger .md",
+    "paths": [
+      "Converter.actionDownload"
+    ]
+  },
+  {
+    "en": "New file",
+    "fr": "Nouveau fichier",
+    "paths": [
+      "Converter.actionNewFile",
+      "Ocr.actionNewFile"
+    ]
+  },
+  {
+    "en": "No text could be extracted. This may be a scanned or image-only PDF — try our OCR converter, which recognizes text from scanned PDFs in your browser.",
+    "fr": "Impossible d'extraire du texte. Il peut s'agir d'un PDF scanné ou composé uniquement d'images. La prise en charge OCR est prévue.",
+    "paths": [
+      "Converter.warningNoText"
+    ]
+  },
+  {
+    "en": "No tables were detected in this PDF. Try the full converter, or check that the PDF has text-based tables with clear column spacing.",
+    "fr": "Aucun tableau détecté. Essayez le convertisseur complet ou vérifiez que le PDF contient des tableaux textuels avec un espacement de colonnes clair.",
+    "paths": [
+      "Converter.warningNoTables"
+    ]
+  },
+  {
+    "en": "Frequently asked questions",
+    "fr": "Questions fréquentes",
+    "paths": [
+      "Landing.faqTitle"
+    ]
+  },
+  {
+    "en": "Related tools",
+    "fr": "Outils associés",
+    "paths": [
+      "Landing.relatedTitle"
+    ]
+  },
+  {
+    "en": "See it in action",
+    "fr": "Voir en action",
+    "paths": [
+      "Examples.title"
+    ]
+  },
+  {
+    "en": "What you get",
+    "fr": "Ce que vous obtenez",
+    "paths": [
+      "Examples.resultTitle"
+    ]
+  },
+  {
+    "en": "No PDF handy?",
+    "fr": "Pas de PDF sous la main ?",
+    "paths": [
+      "Examples.samplePrompt",
+      "Ocr.samplePrompt"
+    ]
+  },
+  {
+    "en": "Try a sample",
+    "fr": "Essayer un exemple",
+    "paths": [
+      "Examples.trySample",
+      "Ocr.trySample"
+    ]
+  },
+  {
+    "en": "Loading sample…",
+    "fr": "Chargement de l'exemple…",
+    "paths": [
+      "Examples.loadingSample"
+    ]
+  },
+  {
+    "en": "Could not load the sample. Please try again.",
+    "fr": "Échec du chargement de l'exemple. Veuillez réessayer.",
+    "paths": [
+      "Examples.errorSampleLoad"
+    ]
+  },
+  {
+    "en": "More use cases",
+    "fr": "Plus de cas d'usage",
+    "paths": [
+      "Examples.specializedTitle"
+    ]
+  },
+  {
+    "en": "How to convert a PDF to Markdown",
+    "fr": "Comment convertir un PDF en Markdown",
+    "paths": [
+      "Examples.general.howToName",
+      "Best.howToName"
+    ]
+  },
+  {
+    "en": "Upload a text-based PDF, or click \"Try sample PDF\" above to use our demo article.",
+    "fr": "Téléversez un PDF textuel, ou cliquez sur « Essayer le PDF d'exemple » ci-dessus pour charger notre article de démonstration.",
+    "paths": [
+      "Examples.general.steps[0]"
+    ]
+  },
+  {
+    "en": "Review the Markdown in Preview or Source view, then copy or download the .md file.",
+    "fr": "Consultez le Markdown en mode Aperçu ou Source, copiez ou téléchargez le fichier .md.",
+    "paths": [
+      "Examples.general.steps[1]"
+    ]
+  },
+  {
+    "en": "Paste into your editor, knowledge base, or LLM prompt — headings, lists and tables are preserved.",
+    "fr": "Collez dans votre éditeur, base de connaissances ou prompt LLM — titres, listes et tableaux sont conservés.",
+    "paths": [
+      "Examples.general.steps[2]"
+    ]
+  },
+  {
+    "en": "How to import a PDF into Obsidian as Markdown",
+    "fr": "Comment importer un PDF dans Obsidian en Markdown",
+    "paths": [
+      "Examples.obsidian.howToName"
+    ]
+  },
+  {
+    "en": "Upload your research notes PDF, or click \"Try sample PDF\" to load our demo notes file.",
+    "fr": "Téléversez votre PDF de notes de recherche, ou cliquez sur « Essayer le PDF d'exemple » pour charger notre fichier de démonstration.",
+    "paths": [
+      "Examples.obsidian.steps[0]"
+    ]
+  },
+  {
+    "en": "Download the .md file — it includes YAML frontmatter (title, date, tags) ready for your vault.",
+    "fr": "Téléchargez le fichier .md — il contient du frontmatter YAML (titre, date, tags) prêt pour votre vault.",
+    "paths": [
+      "Examples.obsidian.steps[1]"
+    ]
+  },
+  {
+    "en": "Move the file into any folder in your Obsidian vault. It appears instantly as a structured note.",
+    "fr": "Déplacez le fichier dans n'importe quel dossier de votre vault Obsidian. Il apparaît immédiatement comme une note structurée.",
+    "paths": [
+      "Examples.obsidian.steps[2]"
+    ]
+  },
+  {
+    "en": "How to convert a PDF to LLM-ready Markdown",
+    "fr": "Comment convertir un PDF en Markdown prêt pour LLM",
+    "paths": [
+      "Examples.llm.howToName"
+    ]
+  },
+  {
+    "en": "Upload a report or paper PDF, or click \"Try sample PDF\" to try our demo article.",
+    "fr": "Téléversez un rapport ou un article PDF, ou cliquez sur « Essayer le PDF d'exemple » pour tester notre démo.",
+    "paths": [
+      "Examples.llm.steps[0]"
+    ]
+  },
+  {
+    "en": "Copy the Markdown output — it includes YAML metadata and chunk markers for RAG pipelines.",
+    "fr": "Copiez la sortie Markdown — elle inclut des métadonnées YAML et des marqueurs de chunks pour les pipelines RAG.",
+    "paths": [
+      "Examples.llm.steps[1]"
+    ]
+  },
+  {
+    "en": "Paste into ChatGPT or Claude for Q&A, or split on chunk markers and embed into your vector database.",
+    "fr": "Collez dans ChatGPT ou Claude pour des Q&R, ou scindez aux marqueurs de chunks et intégrez dans votre base vectorielle.",
+    "paths": [
+      "Examples.llm.steps[2]"
+    ]
+  },
+  {
+    "en": "How to extract tables from a PDF to Markdown",
+    "fr": "Comment extraire des tableaux d'un PDF vers Markdown",
+    "paths": [
+      "Examples.table.howToName"
+    ]
+  },
+  {
+    "en": "Upload a PDF that contains tables, or click \"Try sample PDF\" to load our pricing table demo.",
+    "fr": "Téléversez un PDF contenant des tableaux, ou cliquez sur « Essayer le PDF d'exemple » pour charger notre démo de grille tarifaire.",
+    "paths": [
+      "Examples.table.steps[0]"
+    ]
+  },
+  {
+    "en": "The output contains only GitHub-flavored Markdown tables — no surrounding prose.",
+    "fr": "La sortie ne contient que des tableaux GitHub Flavored Markdown — pas de texte environnant.",
+    "paths": [
+      "Examples.table.steps[1]"
+    ]
+  },
+  {
+    "en": "Copy the table into GitHub, Notion, Obsidian, or any editor that renders GFM tables.",
+    "fr": "Copiez le tableau vers GitHub, Notion, Obsidian ou tout éditeur qui rend les tableaux GFM.",
+    "paths": [
+      "Examples.table.steps[2]"
+    ]
+  },
+  {
+    "en": "How to import a PDF into Notion as Markdown",
+    "fr": "Comment importer un PDF dans Notion en Markdown",
+    "paths": [
+      "Examples.notion.howToName"
+    ]
+  },
+  {
+    "en": "Upload a report or doc PDF, or click \"Try sample PDF\" to load our demo article.",
+    "fr": "Téléversez un rapport ou document PDF, ou cliquez sur « Essayer le PDF d'exemple » pour notre démo.",
+    "paths": [
+      "Examples.notion.steps[0]"
+    ]
+  },
+  {
+    "en": "Copy the Markdown or download the .md file — headings, lists and tables are preserved.",
+    "fr": "Copiez le Markdown ou téléchargez le fichier .md — titres, listes et tableaux sont conservés.",
+    "paths": [
+      "Examples.notion.steps[1]"
+    ]
+  },
+  {
+    "en": "Open Notion, create a page, and paste the content. Notion converts Markdown blocks automatically on paste.",
+    "fr": "Ouvrez Notion, créez une page et collez le contenu. Notion convertit automatiquement les blocs Markdown au collage.",
+    "paths": [
+      "Examples.notion.steps[2]"
+    ]
+  },
+  {
+    "en": "How to convert PDF to Markdown for Python workflows",
+    "fr": "PDF vers Markdown pour les workflows Python",
+    "paths": [
+      "Examples.python.howToName"
+    ]
+  },
+  {
+    "en": "Upload a PDF above — no pip install or virtual environment required for a quick conversion.",
+    "fr": "Téléversez un PDF ci-dessus — aucune installation pip ni virtualenv requise pour une conversion rapide.",
+    "paths": [
+      "Examples.python.steps[0]"
+    ]
+  },
+  {
+    "en": "Copy the Markdown string into your Jupyter notebook, Flask app, or data pipeline.",
+    "fr": "Copiez la chaîne Markdown dans votre notebook Jupyter, application Flask ou pipeline de données.",
+    "paths": [
+      "Examples.python.steps[1]"
+    ]
+  },
+  {
+    "en": "For batch jobs or CI, use our browser tool for ad-hoc files today; a REST API is on the roadmap.",
+    "fr": "Pour les jobs par lot ou CI : utilisez aujourd'hui notre outil navigateur pour les fichiers ad hoc ; une API REST arrive bientôt.",
+    "paths": [
+      "Examples.python.steps[2]"
+    ]
+  },
+  {
+    "en": "Obsidian import",
+    "fr": "Import Obsidian",
+    "paths": [
+      "Examples.cards.obsidian.title"
+    ]
+  },
+  {
+    "en": "Vault-ready notes with frontmatter",
+    "fr": "Notes prêtes pour le vault avec frontmatter",
+    "paths": [
+      "Examples.cards.obsidian.subtitle"
+    ]
+  },
+  {
+    "en": "ChatGPT & RAG",
+    "fr": "ChatGPT & RAG",
+    "paths": [
+      "Examples.cards.llm.title"
+    ]
+  },
+  {
+    "en": "Compact Markdown with chunk markers",
+    "fr": "Markdown compact avec marqueurs de chunks",
+    "paths": [
+      "Examples.cards.llm.subtitle"
+    ]
+  },
+  {
+    "en": "Table extraction",
+    "fr": "Extraction de tableaux",
+    "paths": [
+      "Examples.cards.table.title"
+    ]
+  },
+  {
+    "en": "GFM tables only, no extra prose",
+    "fr": "Tableaux GFM uniquement, sans texte superflu",
+    "paths": [
+      "Examples.cards.table.subtitle"
+    ]
+  },
+  {
+    "en": "Notion import",
+    "fr": "Import Notion",
+    "paths": [
+      "Examples.cards.notion.title"
+    ]
+  },
+  {
+    "en": "Paste-ready Markdown for Notion pages",
+    "fr": "Markdown prêt à coller pour les pages Notion",
+    "paths": [
+      "Examples.cards.notion.subtitle"
+    ]
+  },
+  {
+    "en": "Python & automation",
+    "fr": "Python & automatisation",
+    "paths": [
+      "Examples.cards.python.title"
+    ]
+  },
+  {
+    "en": "Markdown for notebooks and scripts",
+    "fr": "Markdown pour notebooks et scripts",
+    "paths": [
+      "Examples.cards.python.subtitle"
+    ]
+  },
+  {
+    "en": "PDF to Markdown Converter — Free, Private & Local",
+    "fr": "Convertisseur PDF vers Markdown — Gratuit, privé et local",
+    "paths": [
+      "Home.metaTitle"
+    ]
+  },
+  {
+    "en": "Free PDF to Markdown converter that runs in your browser. 100% local — files never leave your device. Headings, tables, and outline intact — ready for editing, search, AI, and RAG.",
+    "fr": "Convertisseur PDF vers Markdown gratuit dans votre navigateur. 100 % local — les fichiers ne quittent jamais votre appareil. Titres, tableaux et structure intacts — prêts pour édition, recherche, IA et RAG.",
+    "paths": [
+      "Home.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf to markdown converter",
+    "fr": "convertisseur pdf vers markdown",
+    "paths": [
+      "Home.keywords[0]"
+    ]
+  },
+  {
+    "en": "pdf to markdown",
+    "fr": "pdf vers markdown",
+    "paths": [
+      "Home.keywords[1]"
+    ]
+  },
+  {
+    "en": "convert pdf to markdown",
+    "fr": "convertir pdf en markdown",
+    "paths": [
+      "Home.keywords[2]",
+      "Guide.keywords[1]"
+    ]
+  },
+  {
+    "en": "pdf to md",
+    "fr": "pdf vers md",
+    "paths": [
+      "Home.keywords[3]"
+    ]
+  },
+  {
+    "en": "convert pdf to markdown online free",
+    "fr": "convertir pdf en markdown en ligne gratuit",
+    "paths": [
+      "Home.keywords[4]"
+    ]
+  },
+  {
+    "en": "PDF to Markdown Converter",
+    "fr": "Convertisseur PDF vers Markdown",
+    "paths": [
+      "Home.h1"
+    ]
+  },
+  {
+    "en": "Skip to content",
+    "fr": "Aller au contenu",
+    "paths": [
+      "Home.nav.skip"
+    ]
+  },
+  {
+    "en": "Why PDFs fail",
+    "fr": "Pourquoi les PDF échouent",
+    "paths": [
+      "Home.nav.problem"
+    ]
+  },
+  {
+    "en": "Why Markdown",
+    "fr": "Pourquoi Markdown",
+    "paths": [
+      "Home.nav.markdown",
+      "Home.th.whyMd"
+    ]
+  },
+  {
+    "en": "How it works",
+    "fr": "Comment ça marche",
+    "paths": [
+      "Home.nav.how",
+      "Home.how.eyebrow",
+      "About.sections[2].title"
+    ]
+  },
+  {
+    "en": "Use cases",
+    "fr": "Cas d'usage",
+    "paths": [
+      "Home.nav.use",
+      "Home.uc.eyebrow",
+      "Home.uc.tabsAria"
+    ]
+  },
+  {
+    "en": "FAQ",
+    "fr": "FAQ",
+    "paths": [
+      "Home.nav.faq",
+      "Home.faq.eyebrow"
+    ]
+  },
+  {
+    "en": "Convert a PDF",
+    "fr": "Convertir un PDF",
+    "paths": [
+      "Home.nav.convert"
+    ]
+  },
+  {
+    "en": "Open menu",
+    "fr": "Ouvrir le menu",
+    "paths": [
+      "Home.nav.open"
+    ]
+  },
+  {
+    "en": "Close menu",
+    "fr": "Fermer le menu",
+    "paths": [
+      "Home.nav.close"
+    ]
+  },
+  {
+    "en": "PDF to Markdown you can <em>edit, search, and retrieve</em>.",
+    "fr": "PDF vers Markdown que vous pouvez <em>éditer, rechercher et récupérer</em>.",
+    "paths": [
+      "Home.hero.title"
+    ]
+  },
+  {
+    "en": "PDFs are built for reading and sharing, not for editing, search, or RAG. We convert PDF to Markdown with headings, tables, lists, and outline intact — ready for docs, retrieval, and AI.",
+    "fr": "Les PDF sont faits pour lire et partager, pas pour éditer, rechercher ou le RAG. Nous convertissons PDF en Markdown avec titres, tableaux, listes et structure intacts — prêts pour docs, retrieval et IA.",
+    "paths": [
+      "Home.hero.lede"
+    ]
+  },
+  {
+    "en": "Convert PDF to Markdown",
+    "fr": "Convertir PDF en Markdown",
+    "paths": [
+      "Home.hero.cta"
+    ]
+  },
+  {
+    "en": "See a sample conversion",
+    "fr": "Voir un exemple de conversion",
+    "paths": [
+      "Home.hero.sample"
+    ]
+  },
+  {
+    "en": "Extract the text <em>and</em> the document: headings, tables, lists, links, and hierarchy — not a pile of unstructured characters.",
+    "fr": "Extrayez le texte <em>et</em> le document : titres, tableaux, listes, liens et hiérarchie — pas un amas de caractères non structurés.",
+    "paths": [
+      "Home.hero.support"
+    ]
+  },
+  {
+    "en": "100% local in your browser — files never leave your device. Up to 50 MB. Try a sample PDF in the converter.",
+    "fr": "100 % local dans votre navigateur — les fichiers ne quittent jamais votre appareil. Max. 50 Mo. Essayez un PDF d'exemple dans le convertisseur.",
+    "paths": [
+      "Home.hero.privacy"
+    ]
+  },
+  {
+    "en": "Common destinations",
+    "fr": "Destinations courantes",
+    "paths": [
+      "Home.hero.chipsAria"
+    ]
+  },
+  {
+    "en": "RAG",
+    "fr": "RAG",
+    "paths": [
+      "Home.hero.chips[0]",
+      "Home.md.chips[1]",
+      "Home.cmp.rows[5].label",
+      "Home.when.mdRows[6].use",
+      "Home.intents[1].tag"
+    ]
+  },
+  {
+    "en": "LLMs",
+    "fr": "LLMs",
+    "paths": [
+      "Home.hero.chips[1]",
+      "Home.md.chips[0]"
+    ]
+  },
+  {
+    "en": "Knowledge bases",
+    "fr": "Bases de connaissances",
+    "paths": [
+      "Home.hero.chips[2]",
+      "Home.when.mdRows[1].use"
+    ]
+  },
+  {
+    "en": "Docs",
+    "fr": "Docs",
+    "paths": [
+      "Home.hero.chips[3]"
+    ]
+  },
+  {
+    "en": "Search",
+    "fr": "Recherche",
+    "paths": [
+      "Home.hero.chips[4]",
+      "Home.cmp.rows[3].label",
+      "Home.when.mdRows[5].use"
+    ]
+  },
+  {
+    "en": "Websites",
+    "fr": "Sites web",
+    "paths": [
+      "Home.hero.chips[5]"
+    ]
+  },
+  {
+    "en": "Method",
+    "fr": "Méthode",
+    "paths": [
+      "Home.preview.channel"
+    ]
+  },
+  {
+    "en": "Use",
+    "fr": "Usage",
+    "paths": [
+      "Home.preview.share",
+      "Home.th.use"
+    ]
+  },
+  {
+    "en": "Convert in the browser",
+    "fr": "Convertir dans le navigateur",
+    "paths": [
+      "Home.convert.eyebrow"
+    ]
+  },
+  {
+    "en": "Drop a PDF. Get structured Markdown.",
+    "fr": "Déposez un PDF. Obtenez du Markdown structuré.",
+    "paths": [
+      "Home.convert.title"
+    ]
+  },
+  {
+    "en": "No upload. Headings, tables, lists, and outline stay intact — then copy or download.",
+    "fr": "Sans envoi. Titres, tableaux, listes et structure intacts — puis copiez ou téléchargez.",
+    "paths": [
+      "Home.convert.lede"
+    ]
+  },
+  {
+    "en": "Trait",
+    "fr": "Caractéristique",
+    "paths": [
+      "Home.th.trait"
+    ]
+  },
+  {
+    "en": "What it means in practice",
+    "fr": "Ce que cela signifie en pratique",
+    "paths": [
+      "Home.th.means"
+    ]
+  },
+  {
+    "en": "Why it hurts modern workflows",
+    "fr": "Pourquoi cela nuit aux workflows modernes",
+    "paths": [
+      "Home.th.hurts"
+    ]
+  },
+  {
+    "en": "Why PDF",
+    "fr": "Pourquoi PDF",
+    "paths": [
+      "Home.th.whyPdf"
+    ]
+  },
+  {
+    "en": "The problem",
+    "fr": "Le problème",
+    "paths": [
+      "Home.problem.eyebrow"
+    ]
+  },
+  {
+    "en": "A PDF remembers how a page looks. Not what the content means.",
+    "fr": "Un PDF se souvient de l'apparence d'une page. Pas de ce que le contenu signifie.",
+    "paths": [
+      "Home.problem.title"
+    ]
+  },
+  {
+    "en": "PDF (Portable Document Format) was built to save and exchange electronic documents so they look the same on every device, in every app. That is a feature when you need a contract, a report, or a printed handbook. It is a problem when you need the <em>content</em>.",
+    "fr": "PDF (Portable Document Format) a été conçu pour conserver des documents électroniques avec la même apparence partout. C'est un avantage pour un contrat, un rapport ou un manuel imprimé. C'est un problème quand vous avez besoin du <em>contenu</em>.",
+    "paths": [
+      "Home.problem.lede"
+    ]
+  },
+  {
+    "en": "A PDF is saving “how this document should look,” not “what this document is made of.”",
+    "fr": "Un PDF conserve « à quoi ce document doit ressembler », pas « de quoi ce document est fait ».",
+    "paths": [
+      "Home.problem.quote"
+    ]
+  },
+  {
+    "en": "What a PDF is good at",
+    "fr": "Ce que le PDF fait bien",
+    "paths": [
+      "Home.problem.goodTag"
+    ]
+  },
+  {
+    "en": "Built for presentation",
+    "fr": "Conçu pour la présentation",
+    "paths": [
+      "Home.problem.goodH"
+    ]
+  },
+  {
+    "en": "Where that design breaks down",
+    "fr": "Où ce design échoue",
+    "paths": [
+      "Home.problem.badTag"
+    ]
+  },
+  {
+    "en": "Hard for work — and for AI",
+    "fr": "Difficile pour le travail — et pour l'IA",
+    "paths": [
+      "Home.problem.badH"
+    ]
+  },
+  {
+    "en": "Fixed layout",
+    "fr": "Mise en page fixe",
+    "paths": [
+      "Home.problem.goodRows[0].trait"
+    ]
+  },
+  {
+    "en": "Fonts, images, tables, spacing, headers, and footers stay put. The page does not reflow when you change devices.",
+    "fr": "Polices, images, tableaux, espacement, en-têtes et pieds de page restent en place. La page ne se reflow pas sur un autre appareil.",
+    "paths": [
+      "Home.problem.goodRows[0].means"
+    ]
+  },
+  {
+    "en": "Cross-platform",
+    "fr": "Multiplateforme",
+    "paths": [
+      "Home.problem.goodRows[1].trait",
+      "Home.md.traits[9].title",
+      "Home.cmp.rows[8].label"
+    ]
+  },
+  {
+    "en": "Windows, macOS, Linux, iOS, and Android can all open it.",
+    "fr": "Windows, macOS, Linux, iOS et Android peuvent tous l'ouvrir.",
+    "paths": [
+      "Home.problem.goodRows[1].means"
+    ]
+  },
+  {
+    "en": "Print-ready",
+    "fr": "Prêt pour l'impression",
+    "paths": [
+      "Home.problem.goodRows[2].trait"
+    ]
+  },
+  {
+    "en": "Page size and print layout hold up, which is why contracts, reports, papers, and manuals ship as PDF.",
+    "fr": "Format de page et mise en page d'impression tiennent le coup — d'où contrats, rapports, articles et manuels en PDF.",
+    "paths": [
+      "Home.problem.goodRows[2].means"
+    ]
+  },
+  {
+    "en": "Stable distribution",
+    "fr": "Distribution stable",
+    "paths": [
+      "Home.problem.goodRows[3].trait"
+    ]
+  },
+  {
+    "en": "Once generated, it works as a final version: read it, share it, archive it.",
+    "fr": "Une fois généré, il sert de version finale : lire, partager, archiver.",
+    "paths": [
+      "Home.problem.goodRows[3].means"
+    ]
+  },
+  {
+    "en": "Complex content",
+    "fr": "Contenu complexe",
+    "paths": [
+      "Home.problem.goodRows[4].trait"
+    ]
+  },
+  {
+    "en": "A PDF is rarely “just text.” It may include images, tables, links, vector graphics, embedded fonts, and scanned pages.",
+    "fr": "Un PDF est rarement « que du texte ». Images, tableaux, liens, vecteurs, polices intégrées et scans en font souvent partie.",
+    "paths": [
+      "Home.problem.goodRows[4].means"
+    ]
+  },
+  {
+    "en": "Structure-unfriendly",
+    "fr": "Hostile à la structure",
+    "paths": [
+      "Home.problem.badRows[0].trait"
+    ]
+  },
+  {
+    "en": "PDF cares about the page, not the outline. Machines struggle to recover headings, paragraphs, lists, and tables.",
+    "fr": "Le PDF se soucie de la page, pas du plan. Les machines peinent à retrouver titres, paragraphes, listes et tableaux.",
+    "paths": [
+      "Home.problem.badRows[0].hurts"
+    ]
+  },
+  {
+    "en": "Awkward to edit",
+    "fr": "Pénible à éditer",
+    "paths": [
+      "Home.problem.badRows[1].trait"
+    ]
+  },
+  {
+    "en": "Unlike Word or Markdown, PDF was not designed for frequent rewriting or reorganization.",
+    "fr": "Contrairement à Word ou Markdown, le PDF n'a pas été conçu pour une réécriture fréquente.",
+    "paths": [
+      "Home.problem.badRows[1].hurts"
+    ]
+  },
+  {
+    "en": "Hard to parse",
+    "fr": "Difficile à analyser",
+    "paths": [
+      "Home.problem.badRows[2].trait"
+    ]
+  },
+  {
+    "en": "Embedded fonts, multi-column layouts, tables, images, and footnotes all make extraction harder.",
+    "fr": "Polices intégrées, mises en page multi-colonnes, tableaux, images et notes de bas de page compliquent l'extraction.",
+    "paths": [
+      "Home.problem.badRows[2].hurts"
+    ]
+  },
+  {
+    "en": "Sometimes not text",
+    "fr": "Parfois sans texte",
+    "paths": [
+      "Home.problem.badRows[3].trait"
+    ]
+  },
+  {
+    "en": "Many PDFs are scans — images of pages. You need OCR before you can even get the words.",
+    "fr": "Beaucoup de PDF sont des scans — des images de pages. Il faut l'OCR avant d'avoir des mots.",
+    "paths": [
+      "Home.problem.badRows[3].hurts"
+    ]
+  },
+  {
+    "en": "What you see",
+    "fr": "Ce que vous voyez",
+    "paths": [
+      "Home.problem.see"
+    ]
+  },
+  {
+    "en": "On the page, a PDF might look like a chapter, a section, a list, a table.",
+    "fr": "Sur la page, un PDF peut ressembler à un chapitre, une section, une liste ou un tableau.",
+    "paths": [
+      "Home.problem.seeP"
+    ]
+  },
+  {
+    "en": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+    "fr": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+    "paths": [
+      "Home.problem.seeCode"
+    ]
+  },
+  {
+    "en": "What software sees",
+    "fr": "Ce que le logiciel voit",
+    "paths": [
+      "Home.problem.soft"
+    ]
+  },
+  {
+    "en": "A program often sees something else: strings, coordinates, fonts, and images scattered across a canvas. Recovering the <em>real</em> title, the paragraph boundaries, the list, and the table is not guaranteed.",
+    "fr": "Un programme voit souvent autre chose : chaînes, coordonnées, polices et images éparpillées sur un canevas. Retrouver le <em>vrai</em> titre, les limites de paragraphe, la liste et le tableau n'est pas garanti.",
+    "paths": [
+      "Home.problem.softP"
+    ]
+  },
+  {
+    "en": "<strong>PDF</strong> is for humans. It emphasizes visual layout.",
+    "fr": "<strong>PDF</strong> est pour les humains. Il met l'accent sur la mise en page visuelle.",
+    "paths": [
+      "Home.problem.gap1"
+    ]
+  },
+  {
+    "en": "<strong>Markdown</strong> is for structured content — editing, software, and AI.",
+    "fr": "<strong>Markdown</strong> est pour le contenu structuré — édition, logiciels et IA.",
+    "paths": [
+      "Home.problem.gap2"
+    ]
+  },
+  {
+    "en": "Once you have Markdown, the same document is ready for search, knowledge bases, RAG, embeddings, and LLMs.",
+    "fr": "Avec Markdown, le même document est prêt pour la recherche, les bases de connaissances, RAG, embeddings et LLM.",
+    "paths": [
+      "Home.problem.gap3"
+    ]
+  },
+  {
+    "en": "Dropping a PDF straight into a knowledge base is often the wrong first step. The model may get text. It does not get structure.",
+    "fr": "Déposer un PDF directement dans une base de connaissances est souvent la mauvaise première étape. Le modèle obtient du texte. Il n'obtient pas la structure.",
+    "paths": [
+      "Home.problem.close"
+    ]
+  },
+  {
+    "en": "The destination",
+    "fr": "La destination",
+    "paths": [
+      "Home.md.eyebrow"
+    ]
+  },
+  {
+    "en": "Markdown keeps the content. And makes the structure explicit.",
+    "fr": "Markdown conserve le contenu. Et rend la structure explicite.",
+    "paths": [
+      "Home.md.title"
+    ]
+  },
+  {
+    "en": "Markdown is a lightweight markup language. A few plain-text symbols stand in for headings, paragraphs, lists, tables, links, and code. You can read the source without rendering it.",
+    "fr": "Markdown est un langage de balisage léger. Quelques symboles en texte brut représentent titres, paragraphes, listes, tableaux, liens et code. Vous pouvez lire la source sans la rendre.",
+    "paths": [
+      "Home.md.lede"
+    ]
+  },
+  {
+    "en": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+    "fr": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+    "paths": [
+      "Home.md.sample"
+    ]
+  },
+  {
+    "en": "What makes Markdown different",
+    "fr": "Ce qui rend Markdown différent",
+    "paths": [
+      "Home.md.diff"
+    ]
+  },
+  {
+    "en": "Clear structure",
+    "fr": "Structure claire",
+    "paths": [
+      "Home.md.traits[0].title"
+    ]
+  },
+  {
+    "en": "#, ##, - and similar markers state headings and lists outright.",
+    "fr": "#, ##, - et marqueurs similaires rendent titres et listes explicites.",
+    "paths": [
+      "Home.md.traits[0].body"
+    ]
+  },
+  {
+    "en": "Plain text",
+    "fr": "Texte brut",
+    "paths": [
+      "Home.md.traits[1].title"
+    ]
+  },
+  {
+    "en": "It is a text file. You are not trapped in a layout format.",
+    "fr": "C'est un fichier texte. Vous n'êtes pas enfermé dans un format de mise en page.",
+    "paths": [
+      "Home.md.traits[1].body"
+    ]
+  },
+  {
+    "en": "Easy to edit",
+    "fr": "Facile à éditer",
+    "paths": [
+      "Home.md.traits[2].title"
+    ]
+  },
+  {
+    "en": "Any text editor works. No specialized office suite required.",
+    "fr": "Tout éditeur de texte fonctionne. Pas besoin de suite bureautique.",
+    "paths": [
+      "Home.md.traits[2].body"
+    ]
+  },
+  {
+    "en": "Easy to read",
+    "fr": "Facile à lire",
+    "paths": [
+      "Home.md.traits[3].title"
+    ]
+  },
+  {
+    "en": "Even the raw file is readable.",
+    "fr": "Même le fichier brut est lisible.",
+    "paths": [
+      "Home.md.traits[3].body"
+    ]
+  },
+  {
+    "en": "Small",
+    "fr": "Léger",
+    "paths": [
+      "Home.md.traits[4].title"
+    ]
+  },
+  {
+    "en": "Usually much lighter than PDF or Word.",
+    "fr": "Généralement bien plus léger que PDF ou Word.",
+    "paths": [
+      "Home.md.traits[4].body"
+    ]
+  },
+  {
+    "en": "Easy to search",
+    "fr": "Facile à rechercher",
+    "paths": [
+      "Home.md.traits[5].title"
+    ]
+  },
+  {
+    "en": "Structured text is straightforward to full-text search.",
+    "fr": "Le texte structuré se prête bien à la recherche full-text.",
+    "paths": [
+      "Home.md.traits[5].body"
+    ]
+  },
+  {
+    "en": "Easy to convert",
+    "fr": "Facile à convertir",
+    "paths": [
+      "Home.md.traits[6].title"
+    ]
+  },
+  {
+    "en": "Markdown becomes HTML, PDF, Word, and more.",
+    "fr": "Markdown devient HTML, PDF, Word et plus.",
+    "paths": [
+      "Home.md.traits[6].body"
+    ]
+  },
+  {
+    "en": "Program-friendly",
+    "fr": "Adapté aux programmes",
+    "paths": [
+      "Home.md.traits[7].title"
+    ]
+  },
+  {
+    "en": "Headings, paragraphs, and lists are explicit, so software can parse them.",
+    "fr": "Titres, paragraphes et listes sont explicites, le logiciel peut les analyser.",
+    "paths": [
+      "Home.md.traits[7].body"
+    ]
+  },
+  {
+    "en": "Version-control friendly",
+    "fr": "Adapté au contrôle de version",
+    "paths": [
+      "Home.md.traits[8].title"
+    ]
+  },
+  {
+    "en": "Plain text belongs in Git.",
+    "fr": "Le texte brut a sa place dans Git.",
+    "paths": [
+      "Home.md.traits[8].body"
+    ]
+  },
+  {
+    "en": "Windows, macOS, Linux — all of them.",
+    "fr": "Windows, macOS, Linux — tous.",
+    "paths": [
+      "Home.md.traits[9].body"
+    ]
+  },
+  {
+    "en": "AI-friendly",
+    "fr": "Adapté à l'IA",
+    "paths": [
+      "Home.md.traits[10].title"
+    ]
+  },
+  {
+    "en": "Structured text is easier for LLMs, embeddings, and RAG to use well.",
+    "fr": "Le texte structuré est plus facile pour LLM, embeddings et RAG.",
+    "paths": [
+      "Home.md.traits[10].body"
+    ]
+  },
+  {
+    "en": "The real reason to use it",
+    "fr": "La vraie raison de l'utiliser",
+    "paths": [
+      "Home.md.why"
+    ]
+  },
+  {
+    "en": "Markdown separates <strong>content</strong> from <strong>visual layout</strong>.",
+    "fr": "Markdown sépare <strong>contenu</strong> et <strong>mise en page visuelle</strong>.",
+    "paths": [
+      "Home.md.sep"
+    ]
+  },
+  {
+    "en": "PDF asks: <em>How should this look on the page?</em>",
+    "fr": "Le PDF demande : <em>Comment cela doit-il apparaître sur la page ?</em>",
+    "paths": [
+      "Home.md.pdfAsks"
+    ]
+  },
+  {
+    "en": "Markdown asks: <em>What is this, and how is it structured?</em>",
+    "fr": "Markdown demande : <em>Qu'est-ce que c'est, et comment est-ce structuré ?</em>",
+    "paths": [
+      "Home.md.mdAsks"
+    ]
+  },
+  {
+    "en": "That is not a cosmetic difference. It is a working difference.",
+    "fr": "Ce n'est pas une différence cosmétique. C'est une différence de travail.",
+    "paths": [
+      "Home.md.notCosmetic"
+    ]
+  },
+  {
+    "en": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+    "fr": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+    "paths": [
+      "Home.md.whyCode"
+    ]
+  },
+  {
+    "en": "You do not just have words. You have a tree.",
+    "fr": "Vous n'avez pas que des mots. Vous avez un arbre.",
+    "paths": [
+      "Home.md.tree"
+    ]
+  },
+  {
+    "en": "That hierarchy is what modern content workflows run on.",
+    "fr": "Cette hiérarchie est ce sur quoi reposent les workflows de contenu modernes.",
+    "paths": [
+      "Home.md.treeP"
+    ]
+  },
+  {
+    "en": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+    "fr": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+    "paths": [
+      "Home.md.treeCode"
+    ]
+  },
+  {
+    "en": "AI does not only need “the text.” It needs the relationships between pieces of text. For an AI or RAG system, heading levels, paragraph boundaries, lists, and tables are suddenly unambiguous.",
+    "fr": "L'IA n'a pas seulement besoin « du texte ». Elle a besoin des relations entre morceaux de texte. Pour l'IA ou RAG, niveaux de titres, limites de paragraphes, listes et tableaux deviennent soudain sans ambiguïté.",
+    "paths": [
+      "Home.md.aiNeed"
+    ]
+  },
+  {
+    "en": "That is why Markdown fits:",
+    "fr": "C'est pourquoi Markdown convient à :",
+    "paths": [
+      "Home.md.fits"
+    ]
+  },
+  {
+    "en": "Vector databases",
+    "fr": "Bases vectorielles",
+    "paths": [
+      "Home.md.chips[2]"
+    ]
+  },
+  {
+    "en": "Embeddings",
+    "fr": "Embeddings",
+    "paths": [
+      "Home.md.chips[3]"
+    ]
+  },
+  {
+    "en": "AI knowledge bases",
+    "fr": "Bases de connaissances IA",
+    "paths": [
+      "Home.md.chips[4]",
+      "Home.when.mdRows[4].use"
+    ]
+  },
+  {
+    "en": "AI agents",
+    "fr": "Agents IA",
+    "paths": [
+      "Home.md.chips[5]"
+    ]
+  },
+  {
+    "en": "Semantic search",
+    "fr": "Recherche sémantique",
+    "paths": [
+      "Home.md.chips[6]"
+    ]
+  },
+  {
+    "en": "Documentation",
+    "fr": "Documentation",
+    "paths": [
+      "Home.md.chips[7]"
+    ]
+  },
+  {
+    "en": "Content management",
+    "fr": "Gestion de contenu",
+    "paths": [
+      "Home.md.chips[8]"
+    ]
+  },
+  {
+    "en": "If the next step is editing, retrieval, or generation, Markdown is the format that already looks like the job.",
+    "fr": "Si la prochaine étape est édition, retrieval ou génération, Markdown est le format déjà fait pour ce travail.",
+    "paths": [
+      "Home.md.close"
+    ]
+  },
+  {
+    "en": "Two formats, two jobs",
+    "fr": "Deux formats, deux rôles",
+    "paths": [
+      "Home.cmp.eyebrow"
+    ]
+  },
+  {
+    "en": "PDF is for delivery. Markdown is for work.",
+    "fr": "PDF pour la livraison. Markdown pour le travail.",
+    "paths": [
+      "Home.cmp.title"
+    ]
+  },
+  {
+    "en": "PDF saves what a document looks like. Markdown saves what a document is.",
+    "fr": "Le PDF conserve l'apparence d'un document. Markdown conserve ce qu'est un document.",
+    "paths": [
+      "Home.cmp.quote"
+    ]
+  },
+  {
+    "en": "Core purpose",
+    "fr": "Objectif principal",
+    "paths": [
+      "Home.cmp.rows[0].label"
+    ]
+  },
+  {
+    "en": "Preserve the page and visual layout",
+    "fr": "Préserver la page et la mise en page visuelle",
+    "paths": [
+      "Home.cmp.rows[0].pdf"
+    ]
+  },
+  {
+    "en": "Express content and structure",
+    "fr": "Exprimer contenu et structure",
+    "paths": [
+      "Home.cmp.rows[0].md"
+    ]
+  },
+  {
+    "en": "Editability",
+    "fr": "Éditabilité",
+    "paths": [
+      "Home.cmp.rows[1].label"
+    ]
+  },
+  {
+    "en": "★★",
+    "fr": "★★",
+    "paths": [
+      "Home.cmp.rows[1].pdf",
+      "Home.cmp.rows[2].pdf",
+      "Home.cmp.rows[4].pdf"
+    ]
+  },
+  {
+    "en": "★★★★★",
+    "fr": "★★★★★",
+    "paths": [
+      "Home.cmp.rows[1].md",
+      "Home.cmp.rows[2].md",
+      "Home.cmp.rows[3].md",
+      "Home.cmp.rows[4].md"
+    ]
+  },
+  {
+    "en": "Machine parsing",
+    "fr": "Analyse machine",
+    "paths": [
+      "Home.cmp.rows[2].label"
+    ]
+  },
+  {
+    "en": "★★★",
+    "fr": "★★★",
+    "paths": [
+      "Home.cmp.rows[3].pdf"
+    ]
+  },
+  {
+    "en": "AI processing",
+    "fr": "Traitement IA",
+    "paths": [
+      "Home.cmp.rows[4].label"
+    ]
+  },
+  {
+    "en": "A poor fit as-is",
+    "fr": "Peu adapté tel quel",
+    "paths": [
+      "Home.cmp.rows[5].pdf"
+    ]
+  },
+  {
+    "en": "A natural fit",
+    "fr": "Adapté naturellement",
+    "paths": [
+      "Home.cmp.rows[5].md"
+    ]
+  },
+  {
+    "en": "Version control",
+    "fr": "Contrôle de version",
+    "paths": [
+      "Home.cmp.rows[6].label"
+    ]
+  },
+  {
+    "en": "Awkward",
+    "fr": "Peu pratique",
+    "paths": [
+      "Home.cmp.rows[6].pdf"
+    ]
+  },
+  {
+    "en": "Native",
+    "fr": "Natif",
+    "paths": [
+      "Home.cmp.rows[6].md"
+    ]
+  },
+  {
+    "en": "File size",
+    "fr": "Taille de fichier",
+    "paths": [
+      "Home.cmp.rows[7].label"
+    ]
+  },
+  {
+    "en": "Usually larger",
+    "fr": "Généralement plus grand",
+    "paths": [
+      "Home.cmp.rows[7].pdf"
+    ]
+  },
+  {
+    "en": "Usually small",
+    "fr": "Généralement petit",
+    "paths": [
+      "Home.cmp.rows[7].md"
+    ]
+  },
+  {
+    "en": "Yes",
+    "fr": "Oui",
+    "paths": [
+      "Home.cmp.rows[8].pdf",
+      "Home.cmp.rows[8].md",
+      "Home.cmp.rows[9].pdf",
+      "Home.cmp.rows[9].md"
+    ]
+  },
+  {
+    "en": "Human reading",
+    "fr": "Lecture humaine",
+    "paths": [
+      "Home.cmp.rows[9].label"
+    ]
+  },
+  {
+    "en": "Page layout",
+    "fr": "Mise en page",
+    "paths": [
+      "Home.cmp.rows[10].label"
+    ]
+  },
+  {
+    "en": "Strong",
+    "fr": "Fort",
+    "paths": [
+      "Home.cmp.rows[10].pdf"
+    ]
+  },
+  {
+    "en": "Weak",
+    "fr": "Faible",
+    "paths": [
+      "Home.cmp.rows[10].md"
+    ]
+  },
+  {
+    "en": "You still need PDFs. Contracts, reports, and papers have to look the same for every reader. You need Markdown when the same material has to be reused, queried, updated, or handed to a model.",
+    "fr": "Vous avez toujours besoin de PDF. Contrats, rapports et articles doivent avoir la même apparence pour chaque lecteur. Vous avez besoin de Markdown quand le même contenu doit être réutilisé, interrogé, mis à jour ou transmis à un modèle.",
+    "paths": [
+      "Home.cmp.still"
+    ]
+  },
+  {
+    "en": "The formats are not enemies. They have different jobs. The missing piece is the conversion in between.",
+    "fr": "Les formats ne sont pas ennemis. Ils ont des rôles différents. L'élément manquant, c'est la conversion entre les deux.",
+    "paths": [
+      "Home.cmp.close"
+    ]
+  },
+  {
+    "en": "The product",
+    "fr": "Le produit",
+    "paths": [
+      "Home.bridge.eyebrow"
+    ]
+  },
+  {
+    "en": "PDF to Markdown is the missing step — not a novelty converter.",
+    "fr": "PDF vers Markdown est l'étape manquante — pas un convertisseur gadget.",
+    "paths": [
+      "Home.bridge.title"
+    ]
+  },
+  {
+    "en": "Most important material already lives as PDF. The work you want next does not: rewrite it, search it, retrieve it, summarize it, publish it. That work needs structure.",
+    "fr": "Le contenu important vit déjà en PDF. Le travail que vous voulez ensuite, non : réécrire, rechercher, récupérer, résumer, publier. Ce travail a besoin de structure.",
+    "paths": [
+      "Home.bridge.lede"
+    ]
+  },
+  {
+    "en": "PDF — locked layout, hard for machines",
+    "fr": "PDF — mise en page verrouillée, difficile pour les machines",
+    "paths": [
+      "Home.bridge.p1"
+    ]
+  },
+  {
+    "en": "Markdown — editable, searchable, AI-friendly",
+    "fr": "Markdown — modifiable, consultable, adapté à l'IA",
+    "paths": [
+      "Home.bridge.p3"
+    ]
+  },
+  {
+    "en": "LLM / RAG / knowledge base / workflow",
+    "fr": "LLM / RAG / base de connaissances / workflow",
+    "paths": [
+      "Home.bridge.p4"
+    ]
+  },
+  {
+    "en": "You are not buying “text from a PDF.” You are buying a document the rest of your stack can use.",
+    "fr": "Vous n'achetez pas « du texte extrait d'un PDF ». Vous achetez un document que le reste de votre stack peut utiliser.",
+    "paths": [
+      "Home.bridge.notText"
+    ]
+  },
+  {
+    "en": "What conversion should recover",
+    "fr": "Ce que la conversion doit retrouver",
+    "paths": [
+      "Home.bridge.recover"
+    ]
+  },
+  {
+    "en": "Running text",
+    "fr": "Texte courant",
+    "paths": [
+      "Home.bridge.extract[0].title"
+    ]
+  },
+  {
+    "en": "The words, in reading order",
+    "fr": "Les mots, dans l'ordre de lecture",
+    "paths": [
+      "Home.bridge.extract[0].body"
+    ]
+  },
+  {
+    "en": "Headings & outline",
+    "fr": "Titres et plan",
+    "paths": [
+      "Home.bridge.extract[1].title"
+    ]
+  },
+  {
+    "en": "Chapter, section, subsection",
+    "fr": "Chapitre, section, sous-section",
+    "paths": [
+      "Home.bridge.extract[1].body"
+    ]
+  },
+  {
+    "en": "Tables",
+    "fr": "Tableaux",
+    "paths": [
+      "Home.bridge.extract[2].title"
+    ]
+  },
+  {
+    "en": "Rows and columns, not a picture of a grid",
+    "fr": "Lignes et colonnes, pas une photo de grille",
+    "paths": [
+      "Home.bridge.extract[2].body"
+    ]
+  },
+  {
+    "en": "Lists",
+    "fr": "Listes",
+    "paths": [
+      "Home.bridge.extract[3].title"
+    ]
+  },
+  {
+    "en": "Items, not leftover bullets on a canvas",
+    "fr": "Éléments, pas des puces laissées sur un canevas",
+    "paths": [
+      "Home.bridge.extract[3].body"
+    ]
+  },
+  {
+    "en": "Links",
+    "fr": "Liens",
+    "paths": [
+      "Home.bridge.extract[4].title"
+    ]
+  },
+  {
+    "en": "Destinations you can still follow",
+    "fr": "Des destinations que vous pouvez encore suivre",
+    "paths": [
+      "Home.bridge.extract[4].body"
+    ]
+  },
+  {
+    "en": "Document structure",
+    "fr": "Structure du document",
+    "paths": [
+      "Home.bridge.extract[5].title"
+    ]
+  },
+  {
+    "en": "The relationships, not only the characters",
+    "fr": "Les relations, pas seulement les caractères",
+    "paths": [
+      "Home.bridge.extract[5].body"
+    ]
+  },
+  {
+    "en": "Turn your PDFs into clean, structured Markdown — ready for editing, search, AI, RAG, and more.",
+    "fr": "Transformez vos PDF en Markdown propre et structuré — prêt pour édition, recherche, IA, RAG et plus.",
+    "paths": [
+      "Home.bridge.ctaLine",
+      "Home.cta.p2"
+    ]
+  },
+  {
+    "en": "Choose the right format",
+    "fr": "Choisir le bon format",
+    "paths": [
+      "Home.when.eyebrow"
+    ]
+  },
+  {
+    "en": "One content pipeline. Three jobs.",
+    "fr": "Un pipeline de contenu. Trois rôles.",
+    "paths": [
+      "Home.when.title"
+    ]
+  },
+  {
+    "en": "Think of them as a chain, not a choice: <strong>PDF</strong> is for delivery and reading → <strong>Markdown</strong> is for editing and processing → <strong>PDF to Markdown</strong> turns existing PDFs into structured content you can actually work with.",
+    "fr": "Pensez-y comme une chaîne, pas un choix : <strong>PDF</strong> pour livraison et lecture → <strong>Markdown</strong> pour édition et traitement → <strong>PDF vers Markdown</strong> transforme des PDF existants en contenu structuré sur lequel vous pouvez travailler.",
+    "paths": [
+      "Home.when.lede"
+    ]
+  },
+  {
+    "en": "When to use each format",
+    "fr": "Quand utiliser chaque format",
+    "paths": [
+      "Home.when.tabsAria"
+    ]
+  },
+  {
+    "en": "When PDF is right",
+    "fr": "Quand le PDF convient",
+    "paths": [
+      "Home.when.tabPdf"
+    ]
+  },
+  {
+    "en": "When Markdown is right",
+    "fr": "Quand Markdown convient",
+    "paths": [
+      "Home.when.tabMd"
+    ]
+  },
+  {
+    "en": "When you need conversion",
+    "fr": "Quand vous avez besoin de conversion",
+    "paths": [
+      "Home.when.tabNeed"
+    ]
+  },
+  {
+    "en": "When the content is done",
+    "fr": "Quand le contenu est terminé",
+    "paths": [
+      "Home.when.pdfH"
+    ]
+  },
+  {
+    "en": "PDF is at its best when the content needs to be shown, shared, printed, or archived without drift.",
+    "fr": "Le PDF est à son meilleur quand le contenu doit être montré, partagé, imprimé ou archivé sans dérive.",
+    "paths": [
+      "Home.when.pdfP"
+    ]
+  },
+  {
+    "en": "PDF’s job, in one line: What they see should match what I made.",
+    "fr": "Le rôle du PDF, en une phrase : Ce qu'ils voient doit correspondre à ce que j'ai fait.",
+    "paths": [
+      "Home.when.pdfJob"
+    ]
+  },
+  {
+    "en": "When the content still has a life",
+    "fr": "Quand le contenu a encore une vie",
+    "paths": [
+      "Home.when.mdH"
+    ]
+  },
+  {
+    "en": "Markdown is at its best when you still need to edit it, update it, search it, convert it, or let software read it.",
+    "fr": "Markdown est à son meilleur quand vous devez encore éditer, mettre à jour, rechercher, convertir ou laisser un logiciel le lire.",
+    "paths": [
+      "Home.when.mdP"
+    ]
+  },
+  {
+    "en": "Markdown’s job, in one line: Make the content easy to edit, manage, search, and parse.",
+    "fr": "Le rôle de Markdown, en une phrase : Rendre le contenu facile à éditer, gérer, rechercher et analyser.",
+    "paths": [
+      "Home.when.mdJob"
+    ]
+  },
+  {
+    "en": "When the important material is already a PDF",
+    "fr": "Quand le contenu important est déjà en PDF",
+    "paths": [
+      "Home.when.needH"
+    ]
+  },
+  {
+    "en": "Reality: a huge amount of important material is already PDF. Then you need to:",
+    "fr": "La réalité : une énorme quantité de contenu important est déjà en PDF. Ensuite, vous devez :",
+    "paths": [
+      "Home.when.needP"
+    ]
+  },
+  {
+    "en": "That is the conversion. <strong>PDF → Markdown.</strong>",
+    "fr": "C'est la conversion. <strong>PDF → Markdown.</strong>",
+    "paths": [
+      "Home.when.needClose"
+    ]
+  },
+  {
+    "en": "Contracts",
+    "fr": "Contrats",
+    "paths": [
+      "Home.when.pdfRows[0].use",
+      "Home.uc1.list[3]"
+    ]
+  },
+  {
+    "en": "Layout stays fixed for both parties and for the archive.",
+    "fr": "La mise en page reste fixe pour les deux parties et l'archive.",
+    "paths": [
+      "Home.when.pdfRows[0].why"
+    ]
+  },
+  {
+    "en": "Reports",
+    "fr": "Rapports",
+    "paths": [
+      "Home.when.pdfRows[1].use"
+    ]
+  },
+  {
+    "en": "Charts, text, and page layout stay consistent.",
+    "fr": "Graphiques, texte et mise en page restent cohérents.",
+    "paths": [
+      "Home.when.pdfRows[1].why"
+    ]
+  },
+  {
+    "en": "Papers / research",
+    "fr": "Articles / recherche",
+    "paths": [
+      "Home.when.pdfRows[2].use"
+    ]
+  },
+  {
+    "en": "Formal publishing and reading.",
+    "fr": "Publication et lecture formelles.",
+    "paths": [
+      "Home.when.pdfRows[2].why"
+    ]
+  },
+  {
+    "en": "Ebooks",
+    "fr": "Livres numériques",
+    "paths": [
+      "Home.when.pdfRows[3].use"
+    ]
+  },
+  {
+    "en": "Chapters, figures, and page design hold.",
+    "fr": "Chapitres, figures et design de page tiennent.",
+    "paths": [
+      "Home.when.pdfRows[3].why"
+    ]
+  },
+  {
+    "en": "Product manuals",
+    "fr": "Manuels produit",
+    "paths": [
+      "Home.when.pdfRows[4].use",
+      "Home.uc1.list[0]"
+    ]
+  },
+  {
+    "en": "People can download, read, or print.",
+    "fr": "Les gens peuvent télécharger, lire ou imprimer.",
+    "paths": [
+      "Home.when.pdfRows[4].why"
+    ]
+  },
+  {
+    "en": "Invoices / receipts",
+    "fr": "Factures / reçus",
+    "paths": [
+      "Home.when.pdfRows[5].use"
+    ]
+  },
+  {
+    "en": "The form does not move.",
+    "fr": "Le formulaire ne bouge pas.",
+    "paths": [
+      "Home.when.pdfRows[5].why"
+    ]
+  },
+  {
+    "en": "Company documents",
+    "fr": "Documents d'entreprise",
+    "paths": [
+      "Home.when.pdfRows[6].use"
+    ]
+  },
+  {
+    "en": "Formal distribution.",
+    "fr": "Distribution formelle.",
+    "paths": [
+      "Home.when.pdfRows[6].why"
+    ]
+  },
+  {
+    "en": "Course materials",
+    "fr": "Supports de cours",
+    "paths": [
+      "Home.when.pdfRows[7].use"
+    ]
+  },
+  {
+    "en": "Lectures and textbooks packaged as a single file.",
+    "fr": "Cours et manuels regroupés en un seul fichier.",
+    "paths": [
+      "Home.when.pdfRows[7].why"
+    ]
+  },
+  {
+    "en": "Print",
+    "fr": "Impression",
+    "paths": [
+      "Home.when.pdfRows[8].use"
+    ]
+  },
+  {
+    "en": "Page geometry survives the printer.",
+    "fr": "La géométrie de page survit à l'imprimante.",
+    "paths": [
+      "Home.when.pdfRows[8].why"
+    ]
+  },
+  {
+    "en": "Archives",
+    "fr": "Archives",
+    "paths": [
+      "Home.when.pdfRows[9].use"
+    ]
+  },
+  {
+    "en": "A stable final version.",
+    "fr": "Une version finale stable.",
+    "paths": [
+      "Home.when.pdfRows[9].why"
+    ]
+  },
+  {
+    "en": "Technical docs",
+    "fr": "Docs techniques",
+    "paths": [
+      "Home.when.mdRows[0].use"
+    ]
+  },
+  {
+    "en": "Developers can edit it directly.",
+    "fr": "Les développeurs peuvent les éditer directement.",
+    "paths": [
+      "Home.when.mdRows[0].why"
+    ]
+  },
+  {
+    "en": "Structure is clear; organization is easy.",
+    "fr": "La structure est claire ; l'organisation est facile.",
+    "paths": [
+      "Home.when.mdRows[1].why"
+    ]
+  },
+  {
+    "en": "Blogs / writing",
+    "fr": "Blogs / rédaction",
+    "paths": [
+      "Home.when.mdRows[2].use"
+    ]
+  },
+  {
+    "en": "Fast to write; easy to turn into a page.",
+    "fr": "Rapide à écrire ; facile à transformer en page.",
+    "paths": [
+      "Home.when.mdRows[2].why"
+    ]
+  },
+  {
+    "en": "Product documentation",
+    "fr": "Documentation produit",
+    "paths": [
+      "Home.when.mdRows[3].use"
+    ]
+  },
+  {
+    "en": "Chapters, sections, and code blocks are first-class.",
+    "fr": "Chapitres, sections et blocs de code sont de première classe.",
+    "paths": [
+      "Home.when.mdRows[3].why"
+    ]
+  },
+  {
+    "en": "Models handle structured text more reliably.",
+    "fr": "Les modèles gèrent mieux le texte structuré.",
+    "paths": [
+      "Home.when.mdRows[4].why"
+    ]
+  },
+  {
+    "en": "Plain text is easier to index.",
+    "fr": "Le texte brut est plus facile à indexer.",
+    "paths": [
+      "Home.when.mdRows[5].why"
+    ]
+  },
+  {
+    "en": "Cleaner chunking, embedding, and retrieval.",
+    "fr": "Découpage, embedding et retrieval plus propres.",
+    "paths": [
+      "Home.when.mdRows[6].why"
+    ]
+  },
+  {
+    "en": "Git / GitHub",
+    "fr": "Git / GitHub",
+    "paths": [
+      "Home.when.mdRows[7].use"
+    ]
+  },
+  {
+    "en": "Plain text is what version control is for.",
+    "fr": "Le texte brut est fait pour le contrôle de version.",
+    "paths": [
+      "Home.when.mdRows[7].why"
+    ]
+  },
+  {
+    "en": "Project READMEs",
+    "fr": "README de projet",
+    "paths": [
+      "Home.when.mdRows[8].use"
+    ]
+  },
+  {
+    "en": "Native on GitHub and similar platforms.",
+    "fr": "Natif sur GitHub et plateformes similaires.",
+    "paths": [
+      "Home.when.mdRows[8].why"
+    ]
+  },
+  {
+    "en": "Content conversion",
+    "fr": "Conversion de contenu",
+    "paths": [
+      "Home.when.mdRows[9].use"
+    ]
+  },
+  {
+    "en": "One source → HTML, PDF, and other outputs.",
+    "fr": "Une source → HTML, PDF et autres sorties.",
+    "paths": [
+      "Home.when.mdRows[9].why"
+    ]
+  },
+  {
+    "en": "Edit the content",
+    "fr": "Éditer le contenu",
+    "paths": [
+      "Home.when.needs[0]"
+    ]
+  },
+  {
+    "en": "Extract the text",
+    "fr": "Extraire le texte",
+    "paths": [
+      "Home.when.needs[1]"
+    ]
+  },
+  {
+    "en": "Build a knowledge base",
+    "fr": "Construire une base de connaissances",
+    "paths": [
+      "Home.when.needs[2]"
+    ]
+  },
+  {
+    "en": "Build RAG",
+    "fr": "Construire du RAG",
+    "paths": [
+      "Home.when.needs[3]"
+    ]
+  },
+  {
+    "en": "Feed it to an AI",
+    "fr": "L'alimenter à une IA",
+    "paths": [
+      "Home.when.needs[4]"
+    ]
+  },
+  {
+    "en": "Search the documents",
+    "fr": "Rechercher dans les documents",
+    "paths": [
+      "Home.when.needs[5]"
+    ]
+  },
+  {
+    "en": "Analyze papers",
+    "fr": "Analyser des articles",
+    "paths": [
+      "Home.when.needs[6]"
+    ]
+  },
+  {
+    "en": "Extract tables",
+    "fr": "Extraire des tableaux",
+    "paths": [
+      "Home.when.needs[7]"
+    ]
+  },
+  {
+    "en": "Turn it into a website",
+    "fr": "En faire un site web",
+    "paths": [
+      "Home.when.needs[8]"
+    ]
+  },
+  {
+    "en": "Turn it into Markdown docs",
+    "fr": "En faire des docs Markdown",
+    "paths": [
+      "Home.when.needs[9]"
+    ]
+  },
+  {
+    "en": "Convert PDF to Markdown in three steps.",
+    "fr": "Convertir PDF en Markdown en trois étapes.",
+    "paths": [
+      "Home.how.title"
+    ]
+  },
+  {
+    "en": "Upload",
+    "fr": "Téléverser",
+    "paths": [
+      "Home.how.s1"
+    ]
+  },
+  {
+    "en": "A report, manual, paper, handbook, SOP, or archive PDF — including files that mix text, tables, images, and links.",
+    "fr": "Un rapport, manuel, article, handbook, SOP ou PDF d'archive — y compris des fichiers mélangeant texte, tableaux, images et liens.",
+    "paths": [
+      "Home.how.s1p"
+    ]
+  },
+  {
+    "en": "Convert",
+    "fr": "Convertir",
+    "paths": [
+      "Home.how.s2",
+      "Home.how.p2",
+      "Home.map.convert",
+      "Home.footer.convert"
+    ]
+  },
+  {
+    "en": "We recover more than a text dump: headings, lists, tables, links, and reading order, so the Markdown still has a document shape.",
+    "fr": "Nous récupérons plus qu'un dump de texte : titres, listes, tableaux, liens et ordre de lecture, pour que le Markdown garde une forme de document.",
+    "paths": [
+      "Home.how.s2p"
+    ]
+  },
+  {
+    "en": "Use it",
+    "fr": "Utiliser",
+    "paths": [
+      "Home.how.s3"
+    ]
+  },
+  {
+    "en": "Edit it. Search it. Chunk it. Embed it. Publish it. Hand it to an LLM. Put it in Git.",
+    "fr": "Éditez. Recherchez. Découpez. Intégrez. Publiez. Transmettez à un LLM. Mettez dans Git.",
+    "paths": [
+      "Home.how.s3p"
+    ]
+  },
+  {
+    "en": "structured Markdown",
+    "fr": "Markdown structuré",
+    "paths": [
+      "Home.how.p3"
+    ]
+  },
+  {
+    "en": "your workflow",
+    "fr": "votre workflow",
+    "paths": [
+      "Home.how.p4"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for RAG, docs, and reuse.",
+    "fr": "PDF vers Markdown pour RAG, docs et réutilisation.",
+    "paths": [
+      "Home.uc.title"
+    ]
+  },
+  {
+    "en": "AI / RAG",
+    "fr": "IA / RAG",
+    "paths": [
+      "Home.uc.tab1"
+    ]
+  },
+  {
+    "en": "Feed an LLM",
+    "fr": "Alimenter un LLM",
+    "paths": [
+      "Home.uc.tab2"
+    ]
+  },
+  {
+    "en": "Research",
+    "fr": "Recherche",
+    "paths": [
+      "Home.uc.tab3"
+    ]
+  },
+  {
+    "en": "Tech docs",
+    "fr": "Docs tech",
+    "paths": [
+      "Home.uc.tab4"
+    ]
+  },
+  {
+    "en": "Website",
+    "fr": "Site web",
+    "paths": [
+      "Home.uc.tab5",
+      "Home.map.web"
+    ]
+  },
+  {
+    "en": "Reuse",
+    "fr": "Réutilisation",
+    "paths": [
+      "Home.uc.tab6"
+    ]
+  },
+  {
+    "en": "Primary job",
+    "fr": "Rôle principal",
+    "paths": [
+      "Home.uc.primary"
+    ]
+  },
+  {
+    "en": "AI / RAG knowledge bases",
+    "fr": "Bases de connaissances IA / RAG",
+    "paths": [
+      "Home.uc1.h"
+    ]
+  },
+  {
+    "en": "A company already has a thousand PDFs: product manuals, technical documentation, internal SOPs, contracts, research reports, training materials. The goal is an assistant that answers from <em>those</em> files. Dumping PDFs into the pipeline is usually not the best first move.",
+    "fr": "Une entreprise a déjà mille PDF : manuels produit, documentation technique, SOP internes, contrats, rapports de recherche, supports de formation. L'objectif est un assistant qui répond à partir de <em>ces</em> fichiers. Déverser des PDF dans le pipeline n'est généralement pas la meilleure première étape.",
+    "paths": [
+      "Home.uc1.p"
+    ]
+  },
+  {
+    "en": "The pile you already have",
+    "fr": "La pile que vous avez déjà",
+    "paths": [
+      "Home.uc1.pile"
+    ]
+  },
+  {
+    "en": "Technical documentation",
+    "fr": "Documentation technique",
+    "paths": [
+      "Home.uc1.list[1]",
+      "Home.uc4.h"
+    ]
+  },
+  {
+    "en": "Internal SOPs",
+    "fr": "SOP internes",
+    "paths": [
+      "Home.uc1.list[2]"
+    ]
+  },
+  {
+    "en": "Research reports",
+    "fr": "Rapports de recherche",
+    "paths": [
+      "Home.uc1.list[4]"
+    ]
+  },
+  {
+    "en": "Training materials",
+    "fr": "Supports de formation",
+    "paths": [
+      "Home.uc1.list[5]"
+    ]
+  },
+  {
+    "en": "The pipeline that works",
+    "fr": "Le pipeline qui fonctionne",
+    "paths": [
+      "Home.uc1.pipe"
+    ]
+  },
+  {
+    "en": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+    "fr": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+    "paths": [
+      "Home.uc1.pipeCode"
+    ]
+  },
+  {
+    "en": "<strong>PDF to Markdown is the data-prep step for an AI knowledge base.</strong> Without structure, chunking cuts in the wrong places, embeddings mix unrelated sections, and retrieval returns blobs instead of answers. With Markdown, a heading is a heading, a table is a table, and a section can be retrieved as a section.",
+    "fr": "<strong>PDF vers Markdown est l'étape de préparation de données pour une base de connaissances IA.</strong> Sans structure, le découpage coupe au mauvais endroit, les embeddings mélangent des sections sans lien, et le retrieval renvoie des blocs au lieu de réponses. Avec Markdown, un titre est un titre, un tableau est un tableau, et une section peut être récupérée comme section.",
+    "paths": [
+      "Home.uc1.close"
+    ]
+  },
+  {
+    "en": "Feed a long PDF to an LLM",
+    "fr": "Alimenter un long PDF à un LLM",
+    "paths": [
+      "Home.uc2.h"
+    ]
+  },
+  {
+    "en": "You have a 100-page file: <em>2026 Global Market Research Report</em>. You want ChatGPT, Claude, or Gemini to summarize the report, pull key figures, analyze competitors, find market trends, and answer questions from inside the document.",
+    "fr": "Vous avez un fichier de 100 pages : <em>2026 Global Market Research Report</em>. Vous voulez que ChatGPT, Claude ou Gemini résume le rapport, extrait les chiffres clés, analyse les concurrents, trouve les tendances du marché et réponde aux questions depuis le document.",
+    "paths": [
+      "Home.uc2.p"
+    ]
+  },
+  {
+    "en": "What you want the model to do",
+    "fr": "Ce que vous voulez du modèle",
+    "paths": [
+      "Home.uc2.want"
+    ]
+  },
+  {
+    "en": "Summarize the report",
+    "fr": "Résumer le rapport",
+    "paths": [
+      "Home.uc2.list[0]"
+    ]
+  },
+  {
+    "en": "Pull key figures",
+    "fr": "Extraire les chiffres clés",
+    "paths": [
+      "Home.uc2.list[1]"
+    ]
+  },
+  {
+    "en": "Analyze competitors",
+    "fr": "Analyser les concurrents",
+    "paths": [
+      "Home.uc2.list[2]"
+    ]
+  },
+  {
+    "en": "Find market trends",
+    "fr": "Trouver les tendances du marché",
+    "paths": [
+      "Home.uc2.list[3]"
+    ]
+  },
+  {
+    "en": "Answer questions from inside the document",
+    "fr": "Répondre aux questions depuis le document",
+    "paths": [
+      "Home.uc2.list[4]"
+    ]
+  },
+  {
+    "en": "After conversion, the model can follow the outline instead of guessing at it. That is the difference between “paste a wall of text” and “give the model a document.”",
+    "fr": "Après conversion, le modèle peut suivre le plan au lieu de deviner. C'est la différence entre « coller un mur de texte » et « donner un document au modèle ».",
+    "paths": [
+      "Home.uc2.close"
+    ]
+  },
+  {
+    "en": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n...",
+    "fr": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n...",
+    "paths": [
+      "Home.uc2.code"
+    ]
+  },
+  {
+    "en": "Papers and research",
+    "fr": "Articles et recherche",
+    "paths": [
+      "Home.uc3.h"
+    ]
+  },
+  {
+    "en": "Researchers live in PDFs. Once they are Markdown, you can search the full text, extract sections, organize a research library, build a literature knowledge base, summarize with AI, run RAG over the corpus, and compare papers against each other.",
+    "fr": "Les chercheurs vivent dans les PDF. Une fois en Markdown, vous pouvez rechercher le texte complet, extraire des sections, organiser une bibliothèque de recherche, construire une base de connaissances bibliographique, résumer avec l'IA, exécuter du RAG sur le corpus et comparer des articles.",
+    "paths": [
+      "Home.uc3.p"
+    ]
+  },
+  {
+    "en": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+    "fr": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+    "paths": [
+      "Home.uc3.codeIn"
+    ]
+  },
+  {
+    "en": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+    "fr": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+    "paths": [
+      "Home.uc3.codeOut"
+    ]
+  },
+  {
+    "en": "The papers stay citable as PDFs. The working copy becomes something you can query.",
+    "fr": "Les articles restent citables en PDF. La copie de travail devient quelque chose que vous pouvez interroger.",
+    "paths": [
+      "Home.uc3.close"
+    ]
+  },
+  {
+    "en": "A lot of existing technical material still ships as PDF. Teams want living files instead — then they belong in GitHub, GitLab, Notion, a documentation website, or an internal knowledge base.",
+    "fr": "Beaucoup de contenu technique existant sort encore en PDF. Les équipes veulent des fichiers vivants — alors ils appartiennent à GitHub, GitLab, Notion, un site de documentation ou une base de connaissances interne.",
+    "paths": [
+      "Home.uc4.p"
+    ]
+  },
+  {
+    "en": "From locked manuals",
+    "fr": "De manuels verrouillés",
+    "paths": [
+      "Home.uc4.from"
+    ]
+  },
+  {
+    "en": "To files you can maintain",
+    "fr": "Vers des fichiers que vous pouvez maintenir",
+    "paths": [
+      "Home.uc4.to"
+    ]
+  },
+  {
+    "en": "Maintenance gets cheaper: diffs, reviews, search, and republishing all work the way software already works.",
+    "fr": "La maintenance devient moins chère : diffs, revues, recherche et republication fonctionnent comme le logiciel.",
+    "paths": [
+      "Home.uc4.close"
+    ]
+  },
+  {
+    "en": "PDF → website",
+    "fr": "PDF → site web",
+    "paths": [
+      "Home.uc5.h"
+    ]
+  },
+  {
+    "en": "A product manual that used to be a download can become a site. The PDF is a file people save. The Markdown path becomes documentation people can search, navigate, and open on the web.",
+    "fr": "Un manuel produit qui était un téléchargement peut devenir un site. Le PDF est un fichier que les gens conservent. Le chemin Markdown devient une documentation consultable, navigable et ouverte sur le web.",
+    "paths": [
+      "Home.uc5.p"
+    ]
+  },
+  {
+    "en": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website",
+    "fr": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website",
+    "paths": [
+      "Home.uc5.code"
+    ]
+  },
+  {
+    "en": "Content reuse",
+    "fr": "Réutilisation de contenu",
+    "paths": [
+      "Home.uc6.h"
+    ]
+  },
+  {
+    "en": "The company already has <file>Company Handbook.pdf</file>. It should not stay trapped in that one file. That is content repurposing: one source of truth, many outputs — because the structure finally exists independently of the page.",
+    "fr": "L'entreprise a déjà <file>Company Handbook.pdf</file>. Cela ne doit pas rester piégé dans ce seul fichier. C'est la réutilisation : une source de vérité, de nombreuses sorties — parce que la structure existe enfin indépendamment de la page.",
+    "paths": [
+      "Home.uc6.p"
+    ]
+  },
+  {
+    "en": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation",
+    "fr": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation",
+    "paths": [
+      "Home.uc6.code"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for ChatGPT & RAG",
+    "fr": "PDF vers Markdown pour ChatGPT et RAG",
+    "paths": [
+      "Home.tools.chatgpt"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for Obsidian",
+    "fr": "PDF vers Markdown pour Obsidian",
+    "paths": [
+      "Home.tools.obsidian",
+      "Obsidian.h1"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for Notion",
+    "fr": "PDF vers Markdown pour Notion",
+    "paths": [
+      "Home.tools.notion",
+      "Notion.h1"
+    ]
+  },
+  {
+    "en": "Before / after",
+    "fr": "Avant / après",
+    "paths": [
+      "Home.ba.eyebrow"
+    ]
+  },
+  {
+    "en": "Text extraction is not document understanding.",
+    "fr": "L'extraction de texte n'est pas la compréhension du document.",
+    "paths": [
+      "Home.ba.title"
+    ]
+  },
+  {
+    "en": "Before — what a PDF often is to software",
+    "fr": "Avant — ce qu'un PDF est souvent pour le logiciel",
+    "paths": [
+      "Home.ba.before"
+    ]
+  },
+  {
+    "en": "After — the same content as Markdown",
+    "fr": "Après — le même contenu en Markdown",
+    "paths": [
+      "Home.ba.after"
+    ]
+  },
+  {
+    "en": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+    "fr": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+    "paths": [
+      "Home.ba.beforeCode"
+    ]
+  },
+  {
+    "en": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+    "fr": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+    "paths": [
+      "Home.ba.afterCode"
+    ]
+  },
+  {
+    "en": "Lines on a page. Maybe the right order. Maybe not. Heading level is a guess. After conversion, headings, boundaries, and hierarchy are explicit — that is the difference between pulling strings off a page and recovering a document.",
+    "fr": "Des lignes sur une page. Peut-être le bon ordre. Peut-être pas. Le niveau de titre est une supposition. Après conversion, titres, limites et hiérarchie sont explicites — c'est la différence entre tirer des chaînes d'une page et retrouver un document.",
+    "paths": [
+      "Home.ba.p"
+    ]
+  },
+  {
+    "en": "AI systems use that hierarchy. Search uses it. Editors use it. A PDF does not hand it to you.",
+    "fr": "Les systèmes IA utilisent cette hiérarchie. La recherche aussi. Les éditeurs aussi. Un PDF ne vous la donne pas gratuitement.",
+    "paths": [
+      "Home.ba.close"
+    ]
+  },
+  {
+    "en": "After conversion",
+    "fr": "Après conversion",
+    "paths": [
+      "Home.map.eyebrow"
+    ]
+  },
+  {
+    "en": "One conversion. Three directions.",
+    "fr": "Une conversion. Trois directions.",
+    "paths": [
+      "Home.map.title"
+    ]
+  },
+  {
+    "en": "Keep the PDF for people. Convert it when the next reader is an editor, a search index, a model, or a site.",
+    "fr": "Gardez le PDF pour les humains. Convertissez quand le prochain lecteur est un éditeur, un index de recherche, un modèle ou un site.",
+    "paths": [
+      "Home.map.p"
+    ]
+  },
+  {
+    "en": "Read / share / print / archive",
+    "fr": "Lire / partager / imprimer / archiver",
+    "paths": [
+      "Home.map.pdf"
+    ]
+  },
+  {
+    "en": "Read / share",
+    "fr": "Lire / partager",
+    "paths": [
+      "Home.map.read"
+    ]
+  },
+  {
+    "en": "A person reads the page",
+    "fr": "Une personne lit la page",
+    "paths": [
+      "Home.map.readD"
+    ]
+  },
+  {
+    "en": "Extract content",
+    "fr": "Extraire le contenu",
+    "paths": [
+      "Home.map.extract"
+    ]
+  },
+  {
+    "en": "Structured source of truth",
+    "fr": "Source structurée de vérité",
+    "paths": [
+      "Home.map.md"
+    ]
+  },
+  {
+    "en": "Human editing",
+    "fr": "Édition humaine",
+    "paths": [
+      "Home.map.edit"
+    ]
+  },
+  {
+    "en": "Content ops",
+    "fr": "Ops contenu",
+    "paths": [
+      "Home.map.editD"
+    ]
+  },
+  {
+    "en": "Knowledge base",
+    "fr": "Base de connaissances",
+    "paths": [
+      "Home.map.aiD"
+    ]
+  },
+  {
+    "en": "HTML / docs site",
+    "fr": "HTML / site de docs",
+    "paths": [
+      "Home.map.webD"
+    ]
+  },
+  {
+    "en": "Read / Share / Print",
+    "fr": "Lire / Partager / Imprimer",
+    "paths": [
+      "Home.job.pdf"
+    ]
+  },
+  {
+    "en": "Write / Structure / Process",
+    "fr": "Écrire / Structurer / Traiter",
+    "paths": [
+      "Home.job.md"
+    ]
+  },
+  {
+    "en": "Extract / Convert / Reuse",
+    "fr": "Extraire / Convertir / Réutiliser",
+    "paths": [
+      "Home.job.conv"
+    ]
+  },
+  {
+    "en": "Who it’s for",
+    "fr": "Pour qui",
+    "paths": [
+      "Home.who.eyebrow"
+    ]
+  },
+  {
+    "en": "Built for people who inherited a pile of PDFs and need to do something next.",
+    "fr": "Conçu pour ceux qui ont hérité d'une pile de PDF et doivent faire quelque chose ensuite.",
+    "paths": [
+      "Home.who.title"
+    ]
+  },
+  {
+    "en": "AI and platform teams",
+    "fr": "Équipes IA et plateforme",
+    "paths": [
+      "Home.who.people[0].title"
+    ]
+  },
+  {
+    "en": "Turning manuals, SOPs, contracts, and training decks into RAG-backed assistants.",
+    "fr": "Transformer manuels, SOP, contrats et decks de formation en assistants RAG.",
+    "paths": [
+      "Home.who.people[0].body"
+    ]
+  },
+  {
+    "en": "Researchers and analysts",
+    "fr": "Chercheurs et analystes",
+    "paths": [
+      "Home.who.people[1].title"
+    ]
+  },
+  {
+    "en": "Search, compare, and ask questions across papers and long reports.",
+    "fr": "Rechercher, comparer et poser des questions sur articles et longs rapports.",
+    "paths": [
+      "Home.who.people[1].body"
+    ]
+  },
+  {
+    "en": "Docs and content teams",
+    "fr": "Équipes docs et contenu",
+    "paths": [
+      "Home.who.people[2].title"
+    ]
+  },
+  {
+    "en": "Moving API PDFs, user manuals, and handbooks into Git, Notion, or a documentation site.",
+    "fr": "Déplacer PDF d'API, manuels utilisateur et handbooks vers Git, Notion ou un site de docs.",
+    "paths": [
+      "Home.who.people[2].body"
+    ]
+  },
+  {
+    "en": "Anyone unsticking a PDF",
+    "fr": "Quiconque doit débloquer un PDF",
+    "paths": [
+      "Home.who.people[3].title"
+    ]
+  },
+  {
+    "en": "Edit, extract tables, republish as a website, or reuse a file that was never meant to be a working copy.",
+    "fr": "Éditer, extraire des tableaux, republier en site web ou réutiliser un fichier jamais pensé comme copie de travail.",
+    "paths": [
+      "Home.who.people[3].body"
+    ]
+  },
+  {
+    "en": "If the PDF is finished, leave it as PDF. If the work is not finished, convert it.",
+    "fr": "Si le PDF est terminé, laissez-le en PDF. Si le travail ne l'est pas, convertissez.",
+    "paths": [
+      "Home.who.close"
+    ]
+  },
+  {
+    "en": "What people search for",
+    "fr": "Ce que les gens recherchent",
+    "paths": [
+      "Home.intent.eyebrow"
+    ]
+  },
+  {
+    "en": "Scans, tables, RAG, chat windows, and whole folders.",
+    "fr": "Scans, tableaux, RAG, fenêtres de chat et dossiers entiers.",
+    "paths": [
+      "Home.intent.title"
+    ]
+  },
+  {
+    "en": "These sit next to the main query. Each is a job the file has to survive — not another lecture on formats.",
+    "fr": "Ces requêtes côtoient la requête principale. Chacune est une tâche que le fichier doit survivre — pas un cours supplémentaire sur les formats.",
+    "paths": [
+      "Home.intent.lede"
+    ]
+  },
+  {
+    "en": "intent-ocr",
+    "fr": "intent-ocr",
+    "paths": [
+      "Home.intents[0].id"
+    ]
+  },
+  {
+    "en": "OCR",
+    "fr": "OCR",
+    "paths": [
+      "Home.intents[0].tag"
+    ]
+  },
+  {
+    "en": "pdf",
+    "fr": "pdf",
+    "paths": [
+      "Home.intents[0].tagKind",
+      "Home.intents[3].tagKind"
+    ]
+  },
+  {
+    "en": "Convert scanned PDFs with OCR",
+    "fr": "Convertir des PDF scannés avec OCR",
+    "paths": [
+      "Home.intents[0].h"
+    ]
+  },
+  {
+    "en": "A scanned handbook is a stack of images. There is no text layer until OCR runs — and OCR alone still leaves a stream of characters. The useful path is OCR plus structure: reading order, heading levels, and tables rebuilt as tables, not as a photograph of a grid. That is how a scan becomes something you can search, chunk, or edit. Contracts, invoices, and older papers are often scans; born-digital files can skip OCR, scans cannot skip the outline. Low-contrast stamps, skewed pages, and mixed handwriting still fail and need a second look. If you index the OCR dump as-is, a knowledge base stores noise.",
+    "fr": "Un manuel scanné est une pile d'images. Il n'y a pas de couche texte tant que l'OCR n'a pas tourné — et l'OCR seul laisse un flux de caractères. Le chemin utile, c'est OCR plus structure : ordre de lecture, niveaux de titres, tableaux reconstruits comme tableaux, pas comme photo de grille. C'est ainsi qu'un scan devient consultable, découpable ou modifiable. Contrats, factures et anciens articles sont souvent des scans ; les fichiers nativement numériques peuvent sauter l'OCR, les scans ne peuvent pas sauter le plan.",
+    "paths": [
+      "Home.intents[0].p"
+    ]
+  },
+  {
+    "en": "/scanned-pdf-to-markdown",
+    "fr": "/scanned-pdf-to-markdown",
+    "paths": [
+      "Home.intents[0].href"
+    ]
+  },
+  {
+    "en": "Open the OCR converter",
+    "fr": "Ouvrir le convertisseur OCR",
+    "paths": [
+      "Home.intents[0].link"
+    ]
+  },
+  {
+    "en": "intent-rag",
+    "fr": "intent-rag",
+    "paths": [
+      "Home.intents[1].id"
+    ]
+  },
+  {
+    "en": "md",
+    "fr": "md",
+    "paths": [
+      "Home.intents[1].tagKind",
+      "Home.intents[4].tagKind"
+    ]
+  },
+  {
+    "en": "Structured files for RAG and embeddings",
+    "fr": "Fichiers structurés pour RAG et embeddings",
+    "paths": [
+      "Home.intents[1].h"
+    ]
+  },
+  {
+    "en": "When you embed a PDF as-is, the splitter often cuts mid-table or mid-section because it never saw a heading. Retrieval then returns a blob that looks related and is not. Give the pipeline Markdown with explicit headings and real tables, and chunking can follow the outline: one section, one table, one list. Embeddings stay closer to a single topic. That is the data-prep job — not a nicer preview. You still choose chunk size, overlap, and the vector store; conversion does not replace that. It stops the model from embedding headers, footers, and page numbers as if they were the answer.",
+    "fr": "Si vous intégrez un PDF tel quel, le découpeur coupe souvent au milieu d'un tableau ou d'une section parce qu'il n'a jamais vu de titre. Le retrieval renvoie alors un bloc qui semble lié et ne l'est pas. Donnez au pipeline du Markdown avec titres explicites et vrais tableaux, et le découpage peut suivre le plan. La conversion ne remplace pas votre taille de chunk. Elle empêche le modèle d'intégrer en-têtes, pieds de page et numéros de page comme s'ils étaient la réponse.",
+    "paths": [
+      "Home.intents[1].p"
+    ]
+  },
+  {
+    "en": "/pdf-to-markdown-for-chatgpt",
+    "fr": "/pdf-to-markdown-for-chatgpt",
+    "paths": [
+      "Home.intents[1].href",
+      "Home.intents[3].href"
+    ]
+  },
+  {
+    "en": "LLM & RAG-ready Markdown",
+    "fr": "Markdown prêt pour LLM et RAG",
+    "paths": [
+      "Home.intents[1].link"
+    ]
+  },
+  {
+    "en": "intent-tables",
+    "fr": "intent-tables",
+    "paths": [
+      "Home.intents[2].id"
+    ]
+  },
+  {
+    "en": "Structure",
+    "fr": "Structure",
+    "paths": [
+      "Home.intents[2].tag"
+    ]
+  },
+  {
+    "en": "bridge",
+    "fr": "bridge",
+    "paths": [
+      "Home.intents[2].tagKind"
+    ]
+  },
+  {
+    "en": "Keep tables and headings",
+    "fr": "Conserver tableaux et titres",
+    "paths": [
+      "Home.intents[2].h"
+    ]
+  },
+  {
+    "en": "Copy-paste and naive extractors flatten a two-column report into one stream: the heading is just larger type, the table is leftover spaces. Downstream you cannot sort a column or retrieve “section 4.2.” Conversion should emit Markdown headings and pipe tables, with reading order that matches how a person would read the page — including multi-column layouts when they exist. Footnotes and captions should stay attached to the block they belong to. If a table was a screenshot, OCR has to run on that image or the grid is lost. The test is simple: can you jump the outline, and can you copy a row?",
+    "fr": "Copier-coller et extracteurs naïfs aplatissent un rapport deux colonnes en un flux : le titre n'est que des lettres plus grandes, le tableau des espaces restants. En aval, vous ne pouvez ni trier une colonne ni récupérer « section 4.2 ». La conversion doit émettre des titres Markdown et des tableaux pipe, avec un ordre de lecture comme un humain lit la page.",
+    "paths": [
+      "Home.intents[2].p"
+    ]
+  },
+  {
+    "en": "/pdf-table-to-markdown",
+    "fr": "/pdf-table-to-markdown",
+    "paths": [
+      "Home.intents[2].href"
+    ]
+  },
+  {
+    "en": "Extract tables to Markdown",
+    "fr": "Extraire des tableaux vers Markdown",
+    "paths": [
+      "Home.intents[2].link"
+    ]
+  },
+  {
+    "en": "intent-chatgpt",
+    "fr": "intent-chatgpt",
+    "paths": [
+      "Home.intents[3].id"
+    ]
+  },
+  {
+    "en": "ChatGPT",
+    "fr": "ChatGPT",
+    "paths": [
+      "Home.intents[3].tag"
+    ]
+  },
+  {
+    "en": "Conversion vs copy-paste into ChatGPT",
+    "fr": "Conversion vs coller dans ChatGPT",
+    "paths": [
+      "Home.intents[3].h"
+    ]
+  },
+  {
+    "en": "Pasting pages into ChatGPT, Claude, or Gemini is fine for a one-off summary. It is a weak plan for a library. The model gets a weakly ordered blob; headings and tables are guesses. You cannot version the source, re-chunk it, or hand a clean file to the rest of the team. Convert first, then prompt: the outline sits in the file, figures stay in tables, and the same Markdown can go to another model, an internal RAG, or Git. Use the chat window to ask questions. Do not use it as your only extractor — especially not for a 100-page report you will query again next month.",
+    "fr": "Coller des pages dans ChatGPT, Claude ou Gemini convient pour un résumé ponctuel. C'est un mauvais plan pour une bibliothèque. Le modèle reçoit un blob faiblement ordonné. Convertissez d'abord, promptez ensuite : le plan est dans le fichier, et le même Markdown peut aller vers un autre modèle, un RAG interne ou Git.",
+    "paths": [
+      "Home.intents[3].p"
+    ]
+  },
+  {
+    "en": "Convert for ChatGPT & LLMs",
+    "fr": "Convertir pour ChatGPT et LLM",
+    "paths": [
+      "Home.intents[3].link"
+    ]
+  },
+  {
+    "en": "intent-batch",
+    "fr": "intent-batch",
+    "paths": [
+      "Home.intents[4].id"
+    ]
+  },
+  {
+    "en": "Batch",
+    "fr": "Batch",
+    "paths": [
+      "Home.intents[4].tag"
+    ]
+  },
+  {
+    "en": "Batch convert PDFs to Markdown",
+    "fr": "Convertir des PDF en lot vers Markdown",
+    "paths": [
+      "Home.intents[4].h"
+    ]
+  },
+  {
+    "en": "One file is a demo. Operations look like a folder: two hundred manuals, a contract archive, a paper corpus. Batch conversion should keep filenames, skip files that already have a .md, and fail visibly when a scan needs OCR or a table collapsed. Put output next to the original — or in a parallel tree — so you can diff and re-run. After that, the same corpus can be indexed, embedded, or published without someone opening each PDF. Start with a sample of ugly files (multi-column, scans, mixed tables) before you point the job at everything.",
+    "fr": "Un fichier est une démo. Les opérations ressemblent à un dossier : deux cents manuels, une archive de contrats, un corpus d'articles. La conversion par lot doit conserver les noms de fichiers, ignorer les .md existants et échouer visiblement quand un scan nécessite l'OCR. Commencez par des échantillons difficiles avant de lancer le job sur tout.",
+    "paths": [
+      "Home.intents[4].p"
+    ]
+  },
+  {
+    "en": "/batch-pdf-to-markdown",
+    "fr": "/batch-pdf-to-markdown",
+    "paths": [
+      "Home.intents[4].href"
+    ]
+  },
+  {
+    "en": "Open the batch converter",
+    "fr": "Ouvrir le convertisseur par lot",
+    "paths": [
+      "Home.intents[4].link"
+    ]
+  },
+  {
+    "en": "Questions worth answering before you convert.",
+    "fr": "Questions qui valent la peine avant de convertir.",
+    "paths": [
+      "Home.faq.title"
+    ]
+  },
+  {
+    "en": "Why not just upload the PDF to ChatGPT, Claude, or Gemini?",
+    "fr": "Pourquoi ne pas simplement téléverser le PDF dans ChatGPT, Claude ou Gemini ?",
+    "paths": [
+      "Home.faqs[0].q"
+    ]
+  },
+  {
+    "en": "You can, for a single pass. A 100-page report still lands as a weakly structured blob: headings, tables, and section boundaries are unreliable. Converted Markdown makes the outline explicit — Executive Summary, Market Size, Competitive Landscape — so summarization, extraction, and Q&A have something to hold onto. For a knowledge base, the gap is larger: RAG wants chunks with real headings, not page coordinates. Conversion still runs entirely in your browser; the file is never uploaded to us.",
+    "fr": "Vous pouvez, pour une fois. Un rapport de 100 pages arrive toujours comme un blob faiblement structuré. Le Markdown converti rend le plan explicite, pour que résumé, extraction et Q&R aient de quoi s'accrocher. Pour une base de connaissances, l'écart est plus grand : RAG veut des chunks avec de vrais titres, pas des coordonnées de page. La conversion s'exécute entièrement dans votre navigateur ; le fichier n'est jamais téléversé chez nous.",
+    "paths": [
+      "Home.faqs[0].a"
+    ]
+  },
+  {
+    "en": "Why Markdown instead of Word or plain text?",
+    "fr": "Pourquoi Markdown plutôt que Word ou texte brut ?",
+    "paths": [
+      "Home.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Word still mixes layout into the file. Plain text throws the hierarchy away. Markdown keeps content and structure and drops the page design — which is exactly what editing, Git, search, embeddings, and LLMs need.",
+    "fr": "Word mélange encore la mise en page dans le fichier. Le texte brut jette la hiérarchie. Markdown conserve contenu et structure et abandonne le design de page — exactement ce qu'il faut pour édition, Git, recherche, embeddings et LLM.",
+    "paths": [
+      "Home.faqs[1].a"
+    ]
+  },
+  {
+    "en": "What do you actually extract?",
+    "fr": "Qu'extrayez-vous exactement ?",
+    "paths": [
+      "Home.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Text, headings, tables, lists, links, and document structure. The point is not a raw dump. The point is a file that still has an outline. Page headers, footers, and page numbers are stripped automatically.",
+    "fr": "Texte, titres, tableaux, listes, liens et structure du document. Le but n'est pas un dump brut. C'est un fichier qui a encore un plan. En-têtes, pieds de page et numéros de page sont supprimés automatiquement.",
+    "paths": [
+      "Home.faqs[2].a"
+    ]
+  },
+  {
+    "en": "What about scanned PDFs?",
+    "fr": "Et les PDF scannés ?",
+    "paths": [
+      "Home.faqs[3].q"
+    ]
+  },
+  {
+    "en": "Many PDFs are images of pages. Those need OCR before there is any text to structure. Use the built-in OCR converter, which recognizes text right in your browser. Scanned input is one of the reasons “just parse the PDF” fails in the real world.",
+    "fr": "Beaucoup de PDF sont des images de pages. Ils ont besoin d'OCR avant d'avoir du texte à structurer. Utilisez le convertisseur OCR intégré, qui reconnaît le texte dans votre navigateur.",
+    "paths": [
+      "Home.faqs[3].a"
+    ]
+  },
+  {
+    "en": "Will multi-column layouts, footnotes, embedded fonts, and mixed tables survive?",
+    "fr": "Les mises en page multi-colonnes, notes de bas de page, polices intégrées et tableaux mixtes survivent-ils ?",
+    "paths": [
+      "Home.faqs[4].q"
+    ]
+  },
+  {
+    "en": "Those are the hard cases — and they are common. They are also why a dedicated PDF → Markdown step exists. A conversion that only concatenates strings will scramble reading order and miss the outline.",
+    "fr": "Ce sont les cas difficiles — et ils sont fréquents. C'est pourquoi une étape dédiée PDF → Markdown existe. Une conversion qui ne concatène que des chaînes perturbe l'ordre de lecture et manque le plan.",
+    "paths": [
+      "Home.faqs[4].a"
+    ]
+  },
+  {
+    "en": "Is this for one file or a whole archive?",
+    "fr": "Est-ce pour un fichier ou tout un archive ?",
+    "paths": [
+      "Home.faqs[5].q"
+    ]
+  },
+  {
+    "en": "Both. One report, so you can ask an LLM about it. A thousand manuals, SOPs, and training PDFs, so you can chunk, embed, and retrieve. Use the batch converter for folders. The product is the prep step either way — and it stays local.",
+    "fr": "Les deux. Un rapport, pour interroger un LLM. Mille manuels, SOP et PDF de formation, pour découper, intégrer et récupérer. Utilisez le convertisseur par lot pour les dossiers. Cela reste local.",
+    "paths": [
+      "Home.faqs[5].a"
+    ]
+  },
+  {
+    "en": "Do I still need the original PDF?",
+    "fr": "Ai-je encore besoin du PDF original ?",
+    "paths": [
+      "Home.faqs[6].q"
+    ]
+  },
+  {
+    "en": "Yes, when you need a stable, print-faithful, shareable original. Conversion does not replace PDF for contracts, invoices, or archival copies. It unlocks a second life for the same content.",
+    "fr": "Oui, si vous avez besoin d'un original stable, fidèle à l'impression, partageable. La conversion ne remplace pas le PDF pour contrats, factures ou copies d'archive. Elle débloque une seconde vie pour le même contenu.",
+    "paths": [
+      "Home.faqs[6].a"
+    ]
+  },
+  {
+    "en": "Can I turn the Markdown back into a site or other formats?",
+    "fr": "Puis-je transformer le Markdown en site ou autre format ?",
+    "paths": [
+      "Home.faqs[7].q"
+    ]
+  },
+  {
+    "en": "That is one of the reasons to convert. Markdown is easy to turn into HTML, PDF, Word, docs sites, FAQs, blog posts, and AI datasets. The PDF was a download. The Markdown is a source.",
+    "fr": "C'est l'une des raisons de convertir. Markdown devient facilement HTML, PDF, Word, sites de docs, FAQ, articles de blog et jeux de données IA. Le PDF était un téléchargement. Le Markdown est une source.",
+    "paths": [
+      "Home.faqs[7].a"
+    ]
+  },
+  {
+    "en": "Get started",
+    "fr": "Commencer",
+    "paths": [
+      "Home.cta.eyebrow"
+    ]
+  },
+  {
+    "en": "Stop treating PDFs as a dead end.",
+    "fr": "Arrêtez de traiter les PDF comme une impasse.",
+    "paths": [
+      "Home.cta.title"
+    ]
+  },
+  {
+    "en": "PDFs are great for reading and sharing, but they're not designed for modern content workflows. Markdown makes content structured, editable, searchable, and AI-friendly.",
+    "fr": "Les PDF sont excellents pour lire et partager, mais ils ne sont pas conçus pour les workflows de contenu modernes. Markdown rend le contenu structuré, modifiable, consultable et adapté à l'IA.",
+    "paths": [
+      "Home.cta.p1"
+    ]
+  },
+  {
+    "en": "Footer",
+    "fr": "Pied de page",
+    "paths": [
+      "Home.footer.aria"
+    ]
+  },
+  {
+    "en": "PDF — Read / Share / Print · Markdown — Write / Structure / Process · PDF to Markdown — Extract / Convert / Reuse",
+    "fr": "PDF — Lire / Partager / Imprimer · Markdown — Écrire / Structurer / Traiter · PDF vers Markdown — Extraire / Convertir / Réutiliser",
+    "paths": [
+      "Home.footer.line"
+    ]
+  },
+  {
+    "en": "Convert PDF to clean Markdown right in your browser. Built for LLM, RAG, Obsidian and Notion workflows.",
+    "fr": "Convertissez PDF en Markdown propre directement dans votre navigateur. Conçu pour les workflows LLM, RAG, Obsidian et Notion.",
+    "paths": [
+      "Home.subtitle"
+    ]
+  },
+  {
+    "en": "How to Convert PDF to Markdown — Free Step-by-Step Guide",
+    "fr": "Convertir PDF en Markdown — Guide gratuit étape par étape",
+    "paths": [
+      "Guide.metaTitle"
+    ]
+  },
+  {
+    "en": "Learn how to convert PDF to Markdown in 3 steps. Free browser-based converter — no upload, no account. Works with text-based PDFs for LLM, Obsidian and docs.",
+    "fr": "Apprenez à convertir un PDF en Markdown en 3 étapes. Convertisseur gratuit dans le navigateur — sans envoi, sans compte. Fonctionne avec les PDF textuels pour LLM, Obsidian et la documentation.",
+    "paths": [
+      "Guide.metaDescription"
+    ]
+  },
+  {
+    "en": "how to convert pdf to markdown",
+    "fr": "convertir pdf en markdown",
+    "paths": [
+      "Guide.keywords[0]"
+    ]
+  },
+  {
+    "en": "pdf to markdown tutorial",
+    "fr": "tutoriel pdf vers markdown",
+    "paths": [
+      "Guide.keywords[2]"
+    ]
+  },
+  {
+    "en": "pdf to markdown step by step",
+    "fr": "pdf vers markdown étape par étape",
+    "paths": [
+      "Guide.keywords[3]"
+    ]
+  },
+  {
+    "en": "Step-by-step guide",
+    "fr": "Guide étape par étape",
+    "paths": [
+      "Guide.badge"
+    ]
+  },
+  {
+    "en": "How to Convert PDF to Markdown",
+    "fr": "Convertir PDF en Markdown",
+    "paths": [
+      "Guide.h1"
+    ]
+  },
+  {
+    "en": "Turn any text-based PDF into clean Markdown in your browser — free, private, and ready in seconds. Use the converter below and follow the steps.",
+    "fr": "Transformez tout PDF textuel en Markdown propre dans votre navigateur — gratuit, privé et prêt en quelques secondes. Utilisez le convertisseur ci-dessus et suivez les étapes.",
+    "paths": [
+      "Guide.subtitle"
+    ]
+  },
+  {
+    "en": "1. Upload your PDF",
+    "fr": "1. Téléversez votre PDF",
+    "paths": [
+      "Guide.features[0].title"
+    ]
+  },
+  {
+    "en": "Drag and drop a text-based PDF onto the converter above, or click to browse. Files up to 50 MB are supported. Try the sample PDF if you want to see the output first.",
+    "fr": "Glissez-déposez un PDF textuel sur le convertisseur ci-dessus, ou cliquez pour parcourir. Les fichiers jusqu'à 50 Mo sont pris en charge. Essayez le PDF d'exemple pour voir le résultat.",
+    "paths": [
+      "Guide.features[0].body"
+    ]
+  },
+  {
+    "en": "2. Review the Markdown",
+    "fr": "2. Vérifiez le Markdown",
+    "paths": [
+      "Guide.features[1].title"
+    ]
+  },
+  {
+    "en": "Switch between Preview and Source view to check headings, lists, and tables. Edit is not built in yet — copy the output into your editor if you need to tweak it.",
+    "fr": "Basculez entre Aperçu et Source pour contrôler titres, listes et tableaux. L'édition en ligne n'est pas encore intégrée — copiez le résultat dans votre éditeur si vous devez l'ajuster.",
+    "paths": [
+      "Guide.features[1].body"
+    ]
+  },
+  {
+    "en": "3. Copy or download",
+    "fr": "3. Copier ou télécharger",
+    "paths": [
+      "Guide.features[2].title"
+    ]
+  },
+  {
+    "en": "Click Copy Markdown to paste into ChatGPT, Obsidian, or a code editor. Or download the .md file and move it into your vault, repo, or RAG pipeline.",
+    "fr": "Cliquez sur Copier le Markdown pour coller dans ChatGPT, Obsidian ou un éditeur de code. Ou téléchargez le fichier .md pour votre vault, dépôt ou pipeline RAG.",
+    "paths": [
+      "Guide.features[2].body"
+    ]
+  },
+  {
+    "en": "What type of PDF works best?",
+    "fr": "Quel type de PDF fonctionne le mieux ?",
+    "paths": [
+      "Guide.faqs[0].q"
+    ]
+  },
+  {
+    "en": "Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. For scanned or image-only PDFs, use our OCR converter, which recognizes the text in your browser.",
+    "fr": "Les PDF textuels — rapports, articles, ebooks exportés depuis Word ou Google Docs — se convertissent le plus fiablement. Les PDF scannés ou composés uniquement d'images nécessitent l'OCR, prévu sur notre feuille de route.",
+    "paths": [
+      "Guide.faqs[0].a"
+    ]
+  },
+  {
+    "en": "Is conversion really local?",
+    "fr": "La conversion est-elle vraiment locale ?",
+    "paths": [
+      "Guide.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Yes. Parsing and Markdown generation run entirely in your browser via WebAssembly. Your PDF is never uploaded to our servers.",
+    "fr": "Oui. L'analyse et la génération Markdown s'exécutent entièrement dans votre navigateur via WebAssembly. Votre PDF n'est jamais téléversé sur nos serveurs.",
+    "paths": [
+      "Guide.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Why use Markdown instead of copying text from the PDF?",
+    "fr": "Pourquoi utiliser Markdown plutôt que copier le texte du PDF ?",
+    "paths": [
+      "Guide.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Copy-paste often breaks table columns, loses heading hierarchy, and includes page headers. Structured Markdown preserves document layout with fewer tokens — ideal for LLMs and note apps.",
+    "fr": "Copier-coller casse souvent les colonnes de tableaux, perd la hiérarchie des titres et inclut les en-têtes de page. Le Markdown structuré préserve la mise en page du document avec moins de tokens — idéal pour les LLM et les apps de notes.",
+    "paths": [
+      "Guide.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Can I convert multiple PDFs at once?",
+    "fr": "Puis-je convertir plusieurs PDF à la fois ?",
+    "paths": [
+      "Guide.faqs[3].q"
+    ]
+  },
+  {
+    "en": "Yes. Use our batch converter to drop many PDFs at once and download them all as a ZIP — free and unlimited, all in your browser.",
+    "fr": "Pas encore. La conversion par lot est prévue pour une future version. Pour l'instant, convertissez les fichiers un par un — chaque exécution est gratuite et illimitée.",
+    "paths": [
+      "Guide.faqs[3].a"
+    ]
+  },
+  {
+    "en": "Best PDF to Markdown Converter (Free & Private) — Compared",
+    "fr": "Meilleur convertisseur PDF vers Markdown (gratuit et privé) — comparatif",
+    "paths": [
+      "Best.metaTitle"
+    ]
+  },
+  {
+    "en": "Looking for the best free PDF to Markdown converter? Try our private, browser-based tool and see how it compares to CloudConvert, Pandoc and manual copy-paste.",
+    "fr": "Vous cherchez le meilleur convertisseur PDF vers Markdown gratuit ? Essayez notre outil privé dans le navigateur et comparez-le à CloudConvert, Pandoc et le copier-coller manuel.",
+    "paths": [
+      "Best.metaDescription"
+    ]
+  },
+  {
+    "en": "best pdf to markdown converter",
+    "fr": "meilleur convertisseur pdf vers markdown",
+    "paths": [
+      "Best.keywords[0]"
+    ]
+  },
+  {
+    "en": "free pdf to markdown converter",
+    "fr": "convertisseur pdf vers markdown gratuit",
+    "paths": [
+      "Best.keywords[1]"
+    ]
+  },
+  {
+    "en": "pdf to markdown converter online",
+    "fr": "convertisseur pdf vers markdown en ligne",
+    "paths": [
+      "Best.keywords[2]"
+    ]
+  },
+  {
+    "en": "best free pdf to markdown",
+    "fr": "meilleur convertisseur pdf vers markdown gratuit",
+    "paths": [
+      "Best.keywords[3]"
+    ]
+  },
+  {
+    "en": "pdf to markdown tool",
+    "fr": "outil pdf vers markdown",
+    "paths": [
+      "Best.keywords[4]"
+    ]
+  },
+  {
+    "en": "Free · Private · Compared",
+    "fr": "Gratuit · Privé · Comparatif",
+    "paths": [
+      "Best.badge"
+    ]
+  },
+  {
+    "en": "The Best PDF to Markdown Converter",
+    "fr": "Le meilleur convertisseur PDF vers Markdown",
+    "paths": [
+      "Best.h1"
+    ]
+  },
+  {
+    "en": "A free, private, browser-based converter — plus an honest, feature-by-feature comparison with the alternatives. Try it right here, then see how it stacks up.",
+    "fr": "Un convertisseur gratuit, privé et dans le navigateur — plus une comparaison honnête avec les alternatives. Essayez-le ici et voyez comment il se positionne.",
+    "paths": [
+      "Best.subtitle"
+    ]
+  },
+  {
+    "en": "Drop your PDF into the converter above — it runs instantly in your browser.",
+    "fr": "Déposez votre PDF dans le convertisseur ci-dessus — il s'exécute directement dans votre navigateur.",
+    "paths": [
+      "Best.howToSteps[0]"
+    ]
+  },
+  {
+    "en": "Review the Markdown in preview or source view.",
+    "fr": "Consultez le Markdown en mode Aperçu ou Source.",
+    "paths": [
+      "Best.howToSteps[1]"
+    ]
+  },
+  {
+    "en": "Copy the result or download the .md file.",
+    "fr": "Copiez le résultat ou téléchargez le fichier .md.",
+    "paths": [
+      "Best.howToSteps[2]"
+    ]
+  },
+  {
+    "en": "Privacy first",
+    "fr": "Confidentialité d'abord",
+    "paths": [
+      "Best.features[0].title"
+    ]
+  },
+  {
+    "en": "The best converter keeps files on your device. Ours runs 100% in the browser — no uploads, no accounts, no tracking.",
+    "fr": "Le meilleur convertisseur garde les fichiers sur votre appareil. Le nôtre fonctionne à 100 % dans le navigateur — sans envoi, sans compte, sans suivi.",
+    "paths": [
+      "Best.features[0].body"
+    ]
+  },
+  {
+    "en": "Real structure",
+    "fr": "Vraie structure",
+    "paths": [
+      "Best.features[1].title"
+    ]
+  },
+  {
+    "en": "Look beyond raw text: good tools preserve headings, lists and true Markdown tables. Ours keeps your document's structure intact.",
+    "fr": "Allez au-delà du texte brut : les bons outils préservent titres, listes et vrais tableaux Markdown. Le nôtre conserve la structure du document.",
+    "paths": [
+      "Best.features[1].body"
+    ]
+  },
+  {
+    "en": "Handles hard cases",
+    "fr": "Cas difficiles",
+    "paths": [
+      "Best.features[2].title"
+    ]
+  },
+  {
+    "en": "Scanned PDFs, embedded images and dozens of files at once — a great tool covers them with OCR, image extraction and batch mode.",
+    "fr": "PDF scannés, images intégrées et dizaines de fichiers à la fois — un bon outil les couvre avec OCR, extraction d'images et mode batch.",
+    "paths": [
+      "Best.features[2].body"
+    ]
+  },
+  {
+    "en": "How it compares",
+    "fr": "Comparatif",
+    "paths": [
+      "Best.comparisonTitle"
+    ]
+  },
+  {
+    "en": "Feature",
+    "fr": "Fonctionnalité",
+    "paths": [
+      "Best.comparisonColumns[0]"
+    ]
+  },
+  {
+    "en": "This tool",
+    "fr": "Cet outil",
+    "paths": [
+      "Best.comparisonColumns[1]"
+    ]
+  },
+  {
+    "en": "CloudConvert",
+    "fr": "CloudConvert",
+    "paths": [
+      "Best.comparisonColumns[2]"
+    ]
+  },
+  {
+    "en": "Pandoc",
+    "fr": "Pandoc",
+    "paths": [
+      "Best.comparisonColumns[3]"
+    ]
+  },
+  {
+    "en": "Copy & paste",
+    "fr": "Copier-coller",
+    "paths": [
+      "Best.comparisonColumns[4]"
+    ]
+  },
+  {
+    "en": "Free & unlimited",
+    "fr": "Gratuit et illimité",
+    "paths": [
+      "Best.comparisonRows[0][0]"
+    ]
+  },
+  {
+    "en": "✓",
+    "fr": "✓",
+    "paths": [
+      "Best.comparisonRows[0][1]",
+      "Best.comparisonRows[0][3]",
+      "Best.comparisonRows[0][4]",
+      "Best.comparisonRows[1][1]",
+      "Best.comparisonRows[1][3]",
+      "Best.comparisonRows[1][4]",
+      "Best.comparisonRows[2][1]",
+      "Best.comparisonRows[2][2]",
+      "Best.comparisonRows[2][4]",
+      "Best.comparisonRows[3][1]",
+      "Best.comparisonRows[3][3]",
+      "Best.comparisonRows[4][1]",
+      "Best.comparisonRows[4][2]",
+      "Best.comparisonRows[4][3]",
+      "Best.comparisonRows[5][1]",
+      "Best.comparisonRows[5][2]",
+      "Best.comparisonRows[6][1]",
+      "Best.comparisonRows[6][2]",
+      "Best.comparisonRows[7][1]"
+    ]
+  },
+  {
+    "en": "Limited",
+    "fr": "Limité",
+    "paths": [
+      "Best.comparisonRows[0][2]"
+    ]
+  },
+  {
+    "en": "No upload (private)",
+    "fr": "Sans envoi (privé)",
+    "paths": [
+      "Best.comparisonRows[1][0]"
+    ]
+  },
+  {
+    "en": "✗",
+    "fr": "✗",
+    "paths": [
+      "Best.comparisonRows[1][2]",
+      "Best.comparisonRows[2][3]",
+      "Best.comparisonRows[3][4]",
+      "Best.comparisonRows[4][4]",
+      "Best.comparisonRows[5][3]",
+      "Best.comparisonRows[5][4]",
+      "Best.comparisonRows[6][4]",
+      "Best.comparisonRows[7][2]",
+      "Best.comparisonRows[7][3]",
+      "Best.comparisonRows[7][4]"
+    ]
+  },
+  {
+    "en": "Nothing to install",
+    "fr": "Rien à installer",
+    "paths": [
+      "Best.comparisonRows[2][0]"
+    ]
+  },
+  {
+    "en": "Tables → Markdown",
+    "fr": "Tableaux → Markdown",
+    "paths": [
+      "Best.comparisonRows[3][0]"
+    ]
+  },
+  {
+    "en": "Partial",
+    "fr": "Partiel",
+    "paths": [
+      "Best.comparisonRows[3][2]"
+    ]
+  },
+  {
+    "en": "Keeps images",
+    "fr": "Conserve les images",
+    "paths": [
+      "Best.comparisonRows[4][0]"
+    ]
+  },
+  {
+    "en": "OCR for scans",
+    "fr": "OCR pour scans",
+    "paths": [
+      "Best.comparisonRows[5][0]"
+    ]
+  },
+  {
+    "en": "Batch + ZIP",
+    "fr": "Batch + ZIP",
+    "paths": [
+      "Best.comparisonRows[6][0]"
+    ]
+  },
+  {
+    "en": "Manual",
+    "fr": "Manuel",
+    "paths": [
+      "Best.comparisonRows[6][3]"
+    ]
+  },
+  {
+    "en": "Live preview",
+    "fr": "Aperçu en direct",
+    "paths": [
+      "Best.comparisonRows[7][0]"
+    ]
+  },
+  {
+    "en": "What is the best PDF to Markdown converter?",
+    "fr": "Quel est le meilleur convertisseur PDF vers Markdown ?",
+    "paths": [
+      "Best.faqs[0].q"
+    ]
+  },
+  {
+    "en": "The best converter is the one that keeps your document structure, respects your privacy, and handles your file types. A browser-based tool that needs no upload or install — with tables, images, OCR and batch support — covers most needs for free.",
+    "fr": "Le meilleur convertisseur préserve la structure de votre document, respecte votre confidentialité et prend en charge vos types de fichiers. Un outil dans le navigateur sans envoi ni installation — avec tableaux, images, OCR et batch — couvre la plupart des besoins gratuitement.",
+    "paths": [
+      "Best.faqs[0].a"
+    ]
+  },
+  {
+    "en": "What is the best free PDF to Markdown converter?",
+    "fr": "Quel est le meilleur convertisseur PDF vers Markdown gratuit ?",
+    "paths": [
+      "Best.faqs[1].q"
+    ]
+  },
+  {
+    "en": "This tool is free with no limits and runs entirely in your browser. Unlike many free online converters, it never uploads your files, and it supports tables, images, scanned PDFs and batch conversion.",
+    "fr": "Cet outil est gratuit sans limites et s'exécute entièrement dans votre navigateur. Contrairement à de nombreux convertisseurs en ligne gratuits, il ne téléverse jamais vos fichiers et prend en charge tableaux, images, PDF scannés et conversion par lot.",
+    "paths": [
+      "Best.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Are online PDF to Markdown converters safe?",
+    "fr": "Les convertisseurs PDF vers Markdown en ligne sont-ils sûrs ?",
+    "paths": [
+      "Best.faqs[2].q"
+    ]
+  },
+  {
+    "en": "It depends on whether they upload your file. Many do, which is risky for confidential documents. This converter processes everything locally in your browser, so your files never leave your device.",
+    "fr": "Cela dépend s'ils téléversent votre fichier. Beaucoup le font, ce qui est risqué pour les documents confidentiels. Ce convertisseur traite tout localement dans votre navigateur — vos fichiers ne quittent jamais votre appareil.",
+    "paths": [
+      "Best.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Do I need to install software?",
+    "fr": "Dois-je installer un logiciel ?",
+    "paths": [
+      "Best.faqs[3].q"
+    ]
+  },
+  {
+    "en": "No. Command-line tools like Pandoc are powerful but require installation and setup. This converter works instantly in any modern browser, on any device.",
+    "fr": "Non. Les outils en ligne de commande comme Pandoc sont puissants mais nécessitent une installation. Ce convertisseur fonctionne directement dans tout navigateur moderne, sur tout appareil.",
+    "paths": [
+      "Best.faqs[3].a"
+    ]
+  },
+  {
+    "en": "Scanned PDF to Markdown — Free OCR Converter",
+    "fr": "PDF scanné vers Markdown — convertisseur OCR gratuit",
+    "paths": [
+      "Ocr.metaTitle"
+    ]
+  },
+  {
+    "en": "Turn scanned or image-only PDFs into Markdown with built-in OCR. Recognizes text in 100+ languages, runs in your browser, and your file is never uploaded.",
+    "fr": "Transformez des PDF scannés ou composés uniquement d'images en Markdown avec OCR intégré. Reconnaît le texte dans plus de 100 langues, s'exécute dans votre navigateur — votre fichier n'est jamais téléversé.",
+    "paths": [
+      "Ocr.metaDescription"
+    ]
+  },
+  {
+    "en": "scanned pdf to markdown",
+    "fr": "pdf scanné vers markdown",
+    "paths": [
+      "Ocr.keywords[0]"
+    ]
+  },
+  {
+    "en": "pdf to markdown ocr",
+    "fr": "pdf vers markdown ocr",
+    "paths": [
+      "Ocr.keywords[1]"
+    ]
+  },
+  {
+    "en": "ocr pdf to markdown",
+    "fr": "ocr pdf vers markdown",
+    "paths": [
+      "Ocr.keywords[2]"
+    ]
+  },
+  {
+    "en": "image pdf to markdown",
+    "fr": "pdf image vers markdown",
+    "paths": [
+      "Ocr.keywords[3]"
+    ]
+  },
+  {
+    "en": "convert scanned pdf to markdown",
+    "fr": "convertir pdf scanné en markdown",
+    "paths": [
+      "Ocr.keywords[4]"
+    ]
+  },
+  {
+    "en": "OCR · Scanned PDF",
+    "fr": "OCR · PDF scanné",
+    "paths": [
+      "Ocr.badge"
+    ]
+  },
+  {
+    "en": "Scanned PDF to Markdown",
+    "fr": "PDF scanné vers Markdown",
+    "paths": [
+      "Ocr.h1"
+    ]
+  },
+  {
+    "en": "Extract text from scanned or image-only PDFs and get clean Markdown. OCR runs entirely in your browser — your file never leaves your device.",
+    "fr": "Extrayez le texte de PDF scannés ou composés uniquement d'images et obtenez du Markdown propre. L'OCR s'exécute entièrement dans votre navigateur — votre fichier ne quitte jamais votre appareil.",
+    "paths": [
+      "Ocr.subtitle"
+    ]
+  },
+  {
+    "en": "Document language",
+    "fr": "Langue du document",
+    "paths": [
+      "Ocr.languageLabel"
+    ]
+  },
+  {
+    "en": "Drop a scanned PDF here, or",
+    "fr": "Déposez un PDF scanné ici, ou",
+    "paths": [
+      "Ocr.dropTitle"
+    ]
+  },
+  {
+    "en": "Image or scanned PDF · OCR in your browser · Max 50MB",
+    "fr": "Image ou PDF scanné · OCR dans votre navigateur · Max. 50 Mo",
+    "paths": [
+      "Ocr.dropSubtitle"
+    ]
+  },
+  {
+    "en": "First run downloads a language model (~2–15MB). After that it works offline — your file is processed locally.",
+    "fr": "La première utilisation télécharge un modèle linguistique (~2–15 Mo). Ensuite, cela fonctionne hors ligne — votre fichier est traité localement.",
+    "paths": [
+      "Ocr.modelNote"
+    ]
+  },
+  {
+    "en": "Rendering pages",
+    "fr": "Rendu des pages",
+    "paths": [
+      "Ocr.rendering"
+    ]
+  },
+  {
+    "en": "Recognizing text",
+    "fr": "Reconnaissance du texte",
+    "paths": [
+      "Ocr.recognizing"
+    ]
+  },
+  {
+    "en": "Page {page}/{total} · {pct}%",
+    "fr": "Page {page}/{total} · {pct} %",
+    "paths": [
+      "Ocr.ocrProgress"
+    ]
+  },
+  {
+    "en": "Could not read any pages from this PDF.",
+    "fr": "Impossible de lire des pages dans ce PDF.",
+    "paths": [
+      "Ocr.errorNoPages"
+    ]
+  },
+  {
+    "en": "OCR failed. Please try another file.",
+    "fr": "Échec de l'OCR. Veuillez essayer un autre fichier.",
+    "paths": [
+      "Ocr.errorFailed"
+    ]
+  },
+  {
+    "en": "Who uses it",
+    "fr": "Qui l'utilise",
+    "paths": [
+      "Ocr.audienceTitle",
+      "Obsidian.audienceTitle",
+      "ChatGPT.audienceTitle",
+      "Table.audienceTitle",
+      "Notion.audienceTitle",
+      "Python.audienceTitle"
+    ]
+  },
+  {
+    "en": "Archivists",
+    "fr": "Archivistes",
+    "paths": [
+      "Ocr.audience[0].title"
+    ]
+  },
+  {
+    "en": "Digitize scanned books, receipts and old documents into editable Markdown.",
+    "fr": "Numérisez livres scannés, reçus et anciens documents en Markdown modifiable.",
+    "paths": [
+      "Ocr.audience[0].body"
+    ]
+  },
+  {
+    "en": "Students",
+    "fr": "Étudiants",
+    "paths": [
+      "Ocr.audience[1].title"
+    ]
+  },
+  {
+    "en": "Turn photographed lecture slides and handouts into searchable notes.",
+    "fr": "Transformez diapositives de cours photographiées et polycopiés en notes consultables.",
+    "paths": [
+      "Ocr.audience[1].body"
+    ]
+  },
+  {
+    "en": "Offices",
+    "fr": "Bureaux",
+    "paths": [
+      "Ocr.audience[2].title"
+    ]
+  },
+  {
+    "en": "Extract text from scanned contracts and forms without retyping.",
+    "fr": "Extrayez le texte de contrats et formulaires scannés sans retaper.",
+    "paths": [
+      "Ocr.audience[2].body"
+    ]
+  },
+  {
+    "en": "How to convert a scanned PDF to Markdown",
+    "fr": "Comment convertir un PDF scanné en Markdown",
+    "paths": [
+      "Ocr.howToName"
+    ]
+  },
+  {
+    "en": "Choose the document language, then drop your scanned or image-only PDF.",
+    "fr": "Choisissez la langue du document et déposez votre PDF scanné ou composé uniquement d'images.",
+    "paths": [
+      "Ocr.howToSteps[0]"
+    ]
+  },
+  {
+    "en": "Watch each page get rendered and recognized in your browser, side by side.",
+    "fr": "Observez chaque page être rendue et reconnue côte à côte dans votre navigateur.",
+    "paths": [
+      "Ocr.howToSteps[1]"
+    ]
+  },
+  {
+    "en": "Copy the Markdown or download the .md file once OCR finishes.",
+    "fr": "Copiez le Markdown ou téléchargez le fichier .md une fois l'OCR terminé.",
+    "paths": [
+      "Ocr.howToSteps[2]"
+    ]
+  },
+  {
+    "en": "Built-in OCR",
+    "fr": "OCR intégré",
+    "paths": [
+      "Ocr.features[0].title"
+    ]
+  },
+  {
+    "en": "Reads text from scanned and image-only PDFs that normal converters can't, powered by Tesseract in your browser.",
+    "fr": "Lit le texte des PDF scannés et composés uniquement d'images que les convertisseurs classiques ne gèrent pas, alimenté par Tesseract dans votre navigateur.",
+    "paths": [
+      "Ocr.features[0].body"
+    ]
+  },
+  {
+    "en": "100+ languages",
+    "fr": "Plus de 100 langues",
+    "paths": [
+      "Ocr.features[1].title"
+    ]
+  },
+  {
+    "en": "Recognize English, Chinese, Japanese, Korean, Spanish, French, German, Russian and many more.",
+    "fr": "Reconnaît l'anglais, le chinois, le japonais, le coréen, l'espagnol, le français, l'allemand, le russe et bien d'autres.",
+    "paths": [
+      "Ocr.features[1].body"
+    ]
+  },
+  {
+    "en": "Private by design",
+    "fr": "Privé par conception",
+    "paths": [
+      "Ocr.features[2].title"
+    ]
+  },
+  {
+    "en": "OCR runs locally via WebAssembly. Only the language model is fetched — your document never leaves your device.",
+    "fr": "L'OCR s'exécute localement via WebAssembly. Seul le modèle linguistique est récupéré — votre document ne quitte jamais votre appareil.",
+    "paths": [
+      "Ocr.features[2].body"
+    ]
+  },
+  {
+    "en": "What is a scanned PDF?",
+    "fr": "Qu'est-ce qu'un PDF scanné ?",
+    "paths": [
+      "Ocr.faqs[0].q"
+    ]
+  },
+  {
+    "en": "A scanned or image-only PDF has no selectable text layer — it's essentially pictures of pages. Regular converters return nothing, so OCR is needed to read the text.",
+    "fr": "Un PDF scanné ou composé uniquement d'images n'a pas de couche de texte sélectionnable — ce sont essentiellement des images de pages. Les convertisseurs classiques ne renvoient rien, l'OCR est donc nécessaire pour lire le texte.",
+    "paths": [
+      "Ocr.faqs[0].a"
+    ]
+  },
+  {
+    "en": "Is the OCR free and private?",
+    "fr": "L'OCR est-il gratuit et privé ?",
+    "paths": [
+      "Ocr.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Yes. Recognition runs entirely in your browser using WebAssembly. Only the language model is downloaded from a CDN; your PDF is never uploaded.",
+    "fr": "Oui. La reconnaissance s'exécute entièrement dans votre navigateur via WebAssembly. Seul le modèle linguistique est téléchargé depuis un CDN ; votre PDF n'est jamais téléversé.",
+    "paths": [
+      "Ocr.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Which languages are supported?",
+    "fr": "Quelles langues sont prises en charge ?",
+    "paths": [
+      "Ocr.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Pick from English, Simplified and Traditional Chinese, Japanese, Korean, Spanish, French, German, Russian and more before you start.",
+    "fr": "Choisissez parmi l'anglais, le chinois simplifié et traditionnel, le japonais, le coréen, l'espagnol, le français, l'allemand, le russe et d'autres avant de commencer.",
+    "paths": [
+      "Ocr.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Why is OCR slower than a normal conversion?",
+    "fr": "Pourquoi l'OCR est-il plus lent qu'une conversion normale ?",
+    "paths": [
+      "Ocr.faqs[3].q"
+    ]
+  },
+  {
+    "en": "OCR analyzes each page image pixel by pixel to recognize characters, which is heavier than reading an existing text layer. Larger documents take longer.",
+    "fr": "L'OCR analyse chaque image de page pixel par pixel pour reconnaître les caractères, ce qui est plus lourd que la lecture d'une couche de texte existante. Les documents volumineux prennent plus de temps.",
+    "paths": [
+      "Ocr.faqs[3].a"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for Obsidian — Offline & Clean",
+    "fr": "PDF vers Markdown pour Obsidian — Hors ligne et propre",
+    "paths": [
+      "Obsidian.metaTitle"
+    ]
+  },
+  {
+    "en": "Turn PDFs into clean Markdown notes for Obsidian. 100% offline in your browser — drop the .md straight into your vault with headings, lists and tables intact.",
+    "fr": "Transformez des PDF en notes Markdown propres pour Obsidian. 100 % hors ligne dans votre navigateur — déposez le .md directement dans votre vault, titres, listes et tableaux intacts.",
+    "paths": [
+      "Obsidian.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf to markdown for obsidian",
+    "fr": "pdf vers markdown pour obsidian",
+    "paths": [
+      "Obsidian.keywords[0]"
+    ]
+  },
+  {
+    "en": "obsidian pdf to markdown",
+    "fr": "obsidian pdf vers markdown",
+    "paths": [
+      "Obsidian.keywords[1]"
+    ]
+  },
+  {
+    "en": "import pdf into obsidian",
+    "fr": "importer pdf dans obsidian",
+    "paths": [
+      "Obsidian.keywords[2]"
+    ]
+  },
+  {
+    "en": "pdf to md obsidian",
+    "fr": "pdf vers md obsidian",
+    "paths": [
+      "Obsidian.keywords[3]"
+    ]
+  },
+  {
+    "en": "Offline · vault-ready",
+    "fr": "Hors ligne · prêt pour le vault",
+    "paths": [
+      "Obsidian.badge"
+    ]
+  },
+  {
+    "en": "Convert PDFs into clean, offline Markdown notes you can drop straight into your Obsidian vault — headings, lists and tables kept intact.",
+    "fr": "Convertissez des PDF en notes Markdown propres et hors ligne que vous pouvez déposer directement dans votre vault Obsidian — titres, listes et tableaux conservés.",
+    "paths": [
+      "Obsidian.subtitle"
+    ]
+  },
+  {
+    "en": "Vault-ready output",
+    "fr": "Résultat prêt pour le vault",
+    "paths": [
+      "Obsidian.features[0].title"
+    ]
+  },
+  {
+    "en": "Download a .md file and move it into your vault. Headings become note structure and tables stay as Markdown tables.",
+    "fr": "Téléchargez un fichier .md et déplacez-le dans votre vault. Les titres deviennent la structure de la note et les tableaux restent des tableaux Markdown.",
+    "paths": [
+      "Obsidian.features[0].body"
+    ]
+  },
+  {
+    "en": "Fully offline",
+    "fr": "Entièrement hors ligne",
+    "paths": [
+      "Obsidian.features[1].title"
+    ]
+  },
+  {
+    "en": "No upload step means it works even with the network off — ideal for private research notes and clippings.",
+    "fr": "Pas d'étape d'envoi — cela fonctionne sans réseau, idéal pour les notes de recherche privées et les extraits.",
+    "paths": [
+      "Obsidian.features[1].body"
+    ]
+  },
+  {
+    "en": "Clean notes",
+    "fr": "Notes propres",
+    "paths": [
+      "Obsidian.features[2].title"
+    ]
+  },
+  {
+    "en": "Page numbers and repeated headers/footers are removed so your notes are not polluted with print artifacts.",
+    "fr": "Les numéros de page et en-têtes/pieds de page répétés sont supprimés pour que vos notes ne soient pas polluées par des artefacts d'impression.",
+    "paths": [
+      "Obsidian.features[2].body"
+    ]
+  },
+  {
+    "en": "Are my files uploaded to a server?",
+    "fr": "Mes fichiers sont-ils téléversés sur un serveur ?",
+    "paths": [
+      "Obsidian.faqs[0].q",
+      "ChatGPT.faqs[0].q",
+      "Table.faqs[0].q"
+    ]
+  },
+  {
+    "en": "No. Conversion runs entirely in your browser using WebAssembly. Your PDF never leaves your device, which makes it safe for contracts, research and other private documents.",
+    "fr": "Non. La conversion s'exécute entièrement dans votre navigateur avec WebAssembly. Votre PDF ne quitte jamais votre appareil, ce qui le rend sûr pour contrats, recherche et autres documents privés.",
+    "paths": [
+      "Obsidian.faqs[0].a",
+      "ChatGPT.faqs[0].a",
+      "Table.faqs[0].a"
+    ]
+  },
+  {
+    "en": "How do I import the result into Obsidian?",
+    "fr": "Comment importer le résultat dans Obsidian ?",
+    "paths": [
+      "Obsidian.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Click “Download .md” and move the file into any folder inside your Obsidian vault. It appears instantly as a new note.",
+    "fr": "Cliquez sur « Télécharger .md » et déplacez le fichier dans n'importe quel dossier de votre vault Obsidian. Il apparaît immédiatement comme une nouvelle note.",
+    "paths": [
+      "Obsidian.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Will tables and lists survive the import?",
+    "fr": "Les tableaux et listes survivent-ils à l'import ?",
+    "paths": [
+      "Obsidian.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Yes. Tables are converted to GitHub-flavored Markdown tables and nested bullet lists keep their indentation.",
+    "fr": "Oui. Les tableaux sont convertis en tableaux GitHub-flavored Markdown et les listes à puces imbriquées conservent leur indentation.",
+    "paths": [
+      "Obsidian.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Researchers & students",
+    "fr": "Chercheurs et étudiants",
+    "paths": [
+      "Obsidian.audience[0].title"
+    ]
+  },
+  {
+    "en": "Pull papers and lecture PDFs into your vault as linkable, searchable notes.",
+    "fr": "Importez articles et PDF de cours dans votre vault sous forme de notes consultables.",
+    "paths": [
+      "Obsidian.audience[0].body"
+    ]
+  },
+  {
+    "en": "PKM enthusiasts",
+    "fr": "Passionnés de PKM",
+    "paths": [
+      "Obsidian.audience[1].title"
+    ]
+  },
+  {
+    "en": "Feed clippings and reports into your Zettelkasten with structure intact.",
+    "fr": "Alimentez votre Zettelkasten avec extraits et rapports en conservant la structure.",
+    "paths": [
+      "Obsidian.audience[1].body"
+    ]
+  },
+  {
+    "en": "Writers",
+    "fr": "Rédacteurs",
+    "paths": [
+      "Obsidian.audience[2].title"
+    ]
+  },
+  {
+    "en": "Draft from source PDFs inside Obsidian without losing headings or tables.",
+    "fr": "Rédigez à partir de PDF sources dans Obsidian sans perdre titres ou tableaux.",
+    "paths": [
+      "Obsidian.audience[2].body"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for ChatGPT, LLMs & RAG",
+    "fr": "PDF vers Markdown pour ChatGPT, LLM et RAG",
+    "paths": [
+      "ChatGPT.metaTitle"
+    ]
+  },
+  {
+    "en": "Convert PDFs to clean Markdown that’s ready for ChatGPT, Claude and RAG pipelines. Compact, structured output that LLMs parse reliably — processed locally in your browser.",
+    "fr": "Convertissez des PDF en Markdown propre prêt pour ChatGPT, Claude et les pipelines RAG. Sortie compacte et structurée que les LLM analysent fiablement — traité localement dans votre navigateur.",
+    "paths": [
+      "ChatGPT.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf to markdown for chatgpt",
+    "fr": "pdf vers markdown pour chatgpt",
+    "paths": [
+      "ChatGPT.keywords[0]"
+    ]
+  },
+  {
+    "en": "pdf to markdown for llm",
+    "fr": "pdf vers markdown pour llm",
+    "paths": [
+      "ChatGPT.keywords[1]"
+    ]
+  },
+  {
+    "en": "pdf to markdown for rag",
+    "fr": "pdf vers markdown pour rag",
+    "paths": [
+      "ChatGPT.keywords[2]"
+    ]
+  },
+  {
+    "en": "pdf to markdown for ai",
+    "fr": "pdf vers markdown pour ia",
+    "paths": [
+      "ChatGPT.keywords[3]"
+    ]
+  },
+  {
+    "en": "LLM-ready output",
+    "fr": "Résultat prêt pour LLM",
+    "paths": [
+      "ChatGPT.badge"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for ChatGPT & LLMs",
+    "fr": "PDF vers Markdown pour ChatGPT et LLM",
+    "paths": [
+      "ChatGPT.h1"
+    ]
+  },
+  {
+    "en": "Convert PDFs into compact, structured Markdown that ChatGPT, Claude and RAG pipelines can parse reliably — all processed locally in your browser.",
+    "fr": "Convertissez des PDF en Markdown compact et structuré que ChatGPT, Claude et les pipelines RAG analysent fiablement — le tout traité localement dans votre navigateur.",
+    "paths": [
+      "ChatGPT.subtitle"
+    ]
+  },
+  {
+    "en": "Token-efficient",
+    "fr": "Efficace en tokens",
+    "paths": [
+      "ChatGPT.features[0].title"
+    ]
+  },
+  {
+    "en": "Markdown is far more compact than raw PDF text dumps, so you fit more context into the model’s window.",
+    "fr": "Le Markdown est bien plus compact que les dumps de texte PDF bruts, vous placez ainsi plus de contexte dans la fenêtre du modèle.",
+    "paths": [
+      "ChatGPT.features[0].body"
+    ]
+  },
+  {
+    "en": "Structure the model understands",
+    "fr": "Structure que le modèle comprend",
+    "paths": [
+      "ChatGPT.features[1].title"
+    ]
+  },
+  {
+    "en": "Clean headings and lists give the model document hierarchy, which improves grounding and reduces hallucination.",
+    "fr": "Des titres et listes propres donnent au modèle la hiérarchie du document, ce qui améliore l'ancrage et réduit les hallucinations.",
+    "paths": [
+      "ChatGPT.features[1].body"
+    ]
+  },
+  {
+    "en": "Ready for RAG",
+    "fr": "Prêt pour RAG",
+    "paths": [
+      "ChatGPT.features[2].title"
+    ]
+  },
+  {
+    "en": "Predictable Markdown is easy to chunk and embed into a vector database for retrieval augmented generation.",
+    "fr": "Un Markdown prévisible est facile à découper et intégrer dans une base vectorielle pour la génération augmentée par récupération.",
+    "paths": [
+      "ChatGPT.features[2].body"
+    ]
+  },
+  {
+    "en": "Why is Markdown better than raw PDF text for LLMs?",
+    "fr": "Pourquoi le Markdown est-il meilleur que le texte PDF brut pour les LLM ?",
+    "paths": [
+      "ChatGPT.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Markdown encodes structure (headings, lists, tables) with very few extra tokens, which helps the model interpret the document and keeps prompts small.",
+    "fr": "Le Markdown encode la structure (titres, listes, tableaux) avec très peu de tokens supplémentaires, ce qui aide le modèle à interpréter le document et garde les prompts compacts.",
+    "paths": [
+      "ChatGPT.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Can I use the output in a RAG pipeline?",
+    "fr": "Puis-je utiliser la sortie dans un pipeline RAG ?",
+    "paths": [
+      "ChatGPT.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Yes. The clean Markdown is straightforward to split into chunks and embed for retrieval, with headings acting as natural chunk boundaries.",
+    "fr": "Oui. Le Markdown propre se découpe facilement en chunks et s'intègre pour la récupération, les titres formant des limites de chunks naturelles.",
+    "paths": [
+      "ChatGPT.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Prompt engineers",
+    "fr": "Prompt engineers",
+    "paths": [
+      "ChatGPT.audience[0].title"
+    ]
+  },
+  {
+    "en": "Paste compact Markdown into ChatGPT or Claude to fit more context per prompt.",
+    "fr": "Collez du Markdown compact dans ChatGPT ou Claude pour plus de contexte par prompt.",
+    "paths": [
+      "ChatGPT.audience[0].body"
+    ]
+  },
+  {
+    "en": "RAG developers",
+    "fr": "Développeurs RAG",
+    "paths": [
+      "ChatGPT.audience[1].title"
+    ]
+  },
+  {
+    "en": "Chunk and embed clean Markdown for reliable retrieval augmented generation.",
+    "fr": "Découpez et intégrez du Markdown propre pour une génération augmentée par récupération fiable.",
+    "paths": [
+      "ChatGPT.audience[1].body"
+    ]
+  },
+  {
+    "en": "Data teams",
+    "fr": "Équipes data",
+    "paths": [
+      "ChatGPT.audience[2].title"
+    ]
+  },
+  {
+    "en": "Standardize messy PDFs into structured text for downstream AI pipelines.",
+    "fr": "Standardisez des PDF désordonnés en texte structuré pour les pipelines IA.",
+    "paths": [
+      "ChatGPT.audience[2].body"
+    ]
+  },
+  {
+    "en": "PDF Table to Markdown — Convert Tables Cleanly",
+    "fr": "Tableau PDF vers Markdown — conversion propre des tableaux",
+    "paths": [
+      "Table.metaTitle"
+    ]
+  },
+  {
+    "en": "Extract tables from PDFs into GitHub-flavored Markdown tables. Column structure is detected automatically and processed locally in your browser — no upload.",
+    "fr": "Extrayez des tableaux de PDF vers des tableaux GitHub-flavored Markdown. La structure des colonnes est détectée automatiquement et traitée localement dans votre navigateur — sans envoi.",
+    "paths": [
+      "Table.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf table to markdown",
+    "fr": "tableau pdf vers markdown",
+    "paths": [
+      "Table.keywords[0]"
+    ]
+  },
+  {
+    "en": "convert pdf table to markdown",
+    "fr": "convertir tableau pdf en markdown",
+    "paths": [
+      "Table.keywords[1]"
+    ]
+  },
+  {
+    "en": "pdf to markdown table",
+    "fr": "pdf vers markdown tableau",
+    "paths": [
+      "Table.keywords[2]"
+    ]
+  },
+  {
+    "en": "extract table from pdf to markdown",
+    "fr": "extraire tableau pdf vers markdown",
+    "paths": [
+      "Table.keywords[3]"
+    ]
+  },
+  {
+    "en": "Tables · GFM output",
+    "fr": "Tableaux · sortie GFM",
+    "paths": [
+      "Table.badge"
+    ]
+  },
+  {
+    "en": "PDF Table to Markdown",
+    "fr": "Tableau PDF vers Markdown",
+    "paths": [
+      "Table.h1"
+    ]
+  },
+  {
+    "en": "Extract tables from your PDFs into clean GitHub-flavored Markdown tables. Column boundaries are detected automatically, all in your browser.",
+    "fr": "Extrayez des tableaux de vos PDF en tableaux GitHub-flavored Markdown propres. Les limites de colonnes sont détectées automatiquement, le tout dans votre navigateur.",
+    "paths": [
+      "Table.subtitle"
+    ]
+  },
+  {
+    "en": "Automatic column detection",
+    "fr": "Détection automatique des colonnes",
+    "paths": [
+      "Table.features[0].title"
+    ]
+  },
+  {
+    "en": "The engine aligns cells by their horizontal position, so multi-column tables come out correctly structured.",
+    "fr": "Le moteur aligne les cellules selon leur position horizontale, pour que les tableaux multi-colonnes soient correctement structurés.",
+    "paths": [
+      "Table.features[0].body"
+    ]
+  },
+  {
+    "en": "GFM tables",
+    "fr": "Tableaux GFM",
+    "paths": [
+      "Table.features[1].title"
+    ]
+  },
+  {
+    "en": "Output uses standard GitHub-flavored Markdown tables that render in GitHub, Obsidian, Notion and most editors.",
+    "fr": "La sortie utilise des tableaux GitHub-flavored Markdown standard qui s'affichent dans GitHub, Obsidian, Notion et la plupart des éditeurs.",
+    "paths": [
+      "Table.features[1].body"
+    ]
+  },
+  {
+    "en": "Mixed documents welcome",
+    "fr": "Documents mixtes acceptés",
+    "paths": [
+      "Table.features[2].title"
+    ]
+  },
+  {
+    "en": "Tables, headings and prose in the same PDF are all handled together in a single pass.",
+    "fr": "Tableaux, titres et texte courant dans le même PDF sont traités ensemble en une seule passe.",
+    "paths": [
+      "Table.features[2].body"
+    ]
+  },
+  {
+    "en": "What table layouts are supported?",
+    "fr": "Quelles mises en page de tableaux sont prises en charge ?",
+    "paths": [
+      "Table.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Text-based tables with clear column spacing convert best. Merged cells are flattened because Markdown tables don’t support cell spanning.",
+    "fr": "Les tableaux textuels avec un espacement de colonnes clair se convertissent le mieux. Les cellules fusionnées sont aplaties car les tableaux Markdown ne prennent pas en charge le colspan.",
+    "paths": [
+      "Table.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Can I copy just the table?",
+    "fr": "Puis-je copier uniquement le tableau ?",
+    "paths": [
+      "Table.faqs[2].q"
+    ]
+  },
+  {
+    "en": "Yes. Convert the PDF, switch to the source view, and copy the table block you need.",
+    "fr": "Oui. Convertissez le PDF, passez en vue Source et copiez le bloc de tableau dont vous avez besoin.",
+    "paths": [
+      "Table.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Analysts",
+    "fr": "Analystes",
+    "paths": [
+      "Table.audience[0].title"
+    ]
+  },
+  {
+    "en": "Pull pricing, financial and data tables out of reports into editable Markdown.",
+    "fr": "Extrayez tableaux de prix, financiers et de données des rapports vers du Markdown modifiable.",
+    "paths": [
+      "Table.audience[0].body"
+    ]
+  },
+  {
+    "en": "Developers",
+    "fr": "Développeurs",
+    "paths": [
+      "Table.audience[1].title"
+    ]
+  },
+  {
+    "en": "Drop PDF tables into docs and READMEs as GitHub-flavored Markdown tables.",
+    "fr": "Intégrez des tableaux PDF dans docs et README sous forme de tableaux GitHub-flavored Markdown.",
+    "paths": [
+      "Table.audience[1].body"
+    ]
+  },
+  {
+    "en": "Researchers",
+    "fr": "Chercheurs",
+    "paths": [
+      "Table.audience[2].title"
+    ]
+  },
+  {
+    "en": "Extract result tables from papers for notes or further analysis.",
+    "fr": "Extrayez les tableaux de résultats des articles pour notes ou analyse.",
+    "paths": [
+      "Table.audience[2].body"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for Notion — Import Pages Cleanly",
+    "fr": "PDF vers Markdown pour Notion — import propre",
+    "paths": [
+      "Notion.metaTitle"
+    ]
+  },
+  {
+    "en": "Convert PDFs to Markdown for Notion. Clean headings, lists and tables — paste into a Notion page in seconds. 100% local in your browser, no upload.",
+    "fr": "Convertissez des PDF en Markdown pour Notion. Titres, listes et tableaux propres — collez dans une page Notion en quelques secondes. 100 % local dans votre navigateur.",
+    "paths": [
+      "Notion.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf to markdown for notion",
+    "fr": "pdf vers markdown pour notion",
+    "paths": [
+      "Notion.keywords[0]"
+    ]
+  },
+  {
+    "en": "notion pdf to markdown",
+    "fr": "notion pdf vers markdown",
+    "paths": [
+      "Notion.keywords[1]"
+    ]
+  },
+  {
+    "en": "import pdf into notion",
+    "fr": "importer pdf dans notion",
+    "paths": [
+      "Notion.keywords[2]"
+    ]
+  },
+  {
+    "en": "pdf to notion markdown",
+    "fr": "pdf to markdown for notion",
+    "paths": [
+      "Notion.keywords[3]"
+    ]
+  },
+  {
+    "en": "Notion-ready · paste to import",
+    "fr": "Prêt pour Notion · coller pour importer",
+    "paths": [
+      "Notion.badge"
+    ]
+  },
+  {
+    "en": "Turn PDF reports, specs and docs into clean Markdown you can paste straight into Notion — headings, lists and tables intact, all processed locally.",
+    "fr": "Transformez rapports, specs et docs PDF en Markdown propre à coller directement dans Notion — titres, listes et tableaux intacts, le tout traité localement.",
+    "paths": [
+      "Notion.subtitle"
+    ]
+  },
+  {
+    "en": "Paste-friendly output",
+    "fr": "Sortie adaptée au collage",
+    "paths": [
+      "Notion.features[0].title"
+    ]
+  },
+  {
+    "en": "Notion recognizes Markdown on paste — headings become blocks, lists stay nested, and GFM tables render as Notion tables.",
+    "fr": "Notion reconnaît le Markdown au collage — les titres deviennent des blocs, les listes restent imbriquées et les tableaux GFM s'affichent comme tableaux Notion.",
+    "paths": [
+      "Notion.features[0].body"
+    ]
+  },
+  {
+    "en": "Private by default",
+    "fr": "Privé par défaut",
+    "paths": [
+      "Notion.features[1].title"
+    ]
+  },
+  {
+    "en": "Internal wikis and strategy docs stay on your device. No upload step means sensitive PDFs never hit a third-party server.",
+    "fr": "Wikis internes et docs stratégiques restent sur votre appareil. Sans envoi, les PDF sensibles ne passent jamais par un serveur tiers.",
+    "paths": [
+      "Notion.features[1].body"
+    ]
+  },
+  {
+    "en": "Works with any Notion workspace",
+    "fr": "Fonctionne avec tout workspace Notion",
+    "paths": [
+      "Notion.features[2].title"
+    ]
+  },
+  {
+    "en": "Copy into team wikis, personal notes, or project docs. Download the .md file if you prefer importing via another tool.",
+    "fr": "Collez dans wikis d'équipe, notes personnelles ou docs de projet. Téléchargez le .md si vous préférez importer via un autre outil.",
+    "paths": [
+      "Notion.features[2].body"
+    ]
+  },
+  {
+    "en": "How do I get the Markdown into Notion?",
+    "fr": "Comment mettre le Markdown dans Notion ?",
+    "paths": [
+      "Notion.faqs[0].q"
+    ]
+  },
+  {
+    "en": "Convert your PDF, click Copy Markdown, then paste into a new Notion page. Notion converts headings, lists and tables into blocks automatically. For large docs, paste section by section.",
+    "fr": "Convertissez votre PDF, cliquez sur Copier le Markdown et collez dans une nouvelle page Notion. Notion convertit automatiquement titres, listes et tableaux en blocs. Pour les grands docs, collez section par section.",
+    "paths": [
+      "Notion.faqs[0].a"
+    ]
+  },
+  {
+    "en": "Do Notion tables from PDF convert correctly?",
+    "fr": "Les tableaux Notion issus de PDF se convertissent-ils bien ?",
+    "paths": [
+      "Notion.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Text-based PDF tables export as GitHub-flavored Markdown tables, which Notion renders well. Complex merged cells may flatten because Markdown tables do not support cell spanning.",
+    "fr": "Les tableaux PDF textuels deviennent des tableaux GFM, que Notion affiche bien. Les cellules fusionnées complexes peuvent être aplaties.",
+    "paths": [
+      "Notion.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Are my files uploaded?",
+    "fr": "Mes fichiers sont-ils téléversés ?",
+    "paths": [
+      "Notion.faqs[2].q"
+    ]
+  },
+  {
+    "en": "No. Conversion runs entirely in your browser. Your PDF never leaves your device.",
+    "fr": "Non. La conversion s'exécute entièrement dans votre navigateur. Votre PDF ne quitte jamais votre appareil.",
+    "paths": [
+      "Notion.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Teams",
+    "fr": "Équipes",
+    "paths": [
+      "Notion.audience[0].title"
+    ]
+  },
+  {
+    "en": "Move specs, wikis and reports into Notion pages with structure preserved.",
+    "fr": "Déplacez specs, wikis et rapports vers des pages Notion en conservant la structure.",
+    "paths": [
+      "Notion.audience[0].body"
+    ]
+  },
+  {
+    "en": "Product managers",
+    "fr": "Chefs de produit",
+    "paths": [
+      "Notion.audience[1].title"
+    ]
+  },
+  {
+    "en": "Turn PDF briefs into editable Notion docs in seconds.",
+    "fr": "Transformez des briefs PDF en docs Notion modifiables en quelques secondes.",
+    "paths": [
+      "Notion.audience[1].body"
+    ]
+  },
+  {
+    "en": "Knowledge managers",
+    "fr": "Gestionnaires de connaissances",
+    "paths": [
+      "Notion.audience[2].title"
+    ]
+  },
+  {
+    "en": "Build a searchable Notion knowledge base from scattered PDFs.",
+    "fr": "Construisez une base de connaissances Notion consultable à partir de PDF dispersés.",
+    "paths": [
+      "Notion.audience[2].body"
+    ]
+  },
+  {
+    "en": "PDF to Markdown Python — Browser Tool & Script Tips",
+    "fr": "PDF vers Markdown Python — outil navigateur et conseils scripts",
+    "paths": [
+      "Python.metaTitle"
+    ]
+  },
+  {
+    "en": "Convert PDF to Markdown without writing Python first — free local browser tool. Plus tips for pymupdf, pdfplumber and our upcoming API for automation.",
+    "fr": "Convertissez PDF en Markdown sans écrire Python d'abord — outil navigateur local gratuit. Plus des conseils pour pymupdf, pdfplumber et notre API à venir.",
+    "paths": [
+      "Python.metaDescription"
+    ]
+  },
+  {
+    "en": "pdf to markdown python",
+    "fr": "pdf vers markdown python",
+    "paths": [
+      "Python.keywords[0]"
+    ]
+  },
+  {
+    "en": "python pdf to markdown",
+    "fr": "python pdf vers markdown",
+    "paths": [
+      "Python.keywords[1]"
+    ]
+  },
+  {
+    "en": "convert pdf to markdown python",
+    "fr": "convertir pdf en markdown python",
+    "paths": [
+      "Python.keywords[2]"
+    ]
+  },
+  {
+    "en": "pdf to markdown api",
+    "fr": "pdf vers markdown api",
+    "paths": [
+      "Python.keywords[3]"
+    ]
+  },
+  {
+    "en": "No pip install · instant output",
+    "fr": "Sans pip · sortie instantanée",
+    "paths": [
+      "Python.badge"
+    ]
+  },
+  {
+    "en": "PDF to Markdown for Python",
+    "fr": "PDF vers Markdown pour Python",
+    "paths": [
+      "Python.h1"
+    ]
+  },
+  {
+    "en": "Need Markdown from a PDF for a notebook, ETL job or prototype? Convert locally in the browser, then copy the string into your Python workflow — no environment setup.",
+    "fr": "Besoin de Markdown depuis un PDF pour un notebook, un job ETL ou un prototype ? Convertissez localement dans le navigateur, puis copiez la chaîne dans votre workflow Python — sans configuration d'environnement.",
+    "paths": [
+      "Python.subtitle"
+    ]
+  },
+  {
+    "en": "Zero-setup conversion",
+    "fr": "Conversion sans configuration",
+    "paths": [
+      "Python.features[0].title"
+    ]
+  },
+  {
+    "en": "Skip installing pymupdf, pdfplumber or Java dependencies for one-off files. Upload, copy the Markdown string, and paste into your script.",
+    "fr": "Passez pymupdf, pdfplumber ou les dépendances Java pour des fichiers ponctuels. Téléversez, copiez la chaîne Markdown, collez dans votre script.",
+    "paths": [
+      "Python.features[0].body"
+    ]
+  },
+  {
+    "en": "Structured for parsing",
+    "fr": "Structuré pour l'analyse",
+    "paths": [
+      "Python.features[1].title"
+    ]
+  },
+  {
+    "en": "Predictable heading levels and GFM tables make it easy to split sections with regex or feed into LangChain, LlamaIndex and other Python RAG stacks.",
+    "fr": "Des niveaux de titres prévisibles et des tableaux GFM facilitent le découpage de sections ou l'alimentation de LangChain, LlamaIndex et autres stacks RAG Python.",
+    "paths": [
+      "Python.features[1].body"
+    ]
+  },
+  {
+    "en": "API coming soon",
+    "fr": "API bientôt disponible",
+    "paths": [
+      "Python.features[2].title"
+    ]
+  },
+  {
+    "en": "Batch conversion and a REST API for programmatic access are on the roadmap. Contact us if you want early access for production pipelines.",
+    "fr": "Conversion par lot et API REST sont sur la feuille de route. Contactez-nous pour un accès anticipé aux pipelines de production.",
+    "paths": [
+      "Python.features[2].body"
+    ]
+  },
+  {
+    "en": "Is there a Python library or pip package?",
+    "fr": "Existe-t-il une bibliothèque Python ou un package pip ?",
+    "paths": [
+      "Python.faqs[0].q"
+    ]
+  },
+  {
+    "en": "This site is a browser-based converter, not a pip module. For quick one-file jobs, use the tool above. For fully programmatic pipelines, common libraries include PyMuPDF, pdfplumber and marker — or wait for our upcoming API.",
+    "fr": "Ce site est un convertisseur navigateur, pas un module pip. Pour des jobs ponctuels rapides, utilisez l'outil ci-dessus. Pour des pipelines entièrement programmatiques : PyMuPDF, pdfplumber, marker — ou attendez notre API.",
+    "paths": [
+      "Python.faqs[0].a"
+    ]
+  },
+  {
+    "en": "Can I use the output in Jupyter or pandas?",
+    "fr": "Puis-je utiliser la sortie dans Jupyter ou pandas ?",
+    "paths": [
+      "Python.faqs[1].q"
+    ]
+  },
+  {
+    "en": "Yes. Copy the Markdown into a notebook cell for documentation, or parse GFM tables into DataFrames with pandas.read_table on the table blocks.",
+    "fr": "Oui. Copiez le Markdown dans une cellule notebook pour la documentation, ou analysez les tableaux GFM en DataFrames avec pandas.read_table.",
+    "paths": [
+      "Python.faqs[1].a"
+    ]
+  },
+  {
+    "en": "Does this replace a Python script in production?",
+    "fr": "Cela remplace-t-il un script Python en production ?",
+    "paths": [
+      "Python.faqs[2].q"
+    ]
+  },
+  {
+    "en": "For ad-hoc and prototype work, the browser tool is faster to start. For automated batch jobs in CI or cron, a script or API is better — our API is planned for that use case.",
+    "fr": "Pour le travail ad hoc et les prototypes, l'outil navigateur démarre plus vite. Pour des jobs batch automatisés en CI ou cron, un script ou une API convient mieux — notre API est prévue pour ce cas.",
+    "paths": [
+      "Python.faqs[2].a"
+    ]
+  },
+  {
+    "en": "Data scientists",
+    "fr": "Data scientists",
+    "paths": [
+      "Python.audience[0].title"
+    ]
+  },
+  {
+    "en": "Grab Markdown for notebooks without setting up a PDF parsing library.",
+    "fr": "Récupérez du Markdown pour notebooks sans configurer une bibliothèque d'analyse PDF.",
+    "paths": [
+      "Python.audience[0].body"
+    ]
+  },
+  {
+    "en": "ML engineers",
+    "fr": "Ingénieurs ML",
+    "paths": [
+      "Python.audience[1].title"
+    ]
+  },
+  {
+    "en": "Prep documents for LangChain and LlamaIndex RAG stacks.",
+    "fr": "Préparez des documents pour les stacks RAG LangChain et LlamaIndex.",
+    "paths": [
+      "Python.audience[1].body"
+    ]
+  },
+  {
+    "en": "Automation builders",
+    "fr": "Automatiseurs",
+    "paths": [
+      "Python.audience[2].title"
+    ]
+  },
+  {
+    "en": "Prototype conversions in the browser before scripting the full pipeline.",
+    "fr": "Prototypagez des conversions dans le navigateur avant de scripter le pipeline complet.",
+    "paths": [
+      "Python.audience[2].body"
+    ]
+  },
+  {
+    "en": "Learn how PDF to Markdown handles your data. PDF conversion runs locally in your browser; we use Google Analytics and Microsoft Clarity for site usage insights.",
+    "fr": "Découvrez comment PDF to Markdown traite vos données. La conversion PDF s'exécute localement dans votre navigateur ; nous utilisons Google Analytics et Microsoft Clarity pour comprendre l'utilisation du site.",
+    "paths": [
+      "PrivacyPolicy.metaDescription"
+    ]
+  },
+  {
+    "en": "Last updated: June 4, 2026",
+    "fr": "Dernière mise à jour : 4 juin 2026",
+    "paths": [
+      "PrivacyPolicy.lastUpdated"
+    ]
+  },
+  {
+    "en": "PDF to Markdown (pdftomarkdown.run) is a free browser-based tool that converts PDF files to Markdown. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.",
+    "fr": "PDF to Markdown (pdftomarkdown.run) est un outil gratuit dans le navigateur qui convertit des fichiers PDF en Markdown. Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et les choix qui s'offrent à vous.",
+    "paths": [
+      "PrivacyPolicy.intro"
+    ]
+  },
+  {
+    "en": "1. PDF conversion — your files stay on your device",
+    "fr": "1. Conversion PDF — vos fichiers restent sur votre appareil",
+    "paths": [
+      "PrivacyPolicy.sections[0].title"
+    ]
+  },
+  {
+    "en": "When you convert a PDF, all processing happens entirely in your web browser using WebAssembly. Your PDF files are never uploaded to our servers or any third-party service for conversion.",
+    "fr": "Lorsque vous convertissez un PDF, tout le traitement s'effectue entièrement dans votre navigateur web via WebAssembly. Vos fichiers PDF ne sont jamais téléversés sur nos serveurs ni sur un service tiers pour la conversion.",
+    "paths": [
+      "PrivacyPolicy.sections[0].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "We do not store, access, or retain the content of your PDF files or the Markdown output you generate. Once you close the browser tab, that data is gone from our perspective.",
+    "fr": "Nous ne stockons pas, n'accédons pas et ne conservons pas le contenu de vos fichiers PDF ni le Markdown généré. Une fois l'onglet du navigateur fermé, ces données disparaissent de notre côté.",
+    "paths": [
+      "PrivacyPolicy.sections[0].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "2. Information we collect automatically",
+    "fr": "2. Informations collectées automatiquement",
+    "paths": [
+      "PrivacyPolicy.sections[1].title"
+    ]
+  },
+  {
+    "en": "When you visit our website, we and our analytics partners may automatically collect certain technical and usage information, such as:",
+    "fr": "Lorsque vous visitez notre site, nous et nos partenaires d'analyse pouvons collecter automatiquement certaines informations techniques et d'utilisation, telles que :",
+    "paths": [
+      "PrivacyPolicy.sections[1].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Pages visited, links clicked, and time spent on the site",
+    "fr": "Pages visitées, liens cliqués et temps passé sur le site",
+    "paths": [
+      "PrivacyPolicy.sections[1].bullets[0]"
+    ]
+  },
+  {
+    "en": "Browser type, operating system, device type, and screen resolution",
+    "fr": "Type de navigateur, système d'exploitation, type d'appareil et résolution d'écran",
+    "paths": [
+      "PrivacyPolicy.sections[1].bullets[1]"
+    ]
+  },
+  {
+    "en": "Approximate geographic location (country/region level, derived from IP address)",
+    "fr": "Localisation géographique approximative (pays/région, dérivée de l'adresse IP)",
+    "paths": [
+      "PrivacyPolicy.sections[1].bullets[2]"
+    ]
+  },
+  {
+    "en": "Referring website or search query",
+    "fr": "Site référent ou requête de recherche",
+    "paths": [
+      "PrivacyPolicy.sections[1].bullets[3]"
+    ]
+  },
+  {
+    "en": "Session interactions such as scrolls, clicks, and mouse movements (via Microsoft Clarity)",
+    "fr": "Interactions de session comme défilements, clics et mouvements de souris (via Microsoft Clarity)",
+    "paths": [
+      "PrivacyPolicy.sections[1].bullets[4]"
+    ]
+  },
+  {
+    "en": "3. Analytics services we use",
+    "fr": "3. Services d'analyse que nous utilisons",
+    "paths": [
+      "PrivacyPolicy.sections[2].title"
+    ]
+  },
+  {
+    "en": "We use the following third-party analytics tools to understand how visitors use our site and to improve the product. These services may set cookies or similar technologies in your browser.",
+    "fr": "Nous utilisons les outils d'analyse tiers suivants pour comprendre comment les visiteurs utilisent notre site et améliorer le produit. Ces services peuvent placer des cookies ou technologies similaires dans votre navigateur.",
+    "paths": [
+      "PrivacyPolicy.sections[2].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Google Analytics (GA4) — provided by Google LLC. Google Analytics collects data about how you interact with our website, including pages viewed and events triggered. Data is processed according to Google's privacy policy. You can learn more at https://policies.google.com/privacy and opt out via the Google Analytics Opt-out Browser Add-on at https://tools.google.com/dlpage/gaoptout.",
+    "fr": "Google Analytics (GA4) — fourni par Google LLC. Google Analytics collecte des données sur votre interaction avec notre site, y compris les pages consultées et les événements déclenchés. Les données sont traitées selon la politique de confidentialité de Google. En savoir plus sur https://policies.google.com/privacy ; vous pouvez vous désinscrire via le module complémentaire de navigateur Google Analytics Opt-out sur https://tools.google.com/dlpage/gaoptout.",
+    "paths": [
+      "PrivacyPolicy.sections[2].bullets[0]"
+    ]
+  },
+  {
+    "en": "Microsoft Clarity — provided by Microsoft Corporation. Clarity uses cookies and similar technologies to record session replays, heatmaps, and interaction data to help us understand user experience and fix usability issues. Data is processed according to Microsoft's privacy policy. You can learn more at https://privacy.microsoft.com/en-us/privacystatement.",
+    "fr": "Microsoft Clarity — fourni par Microsoft Corporation. Clarity utilise des cookies et technologies similaires pour enregistrer des replays de session, heatmaps et données d'interaction afin de comprendre l'expérience utilisateur et corriger les problèmes d'ergonomie. Les données sont traitées selon la politique de confidentialité de Microsoft. En savoir plus sur https://privacy.microsoft.com/en-us/privacystatement.",
+    "paths": [
+      "PrivacyPolicy.sections[2].bullets[1]"
+    ]
+  },
+  {
+    "en": "4. Cookies and similar technologies",
+    "fr": "4. Cookies et technologies similaires",
+    "paths": [
+      "PrivacyPolicy.sections[3].title"
+    ]
+  },
+  {
+    "en": "Our analytics providers use cookies, local storage, and similar tracking technologies to collect usage data described above. You can control cookies through your browser settings — most browsers allow you to block or delete cookies.",
+    "fr": "Nos fournisseurs d'analyse utilisent des cookies, le stockage local et technologies de suivi similaires pour collecter les données d'utilisation décrites ci-dessus. Vous pouvez gérer les cookies via les paramètres de votre navigateur — la plupart permettent de bloquer ou supprimer les cookies.",
+    "paths": [
+      "PrivacyPolicy.sections[3].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Disabling cookies may not affect the core PDF conversion functionality, which runs entirely in your browser without requiring cookies.",
+    "fr": "Désactiver les cookies n'affecte généralement pas la fonctionnalité principale de conversion PDF, qui s'exécute entièrement dans votre navigateur sans cookies.",
+    "paths": [
+      "PrivacyPolicy.sections[3].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "5. How we use collected information",
+    "fr": "5. Comment nous utilisons les informations collectées",
+    "paths": [
+      "PrivacyPolicy.sections[4].title"
+    ]
+  },
+  {
+    "en": "We use the automatically collected information to:",
+    "fr": "Nous utilisons les informations collectées automatiquement pour :",
+    "paths": [
+      "PrivacyPolicy.sections[4].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Monitor site performance and fix errors",
+    "fr": "Surveiller les performances du site et corriger les erreurs",
+    "paths": [
+      "PrivacyPolicy.sections[4].bullets[0]"
+    ]
+  },
+  {
+    "en": "Understand which features and pages are most useful",
+    "fr": "Comprendre quelles fonctionnalités et pages sont les plus utiles",
+    "paths": [
+      "PrivacyPolicy.sections[4].bullets[1]"
+    ]
+  },
+  {
+    "en": "Improve the user experience and prioritize product development",
+    "fr": "Améliorer l'expérience utilisateur et prioriser le développement produit",
+    "paths": [
+      "PrivacyPolicy.sections[4].bullets[2]"
+    ]
+  },
+  {
+    "en": "Detect and prevent abuse or fraudulent activity",
+    "fr": "Détecter et prévenir les abus ou activités frauduleuses",
+    "paths": [
+      "PrivacyPolicy.sections[4].bullets[3]"
+    ]
+  },
+  {
+    "en": "6. Data sharing",
+    "fr": "6. Partage des données",
+    "paths": [
+      "PrivacyPolicy.sections[5].title"
+    ]
+  },
+  {
+    "en": "We do not sell your personal information. Usage data collected by Google Analytics and Microsoft Clarity is shared with those respective providers as described in their privacy policies.",
+    "fr": "Nous ne vendons pas vos informations personnelles. Les données d'utilisation collectées par Google Analytics et Microsoft Clarity sont partagées avec ces fournisseurs respectifs comme décrit dans leurs politiques de confidentialité.",
+    "paths": [
+      "PrivacyPolicy.sections[5].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "We may also disclose information if required by law, court order, or to protect the rights, property, or safety of our users or the public.",
+    "fr": "Nous pouvons également divulguer des informations si la loi l'exige, par ordonnance judiciaire, ou pour protéger les droits, biens ou sécurité de nos utilisateurs ou du public.",
+    "paths": [
+      "PrivacyPolicy.sections[5].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "7. Data retention",
+    "fr": "7. Conservation des données",
+    "paths": [
+      "PrivacyPolicy.sections[6].title"
+    ]
+  },
+  {
+    "en": "Analytics data is retained according to the retention policies of Google Analytics and Microsoft Clarity. PDF files and conversion output are never stored on our servers.",
+    "fr": "Les données d'analyse sont conservées selon les politiques de rétention de Google Analytics et Microsoft Clarity. Les fichiers PDF et la sortie de conversion ne sont jamais stockés sur nos serveurs.",
+    "paths": [
+      "PrivacyPolicy.sections[6].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "8. Your rights and choices",
+    "fr": "8. Vos droits et choix",
+    "paths": [
+      "PrivacyPolicy.sections[7].title"
+    ]
+  },
+  {
+    "en": "Depending on your location, you may have rights to access, correct, or delete personal data held about you. You can also:",
+    "fr": "Selon votre localisation, vous pouvez avoir le droit d'accéder, corriger ou supprimer les données personnelles vous concernant. Vous pouvez aussi :",
+    "paths": [
+      "PrivacyPolicy.sections[7].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Opt out of Google Analytics using the browser add-on linked above",
+    "fr": "Vous désinscrire de Google Analytics via le module complémentaire de navigateur lié ci-dessus",
+    "paths": [
+      "PrivacyPolicy.sections[7].bullets[0]"
+    ]
+  },
+  {
+    "en": "Block or delete cookies via your browser settings",
+    "fr": "Bloquer ou supprimer les cookies via les paramètres de votre navigateur",
+    "paths": [
+      "PrivacyPolicy.sections[7].bullets[1]"
+    ]
+  },
+  {
+    "en": "Use a privacy-focused browser or extensions to limit tracking",
+    "fr": "Utiliser un navigateur ou des extensions axés sur la confidentialité pour limiter le suivi",
+    "paths": [
+      "PrivacyPolicy.sections[7].bullets[2]"
+    ]
+  },
+  {
+    "en": "9. Children's privacy",
+    "fr": "9. Confidentialité des enfants",
+    "paths": [
+      "PrivacyPolicy.sections[8].title"
+    ]
+  },
+  {
+    "en": "Our service is not directed at children under 13. We do not knowingly collect personal information from children.",
+    "fr": "Notre service ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants.",
+    "paths": [
+      "PrivacyPolicy.sections[8].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "10. Changes to this policy",
+    "fr": "10. Modifications de cette politique",
+    "paths": [
+      "PrivacyPolicy.sections[9].title"
+    ]
+  },
+  {
+    "en": "We may update this Privacy Policy from time to time. When we do, we will revise the \"Last updated\" date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy.",
+    "fr": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Lorsque nous le faisons, nous révisons la date « Dernière mise à jour » en haut de cette page. L'utilisation continue du site après modification vaut acceptation de la politique mise à jour.",
+    "paths": [
+      "PrivacyPolicy.sections[9].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "11. Contact",
+    "fr": "11. Contact",
+    "paths": [
+      "PrivacyPolicy.sections[10].title"
+    ]
+  },
+  {
+    "en": "If you have questions about this Privacy Policy, please contact us at privacy@pdftomarkdown.run.",
+    "fr": "Si vous avez des questions sur cette politique de confidentialité, contactez-nous à privacy@pdftomarkdown.run.",
+    "paths": [
+      "PrivacyPolicy.sections[10].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "About PDF to Markdown — Free Local Converter",
+    "fr": "À propos de PDF to Markdown — convertisseur local gratuit",
+    "paths": [
+      "About.metaTitle"
+    ]
+  },
+  {
+    "en": "Learn about PDF to Markdown (pdftomarkdown.run): a free, browser-based PDF to Markdown tool built for privacy, LLM workflows, and knowledge management.",
+    "fr": "Découvrez PDF to Markdown (pdftomarkdown.run) : un outil gratuit PDF vers Markdown dans le navigateur, conçu pour la confidentialité, les workflows LLM et la gestion des connaissances.",
+    "paths": [
+      "About.metaDescription"
+    ]
+  },
+  {
+    "en": "About PDF to Markdown",
+    "fr": "À propos de PDF to Markdown",
+    "paths": [
+      "About.h1",
+      "Contact.aboutLink"
+    ]
+  },
+  {
+    "en": "PDF to Markdown (pdftomarkdown.run) is a free online tool that converts PDF files to clean Markdown entirely in your browser. No uploads, no account required.",
+    "fr": "PDF to Markdown (pdftomarkdown.run) est un outil en ligne gratuit qui convertit des fichiers PDF en Markdown propre entièrement dans votre navigateur. Sans envoi, sans compte requis.",
+    "paths": [
+      "About.intro"
+    ]
+  },
+  {
+    "en": "Read our Privacy Policy",
+    "fr": "Lire notre politique de confidentialité",
+    "paths": [
+      "About.privacyLink"
+    ]
+  },
+  {
+    "en": "Contact us",
+    "fr": "Nous contacter",
+    "paths": [
+      "About.contactLink"
+    ]
+  },
+  {
+    "en": "What we do",
+    "fr": "Ce que nous faisons",
+    "paths": [
+      "About.sections[0].title"
+    ]
+  },
+  {
+    "en": "We help developers, researchers, and knowledge workers turn PDF documents into structured Markdown ready for LLMs, RAG pipelines, Obsidian, Notion, and other tools.",
+    "fr": "Nous aidons développeurs, chercheurs et professionnels de la connaissance à transformer des documents PDF en Markdown structuré, prêt pour LLM, pipelines RAG, Obsidian, Notion et autres outils.",
+    "paths": [
+      "About.sections[0].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Our converter preserves headings, lists, nested bullets, and tables while stripping page numbers and repeated headers so the output is clean and token-efficient.",
+    "fr": "Notre convertisseur préserve titres, listes, puces imbriquées et tableaux, et supprime numéros de page et en-têtes répétés pour une sortie propre et efficace en tokens.",
+    "paths": [
+      "About.sections[0].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "Why we built it",
+    "fr": "Pourquoi nous l'avons créé",
+    "paths": [
+      "About.sections[1].title"
+    ]
+  },
+  {
+    "en": "Most online PDF converters require uploading files to a server, which is a dealbreaker for contracts, internal reports, and research notes.",
+    "fr": "La plupart des convertisseurs PDF en ligne exigent de téléverser vos fichiers sur un serveur, ce qui est rédhibitoire pour contrats, rapports internes et notes de recherche.",
+    "paths": [
+      "About.sections[1].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Existing tools often produce messy Markdown that breaks tables and wastes tokens when fed to language models. We built PDF to Markdown to solve both problems: keep files on your device and produce output designed for modern AI and note-taking workflows.",
+    "fr": "Les outils existants produisent souvent du Markdown désordonné où les tableaux cassent et gaspillent des tokens avec les modèles de langage. PDF to Markdown résout les deux problèmes : les fichiers restent sur votre appareil et la sortie est conçue pour les workflows IA et prise de notes modernes.",
+    "paths": [
+      "About.sections[1].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "When you drop a PDF, parsing and conversion run locally in your browser using WebAssembly. Your file is never transmitted to our servers.",
+    "fr": "Lorsque vous déposez un PDF, l'analyse et la conversion s'exécutent localement dans votre navigateur via WebAssembly. Votre fichier n'est jamais transmis à nos serveurs.",
+    "paths": [
+      "About.sections[2].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "We use Google Analytics and Microsoft Clarity only to understand general site usage, not to access your documents.",
+    "fr": "Nous utilisons Google Analytics et Microsoft Clarity uniquement pour comprendre l'utilisation générale du site, pas pour accéder à vos documents.",
+    "paths": [
+      "About.sections[2].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "100% local PDF processing in the browser",
+    "fr": "Traitement PDF 100 % local dans le navigateur",
+    "paths": [
+      "About.sections[2].bullets[0]"
+    ]
+  },
+  {
+    "en": "No sign-up, no watermark, no daily limit for single files",
+    "fr": "Sans inscription, sans filigrane, sans limite quotidienne pour les fichiers uniques",
+    "paths": [
+      "About.sections[2].bullets[1]"
+    ]
+  },
+  {
+    "en": "Works offline once the page is loaded",
+    "fr": "Fonctionne hors ligne une fois la page chargée",
+    "paths": [
+      "About.sections[2].bullets[2]"
+    ]
+  },
+  {
+    "en": "What's next",
+    "fr": "Prochaines étapes",
+    "paths": [
+      "About.sections[3].title"
+    ]
+  },
+  {
+    "en": "We are actively improving conversion quality and adding capabilities based on user feedback.",
+    "fr": "Nous améliorons activement la qualité de conversion et ajoutons des fonctionnalités selon les retours utilisateurs.",
+    "paths": [
+      "About.sections[3].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "OCR support for scanned and image-only PDFs",
+    "fr": "Prise en charge OCR pour PDF scannés et composés uniquement d'images",
+    "paths": [
+      "About.sections[3].bullets[0]"
+    ]
+  },
+  {
+    "en": "Batch conversion for multiple files",
+    "fr": "Conversion par lot pour plusieurs fichiers",
+    "paths": [
+      "About.sections[3].bullets[1]"
+    ]
+  },
+  {
+    "en": "Higher-fidelity formula and table handling",
+    "fr": "Meilleure gestion des formules et tableaux",
+    "paths": [
+      "About.sections[3].bullets[2]"
+    ]
+  },
+  {
+    "en": "A developer API for automation and RAG pipelines",
+    "fr": "Une API développeur pour l'automatisation et les pipelines RAG",
+    "paths": [
+      "About.sections[3].bullets[3]"
+    ]
+  },
+  {
+    "en": "Get in touch",
+    "fr": "Nous contacter",
+    "paths": [
+      "About.sections[4].title"
+    ]
+  },
+  {
+    "en": "Questions, feedback, or partnership ideas? Head to our contact page — we read every message.",
+    "fr": "Questions, retours ou idées de partenariat ? Rendez-vous sur notre page contact — nous lisons chaque message.",
+    "paths": [
+      "About.sections[4].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Contact PDF to Markdown — Get in Touch",
+    "fr": "Contact PDF to Markdown — nous écrire",
+    "paths": [
+      "Contact.metaTitle"
+    ]
+  },
+  {
+    "en": "Contact the PDF to Markdown team for feedback, bug reports, privacy questions, or partnership inquiries. We typically respond within 2–3 business days.",
+    "fr": "Contactez l'équipe PDF to Markdown pour retours, rapports de bugs, questions de confidentialité ou demandes de partenariat. Nous répondons généralement sous 2–3 jours ouvrables.",
+    "paths": [
+      "Contact.metaDescription"
+    ]
+  },
+  {
+    "en": "Contact Us",
+    "fr": "Contact",
+    "paths": [
+      "Contact.h1"
+    ]
+  },
+  {
+    "en": "We would love to hear from you. Whether you have product feedback, found a conversion issue, or want to explore a partnership, send us an email and we will get back to you.",
+    "fr": "Nous serions ravis d'avoir de vos nouvelles. Que vous ayez un retour produit, un problème de conversion ou une proposition de partenariat — envoyez-nous un e-mail et nous vous recontacterons.",
+    "paths": [
+      "Contact.intro"
+    ]
+  },
+  {
+    "en": "Email",
+    "fr": "E-mail",
+    "paths": [
+      "Contact.emailHeading"
+    ]
+  },
+  {
+    "en": "We typically respond within 2–3 business days.",
+    "fr": "Nous répondons généralement sous 2–3 jours ouvrables.",
+    "paths": [
+      "Contact.responseTime"
+    ]
+  },
+  {
+    "en": "What we can help with",
+    "fr": "Comment nous pouvons vous aider",
+    "paths": [
+      "Contact.sections[0].title"
+    ]
+  },
+  {
+    "en": "PDF to Markdown is a small, focused tool. Here are the most common reasons people reach out:",
+    "fr": "PDF to Markdown est un petit outil ciblé. Voici les raisons les plus courantes pour lesquelles les gens nous contactent :",
+    "paths": [
+      "Contact.sections[0].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "Bug reports or unexpected conversion results",
+    "fr": "Rapports de bugs ou résultats de conversion inattendus",
+    "paths": [
+      "Contact.sections[0].bullets[0]"
+    ]
+  },
+  {
+    "en": "Feature requests (OCR, batch conversion, API access)",
+    "fr": "Demandes de fonctionnalités (OCR, conversion par lot, accès API)",
+    "paths": [
+      "Contact.sections[0].bullets[1]"
+    ]
+  },
+  {
+    "en": "Feedback on output quality for specific PDF types",
+    "fr": "Retours sur la qualité de sortie pour des types de PDF spécifiques",
+    "paths": [
+      "Contact.sections[0].bullets[2]"
+    ]
+  },
+  {
+    "en": "Partnership, integration, or press inquiries",
+    "fr": "Demandes de partenariat, intégration ou presse",
+    "paths": [
+      "Contact.sections[0].bullets[3]"
+    ]
+  },
+  {
+    "en": "Privacy and data-handling questions",
+    "fr": "Questions sur la confidentialité et le traitement des données",
+    "paths": [
+      "Contact.sections[0].bullets[4]"
+    ]
+  },
+  {
+    "en": "Before you write",
+    "fr": "Avant d'écrire",
+    "paths": [
+      "Contact.sections[1].title"
+    ]
+  },
+  {
+    "en": "Your PDF files are processed locally in your browser — we cannot see or recover them. If you are reporting a conversion issue, please describe the problem and, if possible, note the PDF type (scanned, multi-column, heavy tables, etc.). Do not attach sensitive documents unless you are comfortable sharing them.",
+    "fr": "Vos fichiers PDF sont traités localement dans votre navigateur — nous ne pouvons ni les voir ni les récupérer. Si vous signalez un problème de conversion, décrivez-le et, si possible, précisez le type de PDF (scanné, multi-colonnes, nombreux tableaux, etc.). N'attachez pas de documents sensibles sauf si vous êtes à l'aise de les partager.",
+    "paths": [
+      "Contact.sections[1].paragraphs[0]"
+    ]
+  },
+  {
+    "en": "For privacy-specific requests (data access, deletion, or cookie questions), mention \"Privacy request\" in the subject line so we can prioritize your message.",
+    "fr": "Pour les demandes liées à la confidentialité (accès aux données, suppression ou questions sur les cookies), indiquez « Demande confidentialité » dans l'objet afin que nous puissions prioriser votre message.",
+    "paths": [
+      "Contact.sections[1].paragraphs[1]"
+    ]
+  },
+  {
+    "en": "Privacy & data requests",
+    "fr": "Confidentialité et demandes de données",
+    "paths": [
+      "Contact.sections[2].title"
+    ]
+  },
+  {
+    "en": "PDF conversion does not upload your files to our servers. Analytics data is described in our Privacy Policy. For any privacy-related question, use the same email address above.",
+    "fr": "La conversion PDF ne téléverse pas vos fichiers sur nos serveurs. Les données d'analyse sont décrites dans notre politique de confidentialité. Pour toute question de confidentialité, utilisez la même adresse e-mail ci-dessus.",
+    "paths": [
+      "Contact.sections[2].paragraphs[0]"
+    ]
+  }
+]

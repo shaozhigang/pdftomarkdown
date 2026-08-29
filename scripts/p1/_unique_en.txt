@@ -1,0 +1,800 @@
+0	# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n...
+1	# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure
+2	# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key
+3	# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert
+4	#, ##, - and similar markers state headings and lists outright.
+5	/batch-pdf-to-markdown
+6	/pdf-table-to-markdown
+7	/pdf-to-markdown-for-chatgpt
+8	/scanned-pdf-to-markdown
+9	1. PDF conversion — your files stay on your device
+10	1. Upload your PDF
+11	10. Changes to this policy
+12	100% local PDF processing in the browser
+13	100% local in your browser — files never leave your device. Up to 50 MB. Try a sample PDF in the converter.
+14	100% private — files never leave your browser
+15	100+ languages
+16	11. Contact
+17	2. Information we collect automatically
+18	2. Review the Markdown
+19	3. Analytics services we use
+20	3. Copy or download
+21	4. Cookies and similar technologies
+22	5. How we use collected information
+23	6. Data sharing
+24	7. Data retention
+25	8. Your rights and choices
+26	9. Children's privacy
+27	<strong>Markdown</strong> is for structured content — editing, software, and AI.
+28	<strong>PDF to Markdown is the data-prep step for an AI knowledge base.</strong> Without structure, chunking cuts in the wrong places, embeddings mix unrelated sections, and retrieval returns blobs instead of answers. With Markdown, a heading is a heading, a table is a table, and a section can be retrieved as a section.
+29	<strong>PDF</strong> is for humans. It emphasizes visual layout.
+30	A PDF is rarely “just text.” It may include images, tables, links, vector graphics, embedded fonts, and scanned pages.
+31	A PDF is saving “how this document should look,” not “what this document is made of.”
+32	A PDF remembers how a page looks. Not what the content means.
+33	A company already has a thousand PDFs: product manuals, technical documentation, internal SOPs, contracts, research reports, training materials. The goal is an assistant that answers from <em>those</em> files. Dumping PDFs into the pipeline is usually not the best first move.
+34	A developer API for automation and RAG pipelines
+35	A free, private, browser-based converter — plus an honest, feature-by-feature comparison with the alternatives. Try it right here, then see how it stacks up.
+36	A lot of existing technical material still ships as PDF. Teams want living files instead — then they belong in GitHub, GitLab, Notion, a documentation website, or an internal knowledge base.
+37	A natural fit
+38	A person reads the page
+39	A poor fit as-is
+40	A product manual that used to be a download can become a site. The PDF is a file people save. The Markdown path becomes documentation people can search, navigate, and open on the web.
+41	A program often sees something else: strings, coordinates, fonts, and images scattered across a canvas. Recovering the <em>real</em> title, the paragraph boundaries, the list, and the table is not guaranteed.
+42	A report, manual, paper, handbook, SOP, or archive PDF — including files that mix text, tables, images, and links.
+43	A scanned handbook is a stack of images. There is no text layer until OCR runs — and OCR alone still leaves a stream of characters. The useful path is OCR plus structure: reading order, heading levels, and tables rebuilt as tables, not as a photograph of a grid. That is how a scan becomes something you can search, chunk, or edit. Contracts, invoices, and older papers are often scans; born-digital files can skip OCR, scans cannot skip the outline. Low-contrast stamps, skewed pages, and mixed handwriting still fail and need a second look. If you index the OCR dump as-is, a knowledge base stores noise.
+44	A scanned or image-only PDF has no selectable text layer — it's essentially pictures of pages. Regular converters return nothing, so OCR is needed to read the text.
+45	A stable final version.
+46	AI / RAG
+47	AI / RAG knowledge bases
+48	AI agents
+49	AI and platform teams
+50	AI does not only need “the text.” It needs the relationships between pieces of text. For an AI or RAG system, heading levels, paragraph boundaries, lists, and tables are suddenly unambiguous.
+51	AI knowledge bases
+52	AI processing
+53	AI systems use that hierarchy. Search uses it. Editors use it. A PDF does not hand it to you.
+54	AI-friendly
+55	API coming soon
+56	About
+57	About PDF to Markdown
+58	About PDF to Markdown — Free Local Converter
+59	After conversion
+60	After conversion, the model can follow the outline instead of guessing at it. That is the difference between “paste a wall of text” and “give the model a document.”
+61	After — the same content as Markdown
+62	Analysts
+63	Analytics data is retained according to the retention policies of Google Analytics and Microsoft Clarity. PDF files and conversion output are never stored on our servers.
+64	Analyze competitors
+65	Analyze papers
+66	Answer questions from inside the document
+67	Any text editor works. No specialized office suite required.
+68	Anyone unsticking a PDF
+69	Approximate geographic location (country/region level, derived from IP address)
+70	Archives
+71	Archivists
+72	Are my files uploaded to a server?
+73	Are my files uploaded?
+74	Are online PDF to Markdown converters safe?
+75	Automatic column detection
+76	Automation builders
+77	Awkward
+78	Awkward to edit
+79	Batch
+80	Batch + ZIP
+81	Batch Convert
+82	Batch conversion and a REST API for programmatic access are on the roadmap. Contact us if you want early access for production pipelines.
+83	Batch conversion for multiple files
+84	Batch convert PDFs to Markdown
+85	Before / after
+86	Before you write
+87	Before — what a PDF often is to software
+88	Best PDF to Markdown Converter (Free & Private) — Compared
+89	Block or delete cookies via your browser settings
+90	Blogs / writing
+91	Both. One report, so you can ask an LLM about it. A thousand manuals, SOPs, and training PDFs, so you can chunk, embed, and retrieve. Use the batch converter for folders. The product is the prep step either way — and it stays local.
+92	Browser type, operating system, device type, and screen resolution
+93	Bug reports or unexpected conversion results
+94	Build RAG
+95	Build a knowledge base
+96	Build a searchable Notion knowledge base from scattered PDFs.
+97	Building Obsidian note
+98	Built for people who inherited a pile of PDFs and need to do something next.
+99	Built for presentation
+100	Built-in OCR
+101	Can I convert multiple PDFs at once?
+102	Can I copy just the table?
+103	Can I turn the Markdown back into a site or other formats?
+104	Can I use the output in Jupyter or pandas?
+105	Can I use the output in a RAG pipeline?
+106	Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]
+107	Chapter, section, subsection
+108	Chapters, figures, and page design hold.
+109	Chapters, sections, and code blocks are first-class.
+110	Charts, text, and page layout stay consistent.
+111	ChatGPT
+112	ChatGPT & RAG
+113	Choose another file
+114	Choose the document language, then drop your scanned or image-only PDF.
+115	Choose the right format
+116	Chunk and embed clean Markdown for reliable retrieval augmented generation.
+117	Clean headings and lists give the model document hierarchy, which improves grounding and reduces hallucination.
+118	Clean notes
+119	Cleaner chunking, embedding, and retrieval.
+120	Clear structure
+121	Click Copy Markdown to paste into ChatGPT, Obsidian, or a code editor. Or download the .md file and move it into your vault, repo, or RAG pipeline.
+122	Click “Download .md” and move the file into any folder inside your Obsidian vault. It appears instantly as a new note.
+123	Close menu
+124	CloudConvert
+125	Common destinations
+126	Compact Markdown + chunk markers for RAG · 100% local · Max 50MB
+127	Compact Markdown with chunk markers
+128	Company documents
+129	Complex content
+130	Contact
+131	Contact PDF to Markdown — Get in Touch
+132	Contact Us
+133	Contact the PDF to Markdown team for feedback, bug reports, privacy questions, or partnership inquiries. We typically respond within 2–3 business days.
+134	Contact us
+135	Content conversion
+136	Content management
+137	Content ops
+138	Content reuse
+139	Contracts
+140	Conversion failed
+141	Conversion vs copy-paste into ChatGPT
+142	Convert
+143	Convert PDF to Markdown
+144	Convert PDF to Markdown in three steps.
+145	Convert PDF to Markdown without writing Python first — free local browser tool. Plus tips for pymupdf, pdfplumber and our upcoming API for automation.
+146	Convert PDF to clean Markdown right in your browser. Built for LLM, RAG, Obsidian and Notion workflows.
+147	Convert PDFs into clean, offline Markdown notes you can drop straight into your Obsidian vault — headings, lists and tables kept intact.
+148	Convert PDFs into compact, structured Markdown that ChatGPT, Claude and RAG pipelines can parse reliably — all processed locally in your browser.
+149	Convert PDFs to Markdown for Notion. Clean headings, lists and tables — paste into a Notion page in seconds. 100% local in your browser, no upload.
+150	Convert PDFs to clean Markdown that’s ready for ChatGPT, Claude and RAG pipelines. Compact, structured output that LLMs parse reliably — processed locally in your browser.
+151	Convert a PDF
+152	Convert for ChatGPT & LLMs
+153	Convert in the browser
+154	Convert scanned PDFs with OCR
+155	Convert your PDF, click Copy Markdown, then paste into a new Notion page. Notion converts headings, lists and tables into blocks automatically. For large docs, paste section by section.
+156	Converting document
+157	Copied
+158	Copy & paste
+159	Copy Markdown
+160	Copy into scripts & notebooks · 100% local · Max 50MB
+161	Copy into team wikis, personal notes, or project docs. Download the .md file if you prefer importing via another tool.
+162	Copy the Markdown or download the .md file once OCR finishes.
+163	Copy the Markdown or download the .md file — headings, lists and tables are preserved.
+164	Copy the Markdown output — it includes YAML metadata and chunk markers for RAG pipelines.
+165	Copy the Markdown string into your Jupyter notebook, Flask app, or data pipeline.
+166	Copy the result or download the .md file.
+167	Copy the table into GitHub, Notion, Obsidian, or any editor that renders GFM tables.
+168	Copy-paste and naive extractors flatten a two-column report into one stream: the heading is just larger type, the table is leftover spaces. Downstream you cannot sort a column or retrieve “section 4.2.” Conversion should emit Markdown headings and pipe tables, with reading order that matches how a person would read the page — including multi-column layouts when they exist. Footnotes and captions should stay attached to the block they belong to. If a table was a screenshot, OCR has to run on that image or the grid is lost. The test is simple: can you jump the outline, and can you copy a row?
+169	Copy-paste often breaks table columns, loses heading hierarchy, and includes page headers. Structured Markdown preserves document layout with fewer tokens — ideal for LLMs and note apps.
+170	Core purpose
+171	Could not load the sample. Please try again.
+172	Could not read any pages from this PDF.
+173	Course materials
+174	Cross-platform
+175	Data scientists
+176	Data teams
+177	Depending on your location, you may have rights to access, correct, or delete personal data held about you. You can also:
+178	Destinations you can still follow
+179	Detect and prevent abuse or fraudulent activity
+180	Developers
+181	Developers can edit it directly.
+182	Digitize scanned books, receipts and old documents into editable Markdown.
+183	Disabling cookies may not affect the core PDF conversion functionality, which runs entirely in your browser without requiring cookies.
+184	Do I need to install software?
+185	Do I still need the original PDF?
+186	Do Notion tables from PDF convert correctly?
+187	Docs
+188	Docs and content teams
+189	Document language
+190	Document structure
+191	Documentation
+192	Does this replace a Python script in production?
+193	Download .md
+194	Download a .md file and move it into your vault. Headings become note structure and tables stay as Markdown tables.
+195	Download the .md file — it includes YAML frontmatter (title, date, tags) ready for your vault.
+196	Draft from source PDFs inside Obsidian without losing headings or tables.
+197	Drag and drop a text-based PDF onto the converter above, or click to browse. Files up to 50 MB are supported. Try the sample PDF if you want to see the output first.
+198	Drop PDF tables into docs and READMEs as GitHub-flavored Markdown tables.
+199	Drop a PDF for LLM-ready Markdown, or
+200	Drop a PDF for Markdown output, or
+201	Drop a PDF to extract tables, or
+202	Drop a PDF to import into Notion, or
+203	Drop a PDF to import into Obsidian, or
+204	Drop a PDF to keep its images, or
+205	Drop a PDF. Get structured Markdown.
+206	Drop a scanned PDF here, or
+207	Drop your PDF here, or
+208	Drop your PDF into the converter above — it runs instantly in your browser.
+209	Dropping a PDF straight into a knowledge base is often the wrong first step. The model may get text. It does not get structure.
+210	Easy to convert
+211	Easy to edit
+212	Easy to read
+213	Easy to search
+214	Ebooks
+215	Edit it. Search it. Chunk it. Embed it. Publish it. Hand it to an LLM. Put it in Git.
+216	Edit the content
+217	Edit, extract tables, republish as a website, or reuse a file that was never meant to be a working copy.
+218	Editability
+219	Email
+220	Embedded fonts, multi-column layouts, tables, images, and footnotes all make extraction harder.
+221	Embeddings
+222	Even the raw file is readable.
+223	Existing tools often produce messy Markdown that breaks tables and wastes tokens when fed to language models. We built PDF to Markdown to solve both problems: keep files on your device and produce output designed for modern AI and note-taking workflows.
+224	Express content and structure
+225	Extract / Convert / Reuse
+226	Extract content
+227	Extract result tables from papers for notes or further analysis.
+228	Extract tables
+229	Extract tables from PDFs into GitHub-flavored Markdown tables. Column structure is detected automatically and processed locally in your browser — no upload.
+230	Extract tables from your PDFs into clean GitHub-flavored Markdown tables. Column boundaries are detected automatically, all in your browser.
+231	Extract tables to Markdown
+232	Extract text from scanned contracts and forms without retyping.
+233	Extract text from scanned or image-only PDFs and get clean Markdown. OCR runs entirely in your browser — your file never leaves your device.
+234	Extract the text
+235	Extract the text <em>and</em> the document: headings, tables, lists, links, and hierarchy — not a pile of unstructured characters.
+236	Extracting tables
+237	Extracting text & images
+238	FAQ
+239	Fast to write; easy to turn into a page.
+240	Feature
+241	Feature requests (OCR, batch conversion, API access)
+242	Feed a long PDF to an LLM
+243	Feed an LLM
+244	Feed clippings and reports into your Zettelkasten with structure intact.
+245	Feed it to an AI
+246	Feedback on output quality for specific PDF types
+247	File exceeds 50MB. Larger files are not supported yet.
+248	File size
+249	Find market trends
+250	First run downloads a language model (~2–15MB). After that it works offline — your file is processed locally.
+251	Fixed layout
+252	Fonts, images, tables, spacing, headers, and footers stay put. The page does not reflow when you change devices.
+253	Footer
+254	For ad-hoc and prototype work, the browser tool is faster to start. For automated batch jobs in CI or cron, a script or API is better — our API is planned for that use case.
+255	For batch jobs or CI, use our browser tool for ad-hoc files today; a REST API is on the roadmap.
+256	For privacy-specific requests (data access, deletion, or cookie questions), mention "Privacy request" in the subject line so we can prioritize your message.
+257	Formal distribution.
+258	Formal publishing and reading.
+259	Free & unlimited
+260	Free PDF to Markdown converter that runs in your browser. 100% local — files never leave your device. Headings, tables, and outline intact — ready for editing, search, AI, and RAG.
+261	Free · Private · Compared
+262	Frequently asked questions
+263	From locked manuals
+264	Full document · 100% local · Max 50MB
+265	Fully offline
+266	GFM tables
+267	GFM tables only, no extra prose
+268	Generating Markdown
+269	Get in touch
+270	Get started
+271	Git / GitHub
+272	Google Analytics (GA4) — provided by Google LLC. Google Analytics collects data about how you interact with our website, including pages viewed and events triggered. Data is processed according to Google's privacy policy. You can learn more at https://policies.google.com/privacy and opt out via the Google Analytics Opt-out Browser Add-on at https://tools.google.com/dlpage/gaoptout.
+273	Grab Markdown for notebooks without setting up a PDF parsing library.
+274	HTML / docs site
+275	Handles hard cases
+276	Hard for work — and for AI
+277	Hard to parse
+278	Headings & outline
+279	Headings, paragraphs, and lists are explicit, so software can parse them.
+280	Higher-fidelity formula and table handling
+281	Home
+282	How do I get the Markdown into Notion?
+283	How do I import the result into Obsidian?
+284	How it compares
+285	How it works
+286	How to Convert PDF to Markdown
+287	How to Convert PDF to Markdown — Free Step-by-Step Guide
+288	How to convert PDF to Markdown for Python workflows
+289	How to convert a PDF to LLM-ready Markdown
+290	How to convert a PDF to Markdown
+291	How to convert a scanned PDF to Markdown
+292	How to extract tables from a PDF to Markdown
+293	How to import a PDF into Notion as Markdown
+294	How to import a PDF into Obsidian as Markdown
+295	How-to Guide
+296	Human editing
+297	Human reading
+298	If the PDF is finished, leave it as PDF. If the work is not finished, convert it.
+299	If the next step is editing, retrieval, or generation, Markdown is the format that already looks like the job.
+300	If you have questions about this Privacy Policy, please contact us at privacy@pdftomarkdown.run.
+301	Image or scanned PDF · OCR in your browser · Max 50MB
+302	Improve the user experience and prioritize product development
+303	Internal SOPs
+304	Internal wikis and strategy docs stay on your device. No upload step means sensitive PDFs never hit a third-party server.
+305	Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure
+306	Invoices / receipts
+307	Is conversion really local?
+308	Is the OCR free and private?
+309	Is there a Python library or pip package?
+310	Is this for one file or a whole archive?
+311	It depends on whether they upload your file. Many do, which is risky for confidential documents. This converter processes everything locally in your browser, so your files never leave your device.
+312	It is a text file. You are not trapped in a layout format.
+313	Items, not leftover bullets on a canvas
+314	Keep tables and headings
+315	Keep the PDF for people. Convert it when the next reader is an editor, a search index, a model, or a site.
+316	Keeps images
+317	Knowledge base
+318	Knowledge bases
+319	Knowledge managers
+320	LLM & RAG-ready Markdown
+321	LLM / RAG / knowledge base / workflow
+322	LLM-ready output
+323	LLMs
+324	Last updated: June 4, 2026
+325	Layout stays fixed for both parties and for the archive.
+326	Learn about PDF to Markdown (pdftomarkdown.run): a free, browser-based PDF to Markdown tool built for privacy, LLM workflows, and knowledge management.
+327	Learn how PDF to Markdown handles your data. PDF conversion runs locally in your browser; we use Google Analytics and Microsoft Clarity for site usage insights.
+328	Learn how to convert PDF to Markdown in 3 steps. Free browser-based converter — no upload, no account. Works with text-based PDFs for LLM, Obsidian and docs.
+329	Lectures and textbooks packaged as a single file.
+330	Limited
+331	Lines on a page. Maybe the right order. Maybe not. Heading level is a guess. After conversion, headings, boundaries, and hierarchy are explicit — that is the difference between pulling strings off a page and recovering a document.
+332	Links
+333	Lists
+334	Live preview
+335	Loading sample…
+336	Look beyond raw text: good tools preserve headings, lists and true Markdown tables. Ours keeps your document's structure intact.
+337	Looking for the best free PDF to Markdown converter? Try our private, browser-based tool and see how it compares to CloudConvert, Pandoc and manual copy-paste.
+338	ML engineers
+339	Machine parsing
+340	Maintenance gets cheaper: diffs, reviews, search, and republishing all work the way software already works.
+341	Manual
+342	Many PDFs are images of pages. Those need OCR before there is any text to structure. Use the built-in OCR converter, which recognizes text right in your browser. Scanned input is one of the reasons “just parse the PDF” fails in the real world.
+343	Many PDFs are scans — images of pages. You need OCR before you can even get the words.
+344	Markdown asks: <em>What is this, and how is it structured?</em>
+345	Markdown becomes HTML, PDF, Word, and more.
+346	Markdown encodes structure (headings, lists, tables) with very few extra tokens, which helps the model interpret the document and keeps prompts small.
+347	Markdown for notebooks and scripts
+348	Markdown is a lightweight markup language. A few plain-text symbols stand in for headings, paragraphs, lists, tables, links, and code. You can read the source without rendering it.
+349	Markdown is at its best when you still need to edit it, update it, search it, convert it, or let software read it.
+350	Markdown is far more compact than raw PDF text dumps, so you fit more context into the model’s window.
+351	Markdown keeps the content. And makes the structure explicit.
+352	Markdown separates <strong>content</strong> from <strong>visual layout</strong>.
+353	Markdown — editable, searchable, AI-friendly
+354	Markdown → PDF
+355	Markdown’s job, in one line: Make the content easy to edit, manage, search, and parse.
+356	Method
+357	Microsoft Clarity — provided by Microsoft Corporation. Clarity uses cookies and similar technologies to record session replays, heatmaps, and interaction data to help us understand user experience and fix usability issues. Data is processed according to Microsoft's privacy policy. You can learn more at https://privacy.microsoft.com/en-us/privacystatement.
+358	Mixed documents welcome
+359	Models handle structured text more reliably.
+360	Monitor site performance and fix errors
+361	More use cases
+362	Most important material already lives as PDF. The work you want next does not: rewrite it, search it, retrieve it, summarize it, publish it. That work needs structure.
+363	Most online PDF converters require uploading files to a server, which is a dealbreaker for contracts, internal reports, and research notes.
+364	Move specs, wikis and reports into Notion pages with structure preserved.
+365	Move the file into any folder in your Obsidian vault. It appears instantly as a structured note.
+366	Moving API PDFs, user manuals, and handbooks into Git, Notion, or a documentation site.
+367	Native
+368	Native on GitHub and similar platforms.
+369	Need Markdown from a PDF for a notebook, ETL job or prototype? Convert locally in the browser, then copy the string into your Python workflow — no environment setup.
+370	New file
+371	No PDF handy?
+372	No pip install · instant output
+373	No sign-up, no watermark, no daily limit for single files
+374	No tables were detected in this PDF. Try the full converter, or check that the PDF has text-based tables with clear column spacing.
+375	No text could be extracted. This may be a scanned or image-only PDF — try our OCR converter, which recognizes text from scanned PDFs in your browser.
+376	No upload (private)
+377	No upload step means it works even with the network off — ideal for private research notes and clippings.
+378	No upload. Headings, tables, lists, and outline stay intact — then copy or download.
+379	No. Command-line tools like Pandoc are powerful but require installation and setup. This converter works instantly in any modern browser, on any device.
+380	No. Conversion runs entirely in your browser using WebAssembly. Your PDF never leaves your device, which makes it safe for contracts, research and other private documents.
+381	No. Conversion runs entirely in your browser. Your PDF never leaves your device.
+382	Nothing to install
+383	Notion import
+384	Notion recognizes Markdown on paste — headings become blocks, lists stay nested, and GFM tables render as Notion tables.
+385	Notion-ready Markdown · 100% local · Max 50MB
+386	Notion-ready · paste to import
+387	OCR
+388	OCR analyzes each page image pixel by pixel to recognize characters, which is heavier than reading an existing text layer. Larger documents take longer.
+389	OCR failed. Please try another file.
+390	OCR for scans
+391	OCR runs locally via WebAssembly. Only the language model is fetched — your document never leaves your device.
+392	OCR support for scanned and image-only PDFs
+393	OCR · Scanned PDF
+394	Obsidian import
+395	Offices
+396	Offline · vault-ready
+397	On the page, a PDF might look like a chapter, a section, a list, a table.
+398	Once generated, it works as a final version: read it, share it, archive it.
+399	Once you have Markdown, the same document is ready for search, knowledge bases, RAG, embeddings, and LLMs.
+400	One content pipeline. Three jobs.
+401	One conversion. Three directions.
+402	One file is a demo. Operations look like a folder: two hundred manuals, a contract archive, a paper corpus. Batch conversion should keep filenames, skip files that already have a .md, and fail visibly when a scan needs OCR or a table collapsed. Put output next to the original — or in a parallel tree — so you can diff and re-run. After that, the same corpus can be indexed, embedded, or published without someone opening each PDF. Start with a sample of ugly files (multi-column, scans, mixed tables) before you point the job at everything.
+403	One source → HTML, PDF, and other outputs.
+404	Open Notion, create a page, and paste the content. Notion converts Markdown blocks automatically on paste.
+405	Open menu
+406	Open the OCR converter
+407	Open the batch converter
+408	Opt out of Google Analytics using the browser add-on linked above
+409	Optimizing for LLM
+410	Original PDF
+411	Our analytics providers use cookies, local storage, and similar tracking technologies to collect usage data described above. You can control cookies through your browser settings — most browsers allow you to block or delete cookies.
+412	Our converter preserves headings, lists, nested bullets, and tables while stripping page numbers and repeated headers so the output is clean and token-efficient.
+413	Our service is not directed at children under 13. We do not knowingly collect personal information from children.
+414	Output uses standard GitHub-flavored Markdown tables that render in GitHub, Obsidian, Notion and most editors.
+415	PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation
+416	PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”
+417	PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant
+418	PDF (Portable Document Format) was built to save and exchange electronic documents so they look the same on every device, in every app. That is a feature when you need a contract, a report, or a printed handbook. It is a problem when you need the <em>content</em>.
+419	PDF Table to Markdown
+420	PDF Table to Markdown — Convert Tables Cleanly
+421	PDF asks: <em>How should this look on the page?</em>
+422	PDF cares about the page, not the outline. Machines struggle to recover headings, paragraphs, lists, and tables.
+423	PDF conversion does not upload your files to our servers. Analytics data is described in our Privacy Policy. For any privacy-related question, use the same email address above.
+424	PDF is at its best when the content needs to be shown, shared, printed, or archived without drift.
+425	PDF is for delivery. Markdown is for work.
+426	PDF product manual\n  → Markdown\n  → HTML\n  → documentation website
+427	PDF saves what a document looks like. Markdown saves what a document is.
+428	PDF to Markdown (pdftomarkdown.run) is a free browser-based tool that converts PDF files to Markdown. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.
+429	PDF to Markdown (pdftomarkdown.run) is a free online tool that converts PDF files to clean Markdown entirely in your browser. No uploads, no account required.
+430	PDF to Markdown Converter
+431	PDF to Markdown Converter — Free, Private & Local
+432	PDF to Markdown Python — Browser Tool & Script Tips
+433	PDF to Markdown for ChatGPT & LLMs
+434	PDF to Markdown for ChatGPT & RAG
+435	PDF to Markdown for ChatGPT, LLMs & RAG
+436	PDF to Markdown for Notion
+437	PDF to Markdown for Notion — Import Pages Cleanly
+438	PDF to Markdown for Obsidian
+439	PDF to Markdown for Obsidian — Offline & Clean
+440	PDF to Markdown for Python
+441	PDF to Markdown for RAG, docs, and reuse.
+442	PDF to Markdown is a small, focused tool. Here are the most common reasons people reach out:
+443	PDF to Markdown is the missing step — not a novelty converter.
+444	PDF to Markdown you can <em>edit, search, and retrieve</em>.
+445	PDF to Markdown · all conversions run locally in your browser, your files never leave your device.
+446	PDF — Read / Share / Print · Markdown — Write / Structure / Process · PDF to Markdown — Extract / Convert / Reuse
+447	PDF — locked layout, hard for machines
+448	PDF → Word
+449	PDF → website
+450	PDFs are built for reading and sharing, not for editing, search, or RAG. We convert PDF to Markdown with headings, tables, lists, and outline intact — ready for docs, retrieval, and AI.
+451	PDFs are great for reading and sharing, but they're not designed for modern content workflows. Markdown makes content structured, editable, searchable, and AI-friendly.
+452	PDF’s job, in one line: What they see should match what I made.
+453	PKM enthusiasts
+454	Page geometry survives the printer.
+455	Page layout
+456	Page numbers and repeated headers/footers are removed so your notes are not polluted with print artifacts.
+457	Page size and print layout hold up, which is why contracts, reports, papers, and manuals ship as PDF.
+458	Page {page}/{total} · {pct}%
+459	Pages visited, links clicked, and time spent on the site
+460	Pandoc
+461	Papers / research
+462	Papers and research
+463	Partial
+464	Partnership, integration, or press inquiries
+465	Paste compact Markdown into ChatGPT or Claude to fit more context per prompt.
+466	Paste into ChatGPT or Claude for Q&A, or split on chunk markers and embed into your vector database.
+467	Paste into your editor, knowledge base, or LLM prompt — headings, lists and tables are preserved.
+468	Paste-friendly output
+469	Paste-ready Markdown for Notion pages
+470	Pasting pages into ChatGPT, Claude, or Gemini is fine for a one-off summary. It is a weak plan for a library. The model gets a weakly ordered blob; headings and tables are guesses. You cannot version the source, re-chunk it, or hand a clean file to the rest of the team. Convert first, then prompt: the outline sits in the file, figures stay in tables, and the same Markdown can go to another model, an internal RAG, or Git. Use the chat window to ask questions. Do not use it as your only extractor — especially not for a 100-page report you will query again next month.
+471	People can download, read, or print.
+472	Pick from English, Simplified and Traditional Chinese, Japanese, Korean, Spanish, French, German, Russian and more before you start.
+473	Plain text
+474	Plain text belongs in Git.
+475	Plain text is easier to index.
+476	Plain text is what version control is for.
+477	Please upload a PDF file.
+478	Predictable Markdown is easy to chunk and embed into a vector database for retrieval augmented generation.
+479	Predictable heading levels and GFM tables make it easy to split sections with regex or feed into LangChain, LlamaIndex and other Python RAG stacks.
+480	Prep documents for LangChain and LlamaIndex RAG stacks.
+481	Preparing Notion import
+482	Preserve the page and visual layout
+483	Preview
+484	Primary job
+485	Print
+486	Print-ready
+487	Privacy & data requests
+488	Privacy Policy
+489	Privacy and data-handling questions
+490	Privacy first
+491	Private by default
+492	Private by design
+493	Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key
+494	Product documentation
+495	Product managers
+496	Product manuals
+497	Program-friendly
+498	Project READMEs
+499	Prompt engineers
+500	Prototype conversions in the browser before scripting the full pipeline.
+501	Pull key figures
+502	Pull papers and lecture PDFs into your vault as linkable, searchable notes.
+503	Pull pricing, financial and data tables out of reports into editable Markdown.
+504	Python & automation
+505	Questions worth answering before you convert.
+506	Questions, feedback, or partnership ideas? Head to our contact page — we read every message.
+507	RAG
+508	RAG developers
+509	Read / Share / Print
+510	Read / share
+511	Read / share / print / archive
+512	Read our Privacy Policy
+513	Reads text from scanned and image-only PDFs that normal converters can't, powered by Tesseract in your browser.
+514	Ready for RAG
+515	Real structure
+516	Reality: a huge amount of important material is already PDF. Then you need to:
+517	Recognize English, Chinese, Japanese, Korean, Spanish, French, German, Russian and many more.
+518	Recognizing text
+519	Referring website or search query
+520	Related tools
+521	Rendering pages
+522	Reports
+523	Research
+524	Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…
+525	Research reports
+526	Researchers
+527	Researchers & students
+528	Researchers and analysts
+529	Researchers live in PDFs. Once they are Markdown, you can search the full text, extract sections, organize a research library, build a literature knowledge base, summarize with AI, run RAG over the corpus, and compare papers against each other.
+530	Reuse
+531	Review the Markdown in Preview or Source view, then copy or download the .md file.
+532	Review the Markdown in preview or source view.
+533	Rows and columns, not a picture of a grid
+534	Running text
+535	Scanned PDF (OCR)
+536	Scanned PDF to Markdown
+537	Scanned PDF to Markdown — Free OCR Converter
+538	Scanned PDFs, embedded images and dozens of files at once — a great tool covers them with OCR, image extraction and batch mode.
+539	Scans, tables, RAG, chat windows, and whole folders.
+540	Search
+541	Search the documents
+542	Search, compare, and ask questions across papers and long reports.
+543	See a sample conversion
+544	See it in action
+545	Semantic search
+546	Session interactions such as scrolls, clicks, and mouse movements (via Microsoft Clarity)
+547	Skip installing pymupdf, pdfplumber or Java dependencies for one-off files. Upload, copy the Markdown string, and paste into your script.
+548	Skip to content
+549	Small
+550	Sometimes not text
+551	Source
+552	Stable distribution
+553	Standardize messy PDFs into structured text for downstream AI pipelines.
+554	Step-by-step guide
+555	Stop treating PDFs as a dead end.
+556	Strong
+557	Structure
+558	Structure is clear; organization is easy.
+559	Structure the model understands
+560	Structure-unfriendly
+561	Structured files for RAG and embeddings
+562	Structured for parsing
+563	Structured source of truth
+564	Structured text is easier for LLMs, embeddings, and RAG to use well.
+565	Structured text is straightforward to full-text search.
+566	Students
+567	Summarize the report
+568	Switch between Preview and Source view to check headings, lists, and tables. Edit is not built in yet — copy the output into your editor if you need to tweak it.
+569	Table Extractor
+570	Table extraction
+571	Tables
+572	Tables only · GFM output · 100% local · Max 50MB
+573	Tables · GFM output
+574	Tables → Markdown
+575	Tables, headings and prose in the same PDF are all handled together in a single pass.
+576	Teams
+577	Tech docs
+578	Technical docs
+579	Technical documentation
+580	Text + embedded images inline · 100% local · Max 50MB
+581	Text extraction is not document understanding.
+582	Text, headings, tables, lists, links, and document structure. The point is not a raw dump. The point is a file that still has an outline. Page headers, footers, and page numbers are stripped automatically.
+583	Text-based PDF tables export as GitHub-flavored Markdown tables, which Notion renders well. Complex merged cells may flatten because Markdown tables do not support cell spanning.
+584	Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. For scanned or image-only PDFs, use our OCR converter, which recognizes the text in your browser.
+585	Text-based tables with clear column spacing convert best. Merged cells are flattened because Markdown tables don’t support cell spanning.
+586	That hierarchy is what modern content workflows run on.
+587	That is not a cosmetic difference. It is a working difference.
+588	That is one of the reasons to convert. Markdown is easy to turn into HTML, PDF, Word, docs sites, FAQs, blog posts, and AI datasets. The PDF was a download. The Markdown is a source.
+589	That is the conversion. <strong>PDF → Markdown.</strong>
+590	That is why Markdown fits:
+591	The Best PDF to Markdown Converter
+592	The best converter is the one that keeps your document structure, respects your privacy, and handles your file types. A browser-based tool that needs no upload or install — with tables, images, OCR and batch support — covers most needs for free.
+593	The best converter keeps files on your device. Ours runs 100% in the browser — no uploads, no accounts, no tracking.
+594	The company already has <file>Company Handbook.pdf</file>. It should not stay trapped in that one file. That is content repurposing: one source of truth, many outputs — because the structure finally exists independently of the page.
+595	The destination
+596	The engine aligns cells by their horizontal position, so multi-column tables come out correctly structured.
+597	The form does not move.
+598	The formats are not enemies. They have different jobs. The missing piece is the conversion in between.
+599	The output contains only GitHub-flavored Markdown tables — no surrounding prose.
+600	The papers stay citable as PDFs. The working copy becomes something you can query.
+601	The pile you already have
+602	The pipeline that works
+603	The problem
+604	The product
+605	The real reason to use it
+606	The relationships, not only the characters
+607	The words, in reading order
+608	These sit next to the main query. Each is a job the file has to survive — not another lecture on formats.
+609	Think of them as a chain, not a choice: <strong>PDF</strong> is for delivery and reading → <strong>Markdown</strong> is for editing and processing → <strong>PDF to Markdown</strong> turns existing PDFs into structured content you can actually work with.
+610	This site is a browser-based converter, not a pip module. For quick one-file jobs, use the tool above. For fully programmatic pipelines, common libraries include PyMuPDF, pdfplumber and marker — or wait for our upcoming API.
+611	This tool
+612	This tool is free with no limits and runs entirely in your browser. Unlike many free online converters, it never uploads your files, and it supports tables, images, scanned PDFs and batch conversion.
+613	Those are the hard cases — and they are common. They are also why a dedicated PDF → Markdown step exists. A conversion that only concatenates strings will scramble reading order and miss the outline.
+614	To files you can maintain
+615	Token-efficient
+616	Tools
+617	Training materials
+618	Trait
+619	Try a sample
+620	Turn PDF briefs into editable Notion docs in seconds.
+621	Turn PDF reports, specs and docs into clean Markdown you can paste straight into Notion — headings, lists and tables intact, all processed locally.
+622	Turn PDFs into clean Markdown notes for Obsidian. 100% offline in your browser — drop the .md straight into your vault with headings, lists and tables intact.
+623	Turn any text-based PDF into clean Markdown in your browser — free, private, and ready in seconds. Use the converter below and follow the steps.
+624	Turn it into Markdown docs
+625	Turn it into a website
+626	Turn photographed lecture slides and handouts into searchable notes.
+627	Turn scanned or image-only PDFs into Markdown with built-in OCR. Recognizes text in 100+ languages, runs in your browser, and your file is never uploaded.
+628	Turn your PDFs into clean, structured Markdown — ready for editing, search, AI, RAG, and more.
+629	Turning manuals, SOPs, contracts, and training decks into RAG-backed assistants.
+630	Two formats, two jobs
+631	Understand which features and pages are most useful
+632	Unlike Word or Markdown, PDF was not designed for frequent rewriting or reorganization.
+633	Upload
+634	Upload a PDF above — no pip install or virtual environment required for a quick conversion.
+635	Upload a PDF that contains tables, or click "Try sample PDF" to load our pricing table demo.
+636	Upload a report or doc PDF, or click "Try sample PDF" to load our demo article.
+637	Upload a report or paper PDF, or click "Try sample PDF" to try our demo article.
+638	Upload a text-based PDF, or click "Try sample PDF" above to use our demo article.
+639	Upload your research notes PDF, or click "Try sample PDF" to load our demo notes file.
+640	Use
+641	Use a privacy-focused browser or extensions to limit tracking
+642	Use cases
+643	Use it
+644	Usually larger
+645	Usually much lighter than PDF or Word.
+646	Usually small
+647	Vault-ready .md with frontmatter · 100% local · Max 50MB
+648	Vault-ready notes with frontmatter
+649	Vault-ready output
+650	Vector databases
+651	Version control
+652	Version-control friendly
+653	Watch each page get rendered and recognized in your browser, side by side.
+654	We are actively improving conversion quality and adding capabilities based on user feedback.
+655	We do not sell your personal information. Usage data collected by Google Analytics and Microsoft Clarity is shared with those respective providers as described in their privacy policies.
+656	We do not store, access, or retain the content of your PDF files or the Markdown output you generate. Once you close the browser tab, that data is gone from our perspective.
+657	We help developers, researchers, and knowledge workers turn PDF documents into structured Markdown ready for LLMs, RAG pipelines, Obsidian, Notion, and other tools.
+658	We may also disclose information if required by law, court order, or to protect the rights, property, or safety of our users or the public.
+659	We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy.
+660	We recover more than a text dump: headings, lists, tables, links, and reading order, so the Markdown still has a document shape.
+661	We typically respond within 2–3 business days.
+662	We use Google Analytics and Microsoft Clarity only to understand general site usage, not to access your documents.
+663	We use the automatically collected information to:
+664	We use the following third-party analytics tools to understand how visitors use our site and to improve the product. These services may set cookies or similar technologies in your browser.
+665	We would love to hear from you. Whether you have product feedback, found a conversion issue, or want to explore a partnership, send us an email and we will get back to you.
+666	Weak
+667	Website
+668	Websites
+669	What a PDF is good at
+670	What about scanned PDFs?
+671	What conversion should recover
+672	What do you actually extract?
+673	What is a scanned PDF?
+674	What is the best PDF to Markdown converter?
+675	What is the best free PDF to Markdown converter?
+676	What it means in practice
+677	What makes Markdown different
+678	What people search for
+679	What software sees
+680	What table layouts are supported?
+681	What type of PDF works best?
+682	What we can help with
+683	What we do
+684	What you get
+685	What you see
+686	What you want the model to do
+687	What's next
+688	When Markdown is right
+689	When PDF is right
+690	When the content is done
+691	When the content still has a life
+692	When the important material is already a PDF
+693	When to use each format
+694	When you convert a PDF, all processing happens entirely in your web browser using WebAssembly. Your PDF files are never uploaded to our servers or any third-party service for conversion.
+695	When you drop a PDF, parsing and conversion run locally in your browser using WebAssembly. Your file is never transmitted to our servers.
+696	When you embed a PDF as-is, the splitter often cuts mid-table or mid-section because it never saw a heading. Retrieval then returns a blob that looks related and is not. Give the pipeline Markdown with explicit headings and real tables, and chunking can follow the outline: one section, one table, one list. Embeddings stay closer to a single topic. That is the data-prep job — not a nicer preview. You still choose chunk size, overlap, and the vector store; conversion does not replace that. It stops the model from embedding headers, footers, and page numbers as if they were the answer.
+697	When you need conversion
+698	When you visit our website, we and our analytics partners may automatically collect certain technical and usage information, such as:
+699	Where that design breaks down
+700	Which languages are supported?
+701	Who it’s for
+702	Who uses it
+703	Why Markdown
+704	Why Markdown instead of Word or plain text?
+705	Why PDF
+706	Why PDFs fail
+707	Why is Markdown better than raw PDF text for LLMs?
+708	Why is OCR slower than a normal conversion?
+709	Why it hurts modern workflows
+710	Why not just upload the PDF to ChatGPT, Claude, or Gemini?
+711	Why use Markdown instead of copying text from the PDF?
+712	Why we built it
+713	Will multi-column layouts, footnotes, embedded fonts, and mixed tables survive?
+714	Will tables and lists survive the import?
+715	Windows, macOS, Linux — all of them.
+716	Windows, macOS, Linux, iOS, and Android can all open it.
+717	Word still mixes layout into the file. Plain text throws the hierarchy away. Markdown keeps content and structure and drops the page design — which is exactly what editing, Git, search, embeddings, and LLMs need.
+718	Works offline once the page is loaded
+719	Works with any Notion workspace
+720	Write / Structure / Process
+721	Writers
+722	Yes
+723	Yes, when you need a stable, print-faithful, shareable original. Conversion does not replace PDF for contracts, invoices, or archival copies. It unlocks a second life for the same content.
+724	Yes. Convert the PDF, switch to the source view, and copy the table block you need.
+725	Yes. Copy the Markdown into a notebook cell for documentation, or parse GFM tables into DataFrames with pandas.read_table on the table blocks.
+726	Yes. Parsing and Markdown generation run entirely in your browser via WebAssembly. Your PDF is never uploaded to our servers.
+727	Yes. Recognition runs entirely in your browser using WebAssembly. Only the language model is downloaded from a CDN; your PDF is never uploaded.
+728	Yes. Tables are converted to GitHub-flavored Markdown tables and nested bullet lists keep their indentation.
+729	Yes. The clean Markdown is straightforward to split into chunks and embed for retrieval, with headings acting as natural chunk boundaries.
+730	Yes. Use our batch converter to drop many PDFs at once and download them all as a ZIP — free and unlimited, all in your browser.
+731	You are not buying “text from a PDF.” You are buying a document the rest of your stack can use.
+732	You can, for a single pass. A 100-page report still lands as a weakly structured blob: headings, tables, and section boundaries are unreliable. Converted Markdown makes the outline explicit — Executive Summary, Market Size, Competitive Landscape — so summarization, extraction, and Q&A have something to hold onto. For a knowledge base, the gap is larger: RAG wants chunks with real headings, not page coordinates. Conversion still runs entirely in your browser; the file is never uploaded to us.
+733	You do not just have words. You have a tree.
+734	You have a 100-page file: <em>2026 Global Market Research Report</em>. You want ChatGPT, Claude, or Gemini to summarize the report, pull key figures, analyze competitors, find market trends, and answer questions from inside the document.
+735	You still need PDFs. Contracts, reports, and papers have to look the same for every reader. You need Markdown when the same material has to be reused, queried, updated, or handed to a model.
+736	Your PDF files are processed locally in your browser — we cannot see or recover them. If you are reporting a conversion issue, please describe the problem and, if possible, note the PDF type (scanned, multi-column, heavy tables, etc.). Do not attach sensitive documents unless you are comfortable sharing them.
+737	Zero-setup conversion
+738	best free pdf to markdown
+739	best pdf to markdown converter
+740	bridge
+741	click to browse
+742	convert pdf table to markdown
+743	convert pdf to markdown
+744	convert pdf to markdown online free
+745	convert pdf to markdown python
+746	convert scanned pdf to markdown
+747	extract table from pdf to markdown
+748	for ChatGPT & LLMs
+749	for Notion
+750	for Obsidian
+751	free pdf to markdown converter
+752	how to convert pdf to markdown
+753	image pdf to markdown
+754	import pdf into notion
+755	import pdf into obsidian
+756	intent-batch
+757	intent-chatgpt
+758	intent-ocr
+759	intent-rag
+760	intent-tables
+761	md
+762	notion pdf to markdown
+763	obsidian pdf to markdown
+764	ocr pdf to markdown
+765	pdf
+766	pdf table to markdown
+767	pdf to markdown
+768	pdf to markdown api
+769	pdf to markdown converter
+770	pdf to markdown converter online
+771	pdf to markdown for ai
+772	pdf to markdown for chatgpt
+773	pdf to markdown for llm
+774	pdf to markdown for notion
+775	pdf to markdown for obsidian
+776	pdf to markdown for rag
+777	pdf to markdown ocr
+778	pdf to markdown python
+779	pdf to markdown step by step
+780	pdf to markdown table
+781	pdf to markdown tool
+782	pdf to markdown tutorial
+783	pdf to md
+784	pdf to md obsidian
+785	pdf to notion markdown
+786	python pdf to markdown
+787	scanned pdf to markdown
+788	structured Markdown
+789	with Images
+790	with Python
+791	your workflow
+792	{pages} pages · {images} images · {ms} ms
+793	{pages} pages · {ms} ms
+794	{pages} pages · {tables} tables · {ms} ms
+795	★★
+796	★★★
+797	★★★★★
+798	✓
+799	✗

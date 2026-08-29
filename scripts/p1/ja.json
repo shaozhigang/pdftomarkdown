@@ -1,0 +1,1521 @@
+{
+  "Nav": {
+    "home": "ホーム",
+    "tools": "ツール",
+    "obsidian": "Obsidian 向け",
+    "chatgpt": "ChatGPT & LLM 向け",
+    "notion": "Notion 向け",
+    "python": "Python 連携",
+    "table": "表抽出",
+    "mdToPdf": "Markdown → PDF",
+    "ocr": "スキャン PDF（OCR）",
+    "images": "画像付き",
+    "batch": "一括変換",
+    "word": "PDF → Word"
+  },
+  "Footer": {
+    "tagline": "PDF to Markdown · すべての変換はブラウザ内でローカル実行。ファイルはデバイスから外部に送信されません。",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "guide": "使い方ガイド",
+    "privacyPolicy": "プライバシーポリシー"
+  },
+  "Converter": {
+    "dropClickBrowse": "クリックして選択",
+    "privacyBadge": "100% プライベート — ファイルはブラウザ外に出ません",
+    "paneOriginal": "元の PDF",
+    "dropTitle_general": "PDF をここにドロップ、または",
+    "dropTitle_obsidian": "Obsidian 用に PDF をドロップ、または",
+    "dropTitle_llm": "LLM 向け Markdown 用に PDF をドロップ、または",
+    "dropTitle_table": "表を抽出する PDF をドロップ、または",
+    "dropTitle_notion": "Notion 用に PDF をドロップ、または",
+    "dropTitle_python": "Markdown 出力用に PDF をドロップ、または",
+    "dropSubtitle_general": "全文書 · 100% ローカル · 最大 50 MB",
+    "dropSubtitle_obsidian": "Vault 対応 .md（frontmatter 付き）· 100% ローカル · 最大 50 MB",
+    "dropSubtitle_llm": "コンパクト Markdown + RAG 用チャンクマーカー · 100% ローカル · 最大 50 MB",
+    "dropSubtitle_table": "表のみ · GFM 出力 · 100% ローカル · 最大 50 MB",
+    "dropSubtitle_notion": "Notion 対応 Markdown · 100% ローカル · 最大 50 MB",
+    "dropSubtitle_python": "スクリプト & ノートブック向け · 100% ローカル · 最大 50 MB",
+    "errorNotPdf": "PDF ファイルをアップロードしてください。",
+    "errorTooLarge": "ファイルが 50 MB を超えています。より大きなファイルは現在サポートされていません。",
+    "statusParsing_general": "ドキュメントを変換中",
+    "statusParsing_obsidian": "Obsidian ノートを作成中",
+    "statusParsing_llm": "LLM 向けに最適化中",
+    "statusParsing_table": "表を抽出中",
+    "statusParsing_notion": "Notion インポートを準備中",
+    "statusParsing_python": "Markdown を生成中",
+    "chooseAnother": "別のファイルを選択",
+    "conversionFailed": "変換に失敗しました",
+    "tabPreview": "プレビュー",
+    "tabSource": "ソース",
+    "statsInfo": "{pages} ページ · {ms} ms",
+    "statsTables": "{pages} ページ · {tables} 表 · {ms} ms",
+    "actionCopy": "Markdown をコピー",
+    "actionCopied": "コピーしました",
+    "actionDownload": ".md をダウンロード",
+    "actionNewFile": "新しいファイル",
+    "warningNoText": "テキストを抽出できませんでした。スキャン PDF または画像のみの PDF の可能性があります。OCR コンバーターをお試しください。",
+    "warningNoTables": "表が検出されませんでした。フルコンバーターをお試しいただくか、PDF に明確な列間隔のテキスト表があるかご確認ください。",
+    "dropTitle_images": "画像を保持する PDF をドロップ、または",
+    "dropSubtitle_images": "テキスト + 埋め込み画像をインライン · 100% ローカル · 最大 50 MB",
+    "statusParsing_images": "画像を抽出中",
+    "statsImages": "{pages} ページ · {images} 画像 · {ms} ms"
+  },
+  "Landing": {
+    "faqTitle": "よくある質問",
+    "relatedTitle": "関連ツール"
+  },
+  "Examples": {
+    "title": "実際の変換例",
+    "resultTitle": "出力例",
+    "samplePrompt": "PDF をお持ちでない場合",
+    "trySample": "サンプルを試す",
+    "loadingSample": "サンプルを読み込み中…",
+    "errorSampleLoad": "サンプルの読み込みに失敗しました。もう一度お試しください。",
+    "specializedTitle": "その他のユースケース",
+    "general": {
+      "howToName": "PDF を Markdown に変換する方法",
+      "steps": [
+        "テキストベースの PDF をアップロードするか、上の「サンプル PDF を試す」をクリックしてデモ記事を読み込みます。",
+        "プレビューまたはソース表示で Markdown を確認し、コピーまたは .md ファイルをダウンロードします。",
+        "エディター、ナレッジベース、LLM プロンプトに貼り付けます — 見出し、リスト、表は保持されます。"
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "PDF を Obsidian に Markdown としてインポートする方法",
+      "steps": [
+        "研究ノート PDF をアップロードするか、「サンプル PDF を試す」をクリックしてデモノートを読み込みます。",
+        ".md ファイルをダウンロードします — YAML frontmatter（タイトル、日付、タグ）付きで Vault 対応です。",
+        "Obsidian Vault 内の任意のフォルダーに移動すると、すぐに構造化されたノートとして表示されます。"
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "PDF を LLM 向け Markdown に変換する方法",
+      "steps": [
+        "レポートや論文 PDF をアップロードするか、「サンプル PDF を試す」でデモ記事をお試しください。",
+        "Markdown 出力をコピーします — YAML メタデータと RAG パイプライン用チャンクマーカーが含まれます。",
+        "ChatGPT や Claude で Q&A に使うか、チャンクマーカーで分割してベクトル DB に埋め込みます。"
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "PDF から表を Markdown に抽出する方法",
+      "steps": [
+        "表を含む PDF をアップロードするか、「サンプル PDF を試す」で料金表デモを読み込みます。",
+        "出力は GitHub Flavored Markdown 表のみ — 周囲の本文は含まれません。",
+        "表を GitHub、Notion、Obsidian、GFM 表に対応したエディターにコピーします。"
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "notion": {
+      "howToName": "PDF を Notion に Markdown としてインポートする方法",
+      "steps": [
+        "レポートやドキュメント PDF をアップロードするか、「サンプル PDF を試す」でデモを読み込みます。",
+        "Markdown をコピーするか .md をダウンロード — 見出し、リスト、表は保持されます。",
+        "Notion を開き、ページを作成して内容を貼り付けます。Notion は Markdown ブロックを自動変換します。"
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "Python ワークフロー向け PDF → Markdown",
+      "steps": [
+        "上記で PDF をアップロード — クイック変換に pip や virtualenv は不要です。",
+        "Markdown 文字列を Jupyter ノートブック、Flask アプリ、データパイプラインにコピーします。",
+        "バッチジョブや CI には、当面ブラウザツールで ad-hoc ファイルを処理。REST API はロードマップにあります。"
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Obsidian インポート",
+        "subtitle": "frontmatter 付き Vault 対応ノート"
+      },
+      "llm": {
+        "title": "ChatGPT & RAG",
+        "subtitle": "チャンクマーカー付きコンパクト Markdown"
+      },
+      "table": {
+        "title": "表抽出",
+        "subtitle": "GFM 表のみ、余分な本文なし"
+      },
+      "notion": {
+        "title": "Notion インポート",
+        "subtitle": "Notion ページ向け貼り付け対応 Markdown"
+      },
+      "python": {
+        "title": "Python & 自動化",
+        "subtitle": "ノートブックとスクリプト向け Markdown"
+      }
+    }
+  },
+  "Home": {
+    "metaTitle": "PDF Markdown 変換 — 無料・プライベート・ローカル",
+    "metaDescription": "ブラウザで動作する無料 PDF Markdown 変換ツール。100% ローカル — ファイルはデバイスから外部に送信されません。見出し、表、アウトラインを保持 — 編集、検索、AI、RAG に対応。",
+    "keywords": [
+      "pdf markdown 変換",
+      "pdf マークダウン 変換",
+      "pdf md 変換",
+      "pdf markdown コンバーター",
+      "pdf markdown 変換 無料 オンライン"
+    ],
+    "h1": "PDF Markdown 変換",
+    "nav": {
+      "skip": "本文へスキップ",
+      "problem": "PDF の課題",
+      "markdown": "Markdown の利点",
+      "how": "使い方",
+      "use": "ユースケース",
+      "faq": "FAQ",
+      "convert": "PDF を変換",
+      "open": "メニューを開く",
+      "close": "メニューを閉じる"
+    },
+    "hero": {
+      "title": "<em>編集・検索・取得</em>できる PDF → Markdown。",
+      "lede": "PDF は閲覧と共有向けに作られており、編集、検索、RAG 向けではありません。見出し、表、リスト、アウトラインを保持した Markdown に変換 — ドキュメント、検索、AI にすぐ使えます。",
+      "cta": "PDF を Markdown に変換",
+      "sample": "変換サンプルを見る",
+      "support": "テキスト<em>と</em>ドキュメント構造を抽出：見出し、表、リスト、リンク、階層 — 非構造テキストの塊ではありません。",
+      "privacy": "100% ブラウザ内ローカル — ファイルはデバイスから外部に出ません。最大 50 MB。コンバーターでサンプル PDF をお試しください。",
+      "chipsAria": "よく使われる用途",
+      "chips": [
+        "RAG",
+        "LLM",
+        "ナレッジベース",
+        "ドキュメント",
+        "検索",
+        "Web サイト"
+      ]
+    },
+    "preview": {
+      "channel": "方法",
+      "share": "用途"
+    },
+    "convert": {
+      "eyebrow": "ブラウザで変換",
+      "title": "PDF をドロップ。構造化 Markdown を取得。",
+      "lede": "アップロード不要。見出し、表、リスト、アウトラインを保持 — コピーまたはダウンロード。"
+    },
+    "th": {
+      "trait": "特性",
+      "means": "実務での意味",
+      "hurts": "モダンワークフローへの影響",
+      "use": "用途",
+      "whyPdf": "PDF を選ぶ理由",
+      "whyMd": "Markdown を選ぶ理由"
+    },
+    "problem": {
+      "eyebrow": "課題",
+      "title": "PDF はページの見た目を記憶する。コンテンツの意味は記憶しない。",
+      "lede": "PDF（Portable Document Format）は、あらゆるデバイス・アプリで同じ見た目になるよう電子文書を保存・共有するために作られました。契約書、レポート、印刷用手引書には向いています。しかし<em>コンテンツ</em>が必要な場合は問題になります。",
+      "quote": "PDF が保存するのは「この文書をどう見せるか」であり、「この文書が何で構成されているか」ではありません。",
+      "goodTag": "PDF の強み",
+      "goodH": "提示・配布向け",
+      "badTag": "限界が出る場面",
+      "badH": "作業と AI には不向き",
+      "goodRows": [
+        {
+          "trait": "固定レイアウト",
+          "means": "フォント、画像、表、余白、ヘッダー・フッターが固定。デバイスを変えてもページはリフローしません。"
+        },
+        {
+          "trait": "クロスプラットフォーム",
+          "means": "Windows、macOS、Linux、iOS、Android すべてで開けます。"
+        },
+        {
+          "trait": "印刷対応",
+          "means": "ページサイズと印刷レイアウトが維持されるため、契約書、レポート、論文、マニュアルは PDF で配布されます。"
+        },
+        {
+          "trait": "安定した配布",
+          "means": "一度生成すれば最終版として読む・共有する・アーカイブするのに適しています。"
+        },
+        {
+          "trait": "複雑なコンテンツ",
+          "means": "PDF は「テキストだけ」であることは稀。画像、表、リンク、ベクター、埋め込みフォント、スキャンが含まれることが多いです。"
+        }
+      ],
+      "badRows": [
+        {
+          "trait": "構造に不向き",
+          "hurts": "PDF はページを重視し、アウトラインは重視しません。機械は見出し、段落、リスト、表の復元に苦労します。"
+        },
+        {
+          "trait": "編集が難しい",
+          "hurts": "Word や Markdown と異なり、頻繁な書き換えや再構成向けには設計されていません。"
+        },
+        {
+          "trait": "解析が難しい",
+          "hurts": "埋め込みフォント、多段組、表、画像、脚注が抽出を複雑にします。"
+        },
+        {
+          "trait": "テキストがない場合も",
+          "hurts": "多くの PDF はスキャン — ページの画像です。OCR なしでは文字を取得できません。"
+        }
+      ],
+      "see": "人間が見るもの",
+      "seeP": "ページ上では、PDF は章、セクション、リスト、表のように見えます。",
+      "seeCode": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+      "soft": "ソフトウェアが見るもの",
+      "softP": "プログラムは別物を見ることが多い：文字列、座標、フォント、キャンバス上の画像。<em>実際の</em>タイトル、段落境界、リスト、表の復元は保証されません。",
+      "gap1": "<strong>PDF</strong> は人間向け。視覚レイアウトを重視します。",
+      "gap2": "<strong>Markdown</strong> は構造化コンテンツ向け — 編集、ソフトウェア、AI。",
+      "gap3": "Markdown にすれば、同じドキュメントが検索、ナレッジベース、RAG、埋め込み、LLM に対応できます。",
+      "close": "PDF をそのままナレッジベースに入れるのは、多くの場合最初のステップとして不適切です。モデルはテキストは得ても、構造は得られません。"
+    },
+    "md": {
+      "eyebrow": "変換先",
+      "title": "Markdown はコンテンツを保持し、構造を明示します。",
+      "lede": "Markdown は軽量マークアップ言語です。少数のプレーンテキスト記号で見出し、段落、リスト、表、リンク、コードを表現。レンダリングなしでもソースを読めます。",
+      "sample": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+      "diff": "Markdown の違い",
+      "traits": [
+        {
+          "title": "明確な構造",
+          "body": "#、##、- などのマーカーで見出しとリストを明示します。"
+        },
+        {
+          "title": "プレーンテキスト",
+          "body": "テキストファイルなので、レイアウト形式に縛られません。"
+        },
+        {
+          "title": "編集しやすい",
+          "body": "任意のテキストエディターで編集可能。オフィススイートは不要です。"
+        },
+        {
+          "title": "読みやすい",
+          "body": "生ファイルでも読みやすいです。"
+        },
+        {
+          "title": "軽量",
+          "body": "通常 PDF や Word よりはるかに小さいです。"
+        },
+        {
+          "title": "検索しやすい",
+          "body": "構造化テキストは全文検索が容易です。"
+        },
+        {
+          "title": "変換しやすい",
+          "body": "Markdown は HTML、PDF、Word などに変換できます。"
+        },
+        {
+          "title": "プログラム向き",
+          "body": "見出し、段落、リストが明示され、ソフトウェアが解析できます。"
+        },
+        {
+          "title": "バージョン管理向き",
+          "body": "プレーンテキストは Git に最適です。"
+        },
+        {
+          "title": "クロスプラットフォーム",
+          "body": "Windows、macOS、Linux — すべて対応。"
+        },
+        {
+          "title": "AI 向き",
+          "body": "構造化テキストは LLM、埋め込み、RAG で扱いやすいです。"
+        }
+      ],
+      "why": "使う本当の理由",
+      "sep": "Markdown は<strong>コンテンツ</strong>と<strong>視覚レイアウト</strong>を分離します。",
+      "pdfAsks": "PDF の問い：<em>ページ上でどう見せるか？</em>",
+      "mdAsks": "Markdown の問い：<em>これは何で、どう構造化されているか？</em>",
+      "notCosmetic": "見た目の差ではなく、作業の差です。",
+      "whyCode": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+      "tree": "単語だけでなく、ツリー構造があります。",
+      "treeP": "その階層こそ、モダンなコンテンツワークフローの基盤です。",
+      "treeCode": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+      "aiNeed": "AI に必要なのは「テキスト」だけではありません。テキスト断片間の関係が必要です。AI や RAG では、見出しレベル、段落境界、リスト、表が明確になります。",
+      "fits": "Markdown が適する理由：",
+      "chips": [
+        "LLM",
+        "RAG",
+        "ベクトル DB",
+        "埋め込み",
+        "AI ナレッジベース",
+        "AI エージェント",
+        "セマンティック検索",
+        "ドキュメント",
+        "コンテンツ管理"
+      ],
+      "close": "次のステップが編集、検索、生成なら、Markdown はその仕事向けの形式です。"
+    },
+    "cmp": {
+      "eyebrow": "2 つの形式、2 つの役割",
+      "title": "PDF は配布用。Markdown は作業用。",
+      "quote": "PDF は文書の見た目を保存する。Markdown は文書の中身を保存する。",
+      "rows": [
+        {
+          "label": "主目的",
+          "pdf": "ページと視覚レイアウトを保持",
+          "md": "コンテンツと構造を表現"
+        },
+        {
+          "label": "編集性",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "機械解析",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "検索",
+          "pdf": "★★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "AI 処理",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "RAG",
+          "pdf": "そのままでは不向き",
+          "md": "自然な適合"
+        },
+        {
+          "label": "バージョン管理",
+          "pdf": "不便",
+          "md": "ネイティブ"
+        },
+        {
+          "label": "ファイルサイズ",
+          "pdf": "通常大きい",
+          "md": "通常小さい"
+        },
+        {
+          "label": "クロスプラットフォーム",
+          "pdf": "はい",
+          "md": "はい"
+        },
+        {
+          "label": "人間の読みやすさ",
+          "pdf": "はい",
+          "md": "はい"
+        },
+        {
+          "label": "ページレイアウト",
+          "pdf": "強い",
+          "md": "弱い"
+        }
+      ],
+      "still": "PDF は依然として必要です。契約書、レポート、論文は読者全員に同じ見た目である必要があります。同じ素材を再利用、検索、更新、モデルに渡す場合は Markdown が必要です。",
+      "close": "形式は敵ではありません。役割が異なります。欠けているのはその間の変換です。"
+    },
+    "bridge": {
+      "eyebrow": "プロダクト",
+      "title": "PDF → Markdown は欠けていたステップ — 単なる変換ツールではありません。",
+      "lede": "重要な素材の多くはすでに PDF として存在します。次に必要な作業 — 書き換え、検索、取得、要約、公開 — には構造が必要です。",
+      "p1": "PDF — レイアウト固定、機械には不向き",
+      "p3": "Markdown — 編集可能、検索可能、AI 向き",
+      "p4": "LLM / RAG / ナレッジベース / ワークフロー",
+      "notText": "「PDF からテキスト」を買うのではありません。スタック全体が使えるドキュメントを買うのです。",
+      "recover": "変換で復元すべきもの",
+      "extract": [
+        {
+          "title": "本文",
+          "body": "読み順どおりの文字"
+        },
+        {
+          "title": "見出し & アウトライン",
+          "body": "章、節、小節"
+        },
+        {
+          "title": "表",
+          "body": "行と列 — グリッドの写真ではない"
+        },
+        {
+          "title": "リスト",
+          "body": "項目 — キャンバス上の箇条書きではない"
+        },
+        {
+          "title": "リンク",
+          "body": "たどれるリンク先"
+        },
+        {
+          "title": "ドキュメント構造",
+          "body": "文字だけでなく関係性"
+        }
+      ],
+      "ctaLine": "PDF をクリーンで構造化された Markdown に — 編集、検索、AI、RAG などに対応。"
+    },
+    "when": {
+      "eyebrow": "適切な形式を選ぶ",
+      "title": "1 つのコンテンツパイプライン。3 つの役割。",
+      "lede": "チェーンとして考えてください：<strong>PDF</strong> は配布・閲覧 → <strong>Markdown</strong> は編集・処理 → <strong>PDF → Markdown</strong> で既存 PDF を実際に扱える構造化コンテンツに。",
+      "tabsAria": "形式の使い分け",
+      "tabPdf": "PDF が適切な場合",
+      "tabMd": "Markdown が適切な場合",
+      "tabNeed": "変換が必要な場合",
+      "pdfH": "コンテンツが完成している場合",
+      "pdfP": "表示、共有、印刷、アーカイブで見た目のブレが許されない場合、PDF が最適です。",
+      "pdfJob": "PDF の役割（一言）：相手に見せるものが、自分が作ったものと一致すること。",
+      "mdH": "コンテンツにまだ活用法がある場合",
+      "mdP": "編集、更新、検索、変換、ソフトウェアによる読み取りが必要な場合、Markdown が最適です。",
+      "mdJob": "Markdown の役割（一言）：コンテンツを編集・管理・検索・解析しやすくすること。",
+      "needH": "重要な素材がすでに PDF の場合",
+      "needP": "現実：重要な素材の膨大な量はすでに PDF です。その後必要になるのは：",
+      "needClose": "それが変換です。<strong>PDF → Markdown。</strong>",
+      "pdfRows": [
+        {
+          "use": "契約書",
+          "why": "レイアウトが双方とアーカイブで固定されます。"
+        },
+        {
+          "use": "レポート",
+          "why": "グラフ、テキスト、ページレイアウトが一貫します。"
+        },
+        {
+          "use": "論文 / 研究",
+          "why": "正式な出版と閲覧。"
+        },
+        {
+          "use": "電子書籍",
+          "why": "章、図、ページデザインが維持されます。"
+        },
+        {
+          "use": "製品マニュアル",
+          "why": "ダウンロード、閲覧、印刷が可能。"
+        },
+        {
+          "use": "請求書 / 領収書",
+          "why": "フォームがずれません。"
+        },
+        {
+          "use": "社内文書",
+          "why": "正式な配布。"
+        },
+        {
+          "use": "教材",
+          "why": "講義と教科書を 1 ファイルに。"
+        },
+        {
+          "use": "印刷",
+          "why": "ページ形状がプリンターでも維持。"
+        },
+        {
+          "use": "アーカイブ",
+          "why": "安定した最終版。"
+        }
+      ],
+      "mdRows": [
+        {
+          "use": "技術ドキュメント",
+          "why": "開発者が直接編集できます。"
+        },
+        {
+          "use": "ナレッジベース",
+          "why": "構造が明確で整理しやすい。"
+        },
+        {
+          "use": "ブログ / 執筆",
+          "why": "執筆が速く、ページ化も容易。"
+        },
+        {
+          "use": "製品ドキュメント",
+          "why": "章、節、コードブロックが第一級。"
+        },
+        {
+          "use": "AI ナレッジベース",
+          "why": "モデルは構造化テキストをより確実に処理。"
+        },
+        {
+          "use": "検索",
+          "why": "プレーンテキストはインデックスしやすい。"
+        },
+        {
+          "use": "RAG",
+          "why": "よりクリーンなチャンク化、埋め込み、検索。"
+        },
+        {
+          "use": "Git / GitHub",
+          "why": "プレーンテキストはバージョン管理のため。"
+        },
+        {
+          "use": "プロジェクト README",
+          "why": "GitHub 等でネイティブ。"
+        },
+        {
+          "use": "コンテンツ変換",
+          "why": "1 ソース → HTML、PDF など。"
+        }
+      ],
+      "needs": [
+        "コンテンツを編集",
+        "テキストを抽出",
+        "ナレッジベースを構築",
+        "RAG を構築",
+        "AI に渡す",
+        "ドキュメントを検索",
+        "論文を分析",
+        "表を抽出",
+        "Web サイト化",
+        "Markdown ドキュメント化"
+      ]
+    },
+    "how": {
+      "eyebrow": "使い方",
+      "title": "3 ステップで PDF を Markdown に変換。",
+      "s1": "アップロード",
+      "s1p": "レポート、マニュアル、論文、ハンドブック、SOP、アーカイブ PDF — テキスト、表、画像、リンクが混在するファイルも対応。",
+      "s2": "変換",
+      "s2p": "テキストダンプ以上を復元：見出し、リスト、表、リンク、読み順 — Markdown もドキュメント形状を保持。",
+      "s3": "活用",
+      "s3p": "編集。検索。チャンク化。埋め込み。公開。LLM に渡す。Git に入れる。",
+      "p2": "変換",
+      "p3": "構造化 Markdown",
+      "p4": "あなたのワークフロー"
+    },
+    "uc": {
+      "eyebrow": "ユースケース",
+      "title": "RAG、ドキュメント、再利用向け PDF → Markdown。",
+      "tabsAria": "ユースケース",
+      "tab1": "AI / RAG",
+      "tab2": "LLM に渡す",
+      "tab3": "研究",
+      "tab4": "技術ドキュメント",
+      "tab5": "Web サイト",
+      "tab6": "再利用",
+      "primary": "主な用途"
+    },
+    "uc1": {
+      "h": "AI / RAG ナレッジベース",
+      "p": "企業にはすでに数千の PDF がある：製品マニュアル、技術ドキュメント、社内 SOP、契約書、研究レポート、研修資料。目標は<em>それら</em>から回答するアシスタント。パイプラインに PDF をそのまま入れるのは、通常最善の第一歩ではありません。",
+      "pile": "すでにある PDF の山",
+      "list": [
+        "製品マニュアル",
+        "技術ドキュメント",
+        "社内 SOP",
+        "契約書",
+        "研究レポート",
+        "研修資料"
+      ],
+      "pipe": "機能するパイプライン",
+      "pipeCode": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+      "close": "<strong>PDF → Markdown は AI ナレッジベースのデータ準備ステップです。</strong>構造がなければ、チャンク化は誤った位置で切れ、埋め込みは無関係なセクションを混ぜ、検索は回答ではなく塊を返します。Markdown なら見出しは見出し、表は表、セクションはセクションとして取得できます。"
+    },
+    "uc2": {
+      "h": "長い PDF を LLM に渡す",
+      "p": "100 ページのファイル：<em>2026 Global Market Research Report</em>。ChatGPT、Claude、Gemini にレポート要約、主要数値抽出、競合分析、市場トレンド、ドキュメント内 Q&A をさせたい。",
+      "want": "モデルに期待すること",
+      "list": [
+        "レポートを要約",
+        "主要数値を抽出",
+        "競合を分析",
+        "市場トレンドを発見",
+        "ドキュメント内の質問に回答"
+      ],
+      "close": "変換後、モデルはアウトラインを推測ではなく追えます。「テキストの壁を貼る」と「モデルにドキュメントを渡す」の違いです。",
+      "code": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n..."
+    },
+    "uc3": {
+      "h": "論文と研究",
+      "p": "研究者は PDF の中で生活しています。Markdown になれば全文検索、セクション抽出、研究ライブラリ整理、文献ナレッジベース構築、AI 要約、コーパス RAG、論文比較が可能になります。",
+      "codeIn": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+      "codeOut": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+      "close": "論文は PDF として引用可能。作業用コピーはクエリ可能なものになります。"
+    },
+    "uc4": {
+      "h": "技術ドキュメント",
+      "p": "既存の技術資料の多くは PDF で配布されています。チームはライブファイルを求め — GitHub、GitLab、Notion、ドキュメントサイト、社内 KB へ。",
+      "from": "固定マニュアルから",
+      "to": "保守可能なファイルへ",
+      "close": "保守コストが下がります：diff、レビュー、検索、再公開がソフトウェアと同様に機能します。"
+    },
+    "uc5": {
+      "h": "PDF → Web サイト",
+      "p": "ダウンロードだった製品マニュアルがサイトになれます。PDF は保存するファイル。Markdown パスは検索・ナビゲーション・Web 公開できるドキュメントに。",
+      "code": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website"
+    },
+    "uc6": {
+      "h": "コンテンツ再利用",
+      "p": "会社には<file>Company Handbook.pdf</file>がある。1 ファイルに閉じ込めるべきではありません。再利用：1 つの真実の源、多数の出力 — 構造がページから独立して初めて可能になります。",
+      "code": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation"
+    },
+    "tools": {
+      "chatgpt": "ChatGPT & RAG 向け PDF → Markdown",
+      "obsidian": "Obsidian 向け PDF → Markdown",
+      "notion": "Notion 向け PDF → Markdown"
+    },
+    "ba": {
+      "eyebrow": "Before / After",
+      "title": "テキスト抽出はドキュメント理解ではありません。",
+      "before": "Before — ソフトウェアから見た PDF",
+      "after": "After — 同じコンテンツの Markdown",
+      "beforeCode": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "afterCode": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "p": "ページ上の行。順序は合っているかも、合っていないかも。見出しレベルは推測。変換後、見出し、境界、階層が明示 — ページから文字列を引き抜くのとドキュメントを復元するのとの違いです。",
+      "close": "AI システムはその階層を使います。検索も。エディターも。PDF はそれを提供しません。"
+    },
+    "map": {
+      "eyebrow": "変換後",
+      "title": "1 回の変換。3 つの方向。",
+      "p": "PDF は人間向けに保持。次の読者がエディター、検索インデックス、モデル、サイトなら変換。",
+      "pdf": "閲覧 / 共有 / 印刷 / アーカイブ",
+      "read": "閲覧 / 共有",
+      "readD": "人がページを読む",
+      "convert": "変換",
+      "extract": "コンテンツ抽出",
+      "md": "構造化ソースオブトゥルース",
+      "edit": "人間による編集",
+      "editD": "コンテンツ運用",
+      "aiD": "ナレッジベース",
+      "web": "Web サイト",
+      "webD": "HTML / ドキュメントサイト"
+    },
+    "job": {
+      "pdf": "閲覧 / 共有 / 印刷",
+      "md": "執筆 / 構造化 / 処理",
+      "conv": "抽出 / 変換 / 再利用"
+    },
+    "who": {
+      "eyebrow": "対象ユーザー",
+      "title": "PDF の山を引き継ぎ、次に何かしなければならない人向け。",
+      "people": [
+        {
+          "title": "AI・プラットフォームチーム",
+          "body": "マニュアル、SOP、契約書、研修資料を RAG アシスタントに。"
+        },
+        {
+          "title": "研究者・アナリスト",
+          "body": "論文や長いレポートを検索、比較、質問。"
+        },
+        {
+          "title": "ドキュメント・コンテンツチーム",
+          "body": "API PDF、ユーザーマニュアル、ハンドブックを Git、Notion、ドキュメントサイトへ。"
+        },
+        {
+          "title": "PDF から抜け出したいすべての人",
+          "body": "編集、表抽出、Web サイト再公開、作業用コピーではなかったファイルの再利用。"
+        }
+      ],
+      "close": "PDF が完成していれば PDF のまま。作業が未完了なら変換。"
+    },
+    "intent": {
+      "eyebrow": "よく検索されるキーワード",
+      "title": "スキャン、表、RAG、チャット、フォルダー一括。",
+      "lede": "メインクエリの隣にある検索意図。各々がファイルが乗り越えるべきジョブ — 形式の講義ではありません。"
+    },
+    "intents": [
+      {
+        "id": "intent-ocr",
+        "tag": "OCR",
+        "tagKind": "pdf",
+        "h": "OCR でスキャン PDF を変換",
+        "p": "スキャンしたハンドブックは画像の塊。OCR までテキスト層はありません — OCR だけでは文字列の流れが残るだけ。有用なのは OCR + 構造：読み順、見出しレベル、表を表として再構築。検索、チャンク化、編集可能になります。契約書、請求書、古い論文はスキャンが多い。デジタル生成ファイルは OCR 省略可、スキャンはアウトライン省略不可。",
+        "href": "/scanned-pdf-to-markdown",
+        "link": "OCR コンバーターを開く"
+      },
+      {
+        "id": "intent-rag",
+        "tag": "RAG",
+        "tagKind": "md",
+        "h": "RAG と埋め込み向け構造化ファイル",
+        "p": "PDF をそのまま埋め込むと、見出しを認識できず表やセクションの途中で分割されることが多い。関連しそうだがそうでない塊が返されます。明示的見出しと実際の表を持つ Markdown をパイプラインに渡せば、チャンク化はアウトラインに従えます。",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "LLM & RAG 対応 Markdown"
+      },
+      {
+        "id": "intent-tables",
+        "tag": "構造",
+        "tagKind": "bridge",
+        "h": "表と見出しを保持",
+        "p": "コピペや素朴な抽出は 2 段組レポートを 1 列に潰す：見出しは大きい文字、表はスペースの残り。列ソートや「セクション 4.2」取得ができません。変換は Markdown 見出しと pipe 表を出力し、人間が読む順序を維持すべきです。",
+        "href": "/pdf-table-to-markdown",
+        "link": "表を Markdown に抽出"
+      },
+      {
+        "id": "intent-chatgpt",
+        "tag": "ChatGPT",
+        "tagKind": "pdf",
+        "h": "変換 vs ChatGPT へのコピペ",
+        "p": "ChatGPT、Claude、Gemini にページを貼るのは 1 回限りの要約には有効。ライブラリ全体の計画としては弱い。モデルは弱く順序付けられた塊を得ます。先に変換、後でプロンプト：アウトラインはファイル内に。同じ Markdown を別モデル、社内 RAG、Git に渡せます。",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "ChatGPT & LLM 向けに変換"
+      },
+      {
+        "id": "intent-batch",
+        "tag": "Batch",
+        "tagKind": "md",
+        "h": "PDF を一括 Markdown 変換",
+        "p": "1 ファイルはデモ。運用はフォルダー：200 のマニュアル、契約アーカイブ、論文コーパス。一括変換はファイル名保持、既存 .md スキップ、OCR 必要なスキャンは可視的に失敗。まず複雑なサンプルで試してから全体に適用。",
+        "href": "/batch-pdf-to-markdown",
+        "link": "一括コンバーターを開く"
+      }
+    ],
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "変換前に知っておきたい質問。"
+    },
+    "faqs": [
+      {
+        "q": "ChatGPT、Claude、Gemini に PDF を直接アップロードすればいいのでは？",
+        "a": "1 回限りなら可能です。100 ページのレポートは弱い構造の塊として渡されます。変換済み Markdown はアウトラインを明示 — 要約、抽出、Q&A の土台になります。ナレッジベースでは差がより大きく：RAG はページ座標ではなく実際の見出し付きチャンクを求めます。変換は完全にブラウザ内 — ファイルは当社にアップロードされません。"
+      },
+      {
+        "q": "Word やプレーンテキストではなく Markdown なのはなぜ？",
+        "a": "Word はレイアウトをファイルに混在。プレーンテキストは階層を捨てます。Markdown はコンテンツと構造を保持しページデザインを捨てる — 編集、Git、検索、埋め込み、LLM に必要なものです。"
+      },
+      {
+        "q": "実際に何を抽出しますか？",
+        "a": "テキスト、見出し、表、リスト、リンク、ドキュメント構造。目的は生ダンプではなく、アウトラインを持つファイルです。ページヘッダー、フッター、ページ番号は自動削除。"
+      },
+      {
+        "q": "スキャン PDF は？",
+        "a": "多くの PDF はページの画像。構造化する前に OCR が必要。ブラウザ内 OCR コンバーターをご利用ください。"
+      },
+      {
+        "q": "多段組、脚注、埋め込みフォント、複雑な表は保持されますか？",
+        "a": "難しいケース — かつ一般的。専用 PDF → Markdown ステップが存在する理由です。文字列連結だけの変換は読み順を乱しアウトラインを失います。"
+      },
+      {
+        "q": "1 ファイルとアーカイブ全体、どちら向け？",
+        "a": "両方。1 レポートを LLM に質問。1000 のマニュアル、SOP、研修 PDF をチャンク化、埋め込み、検索。フォルダーには一括コンバーター。いずれもローカル。"
+      },
+      {
+        "q": "元の PDF はまだ必要？",
+        "a": "安定した印刷忠実度の共有原本が必要ならはい。変換は契約書、請求書、アーカイブコピーの PDF を置き換えません。同じコンテンツの第二の人生を解き放ちます。"
+      },
+      {
+        "q": "Markdown をサイトや他形式に戻せますか？",
+        "a": "変換する理由の 1 つ。Markdown は HTML、PDF、Word、ドキュメントサイト、FAQ、ブログ、AI データセットに容易に変換。PDF はダウンロード。Markdown はソース。"
+      }
+    ],
+    "cta": {
+      "eyebrow": "はじめる",
+      "title": "PDF を行き止まりとして扱うのをやめましょう。",
+      "p1": "PDF は閲覧と共有に優れますが、モダンなコンテンツワークフロー向けではありません。Markdown はコンテンツを構造化、編集可能、検索可能、AI 向きにします。",
+      "p2": "PDF をクリーンで構造化された Markdown に — 編集、検索、AI、RAG などに対応。"
+    },
+    "footer": {
+      "aria": "フッター",
+      "convert": "変換",
+      "line": "PDF — 閲覧 / 共有 / 印刷 · Markdown — 執筆 / 構造 / 処理 · PDF → Markdown — 抽出 / 変換 / 再利用"
+    },
+    "subtitle": "ブラウザで PDF をクリーンな Markdown に変換。LLM、RAG、Obsidian、Notion ワークフロー向け。"
+  },
+  "Guide": {
+    "metaTitle": "PDF Markdown 変換方法 — 無料ステップバイステップガイド",
+    "metaDescription": "3 ステップで PDF を Markdown に変換する方法。無料ブラウザコンバーター — アップロード不要、アカウント不要。LLM、Obsidian、ドキュメント向けテキスト PDF に対応。",
+    "keywords": [
+      "pdf markdown 変換 方法",
+      "pdf マークダウン 変換",
+      "pdf markdown チュートリアル",
+      "pdf markdown 変換 手順"
+    ],
+    "badge": "ステップバイステップガイド",
+    "h1": "PDF を Markdown に変換する方法",
+    "subtitle": "テキストベース PDF をブラウザでクリーンな Markdown に — 無料、プライベート、数秒で完了。上のコンバーターを使い、手順に従ってください。",
+    "features": [
+      {
+        "title": "1. PDF をアップロード",
+        "body": "テキストベース PDF を上のコンバーターにドラッグ＆ドロップ、またはクリックして選択。最大 50 MB 対応。出力を確認するにはサンプル PDF をお試しください。"
+      },
+      {
+        "title": "2. Markdown を確認",
+        "body": "プレビューとソースを切り替えて見出し、リスト、表を確認。オンライン編集は未搭載 — 調整が必要なら出力をエディターにコピーしてください。"
+      },
+      {
+        "title": "3. コピーまたはダウンロード",
+        "body": "Markdown をコピーして ChatGPT、Obsidian、コードエディターに貼り付け。または .md をダウンロードして Vault、リポジトリ、RAG パイプラインへ。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "どの PDF が最も適していますか？",
+        "a": "テキストベース PDF — Word や Google Docs からエクスポートしたレポート、論文、電子書籍 — が最も確実に変換されます。スキャンや画像のみ PDF には OCR が必要です。"
+      },
+      {
+        "q": "変換は本当にローカルですか？",
+        "a": "はい。解析と Markdown 生成は WebAssembly で完全にブラウザ内で実行。PDF は当社サーバーにアップロードされません。"
+      },
+      {
+        "q": "PDF からテキストをコピーするのではなく Markdown を使う理由は？",
+        "a": "コピペは表の列を壊し、見出し階層を失い、ページヘッダーを含みます。構造化 Markdown はレイアウトをより少ないトークンで保持 — LLM とノートアプリに最適。"
+      },
+      {
+        "q": "複数 PDF を一度に変換できますか？",
+        "a": "はい。一括コンバーターで複数 PDF をドロップし、すべて ZIP でダウンロード — 無料・無制限、すべてブラウザ内。"
+      }
+    ]
+  },
+  "Best": {
+    "metaTitle": "最高の PDF Markdown 変換ツール（無料・プライベート）— 比較",
+    "metaDescription": "最高の無料 PDF Markdown 変換ツールをお探しですか？プライベートなブラウザツールを試し、CloudConvert、Pandoc、手動コピペとの比較をご覧ください。",
+    "keywords": [
+      "pdf markdown 変換 おすすめ",
+      "無料 pdf markdown 変換",
+      "pdf markdown コンバーター オンライン",
+      "最高 無料 pdf markdown",
+      "pdf markdown ツール"
+    ],
+    "badge": "無料 · プライベート · 比較",
+    "h1": "最高の PDF Markdown 変換ツール",
+    "subtitle": "無料・プライベート・ブラウザベースのコンバーター — 代替手段との正直な機能比較。ここで試してから比較してください。",
+    "howToName": "PDF を Markdown に変換する方法",
+    "howToSteps": [
+      "上のコンバーターに PDF をドロップ — ブラウザですぐ実行。",
+      "プレビューまたはソース表示で Markdown を確認。",
+      "結果をコピーするか .md ファイルをダウンロード。"
+    ],
+    "features": [
+      {
+        "title": "プライバシー第一",
+        "body": "最高のコンバーターはファイルをデバイスに保持。当ツールは 100% ブラウザ内 — アップロードなし、アカウントなし、トラッキングなし。"
+      },
+      {
+        "title": "本物の構造",
+        "body": "生テキストを超えて：優れたツールは見出し、リスト、真の Markdown 表を保持。当ツールはドキュメント構造を維持。"
+      },
+      {
+        "title": "難しいケースにも対応",
+        "body": "スキャン PDF、埋め込み画像、数十ファイル一括 — OCR、画像抽出、バッチモードでカバー。"
+      }
+    ],
+    "comparisonTitle": "比較",
+    "comparisonColumns": [
+      "機能",
+      "当ツール",
+      "CloudConvert",
+      "Pandoc",
+      "コピー & ペースト"
+    ],
+    "comparisonRows": [
+      [
+        "無料 & 無制限",
+        "✓",
+        "制限あり",
+        "✓",
+        "✓"
+      ],
+      [
+        "アップロード不要（プライベート）",
+        "✓",
+        "✗",
+        "✓",
+        "✓"
+      ],
+      [
+        "インストール不要",
+        "✓",
+        "✓",
+        "✗",
+        "✓"
+      ],
+      [
+        "表 → Markdown",
+        "✓",
+        "部分的",
+        "✓",
+        "✗"
+      ],
+      [
+        "画像を保持",
+        "✓",
+        "✓",
+        "✓",
+        "✗"
+      ],
+      [
+        "スキャン向け OCR",
+        "✓",
+        "✓",
+        "✗",
+        "✗"
+      ],
+      [
+        "バッチ + ZIP",
+        "✓",
+        "✓",
+        "手動",
+        "✗"
+      ],
+      [
+        "ライブプレビュー",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ]
+    ],
+    "faqs": [
+      {
+        "q": "最高の PDF Markdown 変換ツールは？",
+        "a": "ドキュメント構造を保持し、プライバシーを尊重し、ファイルタイプに対応するツール。アップロード・インストール不要のブラウザツール — 表、画像、OCR、バッチ対応 — が無料で大多数のニーズをカバー。"
+      },
+      {
+        "q": "最高の無料 PDF Markdown 変換ツールは？",
+        "a": "当ツールは無制限無料で完全にブラウザ内。多くの無料オンラインコンバーターと異なりファイルをアップロードせず、表、画像、スキャン PDF、一括変換に対応。"
+      },
+      {
+        "q": "オンライン PDF Markdown コンバーターは安全？",
+        "a": "ファイルをアップロードするかどうか次第。多くはアップロードし、機密文書にはリスク。当コンバーターはすべてブラウザ内で処理 — ファイルはデバイスから出ません。"
+      },
+      {
+        "q": "ソフトウェアのインストールは必要？",
+        "a": "いいえ。Pandoc などの CLI ツールは強力ですがインストールが必要。当コンバーターは任意のモダンブラウザですぐ動作。"
+      }
+    ]
+  },
+  "Ocr": {
+    "metaTitle": "スキャン PDF → Markdown — 無料 OCR コンバーター",
+    "metaDescription": "スキャンまたは画像のみ PDF を内蔵 OCR で Markdown に。100 以上の言語を認識、ブラウザ内実行、ファイルはアップロードされません。",
+    "keywords": [
+      "スキャン pdf markdown 変換",
+      "pdf markdown ocr",
+      "ocr pdf markdown",
+      "画像 pdf markdown",
+      "スキャン pdf markdown 変換"
+    ],
+    "badge": "OCR · スキャン PDF",
+    "h1": "スキャン PDF → Markdown",
+    "subtitle": "スキャンまたは画像のみ PDF からテキストを抽出し、クリーンな Markdown を取得。OCR は完全にブラウザ内 — ファイルはデバイスから出ません。",
+    "privacyBadge": "100% プライベート — ファイルはブラウザ外に出ません",
+    "languageLabel": "ドキュメントの言語",
+    "dropTitle": "スキャン PDF をここにドロップ、または",
+    "dropClickBrowse": "クリックして選択",
+    "dropSubtitle": "画像またはスキャン PDF · ブラウザ内 OCR · 最大 50 MB",
+    "samplePrompt": "PDF をお持ちでない場合",
+    "trySample": "サンプルを試す",
+    "modelNote": "初回は言語モデルをダウンロード（約 2–15 MB）。以降はオフライン — ファイルはローカル処理。",
+    "paneOriginal": "元の PDF",
+    "rendering": "ページをレンダリング中",
+    "recognizing": "テキストを認識中",
+    "tabPreview": "プレビュー",
+    "tabSource": "ソース",
+    "ocrProgress": "ページ {page}/{total} · {pct}%",
+    "actionNewFile": "新しいファイル",
+    "errorNotPdf": "PDF ファイルをアップロードしてください。",
+    "errorTooLarge": "ファイルが 50 MB を超えています。より大きなファイルは現在サポートされていません。",
+    "errorNoPages": "この PDF からページを読み取れませんでした。",
+    "errorFailed": "OCR に失敗しました。別のファイルをお試しください。",
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "アーキビスト",
+        "body": "スキャン書籍、領収書、古い文書を編集可能な Markdown にデジタル化。"
+      },
+      {
+        "title": "学生",
+        "body": "撮影した講義スライドや配布資料を検索可能なノートに。"
+      },
+      {
+        "title": "オフィス",
+        "body": "スキャン契約書やフォームからテキストを抽出、再入力不要。"
+      }
+    ],
+    "howToName": "スキャン PDF を Markdown に変換する方法",
+    "howToSteps": [
+      "ドキュメントの言語を選択し、スキャンまたは画像のみ PDF をドロップ。",
+      "各ページがブラウザ内でレンダリング・認識されるのを確認。",
+      "OCR 完了後、Markdown をコピーするか .md をダウンロード。"
+    ],
+    "features": [
+      {
+        "title": "内蔵 OCR",
+        "body": "通常コンバーターが扱えないスキャン・画像のみ PDF からテキストを読み取り — ブラウザ内 Tesseract 搭載。"
+      },
+      {
+        "title": "100 以上の言語",
+        "body": "英語、中国語、日本語、韓国語、スペイン語、フランス語、ドイツ語、ロシア語など多数に対応。"
+      },
+      {
+        "title": "プライバシー by design",
+        "body": "OCR は WebAssembly でローカル実行。言語モデルのみ取得 — ドキュメントはデバイスから出ません。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "スキャン PDF とは？",
+        "a": "スキャンまたは画像のみ PDF には選択可能なテキスト層がありません — ページの画像そのもの。通常コンバーターは何も返さず、OCR でテキストを読み取る必要があります。"
+      },
+      {
+        "q": "OCR は無料でプライベート？",
+        "a": "はい。認識は WebAssembly で完全にブラウザ内。言語モデルのみ CDN からダウンロード — PDF はアップロードされません。"
+      },
+      {
+        "q": "対応言語は？",
+        "a": "開始前に英語、簡体字・繁体字中国語、日本語、韓国語、スペイン語、フランス語、ドイツ語、ロシア語などから選択。"
+      },
+      {
+        "q": "OCR が通常変換より遅いのはなぜ？",
+        "a": "OCR は各ページ画像をピクセル単位で解析して文字を認識 — 既存テキスト層の読み取りより重い。大きなドキュメントほど時間がかかります。"
+      }
+    ]
+  },
+  "Obsidian": {
+    "metaTitle": "Obsidian 向け PDF Markdown 変換 — オフライン & クリーン",
+    "metaDescription": "PDF を Obsidian 向けクリーン Markdown ノートに。100% ブラウザ内オフライン — .md を Vault に直接ドロップ、見出し、リスト、表を保持。",
+    "keywords": [
+      "obsidian pdf markdown 変換",
+      "pdf markdown obsidian",
+      "pdf obsidian インポート",
+      "pdf md obsidian"
+    ],
+    "badge": "オフライン · Vault 対応",
+    "h1": "Obsidian 向け PDF → Markdown",
+    "subtitle": "PDF をクリーンなオフライン Markdown ノートに変換 — Obsidian Vault に直接配置、見出し、リスト、表を保持。",
+    "features": [
+      {
+        "title": "Vault 対応出力",
+        "body": ".md をダウンロードして Vault に移動。見出しがノート構造に、表が Markdown 表のまま。"
+      },
+      {
+        "title": "完全オフライン",
+        "body": "アップロード不要 — ネットワークなしでも動作。プライベートな研究ノートやクリッピングに最適。"
+      },
+      {
+        "title": "クリーンなノート",
+        "body": "ページ番号と繰り返しヘッダー・フッターを削除 — 印刷アーティファクトでノートを汚しません。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ファイルはサーバーにアップロードされますか？",
+        "a": "いいえ。変換は WebAssembly で完全にブラウザ内。PDF はデバイスから出ません — 契約書、研究、その他プライベート文書に安全。"
+      },
+      {
+        "q": "Obsidian に結果をインポートする方法は？",
+        "a": "「.md をダウンロード」をクリックし、Obsidian Vault 内の任意フォルダーに移動。すぐに新しいノートとして表示。"
+      },
+      {
+        "q": "表とリストはインポート後も保持されますか？",
+        "a": "はい。表は GitHub Flavored Markdown 表に、ネストした箇条書きはインデントを保持。"
+      }
+    ],
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "研究者 & 学生",
+        "body": "論文や講義 PDF を Vault 内の検索可能なノートに。"
+      },
+      {
+        "title": "PKM 愛好家",
+        "body": "クリッピングやレポートを構造を保った Zettelkasten に。"
+      },
+      {
+        "title": "ライター",
+        "body": "ソース PDF から Obsidian で執筆、見出しや表を失わずに。"
+      }
+    ]
+  },
+  "ChatGPT": {
+    "metaTitle": "ChatGPT、LLM、RAG 向け PDF Markdown 変換",
+    "metaDescription": "ChatGPT、Claude、RAG パイプライン向けクリーン Markdown に PDF を変換。コンパクトで構造化された出力 — ブラウザ内ローカル処理。",
+    "keywords": [
+      "chatgpt pdf markdown 変換",
+      "llm pdf markdown",
+      "rag pdf markdown",
+      "ai pdf markdown 変換"
+    ],
+    "badge": "LLM 対応出力",
+    "h1": "ChatGPT & LLM 向け PDF → Markdown",
+    "subtitle": "ChatGPT、Claude、RAG パイプラインが確実に解析できるコンパクトで構造化された Markdown に PDF を変換 — すべてブラウザ内ローカル。",
+    "features": [
+      {
+        "title": "トークン効率",
+        "body": "Markdown は生 PDF テキストダンプよりはるかにコンパクト — モデルのコンテキストウィンドウにより多く入ります。"
+      },
+      {
+        "title": "モデルが理解する構造",
+        "body": "クリーンな見出しとリストがドキュメント階層を与え、グラウンディング改善と幻覚低減。"
+      },
+      {
+        "title": "RAG 対応",
+        "body": "予測可能な Markdown はベクトル DB へのチャンク化・埋め込みが容易 — retrieval augmented generation 向け。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ファイルはサーバーにアップロードされますか？",
+        "a": "いいえ。変換は WebAssembly で完全にブラウザ内。PDF はデバイスから出ません — 契約書、研究、その他プライベート文書に安全。"
+      },
+      {
+        "q": "LLM には生 PDF テキストより Markdown が良い理由は？",
+        "a": "Markdown は構造（見出し、リスト、表）をごく少数の追加トークンで符号化 — モデルの解釈を助けプロンプトを小さく保ちます。"
+      },
+      {
+        "q": "RAG パイプラインで出力を使えますか？",
+        "a": "はい。クリーン Markdown はチャンク分割と埋め込みが容易 — 見出しが自然なチャンク境界になります。"
+      }
+    ],
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "プロンプトエンジニア",
+        "body": "コンパクト Markdown を ChatGPT や Claude に貼り、プロンプトあたりより多くのコンテキストを。"
+      },
+      {
+        "title": "RAG 開発者",
+        "body": "クリーン Markdown をチャンク化・埋め込み — 確実な retrieval augmented generation。"
+      },
+      {
+        "title": "データチーム",
+        "body": "乱雑な PDF を AI パイプライン向け構造化テキストに標準化。"
+      }
+    ]
+  },
+  "Table": {
+    "metaTitle": "PDF 表 → Markdown — きれいな表変換",
+    "metaDescription": "PDF から GitHub Flavored Markdown 表を抽出。列構造を自動検出、ブラウザ内ローカル処理 — アップロード不要。",
+    "keywords": [
+      "pdf 表 markdown 変換",
+      "pdf 表 markdown",
+      "pdf markdown 表",
+      "pdf 表 抽出 markdown"
+    ],
+    "badge": "表 · GFM 出力",
+    "h1": "PDF 表 → Markdown",
+    "subtitle": "PDF からクリーンな GitHub Flavored Markdown 表を抽出。列境界を自動検出、すべてブラウザ内。",
+    "features": [
+      {
+        "title": "自動列検出",
+        "body": "エンジンがセルを水平位置で整列 — 複数列の表も正しく構造化。"
+      },
+      {
+        "title": "GFM 表",
+        "body": "GitHub、Obsidian、Notion、ほとんどのエディターでレンダリングされる標準 GFM 表を出力。"
+      },
+      {
+        "title": "混合ドキュメント対応",
+        "body": "同じ PDF 内の表、見出し、本文を 1 パスで処理。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ファイルはサーバーにアップロードされますか？",
+        "a": "いいえ。変換は WebAssembly で完全にブラウザ内。PDF はデバイスから出ません — 契約書、研究、その他プライベート文書に安全。"
+      },
+      {
+        "q": "対応する表レイアウトは？",
+        "a": "明確な列間隔のテキスト表が最良。結合セルは Markdown 表がセル結合非対応のためフラット化。"
+      },
+      {
+        "q": "表だけコピーできますか？",
+        "a": "はい。PDF を変換し、ソース表示に切り替え、必要な表ブロックをコピー。"
+      }
+    ],
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "アナリスト",
+        "body": "レポートから価格、財務、データ表を編集可能 Markdown に。"
+      },
+      {
+        "title": "開発者",
+        "body": "PDF 表を GitHub Flavored Markdown 表として docs や README に。"
+      },
+      {
+        "title": "研究者",
+        "body": "論文から結果表を抽出してノートや分析に。"
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "Notion 向け PDF Markdown 変換 — クリーンインポート",
+    "metaDescription": "Notion 向け Markdown に PDF を変換。クリーンな見出し、リスト、表 — 数秒で Notion ページに貼り付け。100% ブラウザ内ローカル。",
+    "keywords": [
+      "notion pdf markdown 変換",
+      "pdf markdown notion",
+      "pdf notion インポート",
+      "pdf markdown notion"
+    ],
+    "badge": "Notion 対応 · 貼り付けでインポート",
+    "h1": "Notion 向け PDF → Markdown",
+    "subtitle": "PDF レポート、仕様書、ドキュメントを Notion に直接貼れるクリーン Markdown に — 見出し、リスト、表を保持、すべてローカル処理。",
+    "features": [
+      {
+        "title": "貼り付けフレンドリー",
+        "body": "Notion は貼り付け時に Markdown を認識 — 見出しがブロックに、リストはネスト、GFM 表は Notion 表に。"
+      },
+      {
+        "title": "デフォルトでプライベート",
+        "body": "社内 Wiki や戦略ドキュメントはデバイス上に。アップロードなし — 機密 PDF がサードパーティサーバーに行きません。"
+      },
+      {
+        "title": "任意の Notion ワークスペース",
+        "body": "チーム Wiki、個人ノート、プロジェクト docs に貼り付け。別ツール経由が良ければ .md をダウンロード。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Markdown を Notion に入れる方法は？",
+        "a": "PDF を変換し、Markdown をコピーして新しい Notion ページに貼り付け。見出し、リスト、表は自動でブロックに。大きな docs はセクションごとに貼り付け。"
+      },
+      {
+        "q": "PDF から Notion 表への変換はうまくいきますか？",
+        "a": "テキストベース PDF 表は GFM 表としてエクスポート — Notion で良好にレンダリング。複雑な結合セルはフラット化されることがあります。"
+      },
+      {
+        "q": "ファイルはアップロードされますか？",
+        "a": "いいえ。変換は完全にブラウザ内。PDF はデバイスから出ません。"
+      }
+    ],
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "チーム",
+        "body": "仕様書、Wiki、レポートを構造を保って Notion ページへ。"
+      },
+      {
+        "title": "プロダクトマネージャー",
+        "body": "PDF ブリーフィングを数秒で編集可能 Notion ドキュメントに。"
+      },
+      {
+        "title": "ナレッジマネージャー",
+        "body": "散在 PDF から検索可能な Notion ナレッジベースを構築。"
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF Markdown Python — ブラウザツール & スクリプトのヒント",
+    "metaDescription": "Python を書く前に PDF を Markdown に — 無料ローカルブラウザツール。PyMuPDF、pdfplumber、今後の API のヒントも。",
+    "keywords": [
+      "pdf markdown python",
+      "python pdf markdown 変換",
+      "pdf markdown 変換 python",
+      "pdf markdown api"
+    ],
+    "badge": "pip 不要 · 即座に出力",
+    "h1": "Python 向け PDF → Markdown",
+    "subtitle": "ノートブック、ETL、プロトタイプ用 Markdown が必要？ブラウザでローカル変換し、文字列を Python ワークフローにコピー — 環境セットアップ不要。",
+    "features": [
+      {
+        "title": "セットアップ不要の変換",
+        "body": "1 回限りのファイルには pymupdf、pdfplumber、Java 依存をスキップ。アップロード、Markdown 文字列をコピー、スクリプトに貼り付け。"
+      },
+      {
+        "title": "解析向け構造",
+        "body": "予測可能な見出しレベルと GFM 表 — セクション分割や LangChain、LlamaIndex 等 Python RAG スタックへの投入が容易。"
+      },
+      {
+        "title": "API 近日公開",
+        "body": "一括変換と REST API はロードマップ上。本番パイプラインの早期アクセスはお問い合わせください。"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Python ライブラリや pip パッケージはありますか？",
+        "a": "当サイトはブラウザコンバーターで pip モジュールではありません。クイック 1 ファイルジョブには上のツールを。完全プログラムパイプラインには PyMuPDF、pdfplumber、marker — または今後の API。"
+      },
+      {
+        "q": "Jupyter や pandas で出力を使えますか？",
+        "a": "はい。Markdown をノートブックセルにコピーしてドキュメント化、または GFM 表を pandas.read_table で DataFrame に。"
+      },
+      {
+        "q": "本番 Python スクリプトの代替になりますか？",
+        "a": "ad-hoc とプロトタイプにはブラウザツールの方が起動が速い。CI や cron の自動バッチにはスクリプトか API が良い — API はその用途向けに計画中。"
+      }
+    ],
+    "audienceTitle": "利用者",
+    "audience": [
+      {
+        "title": "データサイエンティスト",
+        "body": "PDF 解析ライブラリをセットアップせずノートブック用 Markdown を取得。"
+      },
+      {
+        "title": "ML エンジニア",
+        "body": "LangChain、LlamaIndex RAG スタック向けにドキュメントを準備。"
+      },
+      {
+        "title": "自動化担当",
+        "body": "フルパイプラインをスクリプト化する前にブラウザで変換をプロトタイプ。"
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "プライバシーポリシー",
+    "metaDescription": "PDF to Markdown のデータ取り扱いについて。PDF 変換はブラウザ内ローカル実行。サイト利用分析に Google Analytics と Microsoft Clarity を使用。",
+    "h1": "プライバシーポリシー",
+    "lastUpdated": "最終更新：2026 年 6 月 4 日",
+    "intro": "PDF to Markdown（pdftomarkdown.run）は、PDF を Markdown に変換する無料ブラウザツールです。本プライバシーポリシーでは、収集する情報、利用方法、選択肢について説明します。",
+    "sections": [
+      {
+        "title": "1. PDF 変換 — ファイルはデバイスに留まります",
+        "paragraphs": [
+          "PDF を変換する際、すべての処理は WebAssembly を用いて完全にブラウザ内で行われます。PDF ファイルは変換のために当社サーバーや第三者サービスにアップロードされることはありません。",
+          "PDF の内容や生成した Markdown 出力の保存、アクセス、保持は行いません。ブラウザタブを閉じると、当社からはそのデータは消えます。"
+        ]
+      },
+      {
+        "title": "2. 自動収集する情報",
+        "paragraphs": [
+          "当サイトを訪問すると、当社と分析パートナーが以下のような技術・利用情報を自動収集する場合があります："
+        ],
+        "bullets": [
+          "訪問ページ、クリックしたリンク、サイト滞在時間",
+          "ブラウザ種類、OS、デバイス種類、画面解像度",
+          "おおよその地理的位置（IP アドレスから推定した国・地域）",
+          "参照元サイトまたは検索クエリ",
+          "スクロール、クリック、マウス移動などのセッション操作（Microsoft Clarity 経由）"
+        ]
+      },
+      {
+        "title": "3. 使用する分析サービス",
+        "paragraphs": [
+          "訪問者のサイト利用を理解しプロダクト改善のため、以下の第三者分析ツールを使用。これらのサービスは Cookie 等をブラウザに設定する場合があります。"
+        ],
+        "bullets": [
+          "Google Analytics（GA4）— Google LLC 提供。ページ閲覧やイベントを含むサイトとの相互作用データを収集。Google プライバシーポリシーに従い処理。詳細：https://policies.google.com/privacy。オプトアウト：https://tools.google.com/dlpage/gaoptout の Google Analytics オプトアウト アドオン。",
+          "Microsoft Clarity — Microsoft Corporation 提供。Cookie 等でセッション再生、ヒートマップ、操作データを記録し UX 理解と使いやすさ問題の修正。Microsoft プライバシーポリシーに従い処理。詳細：https://privacy.microsoft.com/en-us/privacystatement。"
+        ]
+      },
+      {
+        "title": "4. Cookie と類似技術",
+        "paragraphs": [
+          "分析プロバイダーは Cookie、local storage、類似トラッキング技術で上記利用データを収集。ブラウザ設定で Cookie を管理 — 多くのブラウザでブロック・削除可能。",
+          "Cookie 無効化は通常、Cookie 不要で完全ブラウザ内実行の PDF 変換コア機能に影響しません。"
+        ]
+      },
+      {
+        "title": "5. 収集情報の利用目的",
+        "paragraphs": [
+          "自動収集情報は以下に利用します："
+        ],
+        "bullets": [
+          "サイトパフォーマンス監視とエラー修正",
+          "最も有用な機能・ページの理解",
+          "UX 改善とプロダクト開発優先順位",
+          "不正利用・詐欺行為の検知と防止"
+        ]
+      },
+      {
+        "title": "6. データ共有",
+        "paragraphs": [
+          "個人情報を販売しません。Google Analytics と Microsoft Clarity が収集する利用データは、各プライバシーポリシーに記載のとおりそれぞれのプロバイダーと共有。",
+          "法律、裁判所命令で要求される場合、またはユーザー・公衆の権利、財産、安全保護のため開示する場合があります。"
+        ]
+      },
+      {
+        "title": "7. データ保持",
+        "paragraphs": [
+          "分析データは Google Analytics と Microsoft Clarity の保持ポリシーに従い保持。PDF と変換出力は当社サーバーに保存されません。"
+        ]
+      },
+      {
+        "title": "8. お客様の権利と選択",
+        "paragraphs": [
+          "所在地により、個人データのアクセス、訂正、削除の権利がある場合があります。また："
+        ],
+        "bullets": [
+          "上記リンクのブラウザアドオンで Google Analytics をオプトアウト",
+          "ブラウザ設定で Cookie をブロックまたは削除",
+          "プライバシー重視ブラウザや拡張機能でトラッキング制限"
+        ]
+      },
+      {
+        "title": "9. 児童のプライバシー",
+        "paragraphs": [
+          "本サービスは 13 歳未満を対象としていません。児童から故意に個人情報を収集しません。"
+        ]
+      },
+      {
+        "title": "10. 本ポリシーの変更",
+        "paragraphs": [
+          "本プライバシーポリシーを随時更新する場合があります。更新時はページ上部の「最終更新」日を改定。変更後の継続利用は更新ポリシーの受諾とみなします。"
+        ]
+      },
+      {
+        "title": "11. お問い合わせ",
+        "paragraphs": [
+          "本プライバシーポリシーに関するご質問は privacy@pdftomarkdown.run までご連絡ください。"
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "PDF to Markdown について — 無料ローカルコンバーター",
+    "metaDescription": "PDF to Markdown（pdftomarkdown.run）について：プライバシー、LLM ワークフロー、ナレッジ管理向け無料ブラウザ PDF → Markdown ツール。",
+    "h1": "PDF to Markdown について",
+    "intro": "PDF to Markdown（pdftomarkdown.run）は、PDF を完全にブラウザ内でクリーンな Markdown に変換する無料オンラインツールです。アップロード不要、アカウント不要。",
+    "privacyLink": "プライバシーポリシーを読む",
+    "contactLink": "お問い合わせ",
+    "sections": [
+      {
+        "title": "私たちがすること",
+        "paragraphs": [
+          "開発者、研究者、ナレッジワーカーが PDF を LLM、RAG パイプライン、Obsidian、Notion 等向け構造化 Markdown に変換するのを支援。",
+          "コンバーターは見出し、リスト、ネスト箇条書き、表を保持し、ページ番号と繰り返しヘッダーを削除 — クリーンでトークン効率の良い出力。"
+        ]
+      },
+      {
+        "title": "作った理由",
+        "paragraphs": [
+          "多くのオンライン PDF コンバーターはサーバーへのアップロードが必要 — 契約書、社内レポート、研究ノートには致命的。",
+          "既存ツールは表が壊れ LLM に無駄なトークンを消費する乱雑な Markdown を出力することが多い。PDF to Markdown は両方解決：ファイルはデバイスに留まり、出力はモダン AI・ノートワークフロー向け。"
+        ]
+      },
+      {
+        "title": "仕組み",
+        "paragraphs": [
+          "PDF をドロップすると、解析と変換は WebAssembly でブラウザ内ローカル実行。ファイルは当社サーバーに送信されません。",
+          "Google Analytics と Microsoft Clarity は一般的なサイト利用理解のみ — ドキュメントへのアクセスではありません。"
+        ],
+        "bullets": [
+          "100% ブラウザ内ローカル PDF 処理",
+          "登録不要、透かしなし、単一ファイルの日次制限なし",
+          "ページ読み込み後はオフラインでも動作"
+        ]
+      },
+      {
+        "title": "今後の予定",
+        "paragraphs": [
+          "ユーザーフィードバックに基づき変換品質の改善と機能追加を積極的に進めています。"
+        ],
+        "bullets": [
+          "スキャン・画像のみ PDF 向け OCR サポート",
+          "複数ファイルの一括変換",
+          "数式・表処理の高精度化",
+          "自動化と RAG パイプライン向け開発者 API"
+        ]
+      },
+      {
+        "title": "お問い合わせ",
+        "paragraphs": [
+          "ご質問、フィードバック、パートナーシップのご提案はお問い合わせページへ — すべてのメッセージを読んでいます。"
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "PDF to Markdown お問い合わせ",
+    "metaDescription": "フィードバック、バグ報告、プライバシーに関するご質問、パートナーシップのお問い合わせは PDF to Markdown チームへ。通常 2–3 営業日以内に返信。",
+    "h1": "お問い合わせ",
+    "intro": "ご連絡をお待ちしています。プロダクトフィードバック、変換の問題、パートナーシップのご相談 — メールをお送りください。折り返しご連絡いたします。",
+    "emailHeading": "メール",
+    "responseTime": "通常 2–3 営業日以内に返信いたします。",
+    "aboutLink": "PDF to Markdown について",
+    "privacyLink": "プライバシーポリシー",
+    "sections": [
+      {
+        "title": "お手伝いできること",
+        "paragraphs": [
+          "PDF to Markdown は小さく集中したツールです。よくあるお問い合わせ理由："
+        ],
+        "bullets": [
+          "バグ報告または予期しない変換結果",
+          "機能リクエスト（OCR、一括変換、API アクセス）",
+          "特定 PDF タイプの出力品質フィードバック",
+          "パートナーシップ、連携、プレスお問い合わせ",
+          "プライバシーとデータ取り扱いに関するご質問"
+        ]
+      },
+      {
+        "title": "ご連絡前に",
+        "paragraphs": [
+          "PDF はブラウザ内ローカル処理 — 当社は閲覧・復元できません。変換問題の報告時は問題を説明し、可能なら PDF タイプ（スキャン、多段組、表が多い等）を記載。機密文書の添付はご自身の判断で。",
+          "プライバシー関連（データアクセス、削除、Cookie）のご依頼は件名に「Privacy request」と記載いただくと優先対応します。"
+        ]
+      },
+      {
+        "title": "プライバシー & データリクエスト",
+        "paragraphs": [
+          "PDF 変換はファイルを当社サーバーにアップロードしません。分析データはプライバシーポリシーに記載。プライバシーに関するご質問は上記と同じメールアドレスをご利用ください。"
+        ]
+      }
+    ]
+  }
+}

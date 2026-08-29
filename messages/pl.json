@@ -10,7 +10,8 @@
     "mdToPdf": "Markdown → PDF",
     "ocr": "Zeskanowany PDF (OCR)",
     "images": "z obrazami",
-    "batch": "Konwersja wsadowa"
+    "batch": "Konwersja wsadowa",
+    "word": "PDF → Word"
   },
   "Footer": {
     "tagline": "PDF do Markdown · wszystkie konwersje działają lokalnie w przeglądarce, pliki nigdy nie opuszczają urządzenia.",
@@ -54,7 +55,11 @@
     "actionDownload": "Pobierz .md",
     "actionNewFile": "Nowy plik",
     "warningNoText": "Nie udało się wyodrębnić tekstu. Może to być zeskanowany PDF lub PDF zawierający tylko obrazy. Obsługa OCR jest w planie.",
-    "warningNoTables": "Nie wykryto tabel w tym pliku PDF. Spróbuj pełnego konwertera lub sprawdź, czy PDF zawiera tabele tekstowe z wyraźnymi odstępami między kolumnami."
+    "warningNoTables": "Nie wykryto tabel w tym pliku PDF. Spróbuj pełnego konwertera lub sprawdź, czy PDF zawiera tabele tekstowe z wyraźnymi odstępami między kolumnami.",
+    "dropTitle_images": "Upuść PDF, aby zachować obrazy, lub",
+    "dropSubtitle_images": "Tekst + osadzone obrazy inline · 100% lokalnie · Maks. 50 MB",
+    "statusParsing_images": "Wyodrębnianie obrazów",
+    "statsImages": "{pages} stron · {images} obrazów · {ms} ms"
   },
   "Landing": {
     "faqTitle": "Często zadawane pytania",
@@ -876,6 +881,21 @@
         "q": "Czy tabele i listy przetrwają import?",
         "a": "Tak. Tabele są konwertowane na tabele Markdown w stylu GitHub, a zagnieżdżone listy punktowane zachowują wcięcia."
       }
+    ],
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Badacze i studenci",
+        "body": "Przenoś artykuły i PDF-y z wykładów do vault jako przeszukiwalne notatki."
+      },
+      {
+        "title": "Entuzjaści PKM",
+        "body": "Dodawaj wycinki i raporty do Zettelkasten ze zachowaną strukturą."
+      },
+      {
+        "title": "Pisarze",
+        "body": "Pisz na podstawie PDF-ów w Obsidian bez utraty nagłówków i tabel."
+      }
     ]
   },
   "ChatGPT": {
@@ -916,6 +936,21 @@
       {
         "q": "Czy mogę użyć wyniku w pipeline RAG?",
         "a": "Tak. Czysty Markdown łatwo podzielić na chunki i osadzić do retrieval, a nagłówki stanowią naturalne granice chunków."
+      }
+    ],
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Inżynierowie promptów",
+        "body": "Wklejaj zwięzły Markdown do ChatGPT lub Claude, by zmieścić więcej kontekstu."
+      },
+      {
+        "title": "Twórcy RAG",
+        "body": "Dziel i embeduj czysty Markdown dla niezawodnego retrieval augmented generation."
+      },
+      {
+        "title": "Zespoły danych",
+        "body": "Standaryzuj chaotyczne PDF-y do ustrukturyzowanego tekstu dla pipeline'ów AI."
       }
     ]
   },
@@ -958,6 +993,21 @@
         "q": "Czy mogę skopiować tylko tabelę?",
         "a": "Tak. Skonwertuj PDF, przełącz się na widok źródła i skopiuj potrzebny blok tabeli."
       }
+    ],
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Analitycy",
+        "body": "Wyciągaj tabele cen, finansów i danych z raportów do edytowalnego Markdown."
+      },
+      {
+        "title": "Programiści",
+        "body": "Wstawiaj tabele z PDF do dokumentacji i README jako tabele GitHub-flavored Markdown."
+      },
+      {
+        "title": "Badacze",
+        "body": "Wyodrębniaj tabele wyników z artykułów do notatek lub analizy."
+      }
     ]
   },
   "Notion": {
@@ -999,6 +1049,21 @@
         "q": "Czy pliki są przesyłane?",
         "a": "Nie. Konwersja odbywa się w całości w przeglądarce. PDF nie opuszcza urządzenia."
       }
+    ],
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Zespoły",
+        "body": "Przenoś specyfikacje, wiki i raporty do Notion ze zachowaną strukturą."
+      },
+      {
+        "title": "Product managerowie",
+        "body": "Zamieniaj PDF-y briefów na edytowalne dokumenty Notion w kilka sekund."
+      },
+      {
+        "title": "Menedżerowie wiedzy",
+        "body": "Buduj przeszukiwalną bazę wiedzy Notion z rozproszonych PDF-ów."
+      }
     ]
   },
   "Python": {
@@ -1039,6 +1104,21 @@
       {
         "q": "Czy to zastępuje skrypt Python w produkcji?",
         "a": "Do pracy ad-hoc i prototypów narzędzie w przeglądarce startuje szybciej. Do zautomatyzowanych zadań wsadowych w CI lub cron lepszy jest skrypt lub API — planujemy API pod ten przypadek."
+      }
+    ],
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Data scientistowie",
+        "body": "Pobieraj Markdown do notebooków bez konfiguracji biblioteki do parsowania PDF."
+      },
+      {
+        "title": "Inżynierowie ML",
+        "body": "Przygotowuj dokumenty dla stosów RAG LangChain i LlamaIndex."
+      },
+      {
+        "title": "Twórcy automatyzacji",
+        "body": "Prototypuj konwersje w przeglądarce przed skryptowaniem pełnego pipeline'u."
       }
     ]
   },
@@ -1231,6 +1311,210 @@
         "paragraphs": [
           "Konwersja PDF nie przesyła plików na nasze serwery. Dane analityczne opisuje nasza polityka prywatności. W sprawach prywatności użyj tego samego adresu e-mail powyżej."
         ]
+      }
+    ]
+  },
+  "Best": {
+    "metaTitle": "Najlepszy konwerter PDF na Markdown (darmowy i prywatny) — porównanie",
+    "metaDescription": "Szukasz najlepszego darmowego konwertera PDF na Markdown? Wypróbuj nasze prywatne narzędzie w przeglądarce i zobacz, jak wypada na tle CloudConvert, Pandoc i ręcznego kopiowania.",
+    "keywords": [
+      "najlepszy konwerter pdf na markdown",
+      "darmowy konwerter pdf na markdown",
+      "konwerter pdf na markdown online",
+      "najlepszy darmowy pdf na markdown",
+      "narzędzie pdf na markdown"
+    ],
+    "badge": "Darmowy · Prywatny · Porównanie",
+    "h1": "Najlepszy konwerter PDF na Markdown",
+    "subtitle": "Darmowy, prywatny konwerter w przeglądarce — plus uczciwe porównanie z alternatywami. Wypróbuj go tutaj i zobacz, jak wypada.",
+    "howToName": "Jak przekonwertować PDF na Markdown",
+    "howToSteps": [
+      "Upuść PDF do konwertera powyżej — działa od razu w przeglądarce.",
+      "Sprawdź Markdown w podglądzie lub widoku źródła.",
+      "Skopiuj wynik lub pobierz plik .md."
+    ],
+    "features": [
+      {
+        "title": "Prywatność na pierwszym miejscu",
+        "body": "Najlepszy konwerter trzyma pliki na Twoim urządzeniu. Nasz działa w 100% w przeglądarce — bez uploadu, kont i śledzenia."
+      },
+      {
+        "title": "Prawdziwa struktura",
+        "body": "Wyjdź poza surowy tekst: dobre narzędzia zachowują nagłówki, listy i prawdziwe tabele Markdown. Nasze utrzymuje strukturę dokumentu."
+      },
+      {
+        "title": "Trudne przypadki",
+        "body": "Skanowane PDF-y, osadzone obrazy i dziesiątki plików naraz — świetne narzędzie obejmuje je OCR, ekstrakcją obrazów i trybem wsadowym."
+      }
+    ],
+    "comparisonTitle": "Jak wypada na tle innych",
+    "comparisonColumns": [
+      "Funkcja",
+      "To narzędzie",
+      "CloudConvert",
+      "Pandoc",
+      "Kopiuj i wklej"
+    ],
+    "comparisonRows": [
+      [
+        "Darmowe i bez limitu",
+        "✓",
+        "Ograniczone",
+        "✓",
+        "✓"
+      ],
+      [
+        "Bez uploadu (prywatne)",
+        "✓",
+        "✗",
+        "✓",
+        "✓"
+      ],
+      [
+        "Bez instalacji",
+        "✓",
+        "✓",
+        "✗",
+        "✓"
+      ],
+      [
+        "Tabele → Markdown",
+        "✓",
+        "Częściowo",
+        "✓",
+        "✗"
+      ],
+      [
+        "Zachowuje obrazy",
+        "✓",
+        "✓",
+        "✓",
+        "✗"
+      ],
+      [
+        "OCR dla skanów",
+        "✓",
+        "✓",
+        "✗",
+        "✗"
+      ],
+      [
+        "Wsadowo + ZIP",
+        "✓",
+        "✓",
+        "Ręcznie",
+        "✗"
+      ],
+      [
+        "Podgląd na żywo",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ]
+    ],
+    "faqs": [
+      {
+        "q": "Jaki jest najlepszy konwerter PDF na Markdown?",
+        "a": "Najlepszy zachowuje strukturę dokumentu, szanuje prywatność i obsługuje Twoje typy plików. Narzędzie w przeglądarce bez uploadu i instalacji — z tabelami, obrazami, OCR i trybem wsadowym — pokrywa większość potrzeb za darmo."
+      },
+      {
+        "q": "Jaki jest najlepszy darmowy konwerter PDF na Markdown?",
+        "a": "To narzędzie jest darmowe bez limitów i działa w całości w przeglądarce. W przeciwieństwie do wielu darmowych konwerterów online nigdy nie przesyła plików i obsługuje tabele, obrazy, skanowane PDF-y i konwersję wsadową."
+      },
+      {
+        "q": "Czy online konwertery PDF na Markdown są bezpieczne?",
+        "a": "Zależy od tego, czy przesyłają plik. Wiele tak robi, co jest ryzykowne dla poufnych dokumentów. Ten konwerter przetwarza wszystko lokalnie w przeglądarce, więc pliki nie opuszczają urządzenia."
+      },
+      {
+        "q": "Czy muszę instalować oprogramowanie?",
+        "a": "Nie. Narzędzia CLI jak Pandoc są potężne, ale wymagają instalacji. Ten konwerter działa od razu w każdej nowoczesnej przeglądarce, na każdym urządzeniu."
+      }
+    ]
+  },
+  "Ocr": {
+    "metaTitle": "Skanowany PDF na Markdown — darmowy konwerter OCR",
+    "metaDescription": "Zamień skanowane lub obrazowe PDF-y na Markdown z wbudowanym OCR. Rozpoznaje tekst w 100+ językach, działa w przeglądarce, plik nie jest przesyłany.",
+    "keywords": [
+      "skanowany pdf na markdown",
+      "pdf na markdown ocr",
+      "ocr pdf na markdown",
+      "obrazowy pdf na markdown",
+      "konwertować skanowany pdf na markdown"
+    ],
+    "badge": "OCR · Skanowany PDF",
+    "h1": "Skanowany PDF na Markdown",
+    "subtitle": "Wyodrębnij tekst ze skanowanych lub obrazowych PDF-ów i uzyskaj czysty Markdown. OCR działa w całości w przeglądarce — plik nie opuszcza urządzenia.",
+    "privacyBadge": "100% prywatnie — pliki nie opuszczają przeglądarki",
+    "languageLabel": "Język dokumentu",
+    "dropTitle": "Upuść skanowany PDF tutaj lub",
+    "dropClickBrowse": "kliknij, aby przeglądać",
+    "dropSubtitle": "Obraz lub skanowany PDF · OCR w przeglądarce · Maks. 50 MB",
+    "samplePrompt": "Brak PDF pod ręką?",
+    "trySample": "Wypróbuj przykład",
+    "modelNote": "Pierwsze uruchomienie pobiera model językowy (~2–15 MB). Potem działa offline — plik jest przetwarzany lokalnie.",
+    "paneOriginal": "Oryginalny PDF",
+    "rendering": "Renderowanie stron",
+    "recognizing": "Rozpoznawanie tekstu",
+    "tabPreview": "Podgląd",
+    "tabSource": "Źródło",
+    "ocrProgress": "Strona {page}/{total} · {pct}%",
+    "actionNewFile": "Nowy plik",
+    "errorNotPdf": "Prześlij plik PDF.",
+    "errorTooLarge": "Plik przekracza 50 MB. Większe pliki nie są jeszcze obsługiwane.",
+    "errorNoPages": "Nie udało się odczytać stron z tego PDF.",
+    "errorFailed": "OCR nie powiodło się. Spróbuj innego pliku.",
+    "audienceTitle": "Kto z tego korzysta",
+    "audience": [
+      {
+        "title": "Archiwiści",
+        "body": "Digitalizuj skanowane książki, paragony i stare dokumenty do edytowalnego Markdown."
+      },
+      {
+        "title": "Studenci",
+        "body": "Zamieniaj sfotografowane slajdy i materiały na przeszukiwalne notatki."
+      },
+      {
+        "title": "Biura",
+        "body": "Wyodrębniaj tekst ze skanowanych umów i formularzy bez przepisywania."
+      }
+    ],
+    "howToName": "Jak przekonwertować skanowany PDF na Markdown",
+    "howToSteps": [
+      "Wybierz język dokumentu i upuść skanowany lub obrazowy PDF.",
+      "Obserwuj renderowanie i rozpoznawanie każdej strony obok siebie w przeglądarce.",
+      "Skopiuj Markdown lub pobierz plik .md po zakończeniu OCR."
+    ],
+    "features": [
+      {
+        "title": "Wbudowany OCR",
+        "body": "Odczytuje tekst ze skanowanych i obrazowych PDF-ów, których zwykłe konwertery nie obsługują, dzięki Tesseract w przeglądarce."
+      },
+      {
+        "title": "100+ języków",
+        "body": "Rozpoznaje angielski, chiński, japoński, koreański, hiszpański, francuski, niemiecki, rosyjski i wiele innych."
+      },
+      {
+        "title": "Prywatność od podstaw",
+        "body": "OCR działa lokalnie przez WebAssembly. Pobierany jest tylko model językowy — dokument nie opuszcza urządzenia."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Czym jest skanowany PDF?",
+        "a": "Skanowany lub obrazowy PDF nie ma warstwy tekstu do zaznaczenia — to w zasadzie zdjęcia stron. Zwykłe konwertery nic nie zwracają, więc potrzebny jest OCR."
+      },
+      {
+        "q": "Czy OCR jest darmowy i prywatny?",
+        "a": "Tak. Rozpoznawanie działa w całości w przeglądarce przez WebAssembly. Tylko model językowy jest pobierany z CDN; PDF nie jest przesyłany."
+      },
+      {
+        "q": "Jakie języki są obsługiwane?",
+        "a": "Wybierz angielski, chiński uproszczony i tradycyjny, japoński, koreański, hiszpański, francuski, niemiecki, rosyjski i inne przed startem."
+      },
+      {
+        "q": "Dlaczego OCR jest wolniejszy niż zwykła konwersja?",
+        "a": "OCR analizuje każdy obraz strony piksel po pikselu, by rozpoznać znaki — to cięższe niż odczyt istniejącej warstwy tekstu. Większe dokumenty trwają dłużej."
       }
     ]
   }

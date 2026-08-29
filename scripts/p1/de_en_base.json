@@ -1,0 +1,1521 @@
+{
+  "Nav": {
+    "home": "Home",
+    "tools": "Tools",
+    "obsidian": "for Obsidian",
+    "chatgpt": "for ChatGPT & LLMs",
+    "notion": "for Notion",
+    "python": "with Python",
+    "table": "Table Extractor",
+    "word": "PDF → Word",
+    "mdToPdf": "Markdown → PDF",
+    "ocr": "Scanned PDF (OCR)",
+    "images": "with Images",
+    "batch": "Batch Convert"
+  },
+  "Footer": {
+    "tagline": "PDF to Markdown · all conversions run locally in your browser, your files never leave your device.",
+    "about": "About",
+    "contact": "Contact",
+    "guide": "How-to Guide",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "Converter": {
+    "dropClickBrowse": "click to browse",
+    "privacyBadge": "100% private — files never leave your browser",
+    "paneOriginal": "Original PDF",
+    "dropTitle_general": "Drop your PDF here, or",
+    "dropTitle_obsidian": "Drop a PDF to import into Obsidian, or",
+    "dropTitle_llm": "Drop a PDF for LLM-ready Markdown, or",
+    "dropTitle_table": "Drop a PDF to extract tables, or",
+    "dropTitle_notion": "Drop a PDF to import into Notion, or",
+    "dropTitle_python": "Drop a PDF for Markdown output, or",
+    "dropTitle_images": "Drop a PDF to keep its images, or",
+    "dropSubtitle_general": "Full document · 100% local · Max 50MB",
+    "dropSubtitle_obsidian": "Vault-ready .md with frontmatter · 100% local · Max 50MB",
+    "dropSubtitle_llm": "Compact Markdown + chunk markers for RAG · 100% local · Max 50MB",
+    "dropSubtitle_table": "Tables only · GFM output · 100% local · Max 50MB",
+    "dropSubtitle_notion": "Notion-ready Markdown · 100% local · Max 50MB",
+    "dropSubtitle_python": "Copy into scripts & notebooks · 100% local · Max 50MB",
+    "dropSubtitle_images": "Text + embedded images inline · 100% local · Max 50MB",
+    "errorNotPdf": "Please upload a PDF file.",
+    "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
+    "statusParsing_general": "Converting document",
+    "statusParsing_obsidian": "Building Obsidian note",
+    "statusParsing_llm": "Optimizing for LLM",
+    "statusParsing_table": "Extracting tables",
+    "statusParsing_notion": "Preparing Notion import",
+    "statusParsing_python": "Generating Markdown",
+    "statusParsing_images": "Extracting text & images",
+    "chooseAnother": "Choose another file",
+    "conversionFailed": "Conversion failed",
+    "tabPreview": "Preview",
+    "tabSource": "Source",
+    "statsInfo": "{pages} pages · {ms} ms",
+    "statsTables": "{pages} pages · {tables} tables · {ms} ms",
+    "statsImages": "{pages} pages · {images} images · {ms} ms",
+    "actionCopy": "Copy Markdown",
+    "actionCopied": "Copied",
+    "actionDownload": "Download .md",
+    "actionNewFile": "New file",
+    "warningNoText": "No text could be extracted. This may be a scanned or image-only PDF — try our OCR converter, which recognizes text from scanned PDFs in your browser.",
+    "warningNoTables": "No tables were detected in this PDF. Try the full converter, or check that the PDF has text-based tables with clear column spacing."
+  },
+  "Landing": {
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "Related tools"
+  },
+  "Examples": {
+    "title": "See it in action",
+    "resultTitle": "What you get",
+    "samplePrompt": "No PDF handy?",
+    "trySample": "Try a sample",
+    "loadingSample": "Loading sample…",
+    "errorSampleLoad": "Could not load the sample. Please try again.",
+    "specializedTitle": "More use cases",
+    "general": {
+      "howToName": "How to convert a PDF to Markdown",
+      "steps": [
+        "Upload a text-based PDF, or click \"Try sample PDF\" above to use our demo article.",
+        "Review the Markdown in Preview or Source view, then copy or download the .md file.",
+        "Paste into your editor, knowledge base, or LLM prompt — headings, lists and tables are preserved."
+      ],
+      "resultPreview": "# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models.\n\n## Next Steps\n\nConvert your source documents to Markdown, chunk them, and store the embeddings in a vector database."
+    },
+    "obsidian": {
+      "howToName": "How to import a PDF into Obsidian as Markdown",
+      "steps": [
+        "Upload your research notes PDF, or click \"Try sample PDF\" to load our demo notes file.",
+        "Download the .md file — it includes YAML frontmatter (title, date, tags) ready for your vault.",
+        "Move the file into any folder in your Obsidian vault. It appears instantly as a structured note."
+      ],
+      "resultPreview": "---\ntitle: Literature Review Notes\nsource: pdf\ncreated: 2026-06-06\ntags:\n  - pdf-import\n---\n\n# Literature Review Notes\n\nSummary of key papers on retrieval-augmented generation.\n\n## Key Findings\n\n- Markdown preserves document structure with minimal tokens\n- Local conversion keeps private research notes secure\n- Tables and nested lists import cleanly into Obsidian"
+    },
+    "llm": {
+      "howToName": "How to convert a PDF to LLM-ready Markdown",
+      "steps": [
+        "Upload a report or paper PDF, or click \"Try sample PDF\" to try our demo article.",
+        "Copy the Markdown output — it includes YAML metadata and chunk markers for RAG pipelines.",
+        "Paste into ChatGPT or Claude for Q&A, or split on chunk markers and embed into your vector database."
+      ],
+      "resultPreview": "---\ntitle: Getting Started with RAG\npages: 1\nformat: markdown\nusage: llm-rag\n---\n\n# Getting Started with RAG\n\nRetrieval augmented generation combines a language model with an external knowledge base.\n\n<!-- chunk -->\n## Why Markdown\n\nMarkdown is compact and structured, which makes it the preferred input format for large language models."
+    },
+    "table": {
+      "howToName": "How to extract tables from a PDF to Markdown",
+      "steps": [
+        "Upload a PDF that contains tables, or click \"Try sample PDF\" to load our pricing table demo.",
+        "The output contains only GitHub-flavored Markdown tables — no surrounding prose.",
+        "Copy the table into GitHub, Notion, Obsidian, or any editor that renders GFM tables."
+      ],
+      "resultPreview": "| Plan | Features | Price |\n| --- | --- | --- |\n| Free | Single file, basic | $0 |\n| Pro | Batch, tables, OCR | $9/mo |\n| API | Programmatic access | Usage |"
+    },
+    "notion": {
+      "howToName": "How to import a PDF into Notion as Markdown",
+      "steps": [
+        "Upload a report or doc PDF, or click \"Try sample PDF\" to load our demo article.",
+        "Copy the Markdown or download the .md file — headings, lists and tables are preserved.",
+        "Open Notion, create a page, and paste the content. Notion converts Markdown blocks automatically on paste."
+      ],
+      "resultPreview": "# Q4 Product Roadmap\n\n## Key milestones\n\n- Launch batch conversion beta\n- OCR for scanned PDFs\n- Improved table fidelity\n\n| Initiative | Owner | Status |\n| --- | --- | --- |\n| API access | Eng | Planned |\n| Notion import | Product | In progress |"
+    },
+    "python": {
+      "howToName": "How to convert PDF to Markdown for Python workflows",
+      "steps": [
+        "Upload a PDF above — no pip install or virtual environment required for a quick conversion.",
+        "Copy the Markdown string into your Jupyter notebook, Flask app, or data pipeline.",
+        "For batch jobs or CI, use our browser tool for ad-hoc files today; a REST API is on the roadmap."
+      ],
+      "resultPreview": "# Research Summary\n\n## Overview\n\nThis document was converted from PDF to Markdown for use in Python scripts and notebooks.\n\n## Key points\n\n- Structured headings map cleanly to section parsers\n- Tables export as GFM for pandas or tabulate\n- Local conversion keeps sensitive PDFs off shared servers"
+    },
+    "cards": {
+      "obsidian": {
+        "title": "Obsidian import",
+        "subtitle": "Vault-ready notes with frontmatter"
+      },
+      "llm": {
+        "title": "ChatGPT & RAG",
+        "subtitle": "Compact Markdown with chunk markers"
+      },
+      "table": {
+        "title": "Table extraction",
+        "subtitle": "GFM tables only, no extra prose"
+      },
+      "notion": {
+        "title": "Notion import",
+        "subtitle": "Paste-ready Markdown for Notion pages"
+      },
+      "python": {
+        "title": "Python & automation",
+        "subtitle": "Markdown for notebooks and scripts"
+      }
+    }
+  },
+  "Home": {
+    "metaTitle": "PDF to Markdown Converter — Free, Private & Local",
+    "metaDescription": "Free PDF to Markdown converter that runs in your browser. 100% local — files never leave your device. Headings, tables, and outline intact — ready for editing, search, AI, and RAG.",
+    "keywords": [
+      "pdf to markdown converter",
+      "pdf to markdown",
+      "convert pdf to markdown",
+      "pdf to md",
+      "convert pdf to markdown online free"
+    ],
+    "h1": "PDF to Markdown Converter",
+    "nav": {
+      "skip": "Skip to content",
+      "problem": "Why PDFs fail",
+      "markdown": "Why Markdown",
+      "how": "How it works",
+      "use": "Use cases",
+      "faq": "FAQ",
+      "convert": "Convert a PDF",
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "hero": {
+      "title": "PDF to Markdown you can <em>edit, search, and retrieve</em>.",
+      "lede": "PDFs are built for reading and sharing, not for editing, search, or RAG. We convert PDF to Markdown with headings, tables, lists, and outline intact — ready for docs, retrieval, and AI.",
+      "cta": "Convert PDF to Markdown",
+      "sample": "See a sample conversion",
+      "support": "Extract the text <em>and</em> the document: headings, tables, lists, links, and hierarchy — not a pile of unstructured characters.",
+      "privacy": "100% local in your browser — files never leave your device. Up to 50 MB. Try a sample PDF in the converter.",
+      "chipsAria": "Common destinations",
+      "chips": [
+        "RAG",
+        "LLMs",
+        "Knowledge bases",
+        "Docs",
+        "Search",
+        "Websites"
+      ]
+    },
+    "preview": {
+      "channel": "Method",
+      "share": "Use"
+    },
+    "convert": {
+      "eyebrow": "Convert in the browser",
+      "title": "Drop a PDF. Get structured Markdown.",
+      "lede": "No upload. Headings, tables, lists, and outline stay intact — then copy or download."
+    },
+    "th": {
+      "trait": "Trait",
+      "means": "What it means in practice",
+      "hurts": "Why it hurts modern workflows",
+      "use": "Use",
+      "whyPdf": "Why PDF",
+      "whyMd": "Why Markdown"
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "A PDF remembers how a page looks. Not what the content means.",
+      "lede": "PDF (Portable Document Format) was built to save and exchange electronic documents so they look the same on every device, in every app. That is a feature when you need a contract, a report, or a printed handbook. It is a problem when you need the <em>content</em>.",
+      "quote": "A PDF is saving “how this document should look,” not “what this document is made of.”",
+      "goodTag": "What a PDF is good at",
+      "goodH": "Built for presentation",
+      "badTag": "Where that design breaks down",
+      "badH": "Hard for work — and for AI",
+      "goodRows": [
+        {
+          "trait": "Fixed layout",
+          "means": "Fonts, images, tables, spacing, headers, and footers stay put. The page does not reflow when you change devices."
+        },
+        {
+          "trait": "Cross-platform",
+          "means": "Windows, macOS, Linux, iOS, and Android can all open it."
+        },
+        {
+          "trait": "Print-ready",
+          "means": "Page size and print layout hold up, which is why contracts, reports, papers, and manuals ship as PDF."
+        },
+        {
+          "trait": "Stable distribution",
+          "means": "Once generated, it works as a final version: read it, share it, archive it."
+        },
+        {
+          "trait": "Complex content",
+          "means": "A PDF is rarely “just text.” It may include images, tables, links, vector graphics, embedded fonts, and scanned pages."
+        }
+      ],
+      "badRows": [
+        {
+          "trait": "Structure-unfriendly",
+          "hurts": "PDF cares about the page, not the outline. Machines struggle to recover headings, paragraphs, lists, and tables."
+        },
+        {
+          "trait": "Awkward to edit",
+          "hurts": "Unlike Word or Markdown, PDF was not designed for frequent rewriting or reorganization."
+        },
+        {
+          "trait": "Hard to parse",
+          "hurts": "Embedded fonts, multi-column layouts, tables, images, and footnotes all make extraction harder."
+        },
+        {
+          "trait": "Sometimes not text",
+          "hurts": "Many PDFs are scans — images of pages. You need OCR before you can even get the words."
+        }
+      ],
+      "see": "What you see",
+      "seeP": "On the page, a PDF might look like a chapter, a section, a list, a table.",
+      "seeCode": "Chapter 1\nIntroduction\n\nThis is the introduction...\n\n1. Background\n2. Methodology\n3. Results\n\n[Table]",
+      "soft": "What software sees",
+      "softP": "A program often sees something else: strings, coordinates, fonts, and images scattered across a canvas. Recovering the <em>real</em> title, the paragraph boundaries, the list, and the table is not guaranteed.",
+      "gap1": "<strong>PDF</strong> is for humans. It emphasizes visual layout.",
+      "gap2": "<strong>Markdown</strong> is for structured content — editing, software, and AI.",
+      "gap3": "Once you have Markdown, the same document is ready for search, knowledge bases, RAG, embeddings, and LLMs.",
+      "close": "Dropping a PDF straight into a knowledge base is often the wrong first step. The model may get text. It does not get structure."
+    },
+    "md": {
+      "eyebrow": "The destination",
+      "title": "Markdown keeps the content. And makes the structure explicit.",
+      "lede": "Markdown is a lightweight markup language. A few plain-text symbols stand in for headings, paragraphs, lists, tables, links, and code. You can read the source without rendering it.",
+      "sample": "# Product Documentation\n\n## Introduction\n\nMarkdown is simple and easy to read.\n\n- Easy to edit\n- Easy to search\n- Easy to convert",
+      "diff": "What makes Markdown different",
+      "traits": [
+        {
+          "title": "Clear structure",
+          "body": "#, ##, - and similar markers state headings and lists outright."
+        },
+        {
+          "title": "Plain text",
+          "body": "It is a text file. You are not trapped in a layout format."
+        },
+        {
+          "title": "Easy to edit",
+          "body": "Any text editor works. No specialized office suite required."
+        },
+        {
+          "title": "Easy to read",
+          "body": "Even the raw file is readable."
+        },
+        {
+          "title": "Small",
+          "body": "Usually much lighter than PDF or Word."
+        },
+        {
+          "title": "Easy to search",
+          "body": "Structured text is straightforward to full-text search."
+        },
+        {
+          "title": "Easy to convert",
+          "body": "Markdown becomes HTML, PDF, Word, and more."
+        },
+        {
+          "title": "Program-friendly",
+          "body": "Headings, paragraphs, and lists are explicit, so software can parse them."
+        },
+        {
+          "title": "Version-control friendly",
+          "body": "Plain text belongs in Git."
+        },
+        {
+          "title": "Cross-platform",
+          "body": "Windows, macOS, Linux — all of them."
+        },
+        {
+          "title": "AI-friendly",
+          "body": "Structured text is easier for LLMs, embeddings, and RAG to use well."
+        }
+      ],
+      "why": "The real reason to use it",
+      "sep": "Markdown separates <strong>content</strong> from <strong>visual layout</strong>.",
+      "pdfAsks": "PDF asks: <em>How should this look on the page?</em>",
+      "mdAsks": "Markdown asks: <em>What is this, and how is it structured?</em>",
+      "notCosmetic": "That is not a cosmetic difference. It is a working difference.",
+      "whyCode": "# Product Documentation\n\n## Installation\n\n### Requirements\n\n- Node 18+\n- A valid API key",
+      "tree": "You do not just have words. You have a tree.",
+      "treeP": "That hierarchy is what modern content workflows run on.",
+      "treeCode": "Product Documentation\n└── Installation\n    └── Requirements\n        ├── Node 18+\n        └── A valid API key",
+      "aiNeed": "AI does not only need “the text.” It needs the relationships between pieces of text. For an AI or RAG system, heading levels, paragraph boundaries, lists, and tables are suddenly unambiguous.",
+      "fits": "That is why Markdown fits:",
+      "chips": [
+        "LLMs",
+        "RAG",
+        "Vector databases",
+        "Embeddings",
+        "AI knowledge bases",
+        "AI agents",
+        "Semantic search",
+        "Documentation",
+        "Content management"
+      ],
+      "close": "If the next step is editing, retrieval, or generation, Markdown is the format that already looks like the job."
+    },
+    "cmp": {
+      "eyebrow": "Two formats, two jobs",
+      "title": "PDF is for delivery. Markdown is for work.",
+      "quote": "PDF saves what a document looks like. Markdown saves what a document is.",
+      "rows": [
+        {
+          "label": "Core purpose",
+          "pdf": "Preserve the page and visual layout",
+          "md": "Express content and structure"
+        },
+        {
+          "label": "Editability",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "Machine parsing",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "Search",
+          "pdf": "★★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "AI processing",
+          "pdf": "★★",
+          "md": "★★★★★"
+        },
+        {
+          "label": "RAG",
+          "pdf": "A poor fit as-is",
+          "md": "A natural fit"
+        },
+        {
+          "label": "Version control",
+          "pdf": "Awkward",
+          "md": "Native"
+        },
+        {
+          "label": "File size",
+          "pdf": "Usually larger",
+          "md": "Usually small"
+        },
+        {
+          "label": "Cross-platform",
+          "pdf": "Yes",
+          "md": "Yes"
+        },
+        {
+          "label": "Human reading",
+          "pdf": "Yes",
+          "md": "Yes"
+        },
+        {
+          "label": "Page layout",
+          "pdf": "Strong",
+          "md": "Weak"
+        }
+      ],
+      "still": "You still need PDFs. Contracts, reports, and papers have to look the same for every reader. You need Markdown when the same material has to be reused, queried, updated, or handed to a model.",
+      "close": "The formats are not enemies. They have different jobs. The missing piece is the conversion in between."
+    },
+    "bridge": {
+      "eyebrow": "The product",
+      "title": "PDF to Markdown is the missing step — not a novelty converter.",
+      "lede": "Most important material already lives as PDF. The work you want next does not: rewrite it, search it, retrieve it, summarize it, publish it. That work needs structure.",
+      "p1": "PDF — locked layout, hard for machines",
+      "p3": "Markdown — editable, searchable, AI-friendly",
+      "p4": "LLM / RAG / knowledge base / workflow",
+      "notText": "You are not buying “text from a PDF.” You are buying a document the rest of your stack can use.",
+      "recover": "What conversion should recover",
+      "extract": [
+        {
+          "title": "Running text",
+          "body": "The words, in reading order"
+        },
+        {
+          "title": "Headings & outline",
+          "body": "Chapter, section, subsection"
+        },
+        {
+          "title": "Tables",
+          "body": "Rows and columns, not a picture of a grid"
+        },
+        {
+          "title": "Lists",
+          "body": "Items, not leftover bullets on a canvas"
+        },
+        {
+          "title": "Links",
+          "body": "Destinations you can still follow"
+        },
+        {
+          "title": "Document structure",
+          "body": "The relationships, not only the characters"
+        }
+      ],
+      "ctaLine": "Turn your PDFs into clean, structured Markdown — ready for editing, search, AI, RAG, and more."
+    },
+    "when": {
+      "eyebrow": "Choose the right format",
+      "title": "One content pipeline. Three jobs.",
+      "lede": "Think of them as a chain, not a choice: <strong>PDF</strong> is for delivery and reading → <strong>Markdown</strong> is for editing and processing → <strong>PDF to Markdown</strong> turns existing PDFs into structured content you can actually work with.",
+      "tabsAria": "When to use each format",
+      "tabPdf": "When PDF is right",
+      "tabMd": "When Markdown is right",
+      "tabNeed": "When you need conversion",
+      "pdfH": "When the content is done",
+      "pdfP": "PDF is at its best when the content needs to be shown, shared, printed, or archived without drift.",
+      "pdfJob": "PDF’s job, in one line: What they see should match what I made.",
+      "mdH": "When the content still has a life",
+      "mdP": "Markdown is at its best when you still need to edit it, update it, search it, convert it, or let software read it.",
+      "mdJob": "Markdown’s job, in one line: Make the content easy to edit, manage, search, and parse.",
+      "needH": "When the important material is already a PDF",
+      "needP": "Reality: a huge amount of important material is already PDF. Then you need to:",
+      "needClose": "That is the conversion. <strong>PDF → Markdown.</strong>",
+      "pdfRows": [
+        {
+          "use": "Contracts",
+          "why": "Layout stays fixed for both parties and for the archive."
+        },
+        {
+          "use": "Reports",
+          "why": "Charts, text, and page layout stay consistent."
+        },
+        {
+          "use": "Papers / research",
+          "why": "Formal publishing and reading."
+        },
+        {
+          "use": "Ebooks",
+          "why": "Chapters, figures, and page design hold."
+        },
+        {
+          "use": "Product manuals",
+          "why": "People can download, read, or print."
+        },
+        {
+          "use": "Invoices / receipts",
+          "why": "The form does not move."
+        },
+        {
+          "use": "Company documents",
+          "why": "Formal distribution."
+        },
+        {
+          "use": "Course materials",
+          "why": "Lectures and textbooks packaged as a single file."
+        },
+        {
+          "use": "Print",
+          "why": "Page geometry survives the printer."
+        },
+        {
+          "use": "Archives",
+          "why": "A stable final version."
+        }
+      ],
+      "mdRows": [
+        {
+          "use": "Technical docs",
+          "why": "Developers can edit it directly."
+        },
+        {
+          "use": "Knowledge bases",
+          "why": "Structure is clear; organization is easy."
+        },
+        {
+          "use": "Blogs / writing",
+          "why": "Fast to write; easy to turn into a page."
+        },
+        {
+          "use": "Product documentation",
+          "why": "Chapters, sections, and code blocks are first-class."
+        },
+        {
+          "use": "AI knowledge bases",
+          "why": "Models handle structured text more reliably."
+        },
+        {
+          "use": "Search",
+          "why": "Plain text is easier to index."
+        },
+        {
+          "use": "RAG",
+          "why": "Cleaner chunking, embedding, and retrieval."
+        },
+        {
+          "use": "Git / GitHub",
+          "why": "Plain text is what version control is for."
+        },
+        {
+          "use": "Project READMEs",
+          "why": "Native on GitHub and similar platforms."
+        },
+        {
+          "use": "Content conversion",
+          "why": "One source → HTML, PDF, and other outputs."
+        }
+      ],
+      "needs": [
+        "Edit the content",
+        "Extract the text",
+        "Build a knowledge base",
+        "Build RAG",
+        "Feed it to an AI",
+        "Search the documents",
+        "Analyze papers",
+        "Extract tables",
+        "Turn it into a website",
+        "Turn it into Markdown docs"
+      ]
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Convert PDF to Markdown in three steps.",
+      "s1": "Upload",
+      "s1p": "A report, manual, paper, handbook, SOP, or archive PDF — including files that mix text, tables, images, and links.",
+      "s2": "Convert",
+      "s2p": "We recover more than a text dump: headings, lists, tables, links, and reading order, so the Markdown still has a document shape.",
+      "s3": "Use it",
+      "s3p": "Edit it. Search it. Chunk it. Embed it. Publish it. Hand it to an LLM. Put it in Git.",
+      "p2": "Convert",
+      "p3": "structured Markdown",
+      "p4": "your workflow"
+    },
+    "uc": {
+      "eyebrow": "Use cases",
+      "title": "PDF to Markdown for RAG, docs, and reuse.",
+      "tabsAria": "Use cases",
+      "tab1": "AI / RAG",
+      "tab2": "Feed an LLM",
+      "tab3": "Research",
+      "tab4": "Tech docs",
+      "tab5": "Website",
+      "tab6": "Reuse",
+      "primary": "Primary job"
+    },
+    "uc1": {
+      "h": "AI / RAG knowledge bases",
+      "p": "A company already has a thousand PDFs: product manuals, technical documentation, internal SOPs, contracts, research reports, training materials. The goal is an assistant that answers from <em>those</em> files. Dumping PDFs into the pipeline is usually not the best first move.",
+      "pile": "The pile you already have",
+      "list": [
+        "Product manuals",
+        "Technical documentation",
+        "Internal SOPs",
+        "Contracts",
+        "Research reports",
+        "Training materials"
+      ],
+      "pipe": "The pipeline that works",
+      "pipeCode": "PDF\n  → structured Markdown\n  → chunking\n  → embedding\n  → vector database\n  → RAG\n  → AI assistant",
+      "close": "<strong>PDF to Markdown is the data-prep step for an AI knowledge base.</strong> Without structure, chunking cuts in the wrong places, embeddings mix unrelated sections, and retrieval returns blobs instead of answers. With Markdown, a heading is a heading, a table is a table, and a section can be retrieved as a section."
+    },
+    "uc2": {
+      "h": "Feed a long PDF to an LLM",
+      "p": "You have a 100-page file: <em>2026 Global Market Research Report</em>. You want ChatGPT, Claude, or Gemini to summarize the report, pull key figures, analyze competitors, find market trends, and answer questions from inside the document.",
+      "want": "What you want the model to do",
+      "list": [
+        "Summarize the report",
+        "Pull key figures",
+        "Analyze competitors",
+        "Find market trends",
+        "Answer questions from inside the document"
+      ],
+      "close": "After conversion, the model can follow the outline instead of guessing at it. That is the difference between “paste a wall of text” and “give the model a document.”",
+      "code": "# Executive Summary\n\n## Market Overview\n...\n\n## Market Size\n...\n\n## Competitive Landscape\n\n### Company A\n...\n\n### Company B\n..."
+    },
+    "uc3": {
+      "h": "Papers and research",
+      "p": "Researchers live in PDFs. Once they are Markdown, you can search the full text, extract sections, organize a research library, build a literature knowledge base, summarize with AI, run RAG over the corpus, and compare papers against each other.",
+      "codeIn": "Research Paper 1.pdf\nResearch Paper 2.pdf\nResearch Paper 3.pdf\nResearch Paper 4.pdf\n…",
+      "codeOut": "PDF\n  → Markdown\n  → research knowledge base\n  → AI\n  → “Compare what these 50 papers\n     conclude about RAG.”",
+      "close": "The papers stay citable as PDFs. The working copy becomes something you can query."
+    },
+    "uc4": {
+      "h": "Technical documentation",
+      "p": "A lot of existing technical material still ships as PDF. Teams want living files instead — then they belong in GitHub, GitLab, Notion, a documentation website, or an internal knowledge base.",
+      "from": "From locked manuals",
+      "to": "To files you can maintain",
+      "close": "Maintenance gets cheaper: diffs, reviews, search, and republishing all work the way software already works."
+    },
+    "uc5": {
+      "h": "PDF → website",
+      "p": "A product manual that used to be a download can become a site. The PDF is a file people save. The Markdown path becomes documentation people can search, navigate, and open on the web.",
+      "code": "PDF product manual\n  → Markdown\n  → HTML\n  → documentation website"
+    },
+    "uc6": {
+      "h": "Content reuse",
+      "p": "The company already has <file>Company Handbook.pdf</file>. It should not stay trapped in that one file. That is content repurposing: one source of truth, many outputs — because the structure finally exists independently of the page.",
+      "code": "PDF\n  → Markdown\n       ├── blog article\n       ├── website content\n       ├── FAQ\n       ├── knowledge base\n       ├── AI dataset\n       └── documentation"
+    },
+    "tools": {
+      "chatgpt": "PDF to Markdown for ChatGPT & RAG",
+      "obsidian": "PDF to Markdown for Obsidian",
+      "notion": "PDF to Markdown for Notion"
+    },
+    "ba": {
+      "eyebrow": "Before / after",
+      "title": "Text extraction is not document understanding.",
+      "before": "Before — what a PDF often is to software",
+      "after": "After — the same content as Markdown",
+      "beforeCode": "Introduction\nGetting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "afterCode": "# Introduction\n\n## Getting started\n\nInstall the CLI...\n\n1. Download\n2. Configure",
+      "p": "Lines on a page. Maybe the right order. Maybe not. Heading level is a guess. After conversion, headings, boundaries, and hierarchy are explicit — that is the difference between pulling strings off a page and recovering a document.",
+      "close": "AI systems use that hierarchy. Search uses it. Editors use it. A PDF does not hand it to you."
+    },
+    "map": {
+      "eyebrow": "After conversion",
+      "title": "One conversion. Three directions.",
+      "p": "Keep the PDF for people. Convert it when the next reader is an editor, a search index, a model, or a site.",
+      "pdf": "Read / share / print / archive",
+      "read": "Read / share",
+      "readD": "A person reads the page",
+      "convert": "Convert",
+      "extract": "Extract content",
+      "md": "Structured source of truth",
+      "edit": "Human editing",
+      "editD": "Content ops",
+      "aiD": "Knowledge base",
+      "web": "Website",
+      "webD": "HTML / docs site"
+    },
+    "job": {
+      "pdf": "Read / Share / Print",
+      "md": "Write / Structure / Process",
+      "conv": "Extract / Convert / Reuse"
+    },
+    "who": {
+      "eyebrow": "Who it’s for",
+      "title": "Built for people who inherited a pile of PDFs and need to do something next.",
+      "people": [
+        {
+          "title": "AI and platform teams",
+          "body": "Turning manuals, SOPs, contracts, and training decks into RAG-backed assistants."
+        },
+        {
+          "title": "Researchers and analysts",
+          "body": "Search, compare, and ask questions across papers and long reports."
+        },
+        {
+          "title": "Docs and content teams",
+          "body": "Moving API PDFs, user manuals, and handbooks into Git, Notion, or a documentation site."
+        },
+        {
+          "title": "Anyone unsticking a PDF",
+          "body": "Edit, extract tables, republish as a website, or reuse a file that was never meant to be a working copy."
+        }
+      ],
+      "close": "If the PDF is finished, leave it as PDF. If the work is not finished, convert it."
+    },
+    "intent": {
+      "eyebrow": "What people search for",
+      "title": "Scans, tables, RAG, chat windows, and whole folders.",
+      "lede": "These sit next to the main query. Each is a job the file has to survive — not another lecture on formats."
+    },
+    "intents": [
+      {
+        "id": "intent-ocr",
+        "tag": "OCR",
+        "tagKind": "pdf",
+        "h": "Convert scanned PDFs with OCR",
+        "p": "A scanned handbook is a stack of images. There is no text layer until OCR runs — and OCR alone still leaves a stream of characters. The useful path is OCR plus structure: reading order, heading levels, and tables rebuilt as tables, not as a photograph of a grid. That is how a scan becomes something you can search, chunk, or edit. Contracts, invoices, and older papers are often scans; born-digital files can skip OCR, scans cannot skip the outline. Low-contrast stamps, skewed pages, and mixed handwriting still fail and need a second look. If you index the OCR dump as-is, a knowledge base stores noise.",
+        "href": "/scanned-pdf-to-markdown",
+        "link": "Open the OCR converter"
+      },
+      {
+        "id": "intent-rag",
+        "tag": "RAG",
+        "tagKind": "md",
+        "h": "Structured files for RAG and embeddings",
+        "p": "When you embed a PDF as-is, the splitter often cuts mid-table or mid-section because it never saw a heading. Retrieval then returns a blob that looks related and is not. Give the pipeline Markdown with explicit headings and real tables, and chunking can follow the outline: one section, one table, one list. Embeddings stay closer to a single topic. That is the data-prep job — not a nicer preview. You still choose chunk size, overlap, and the vector store; conversion does not replace that. It stops the model from embedding headers, footers, and page numbers as if they were the answer.",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "LLM & RAG-ready Markdown"
+      },
+      {
+        "id": "intent-tables",
+        "tag": "Structure",
+        "tagKind": "bridge",
+        "h": "Keep tables and headings",
+        "p": "Copy-paste and naive extractors flatten a two-column report into one stream: the heading is just larger type, the table is leftover spaces. Downstream you cannot sort a column or retrieve “section 4.2.” Conversion should emit Markdown headings and pipe tables, with reading order that matches how a person would read the page — including multi-column layouts when they exist. Footnotes and captions should stay attached to the block they belong to. If a table was a screenshot, OCR has to run on that image or the grid is lost. The test is simple: can you jump the outline, and can you copy a row?",
+        "href": "/pdf-table-to-markdown",
+        "link": "Extract tables to Markdown"
+      },
+      {
+        "id": "intent-chatgpt",
+        "tag": "ChatGPT",
+        "tagKind": "pdf",
+        "h": "Conversion vs copy-paste into ChatGPT",
+        "p": "Pasting pages into ChatGPT, Claude, or Gemini is fine for a one-off summary. It is a weak plan for a library. The model gets a weakly ordered blob; headings and tables are guesses. You cannot version the source, re-chunk it, or hand a clean file to the rest of the team. Convert first, then prompt: the outline sits in the file, figures stay in tables, and the same Markdown can go to another model, an internal RAG, or Git. Use the chat window to ask questions. Do not use it as your only extractor — especially not for a 100-page report you will query again next month.",
+        "href": "/pdf-to-markdown-for-chatgpt",
+        "link": "Convert for ChatGPT & LLMs"
+      },
+      {
+        "id": "intent-batch",
+        "tag": "Batch",
+        "tagKind": "md",
+        "h": "Batch convert PDFs to Markdown",
+        "p": "One file is a demo. Operations look like a folder: two hundred manuals, a contract archive, a paper corpus. Batch conversion should keep filenames, skip files that already have a .md, and fail visibly when a scan needs OCR or a table collapsed. Put output next to the original — or in a parallel tree — so you can diff and re-run. After that, the same corpus can be indexed, embedded, or published without someone opening each PDF. Start with a sample of ugly files (multi-column, scans, mixed tables) before you point the job at everything.",
+        "href": "/batch-pdf-to-markdown",
+        "link": "Open the batch converter"
+      }
+    ],
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions worth answering before you convert."
+    },
+    "faqs": [
+      {
+        "q": "Why not just upload the PDF to ChatGPT, Claude, or Gemini?",
+        "a": "You can, for a single pass. A 100-page report still lands as a weakly structured blob: headings, tables, and section boundaries are unreliable. Converted Markdown makes the outline explicit — Executive Summary, Market Size, Competitive Landscape — so summarization, extraction, and Q&A have something to hold onto. For a knowledge base, the gap is larger: RAG wants chunks with real headings, not page coordinates. Conversion still runs entirely in your browser; the file is never uploaded to us."
+      },
+      {
+        "q": "Why Markdown instead of Word or plain text?",
+        "a": "Word still mixes layout into the file. Plain text throws the hierarchy away. Markdown keeps content and structure and drops the page design — which is exactly what editing, Git, search, embeddings, and LLMs need."
+      },
+      {
+        "q": "What do you actually extract?",
+        "a": "Text, headings, tables, lists, links, and document structure. The point is not a raw dump. The point is a file that still has an outline. Page headers, footers, and page numbers are stripped automatically."
+      },
+      {
+        "q": "What about scanned PDFs?",
+        "a": "Many PDFs are images of pages. Those need OCR before there is any text to structure. Use the built-in OCR converter, which recognizes text right in your browser. Scanned input is one of the reasons “just parse the PDF” fails in the real world."
+      },
+      {
+        "q": "Will multi-column layouts, footnotes, embedded fonts, and mixed tables survive?",
+        "a": "Those are the hard cases — and they are common. They are also why a dedicated PDF → Markdown step exists. A conversion that only concatenates strings will scramble reading order and miss the outline."
+      },
+      {
+        "q": "Is this for one file or a whole archive?",
+        "a": "Both. One report, so you can ask an LLM about it. A thousand manuals, SOPs, and training PDFs, so you can chunk, embed, and retrieve. Use the batch converter for folders. The product is the prep step either way — and it stays local."
+      },
+      {
+        "q": "Do I still need the original PDF?",
+        "a": "Yes, when you need a stable, print-faithful, shareable original. Conversion does not replace PDF for contracts, invoices, or archival copies. It unlocks a second life for the same content."
+      },
+      {
+        "q": "Can I turn the Markdown back into a site or other formats?",
+        "a": "That is one of the reasons to convert. Markdown is easy to turn into HTML, PDF, Word, docs sites, FAQs, blog posts, and AI datasets. The PDF was a download. The Markdown is a source."
+      }
+    ],
+    "cta": {
+      "eyebrow": "Get started",
+      "title": "Stop treating PDFs as a dead end.",
+      "p1": "PDFs are great for reading and sharing, but they're not designed for modern content workflows. Markdown makes content structured, editable, searchable, and AI-friendly.",
+      "p2": "Turn your PDFs into clean, structured Markdown — ready for editing, search, AI, RAG, and more."
+    },
+    "footer": {
+      "aria": "Footer",
+      "convert": "Convert",
+      "line": "PDF — Read / Share / Print · Markdown — Write / Structure / Process · PDF to Markdown — Extract / Convert / Reuse"
+    },
+    "subtitle": "Convert PDF to clean Markdown right in your browser. Built for LLM, RAG, Obsidian and Notion workflows."
+  },
+  "Guide": {
+    "metaTitle": "How to Convert PDF to Markdown — Free Step-by-Step Guide",
+    "metaDescription": "Learn how to convert PDF to Markdown in 3 steps. Free browser-based converter — no upload, no account. Works with text-based PDFs for LLM, Obsidian and docs.",
+    "keywords": [
+      "how to convert pdf to markdown",
+      "convert pdf to markdown",
+      "pdf to markdown tutorial",
+      "pdf to markdown step by step"
+    ],
+    "badge": "Step-by-step guide",
+    "h1": "How to Convert PDF to Markdown",
+    "subtitle": "Turn any text-based PDF into clean Markdown in your browser — free, private, and ready in seconds. Use the converter below and follow the steps.",
+    "features": [
+      {
+        "title": "1. Upload your PDF",
+        "body": "Drag and drop a text-based PDF onto the converter above, or click to browse. Files up to 50 MB are supported. Try the sample PDF if you want to see the output first."
+      },
+      {
+        "title": "2. Review the Markdown",
+        "body": "Switch between Preview and Source view to check headings, lists, and tables. Edit is not built in yet — copy the output into your editor if you need to tweak it."
+      },
+      {
+        "title": "3. Copy or download",
+        "body": "Click Copy Markdown to paste into ChatGPT, Obsidian, or a code editor. Or download the .md file and move it into your vault, repo, or RAG pipeline."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What type of PDF works best?",
+        "a": "Text-based PDFs — reports, papers, ebooks exported from Word or Google Docs — convert most reliably. For scanned or image-only PDFs, use our OCR converter, which recognizes the text in your browser."
+      },
+      {
+        "q": "Is conversion really local?",
+        "a": "Yes. Parsing and Markdown generation run entirely in your browser via WebAssembly. Your PDF is never uploaded to our servers."
+      },
+      {
+        "q": "Why use Markdown instead of copying text from the PDF?",
+        "a": "Copy-paste often breaks table columns, loses heading hierarchy, and includes page headers. Structured Markdown preserves document layout with fewer tokens — ideal for LLMs and note apps."
+      },
+      {
+        "q": "Can I convert multiple PDFs at once?",
+        "a": "Yes. Use our batch converter to drop many PDFs at once and download them all as a ZIP — free and unlimited, all in your browser."
+      }
+    ]
+  },
+  "Best": {
+    "metaTitle": "Best PDF to Markdown Converter (Free & Private) — Compared",
+    "metaDescription": "Looking for the best free PDF to Markdown converter? Try our private, browser-based tool and see how it compares to CloudConvert, Pandoc and manual copy-paste.",
+    "keywords": [
+      "best pdf to markdown converter",
+      "free pdf to markdown converter",
+      "pdf to markdown converter online",
+      "best free pdf to markdown",
+      "pdf to markdown tool"
+    ],
+    "badge": "Free · Private · Compared",
+    "h1": "The Best PDF to Markdown Converter",
+    "subtitle": "A free, private, browser-based converter — plus an honest, feature-by-feature comparison with the alternatives. Try it right here, then see how it stacks up.",
+    "howToName": "How to convert a PDF to Markdown",
+    "howToSteps": [
+      "Drop your PDF into the converter above — it runs instantly in your browser.",
+      "Review the Markdown in preview or source view.",
+      "Copy the result or download the .md file."
+    ],
+    "features": [
+      {
+        "title": "Privacy first",
+        "body": "The best converter keeps files on your device. Ours runs 100% in the browser — no uploads, no accounts, no tracking."
+      },
+      {
+        "title": "Real structure",
+        "body": "Look beyond raw text: good tools preserve headings, lists and true Markdown tables. Ours keeps your document's structure intact."
+      },
+      {
+        "title": "Handles hard cases",
+        "body": "Scanned PDFs, embedded images and dozens of files at once — a great tool covers them with OCR, image extraction and batch mode."
+      }
+    ],
+    "comparisonTitle": "How it compares",
+    "comparisonColumns": [
+      "Feature",
+      "This tool",
+      "CloudConvert",
+      "Pandoc",
+      "Copy & paste"
+    ],
+    "comparisonRows": [
+      [
+        "Free & unlimited",
+        "✓",
+        "Limited",
+        "✓",
+        "✓"
+      ],
+      [
+        "No upload (private)",
+        "✓",
+        "✗",
+        "✓",
+        "✓"
+      ],
+      [
+        "Nothing to install",
+        "✓",
+        "✓",
+        "✗",
+        "✓"
+      ],
+      [
+        "Tables → Markdown",
+        "✓",
+        "Partial",
+        "✓",
+        "✗"
+      ],
+      [
+        "Keeps images",
+        "✓",
+        "✓",
+        "✓",
+        "✗"
+      ],
+      [
+        "OCR for scans",
+        "✓",
+        "✓",
+        "✗",
+        "✗"
+      ],
+      [
+        "Batch + ZIP",
+        "✓",
+        "✓",
+        "Manual",
+        "✗"
+      ],
+      [
+        "Live preview",
+        "✓",
+        "✗",
+        "✗",
+        "✗"
+      ]
+    ],
+    "faqs": [
+      {
+        "q": "What is the best PDF to Markdown converter?",
+        "a": "The best converter is the one that keeps your document structure, respects your privacy, and handles your file types. A browser-based tool that needs no upload or install — with tables, images, OCR and batch support — covers most needs for free."
+      },
+      {
+        "q": "What is the best free PDF to Markdown converter?",
+        "a": "This tool is free with no limits and runs entirely in your browser. Unlike many free online converters, it never uploads your files, and it supports tables, images, scanned PDFs and batch conversion."
+      },
+      {
+        "q": "Are online PDF to Markdown converters safe?",
+        "a": "It depends on whether they upload your file. Many do, which is risky for confidential documents. This converter processes everything locally in your browser, so your files never leave your device."
+      },
+      {
+        "q": "Do I need to install software?",
+        "a": "No. Command-line tools like Pandoc are powerful but require installation and setup. This converter works instantly in any modern browser, on any device."
+      }
+    ]
+  },
+  "Ocr": {
+    "metaTitle": "Scanned PDF to Markdown — Free OCR Converter",
+    "metaDescription": "Turn scanned or image-only PDFs into Markdown with built-in OCR. Recognizes text in 100+ languages, runs in your browser, and your file is never uploaded.",
+    "keywords": [
+      "scanned pdf to markdown",
+      "pdf to markdown ocr",
+      "ocr pdf to markdown",
+      "image pdf to markdown",
+      "convert scanned pdf to markdown"
+    ],
+    "badge": "OCR · Scanned PDF",
+    "h1": "Scanned PDF to Markdown",
+    "subtitle": "Extract text from scanned or image-only PDFs and get clean Markdown. OCR runs entirely in your browser — your file never leaves your device.",
+    "privacyBadge": "100% private — files never leave your browser",
+    "languageLabel": "Document language",
+    "dropTitle": "Drop a scanned PDF here, or",
+    "dropClickBrowse": "click to browse",
+    "dropSubtitle": "Image or scanned PDF · OCR in your browser · Max 50MB",
+    "samplePrompt": "No PDF handy?",
+    "trySample": "Try a sample",
+    "modelNote": "First run downloads a language model (~2–15MB). After that it works offline — your file is processed locally.",
+    "paneOriginal": "Original PDF",
+    "rendering": "Rendering pages",
+    "recognizing": "Recognizing text",
+    "tabPreview": "Preview",
+    "tabSource": "Source",
+    "ocrProgress": "Page {page}/{total} · {pct}%",
+    "actionNewFile": "New file",
+    "errorNotPdf": "Please upload a PDF file.",
+    "errorTooLarge": "File exceeds 50MB. Larger files are not supported yet.",
+    "errorNoPages": "Could not read any pages from this PDF.",
+    "errorFailed": "OCR failed. Please try another file.",
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Archivists",
+        "body": "Digitize scanned books, receipts and old documents into editable Markdown."
+      },
+      {
+        "title": "Students",
+        "body": "Turn photographed lecture slides and handouts into searchable notes."
+      },
+      {
+        "title": "Offices",
+        "body": "Extract text from scanned contracts and forms without retyping."
+      }
+    ],
+    "howToName": "How to convert a scanned PDF to Markdown",
+    "howToSteps": [
+      "Choose the document language, then drop your scanned or image-only PDF.",
+      "Watch each page get rendered and recognized in your browser, side by side.",
+      "Copy the Markdown or download the .md file once OCR finishes."
+    ],
+    "features": [
+      {
+        "title": "Built-in OCR",
+        "body": "Reads text from scanned and image-only PDFs that normal converters can't, powered by Tesseract in your browser."
+      },
+      {
+        "title": "100+ languages",
+        "body": "Recognize English, Chinese, Japanese, Korean, Spanish, French, German, Russian and many more."
+      },
+      {
+        "title": "Private by design",
+        "body": "OCR runs locally via WebAssembly. Only the language model is fetched — your document never leaves your device."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is a scanned PDF?",
+        "a": "A scanned or image-only PDF has no selectable text layer — it's essentially pictures of pages. Regular converters return nothing, so OCR is needed to read the text."
+      },
+      {
+        "q": "Is the OCR free and private?",
+        "a": "Yes. Recognition runs entirely in your browser using WebAssembly. Only the language model is downloaded from a CDN; your PDF is never uploaded."
+      },
+      {
+        "q": "Which languages are supported?",
+        "a": "Pick from English, Simplified and Traditional Chinese, Japanese, Korean, Spanish, French, German, Russian and more before you start."
+      },
+      {
+        "q": "Why is OCR slower than a normal conversion?",
+        "a": "OCR analyzes each page image pixel by pixel to recognize characters, which is heavier than reading an existing text layer. Larger documents take longer."
+      }
+    ]
+  },
+  "Obsidian": {
+    "metaTitle": "PDF to Markdown for Obsidian — Offline & Clean",
+    "metaDescription": "Turn PDFs into clean Markdown notes for Obsidian. 100% offline in your browser — drop the .md straight into your vault with headings, lists and tables intact.",
+    "keywords": [
+      "pdf to markdown for obsidian",
+      "obsidian pdf to markdown",
+      "import pdf into obsidian",
+      "pdf to md obsidian"
+    ],
+    "badge": "Offline · vault-ready",
+    "h1": "PDF to Markdown for Obsidian",
+    "subtitle": "Convert PDFs into clean, offline Markdown notes you can drop straight into your Obsidian vault — headings, lists and tables kept intact.",
+    "features": [
+      {
+        "title": "Vault-ready output",
+        "body": "Download a .md file and move it into your vault. Headings become note structure and tables stay as Markdown tables."
+      },
+      {
+        "title": "Fully offline",
+        "body": "No upload step means it works even with the network off — ideal for private research notes and clippings."
+      },
+      {
+        "title": "Clean notes",
+        "body": "Page numbers and repeated headers/footers are removed so your notes are not polluted with print artifacts."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are my files uploaded to a server?",
+        "a": "No. Conversion runs entirely in your browser using WebAssembly. Your PDF never leaves your device, which makes it safe for contracts, research and other private documents."
+      },
+      {
+        "q": "How do I import the result into Obsidian?",
+        "a": "Click “Download .md” and move the file into any folder inside your Obsidian vault. It appears instantly as a new note."
+      },
+      {
+        "q": "Will tables and lists survive the import?",
+        "a": "Yes. Tables are converted to GitHub-flavored Markdown tables and nested bullet lists keep their indentation."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Researchers & students",
+        "body": "Pull papers and lecture PDFs into your vault as linkable, searchable notes."
+      },
+      {
+        "title": "PKM enthusiasts",
+        "body": "Feed clippings and reports into your Zettelkasten with structure intact."
+      },
+      {
+        "title": "Writers",
+        "body": "Draft from source PDFs inside Obsidian without losing headings or tables."
+      }
+    ]
+  },
+  "ChatGPT": {
+    "metaTitle": "PDF to Markdown for ChatGPT, LLMs & RAG",
+    "metaDescription": "Convert PDFs to clean Markdown that’s ready for ChatGPT, Claude and RAG pipelines. Compact, structured output that LLMs parse reliably — processed locally in your browser.",
+    "keywords": [
+      "pdf to markdown for chatgpt",
+      "pdf to markdown for llm",
+      "pdf to markdown for rag",
+      "pdf to markdown for ai"
+    ],
+    "badge": "LLM-ready output",
+    "h1": "PDF to Markdown for ChatGPT & LLMs",
+    "subtitle": "Convert PDFs into compact, structured Markdown that ChatGPT, Claude and RAG pipelines can parse reliably — all processed locally in your browser.",
+    "features": [
+      {
+        "title": "Token-efficient",
+        "body": "Markdown is far more compact than raw PDF text dumps, so you fit more context into the model’s window."
+      },
+      {
+        "title": "Structure the model understands",
+        "body": "Clean headings and lists give the model document hierarchy, which improves grounding and reduces hallucination."
+      },
+      {
+        "title": "Ready for RAG",
+        "body": "Predictable Markdown is easy to chunk and embed into a vector database for retrieval augmented generation."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are my files uploaded to a server?",
+        "a": "No. Conversion runs entirely in your browser using WebAssembly. Your PDF never leaves your device, which makes it safe for contracts, research and other private documents."
+      },
+      {
+        "q": "Why is Markdown better than raw PDF text for LLMs?",
+        "a": "Markdown encodes structure (headings, lists, tables) with very few extra tokens, which helps the model interpret the document and keeps prompts small."
+      },
+      {
+        "q": "Can I use the output in a RAG pipeline?",
+        "a": "Yes. The clean Markdown is straightforward to split into chunks and embed for retrieval, with headings acting as natural chunk boundaries."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Prompt engineers",
+        "body": "Paste compact Markdown into ChatGPT or Claude to fit more context per prompt."
+      },
+      {
+        "title": "RAG developers",
+        "body": "Chunk and embed clean Markdown for reliable retrieval augmented generation."
+      },
+      {
+        "title": "Data teams",
+        "body": "Standardize messy PDFs into structured text for downstream AI pipelines."
+      }
+    ]
+  },
+  "Table": {
+    "metaTitle": "PDF Table to Markdown — Convert Tables Cleanly",
+    "metaDescription": "Extract tables from PDFs into GitHub-flavored Markdown tables. Column structure is detected automatically and processed locally in your browser — no upload.",
+    "keywords": [
+      "pdf table to markdown",
+      "convert pdf table to markdown",
+      "pdf to markdown table",
+      "extract table from pdf to markdown"
+    ],
+    "badge": "Tables · GFM output",
+    "h1": "PDF Table to Markdown",
+    "subtitle": "Extract tables from your PDFs into clean GitHub-flavored Markdown tables. Column boundaries are detected automatically, all in your browser.",
+    "features": [
+      {
+        "title": "Automatic column detection",
+        "body": "The engine aligns cells by their horizontal position, so multi-column tables come out correctly structured."
+      },
+      {
+        "title": "GFM tables",
+        "body": "Output uses standard GitHub-flavored Markdown tables that render in GitHub, Obsidian, Notion and most editors."
+      },
+      {
+        "title": "Mixed documents welcome",
+        "body": "Tables, headings and prose in the same PDF are all handled together in a single pass."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are my files uploaded to a server?",
+        "a": "No. Conversion runs entirely in your browser using WebAssembly. Your PDF never leaves your device, which makes it safe for contracts, research and other private documents."
+      },
+      {
+        "q": "What table layouts are supported?",
+        "a": "Text-based tables with clear column spacing convert best. Merged cells are flattened because Markdown tables don’t support cell spanning."
+      },
+      {
+        "q": "Can I copy just the table?",
+        "a": "Yes. Convert the PDF, switch to the source view, and copy the table block you need."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Analysts",
+        "body": "Pull pricing, financial and data tables out of reports into editable Markdown."
+      },
+      {
+        "title": "Developers",
+        "body": "Drop PDF tables into docs and READMEs as GitHub-flavored Markdown tables."
+      },
+      {
+        "title": "Researchers",
+        "body": "Extract result tables from papers for notes or further analysis."
+      }
+    ]
+  },
+  "Notion": {
+    "metaTitle": "PDF to Markdown for Notion — Import Pages Cleanly",
+    "metaDescription": "Convert PDFs to Markdown for Notion. Clean headings, lists and tables — paste into a Notion page in seconds. 100% local in your browser, no upload.",
+    "keywords": [
+      "pdf to markdown for notion",
+      "notion pdf to markdown",
+      "import pdf into notion",
+      "pdf to notion markdown"
+    ],
+    "badge": "Notion-ready · paste to import",
+    "h1": "PDF to Markdown for Notion",
+    "subtitle": "Turn PDF reports, specs and docs into clean Markdown you can paste straight into Notion — headings, lists and tables intact, all processed locally.",
+    "features": [
+      {
+        "title": "Paste-friendly output",
+        "body": "Notion recognizes Markdown on paste — headings become blocks, lists stay nested, and GFM tables render as Notion tables."
+      },
+      {
+        "title": "Private by default",
+        "body": "Internal wikis and strategy docs stay on your device. No upload step means sensitive PDFs never hit a third-party server."
+      },
+      {
+        "title": "Works with any Notion workspace",
+        "body": "Copy into team wikis, personal notes, or project docs. Download the .md file if you prefer importing via another tool."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I get the Markdown into Notion?",
+        "a": "Convert your PDF, click Copy Markdown, then paste into a new Notion page. Notion converts headings, lists and tables into blocks automatically. For large docs, paste section by section."
+      },
+      {
+        "q": "Do Notion tables from PDF convert correctly?",
+        "a": "Text-based PDF tables export as GitHub-flavored Markdown tables, which Notion renders well. Complex merged cells may flatten because Markdown tables do not support cell spanning."
+      },
+      {
+        "q": "Are my files uploaded?",
+        "a": "No. Conversion runs entirely in your browser. Your PDF never leaves your device."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Teams",
+        "body": "Move specs, wikis and reports into Notion pages with structure preserved."
+      },
+      {
+        "title": "Product managers",
+        "body": "Turn PDF briefs into editable Notion docs in seconds."
+      },
+      {
+        "title": "Knowledge managers",
+        "body": "Build a searchable Notion knowledge base from scattered PDFs."
+      }
+    ]
+  },
+  "Python": {
+    "metaTitle": "PDF to Markdown Python — Browser Tool & Script Tips",
+    "metaDescription": "Convert PDF to Markdown without writing Python first — free local browser tool. Plus tips for pymupdf, pdfplumber and our upcoming API for automation.",
+    "keywords": [
+      "pdf to markdown python",
+      "python pdf to markdown",
+      "convert pdf to markdown python",
+      "pdf to markdown api"
+    ],
+    "badge": "No pip install · instant output",
+    "h1": "PDF to Markdown for Python",
+    "subtitle": "Need Markdown from a PDF for a notebook, ETL job or prototype? Convert locally in the browser, then copy the string into your Python workflow — no environment setup.",
+    "features": [
+      {
+        "title": "Zero-setup conversion",
+        "body": "Skip installing pymupdf, pdfplumber or Java dependencies for one-off files. Upload, copy the Markdown string, and paste into your script."
+      },
+      {
+        "title": "Structured for parsing",
+        "body": "Predictable heading levels and GFM tables make it easy to split sections with regex or feed into LangChain, LlamaIndex and other Python RAG stacks."
+      },
+      {
+        "title": "API coming soon",
+        "body": "Batch conversion and a REST API for programmatic access are on the roadmap. Contact us if you want early access for production pipelines."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there a Python library or pip package?",
+        "a": "This site is a browser-based converter, not a pip module. For quick one-file jobs, use the tool above. For fully programmatic pipelines, common libraries include PyMuPDF, pdfplumber and marker — or wait for our upcoming API."
+      },
+      {
+        "q": "Can I use the output in Jupyter or pandas?",
+        "a": "Yes. Copy the Markdown into a notebook cell for documentation, or parse GFM tables into DataFrames with pandas.read_table on the table blocks."
+      },
+      {
+        "q": "Does this replace a Python script in production?",
+        "a": "For ad-hoc and prototype work, the browser tool is faster to start. For automated batch jobs in CI or cron, a script or API is better — our API is planned for that use case."
+      }
+    ],
+    "audienceTitle": "Who uses it",
+    "audience": [
+      {
+        "title": "Data scientists",
+        "body": "Grab Markdown for notebooks without setting up a PDF parsing library."
+      },
+      {
+        "title": "ML engineers",
+        "body": "Prep documents for LangChain and LlamaIndex RAG stacks."
+      },
+      {
+        "title": "Automation builders",
+        "body": "Prototype conversions in the browser before scripting the full pipeline."
+      }
+    ]
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "Learn how PDF to Markdown handles your data. PDF conversion runs locally in your browser; we use Google Analytics and Microsoft Clarity for site usage insights.",
+    "h1": "Privacy Policy",
+    "lastUpdated": "Last updated: June 4, 2026",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is a free browser-based tool that converts PDF files to Markdown. This Privacy Policy explains what information we collect, how we use it, and the choices available to you.",
+    "sections": [
+      {
+        "title": "1. PDF conversion — your files stay on your device",
+        "paragraphs": [
+          "When you convert a PDF, all processing happens entirely in your web browser using WebAssembly. Your PDF files are never uploaded to our servers or any third-party service for conversion.",
+          "We do not store, access, or retain the content of your PDF files or the Markdown output you generate. Once you close the browser tab, that data is gone from our perspective."
+        ]
+      },
+      {
+        "title": "2. Information we collect automatically",
+        "paragraphs": [
+          "When you visit our website, we and our analytics partners may automatically collect certain technical and usage information, such as:"
+        ],
+        "bullets": [
+          "Pages visited, links clicked, and time spent on the site",
+          "Browser type, operating system, device type, and screen resolution",
+          "Approximate geographic location (country/region level, derived from IP address)",
+          "Referring website or search query",
+          "Session interactions such as scrolls, clicks, and mouse movements (via Microsoft Clarity)"
+        ]
+      },
+      {
+        "title": "3. Analytics services we use",
+        "paragraphs": [
+          "We use the following third-party analytics tools to understand how visitors use our site and to improve the product. These services may set cookies or similar technologies in your browser."
+        ],
+        "bullets": [
+          "Google Analytics (GA4) — provided by Google LLC. Google Analytics collects data about how you interact with our website, including pages viewed and events triggered. Data is processed according to Google's privacy policy. You can learn more at https://policies.google.com/privacy and opt out via the Google Analytics Opt-out Browser Add-on at https://tools.google.com/dlpage/gaoptout.",
+          "Microsoft Clarity — provided by Microsoft Corporation. Clarity uses cookies and similar technologies to record session replays, heatmaps, and interaction data to help us understand user experience and fix usability issues. Data is processed according to Microsoft's privacy policy. You can learn more at https://privacy.microsoft.com/en-us/privacystatement."
+        ]
+      },
+      {
+        "title": "4. Cookies and similar technologies",
+        "paragraphs": [
+          "Our analytics providers use cookies, local storage, and similar tracking technologies to collect usage data described above. You can control cookies through your browser settings — most browsers allow you to block or delete cookies.",
+          "Disabling cookies may not affect the core PDF conversion functionality, which runs entirely in your browser without requiring cookies."
+        ]
+      },
+      {
+        "title": "5. How we use collected information",
+        "paragraphs": [
+          "We use the automatically collected information to:"
+        ],
+        "bullets": [
+          "Monitor site performance and fix errors",
+          "Understand which features and pages are most useful",
+          "Improve the user experience and prioritize product development",
+          "Detect and prevent abuse or fraudulent activity"
+        ]
+      },
+      {
+        "title": "6. Data sharing",
+        "paragraphs": [
+          "We do not sell your personal information. Usage data collected by Google Analytics and Microsoft Clarity is shared with those respective providers as described in their privacy policies.",
+          "We may also disclose information if required by law, court order, or to protect the rights, property, or safety of our users or the public."
+        ]
+      },
+      {
+        "title": "7. Data retention",
+        "paragraphs": [
+          "Analytics data is retained according to the retention policies of Google Analytics and Microsoft Clarity. PDF files and conversion output are never stored on our servers."
+        ]
+      },
+      {
+        "title": "8. Your rights and choices",
+        "paragraphs": [
+          "Depending on your location, you may have rights to access, correct, or delete personal data held about you. You can also:"
+        ],
+        "bullets": [
+          "Opt out of Google Analytics using the browser add-on linked above",
+          "Block or delete cookies via your browser settings",
+          "Use a privacy-focused browser or extensions to limit tracking"
+        ]
+      },
+      {
+        "title": "9. Children's privacy",
+        "paragraphs": [
+          "Our service is not directed at children under 13. We do not knowingly collect personal information from children."
+        ]
+      },
+      {
+        "title": "10. Changes to this policy",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time. When we do, we will revise the \"Last updated\" date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy."
+        ]
+      },
+      {
+        "title": "11. Contact",
+        "paragraphs": [
+          "If you have questions about this Privacy Policy, please contact us at privacy@pdftomarkdown.run."
+        ]
+      }
+    ]
+  },
+  "About": {
+    "metaTitle": "About PDF to Markdown — Free Local Converter",
+    "metaDescription": "Learn about PDF to Markdown (pdftomarkdown.run): a free, browser-based PDF to Markdown tool built for privacy, LLM workflows, and knowledge management.",
+    "h1": "About PDF to Markdown",
+    "intro": "PDF to Markdown (pdftomarkdown.run) is a free online tool that converts PDF files to clean Markdown entirely in your browser. No uploads, no account required.",
+    "privacyLink": "Read our Privacy Policy",
+    "contactLink": "Contact us",
+    "sections": [
+      {
+        "title": "What we do",
+        "paragraphs": [
+          "We help developers, researchers, and knowledge workers turn PDF documents into structured Markdown ready for LLMs, RAG pipelines, Obsidian, Notion, and other tools.",
+          "Our converter preserves headings, lists, nested bullets, and tables while stripping page numbers and repeated headers so the output is clean and token-efficient."
+        ]
+      },
+      {
+        "title": "Why we built it",
+        "paragraphs": [
+          "Most online PDF converters require uploading files to a server, which is a dealbreaker for contracts, internal reports, and research notes.",
+          "Existing tools often produce messy Markdown that breaks tables and wastes tokens when fed to language models. We built PDF to Markdown to solve both problems: keep files on your device and produce output designed for modern AI and note-taking workflows."
+        ]
+      },
+      {
+        "title": "How it works",
+        "paragraphs": [
+          "When you drop a PDF, parsing and conversion run locally in your browser using WebAssembly. Your file is never transmitted to our servers.",
+          "We use Google Analytics and Microsoft Clarity only to understand general site usage, not to access your documents."
+        ],
+        "bullets": [
+          "100% local PDF processing in the browser",
+          "No sign-up, no watermark, no daily limit for single files",
+          "Works offline once the page is loaded"
+        ]
+      },
+      {
+        "title": "What's next",
+        "paragraphs": [
+          "We are actively improving conversion quality and adding capabilities based on user feedback."
+        ],
+        "bullets": [
+          "OCR support for scanned and image-only PDFs",
+          "Batch conversion for multiple files",
+          "Higher-fidelity formula and table handling",
+          "A developer API for automation and RAG pipelines"
+        ]
+      },
+      {
+        "title": "Get in touch",
+        "paragraphs": [
+          "Questions, feedback, or partnership ideas? Head to our contact page — we read every message."
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "metaTitle": "Contact PDF to Markdown — Get in Touch",
+    "metaDescription": "Contact the PDF to Markdown team for feedback, bug reports, privacy questions, or partnership inquiries. We typically respond within 2–3 business days.",
+    "h1": "Contact Us",
+    "intro": "We would love to hear from you. Whether you have product feedback, found a conversion issue, or want to explore a partnership, send us an email and we will get back to you.",
+    "emailHeading": "Email",
+    "responseTime": "We typically respond within 2–3 business days.",
+    "aboutLink": "About PDF to Markdown",
+    "privacyLink": "Privacy Policy",
+    "sections": [
+      {
+        "title": "What we can help with",
+        "paragraphs": [
+          "PDF to Markdown is a small, focused tool. Here are the most common reasons people reach out:"
+        ],
+        "bullets": [
+          "Bug reports or unexpected conversion results",
+          "Feature requests (OCR, batch conversion, API access)",
+          "Feedback on output quality for specific PDF types",
+          "Partnership, integration, or press inquiries",
+          "Privacy and data-handling questions"
+        ]
+      },
+      {
+        "title": "Before you write",
+        "paragraphs": [
+          "Your PDF files are processed locally in your browser — we cannot see or recover them. If you are reporting a conversion issue, please describe the problem and, if possible, note the PDF type (scanned, multi-column, heavy tables, etc.). Do not attach sensitive documents unless you are comfortable sharing them.",
+          "For privacy-specific requests (data access, deletion, or cookie questions), mention \"Privacy request\" in the subject line so we can prioritize your message."
+        ]
+      },
+      {
+        "title": "Privacy & data requests",
+        "paragraphs": [
+          "PDF conversion does not upload your files to our servers. Analytics data is described in our Privacy Policy. For any privacy-related question, use the same email address above."
+        ]
+      }
+    ]
+  }
+}
