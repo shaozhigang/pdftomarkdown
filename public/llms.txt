@@ -1,0 +1,28 @@
+# PDF to Markdown
+> Free local-first PDF ↔ Markdown / Word converter. Files never leave the browser — PDFs are parsed client-side with pdf.js, with no server upload. Built for LLM, RAG, Obsidian, Notion, and ChatGPT workflows. Available in 9 languages.
+
+## Core Tools
+- [PDF to Markdown](https://pdftomarkdown.run/en): Free, private, in-browser PDF to Markdown converter — the main tool
+- [PDF to Word](https://pdftomarkdown.run/en/pdf-to-word): Convert PDF to editable Word (.docx) entirely in the browser
+- [Markdown to PDF](https://pdftomarkdown.run/en/markdown-to-pdf): Convert Markdown documents back to PDF locally
+- [Scanned PDF to Markdown](https://pdftomarkdown.run/en/scanned-pdf-to-markdown): OCR scanned PDFs into Markdown without uploading files
+- [PDF to Markdown with Images](https://pdftomarkdown.run/en/pdf-to-markdown-with-images): Convert PDFs to Markdown while keeping embedded images
+- [Batch PDF to Markdown](https://pdftomarkdown.run/en/batch-pdf-to-markdown): Convert multiple PDFs to Markdown in one local batch
+- [PDF Table to Markdown](https://pdftomarkdown.run/en/pdf-table-to-markdown): Extract PDF tables as GitHub-flavored Markdown tables
+
+## Use-Case Guides
+- [PDF to Markdown for Obsidian](https://pdftomarkdown.run/en/pdf-to-markdown-for-obsidian): Convert PDFs into vault-ready Markdown notes for Obsidian
+- [PDF to Markdown for Notion](https://pdftomarkdown.run/en/pdf-to-markdown-for-notion): Prepare PDF content for import into Notion
+- [PDF to Markdown for ChatGPT](https://pdftomarkdown.run/en/pdf-to-markdown-for-chatgpt): Turn PDFs into clean Markdown for ChatGPT, LLM, and RAG workflows
+- [PDF to Markdown in Python](https://pdftomarkdown.run/en/pdf-to-markdown-python): Compare Python libraries with this browser-based converter
+- [Best PDF to Markdown Converter](https://pdftomarkdown.run/en/best-pdf-to-markdown-converter): Compare this local tool with CloudConvert, Pandoc, and similar converters
+
+## Documentation & Info
+- [How to Convert PDF to Markdown](https://pdftomarkdown.run/en/how-to-convert-pdf-to-markdown): Step-by-step tutorial for converting a PDF to Markdown
+- [About](https://pdftomarkdown.run/en/about): Project background and the local-first privacy model
+- [Contact](https://pdftomarkdown.run/en/contact): How to reach the site operator
+- [Privacy Policy](https://pdftomarkdown.run/en/privacy-policy): Local processing policy plus analytics disclosure
+
+## Machine-Readable Resources
+- [Sitemap](https://pdftomarkdown.run/sitemap.xml): Complete list of indexable URLs
+- [Robots](https://pdftomarkdown.run/robots.txt): Crawler access rules
